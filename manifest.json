@@ -1,0 +1,67 @@
+{
+    "manifest_version": 2,
+    "version": "17.3.2",
+    "name": "__MSG_extName__",
+    "description": "__MSG_extDescription__",
+    "default_locale": "en",
+
+    "icons": {
+        "16": "icons/icon-16.png",
+        "32": "icons/icon-32.png",
+        "64": "icons/icon-64.png",
+        "128": "icons/icon-128.png"
+    },
+
+    "background": {
+        "scripts": [
+            "js/vendor/runtime.js",
+            "js/vendor/all.js",
+            "js/vendor/background.js",
+            "js/background.js"
+        ]
+    },
+
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
+    },
+
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "icons/icon-popup.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "exclude_matches": ["*://*.youtube.com/embed/*"],
+            "js": [
+                "js/vendor/runtime.js",
+                "js/vendor/all.js",
+                "js/vendor/page.js",
+                "js/vendor/download.js"
+            ],
+            "css": ["css/content/youtube.css"],
+            "run_at": "document_end"
+        }
+    ],
+
+    "permissions": [
+        "alarms",
+        "http://*/*",
+        "https://*/*",
+        "storage",
+        "tabs",
+        "downloads",
+        "downloads.open"
+    ],
+
+    "web_accessible_resources": [
+        "icons/icon-popup.png",
+        "images/icon-flixmate.png",
+        "extras/js/*",
+        "extras/css/*"
+    ],
+
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

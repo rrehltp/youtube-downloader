@@ -1,0 +1,1193 @@
+{
+    "extName": {
+        "message": "YouTube Video ve MP3 İndirici"
+    },
+    "extDescription": {
+        "message": "Farklı video kalitesine sahip YouTube videolarını indirin: 1080P, 720P, 480P, 360p vb. tüm formatları destekler Mp3, MP4, FLV, WebM, 3GP"
+    },
+    "downloadsHeading": {
+        "message": "İndirmeler"
+    },
+    "downloadsError_FILE_FAILED": {
+        "message": "Başarısız"
+    },
+    "downloadsError_FILE_ACCESS_DENIED": {
+        "message": "Erişim reddedildi"
+    },
+    "downloadsError_FILE_NO_SPACE": {
+        "message": "Yetersiz depolama alanı"
+    },
+    "downloadsError_FILE_NAME_TOO_LONG": {
+        "message": "Dosya adı çok uzun"
+    },
+    "downloadsError_FILE_TOO_LARGE": {
+        "message": "Dosya çok büyük"
+    },
+    "downloadsError_FILE_VIRUS_INFECTED": {
+        "message": "Dosya virüslü olabilir"
+    },
+    "downloadsError_FILE_TRANSIENT_ERROR": {
+        "message": "Başarısız"
+    },
+    "downloadsError_FILE_BLOCKED": {
+        "message": "Engellenmiş"
+    },
+    "downloadsError_FILE_SECURITY_CHECK_FAILED": {
+        "message": "Güvenlik kontrolü başarısız oldu"
+    },
+    "downloadsError_FILE_TOO_SHORT": {
+        "message": "Dosya çok küçük"
+    },
+    "downloadsError_NETWORK_FAILED": {
+        "message": "Bağlantı hatası"
+    },
+    "downloadsError_NETWORK_TIMEOUT": {
+        "message": "Zaman aşımına uğradı"
+    },
+    "downloadsError_NETWORK_DISCONNECTED": {
+        "message": "Bağlantı koptu"
+    },
+    "downloadsError_NETWORK_SERVER_DOWN": {
+        "message": "Sunucu çöktü"
+    },
+    "downloadsError_NETWORK_INVALID_REQUEST": {
+        "message": "Geçersiz istek"
+    },
+    "downloadsError_SERVER_FAILED": {
+        "message": "Sunucu hatası"
+    },
+    "downloadsError_SERVER_NO_RANGE": {
+        "message": "Sunucu aralığı hatası"
+    },
+    "downloadsError_SERVER_BAD_CONTENT": {
+        "message": "Kötü bağlantı"
+    },
+    "downloadsError_SERVER_UNAUTHORIZED": {
+        "message": "Yetkisiz"
+    },
+    "downloadsError_SERVER_CERT_PROBLEM": {
+        "message": "Sertifika hatası"
+    },
+    "downloadsError_SERVER_FORBIDDEN": {
+        "message": "Yasaklanmış"
+    },
+    "downloadsError_USER_CANCELED": {
+        "message": "İptal edilmiş"
+    },
+    "downloadsError_USER_SHUTDOWN": {
+        "message": "Kapalı"
+    },
+    "downloadsError_CRASH": {
+        "message": "Çöktü"
+    },
+    "bgFlixmateNotConnectedError": {
+        "message": "Flixmate bağlı değil."
+    },
+    "popupHomeButtonTooltip": {
+        "message": "Ana bölüme git"
+    },
+    "popupDownloadsButtonTooltip": {
+        "message": "İndirmeleri göster"
+    },
+    "popupVideoButtonTooltip": {
+        "message": "Video bölümüne git"
+    },
+    "popupThemeToggleButtonTooltip": {
+        "message": "Temayı değiştir"
+    },
+    "popupThemeMenuSystemLabel": {
+        "message": "Sistem varsayılanı"
+    },
+    "popupThemeMenuDarkLabel": {
+        "message": "Koyu tema"
+    },
+    "popupThemeMenuLightLabel": {
+        "message": "Açık tema"
+    },
+    "popupOptionsButtonTooltip": {
+        "message": "Seçenekler sayfasını aç"
+    },
+    "popupHomeLinkHomePageText": {
+        "message": "Ana sayfa"
+    },
+    "popupHomeLinkHowToUseText": {
+        "message": "Nasıl kullanılır"
+    },
+    "popupHomeLinkDownloadsText": {
+        "message": "İndirmeler"
+    },
+    "popupHomeLinkReportBugText": {
+        "message": "Hata bildir"
+    },
+    "popupHomeAlertsHeading": {
+        "message": "Son alarmlar"
+    },
+    "popupDownloaderLoadingText": {
+        "message": "Video ayrıntıları yükleniyor"
+    },
+    "popupDownloaderErrorText": {
+        "message": "Video ayrıntıları alınamadı"
+    },
+    "popupDownloaderNotAvailableMessage": {
+        "message": "Canlı veya gelecek videolar için indirme yapılamaz."
+    },
+    "popupDownloaderTabSDLabel": {
+        "message": "Standart indirmeler"
+    },
+    "popupDownloaderTabMP3Label": {
+        "message": "MP3'e çevir"
+    },
+    "popupDownloaderTabUHDLabel": {
+        "message": "Ultra HD"
+    },
+    "popupDownloaderTabThumbnailsLabel": {
+        "message": "Küçük resimler"
+    },
+    "popupDownloaderTabSubtitlesLabel": {
+        "message": "Altyazılar"
+    },
+    "videoInfoGenericError": {
+        "message": "Bir hata oluştu. Lütfen tekrar deneyin."
+    },
+    "genericDownloadError": {
+        "message": "Bir hata oluştu. Lütfen tekrar deneyin."
+    },
+    "downloadsQrCodeButtonTooltip": {
+        "message": "QR kod oluştur"
+    },
+    "downloadsCopyToClipboardButtonTooltip": {
+        "message": "URL'yi panoya kopyala"
+    },
+    "downloadsVideoOnlyTooltip": {
+        "message": "Bu dosya ses içermiyor"
+    },
+    "downloadsAudioOnlyTooltip": {
+        "message": "Sadece ses dosyası"
+    },
+    "flixmateNotConnectedTitle": {
+        "message": "Flixmate bağlı değil"
+    },
+    "flixmateNotConnectedText": {
+        "message": "Ultra HD indirmeler mevcut değildir."
+    },
+    "flixmateNotConnectedMp3Text": {
+        "message": "MP3 indirme uzunluğu sınırlı olacaktır."
+    },
+    "flixmateNotConnectedLinkText": {
+        "message": "Daha fazla öğren"
+    },
+    "downloadsPrimaryDownloadsHeading": {
+        "message": "YouTube'dan indirilenler"
+    },
+    "downloadsApiDownloadsHeading": {
+        "message": "Harici servislerden indirmeler"
+    },
+    "downloadsDashFormatsShowButtonText": {
+        "message": "Dash formatları"
+    },
+    "downloadsDashFormatsHideButtonText": {
+        "message": "Gizle"
+    },
+    "downloadsDownloadStartedText": {
+        "message": "İndirme başladı."
+    },
+    "downloadsDownloadFailedText": {
+        "message": "İndirme başarısız."
+    },
+    "downloadsUrlCopiedToClipboard": {
+        "message": "İndirme URL'si panoya kopyalandı."
+    },
+    "downloadsQrCodeNote": {
+        "message": "İndirme URL'sini almak için bu QR kodunu cihazınızda tarayın."
+    },
+    "downloadsQrCodeButtonText": {
+        "message": "Kapat"
+    },
+    "downloadsApiRequestLoadingText": {
+        "message": "İndirme isteniyor, bu işlem birkaç saniye sürebilir."
+    },
+    "mp3ConverterBitrateLabel": {
+        "message": "MP3 bit hızını seçin"
+    },
+    "mp3ConverterTimeLabel": {
+        "message": "Zaman"
+    },
+    "mp3ConverterTimeFromLabel": {
+        "message": "Buradan"
+    },
+    "mp3ConverterTimeToLabel": {
+        "message": "Buraya"
+    },
+    "mp3ConverterMp3DownloadButtonText": {
+        "message": "İndir"
+    },
+    "mp3ConverterDownloadStartedText": {
+        "message": "İndirme başladı."
+    },
+    "mp3ConverterDownloadFailedText": {
+        "message": "İndirme başarısız."
+    },
+    "flixmateDownloadStartedText": {
+        "message": "İndirme Flixmate'e eklendi."
+    },
+    "flixmateInstallText": {
+        "message": "Kur"
+    },
+    "flixmateAppName": {
+        "message": "Flixmate Medya İndirici"
+    },
+    "flixmateAppTitle": {
+        "message": "Ultra HD, 4K ve 8k videolar indirin"
+    },
+    "flixmateAppDescription": {
+        "message": "Flixmate Medya İndirici kullanarak 1080p, 2k, 4K ve 8K dahil Sınırsız MP3 ve HD formatlarını indirin"
+    },
+    "flixmateAppDownloadButtonText": {
+        "message": "İndir"
+    },
+    "flixmateHowToLinkText": {
+        "message": "Nasıl çalışır?"
+    },
+    "flixmateAdvancedShowButtonText": {
+        "message": "Gelişmiş (Dönüştür veya Kırp)"
+    },
+    "flixmateAdvancedHideButtonText": {
+        "message": "Gizle"
+    },
+    "flixmateSelectFormatLabel": {
+        "message": "Format seç"
+    },
+    "flixmateSelectQualityLabel": {
+        "message": "Kalite seç"
+    },
+    "flixmateTimeLabel": {
+        "message": "Zaman"
+    },
+    "flixmateFromLabel": {
+        "message": "Buradan"
+    },
+    "flixmateToLabel": {
+        "message": "Buraya"
+    },
+    "flixmateDownloadButtonText": {
+        "message": "İndir"
+    },
+    "flixmateDownloadFailedText": {
+        "message": "İndirme başarısız."
+    },
+    "thumbnailsQualityLabel": {
+        "message": "Kalite seç"
+    },
+    "thumbnailsDownloadButtonText": {
+        "message": "İndir"
+    },
+    "thumbnailsDownloadStartedText": {
+        "message": "İndirme başladı."
+    },
+    "thumbnailsDownloadFailedText": {
+        "message": "İndirme başarısız."
+    },
+    "subtitlesLanguageLabel": {
+        "message": "Dil seç"
+    },
+    "subtitlesAutoGeneratedNote": {
+        "message": "Otomatik oluşturulan altyazılar bu simgeyle işaretlenir."
+    },
+    "subtitlesFormatLabel": {
+        "message": "Dosya formatı seçin"
+    },
+    "subtitlesDownloadButtonText": {
+        "message": "İndir"
+    },
+    "subtitlesNotAvailableMessage": {
+        "message": "Bu video için altyazı bulunamadı."
+    },
+    "subtitlesDownloadStartedText": {
+        "message": "İndirme başladı."
+    },
+    "subtitlesDownloadFailedText": {
+        "message": "İndirme başarısız."
+    },
+    "handleLinksDownloadButtonText": {
+        "message": "İndir"
+    },
+    "handleLinksDownloadButtonTooltip": {
+        "message": "YouTube Video ve MP3 Downloader'ı kullanarak indirin"
+    },
+    "downloadsAddDownloadButtonText": {
+        "message": "İndirmeye ekle"
+    },
+    "downloadsClearAllButtonText": {
+        "message": "Hepsini temizle"
+    },
+    "downloadsOpenFolderMenuText": {
+        "message": "İndirilenler klasörünü aç"
+    },
+    "downloadsExtensionFolderButtonText": {
+        "message": "Uzantı indirmeleri"
+    },
+    "downloadsFlixmateFolderButtonText": {
+        "message": "Flixmate indirmeleri"
+    },
+    "downloadsTabBrowserButtonText": {
+        "message": "Tarayıcı"
+    },
+    "downloadsTabFlixmateButtonText": {
+        "message": "Flixmate"
+    },
+    "downloadsStateMenuAllLabel": {
+        "message": "Tüm İndirmeler"
+    },
+    "downloadsStateMenuDownloadingLabel": {
+        "message": "İndiriliyor"
+    },
+    "downloadsStateMenuQueuedLabel": {
+        "message": "Sıraya alındı"
+    },
+    "downloadsStateMenuPausedLabel": {
+        "message": "Duraklatıldı"
+    },
+    "downloadsStateMenuProcessingLabel": {
+        "message": "İşleniyor"
+    },
+    "downloadsStateMenuCompletedLabel": {
+        "message": "Tamamlandı"
+    },
+    "downloadsStateMenuCanceledLabel": {
+        "message": "İptal edildi"
+    },
+    "downloadsStateMenuErrorLabel": {
+        "message": "Hata"
+    },
+    "downloadsSearchInputPlaceholder": {
+        "message": "İndirmeler içinde ara"
+    },
+    "downloadsSizeUnknownText": {
+        "message": "Boyut bilinmiyor"
+    },
+    "downloadsPausedText": {
+        "message": "Duraklatıldı"
+    },
+    "downloadsPauseButtonText": {
+        "message": "Duraklat"
+    },
+    "downloadsResumeButtonText": {
+        "message": "Devam et"
+    },
+    "downloadsCopyUrlButtonText": {
+        "message": "URL kopyala"
+    },
+    "downloadsCancelButtonText": {
+        "message": "İptal et"
+    },
+    "downloadsPlayButtonText": {
+        "message": "Oynat"
+    },
+    "downloadsShowFolderButtonText": {
+        "message": "Klasör içinde göster"
+    },
+    "downloadsRemoveButtonText": {
+        "message": "Kaldır"
+    },
+    "downloadsDeleteStateText": {
+        "message": "Silindi"
+    },
+    "downloadsLoadMoreButtonText": {
+        "message": "Daha fazla yükle"
+    },
+    "downloadsDownloaderTitle": {
+        "message": "Bir YouTube video URL'si girin"
+    },
+    "downloadsDownloaderVideoIdErrorText": {
+        "message": "Video kimliği çıkarılamadı, lütfen URL'nizi kontrol edin."
+    },
+    "downloadsDownloaderLoadingText": {
+        "message": "Video ayrıntıları yükleniyor..."
+    },
+    "downloadsDownloaderErrorText": {
+        "message": "Video ayrıntıları alınamadı"
+    },
+    "downloadsDownloaderNotAvailableMessage": {
+        "message": "Canlı veya gelecek videolar için indirme yapılamaz."
+    },
+    "downloadsDownloaderTabSDLabel": {
+        "message": "Standart indirmeler"
+    },
+    "downloadsDownloaderTabMP3Label": {
+        "message": "MP3'e dönüştür"
+    },
+    "downloadsDownloaderTabUHDLabel": {
+        "message": "Ultra HD"
+    },
+    "downloadsDownloaderTabThumbnailsLabel": {
+        "message": "Küçük resimler"
+    },
+    "downloadsDownloaderTabSubtitlesLabel": {
+        "message": "Altyazılar"
+    },
+    "injLooperPlayedText": {
+        "message": "Oynatıldı"
+    },
+    "injLooperPlayedTimesText": {
+        "message": "süre(ler)"
+    },
+    "injLooperStoppedText": {
+        "message": "Durduruldu"
+    },
+    "injLooperLoopForTimesText": {
+        "message": "(x kez) tekrarla"
+    },
+    "injLooperLoopForPortionText": {
+        "message": "Bölümü tekrarla"
+    },
+    "injLooperLoopFromLabel": {
+        "message": "Buradan"
+    },
+    "injLooperLoopToLabel": {
+        "message": "Buraya"
+    },
+    "injNotificationsBtnTooltip": {
+        "message": "Bildirimler"
+    },
+    "injSdDownloadsBtnTooltip": {
+        "message": "Standart indirmeler"
+    },
+    "injMp3ConverterBtnTooltip": {
+        "message": "MP3 Dönüştürücü"
+    },
+    "injUhdDownloadsBtnTooltip": {
+        "message": "Ultra HD indirmeler"
+    },
+    "injThumbnailsBtnTooltip": {
+        "message": "Küçük resimler"
+    },
+    "injSubtitlesBtnTooltip": {
+        "message": "Altyazılar"
+    },
+    "injDownloadsManagerBtnTooltip": {
+        "message": "İndirme Yöneticisi"
+    },
+    "injScreenshotBtnTooltip": {
+        "message": "Ekran görüntüsü al"
+    },
+    "injEnableEditModeText": {
+        "message": "Panelleri düzenle"
+    },
+    "injMoreToggleButtonText": {
+        "message": "Daha fazla"
+    },
+    "injCancelEditModeText": {
+        "message": "İptal"
+    },
+    "injDarkModeInactiveTooltip": {
+        "message": "Karanlık modu etkinleştir"
+    },
+    "injDarkModeActiveTooltip": {
+        "message": "Karanlık modu devre dışı bırak"
+    },
+    "injCinemaModeInactiveTooltip": {
+        "message": "Sinema modunu etkinleştir"
+    },
+    "injCinemaModeActiveTooltip": {
+        "message": "Sinema modunu devre dışı bırak"
+    },
+    "injPipInactiveTooltip": {
+        "message": "Resim-içinde-resim modunu etkinleştir"
+    },
+    "injPipActiveTooltip": {
+        "message": "Resim-içinde-resim modunu devre dışı bırak"
+    },
+    "injFloatVideoActiveTooltip": {
+        "message": "Yüzen video oynatıcıyı devre dışı bırak"
+    },
+    "injFloatVideoInactiveTooltip": {
+        "message": "Yüzen video oynatıcıyı etkinleştir"
+    },
+    "injLooperInactiveTooltip": {
+        "message": "Gelişmiş video tekrarlayıcıyı göster"
+    },
+    "injLooperActiveTooltip": {
+        "message": "Video tekrarlayıcıyı gizle"
+    },
+    "injSmartPauseInactiveTooltip": {
+        "message": "Sekme anahtarında akıllı duraklatma videosunu etkinleştir"
+    },
+    "injSmartPauseActiveTooltip": {
+        "message": "Akıllı duraklatmayı devre dışı bırak"
+    },
+    "injAutoplayInactiveTooltip": {
+        "message": "Otomatik oynatmayı etkinleştir"
+    },
+    "injAutoplayActiveTooltip": {
+        "message": "Otomatik oynatmayı devre dışı bırak"
+    },
+    "injAudioModeInactiveTooltip": {
+        "message": "Yalnızca ses modunu etkinleştir"
+    },
+    "injAudioModeActiveTooltip": {
+        "message": "Yalnızca ses modunu devre dışı bırak"
+    },
+    "injVolumeControlInactiveTooltip": {
+        "message": "Fare tekerleğini kullanarak ses kontrolünü etkinleştirin"
+    },
+    "injVolumeControlActiveTooltip": {
+        "message": "Fare tekerleğini kullanarak ses kontrolünü devre dışı bırakın"
+    },
+    "injVideoSearchInactiveTooltip": {
+        "message": "Video izlerken video aramayı etkinleştir"
+    },
+    "injVideoSearchActiveTooltip": {
+        "message": "Video aramayı devre dışı bırak"
+    },
+    "injHideCommentsInactiveTooltip": {
+        "message": "Yorumlar bölümünü gizle"
+    },
+    "injHideCommentsActiveTooltip": {
+        "message": "Yorumlar bölümünü göster"
+    },
+    "injOptionsTooltip": {
+        "message": "Uzantı ayarlarını aç"
+    },
+    "downloadsDownloadStartedSubText": {
+        "message": "İndirme yöneticisini açmak için burayı tıklayın"
+    },
+    "downloadsFlixmateDownloadsClearedNotificationText": {
+        "message": "İndirmeler temizlendi."
+    },
+    "downloadsStateFilterAll": {
+        "message": "Tüm İndirmeler"
+    },
+    "downloadsStateDownloading": {
+        "message": "İndiriliyor"
+    },
+    "downloadsStateQueued": {
+        "message": "Sıraya alındı"
+    },
+    "downloadsStateError": {
+        "message": "Hata"
+    },
+    "downloadsStateCanceled": {
+        "message": "İptal edildi"
+    },
+    "downloadsStatePaused": {
+        "message": "Duraklatıldı"
+    },
+    "downloadsStateProcessing": {
+        "message": "İşleniyor"
+    },
+    "downloadsStateCompleted": {
+        "message": "Tamamlandı"
+    },
+    "downloadsUrlCopiedText": {
+        "message": "URL panoya kopyalandı."
+    },
+    "injHelpButtonText": {
+        "message": "Yardım & SSS"
+    },
+    "injGuideDescription": {
+        "message": "YouTube Video İndirici'nin özellikleri ve bunların nasıl kullanılacağı hakkında daha fazla bilgi edinin"
+    },
+    "injGuideSdDownloadsButtonTooltip": {
+        "message": "Standart İndirmeler"
+    },
+    "injGuideMp3ConverterButtonTooltip": {
+        "message": "MP3 Çevirici"
+    },
+    "injGuideUhdDownloadsButtonTooltip": {
+        "message": "Ultra HD İndirmeler"
+    },
+    "injGuideThumbnailsButtonTooltip": {
+        "message": "Küçük resimler"
+    },
+    "injGuideSubtitlesButtonTooltip": {
+        "message": "Alt yazılar"
+    },
+    "injGuideScreenshotButtonTooltip": {
+        "message": "Ekran görüntüsü"
+    },
+    "injGuideDownloadsManagerButtonTooltip": {
+        "message": "İndirme Yöneticisi"
+    },
+    "injGuideDarkModeButtonTooltip": {
+        "message": "Taranlık Mod"
+    },
+    "injGuideCinemaModeButtonTooltip": {
+        "message": "Sinema Modu"
+    },
+    "injGuidePipButtonTooltip": {
+        "message": "Yüzen video oynatıcı"
+    },
+    "injGuideLooperButtonTooltip": {
+        "message": "Looper"
+    },
+    "injGuideSmartPauseButtonTooltip": {
+        "message": "Akıllı Duraklatma"
+    },
+    "injGuideAutoplayButtonTooltip": {
+        "message": "Otomatik Oynatma"
+    },
+    "injGuideAudioModeButtonTooltip": {
+        "message": "Ses Modu"
+    },
+    "injGuideVolumeControlButtonTooltip": {
+        "message": "Fare Tekerleği Ses Kontrolü"
+    },
+    "injGuideVideoSearchButtonTooltip": {
+        "message": "Video Arama"
+    },
+    "injGuideHideCommentsButtonTooltip": {
+        "message": "Saklı yorumlar"
+    },
+    "injGuideNoteText": {
+        "message": "Daha fazla ayrıntı için bir simgeye tıklayın veya SSS'lerde yanıtınızı bulun"
+    },
+    "injGuideFaqHeading": {
+        "message": "Sık Sorulan Sorular"
+    },
+    "injGuideFaqSD": {
+        "message": "YouTube'dan video nasıl indirilir?"
+    },
+    "injGuideFaqMP3": {
+        "message": "Bir YouTube videosunu MP3'e nasıl dönüştürebilirim?"
+    },
+    "injGuideFaqDownloads": {
+        "message": "İndirilen videolarım nerede depolanıyor?"
+    },
+    "injGuideFaqSubtitles": {
+        "message": "Altyazılı bir YouTube videosu indirebilir miyim?"
+    },
+    "injGuideContactUsNote": {
+        "message": "Hala sorun mu yaşıyorsunuz?"
+    },
+    "injGuideContactUsButtonText": {
+        "message": "Bizimle İletişime Geçin"
+    },
+    "injGuideBackButtonText": {
+        "message": "Geri"
+    },
+    "injGuideFeatSdHeading": {
+        "message": "Standart indirmeler"
+    },
+    "injGuideFeatSdSec1Title": {
+        "message": "Bir video nasıl indirilir?"
+    },
+    "injGuideFeatSdSec1Step1P1": {
+        "message": "Tıkla"
+    },
+    "injGuideFeatSdSec1Step1P2": {
+        "message": "araç çubuğundaki simge."
+    },
+    "injGuideFeatSdSec1Step2": {
+        "message": "Video ayrıntılarının yüklenmesini bekleyin."
+    },
+    "injGuideFeatSdSec1Step3": {
+        "message": "Listeden talep ettiğiniz video kalitesine tıklayın."
+    },
+    "injGuideFeatSdSec1Step4": {
+        "message": "Dosya indirme işleminiz başlayacaktır."
+    },
+    "injGuideFeatSdNote1P1": {
+        "message": "Yapabilirsiniz"
+    },
+    "injGuideFeatSdNote1P2": {
+        "message": "QR kodu oluşturma"
+    },
+    "injGuideFeatSdNote1P3": {
+        "message": "ve videoyu telefonunuza indirmek için taramak."
+    },
+    "injGuideFeatSdNote2": {
+        "message": "YouTube, bazı videolar için HD indirme sağlamaz, bu videolar için harici bir indirme hizmeti kullanırız."
+    },
+    "injGuideFeatSdNote3": {
+        "message": "Dash formatındaki videolar ses içermez."
+    },
+    "injGuideFeatMp3Heading": {
+        "message": "MP3 Çevirici"
+    },
+    "injGuideFeatMp3Sec1Title": {
+        "message": "Bir videoyu MP3'e nasıl dönüştürebilirim?"
+    },
+    "injGuideFeatMp3Sec1Step1P1": {
+        "message": "Tıkla"
+    },
+    "injGuideFeatMp3Sec1Step1P2": {
+        "message": "araç çubuğundaki simge."
+    },
+    "injGuideFeatMp3Sec1Step2": {
+        "message": "Video ayrıntılarının yüklenmesini bekleyin."
+    },
+    "injGuideFeatMp3Sec1Step3": {
+        "message": "MP3 bit hızını seçin ve videoyu kırpmanız gerekiyorsa video uzunluğunu ayarlayın."
+    },
+    "injGuideFeatMp3Sec1Step4": {
+        "message": "İndir düğmesine tıklayın ve isteğin tamamlanmasını bekleyin."
+    },
+    "injGuideFeatMp3Sec1Step5": {
+        "message": "Dosya indirme işleminiz başlayacaktır."
+    },
+    "injGuideFeatMp3Note1": {
+        "message": "Kırpma için giriş kutularındaki kaydırıcıyı kullanarak video uzunluğunu ayarlayabilirsiniz."
+    },
+    "injGuideFeatMp3Note2": {
+        "message": "YouTube MP3 indirmeleri sağlamaz, MP3 dönüştürme için harici bir indirme hizmeti kullanırız."
+    },
+    "injGuideFeatMp3Note3": {
+        "message": "Flixmate'i yüklediyseniz ve etkinleştirdiyseniz, İndirilenler flixmate'e eklenecektir."
+    },
+    "injGuideFeatUhdHeading": {
+        "message": "Ultra HD İndirmeler"
+    },
+    "injGuideFeatUhdDescriptionP1": {
+        "message": "Flixmate"
+    },
+    "injGuideFeatUhdDescriptionP2": {
+        "message": "1080p, 2k, 4k ve 8k dahil olmak üzere yüksek kaliteli videoları indirmek için gereklidir. Ses/video akışlarını birleştirebilen ve farklı biçimlere dönüştürebilen bir masaüstü hizmetidir."
+    },
+    "injGuideFeatUhdSec1Title": {
+        "message": "Ultra HD (1080p, 4k, 8k) videolar nasıl indirilir?"
+    },
+    "injGuideFeatUhdSec1Step1": {
+        "message": "PC'nize Flixmate'i yükleyin."
+    },
+    "injGuideFeatUhdSec1Step2P1": {
+        "message": "Tıkla"
+    },
+    "injGuideFeatUhdSec1Step2P2": {
+        "message": "araç çubuğundaki simge."
+    },
+    "injGuideFeatUhdSec1Step3": {
+        "message": "Video ayrıntılarının yüklenmesini bekleyin."
+    },
+    "injGuideFeatUhdSec1Step4": {
+        "message": "Listeden talep edilen video kalitesine tıklayın."
+    },
+    "injGuideFeatUhdSec1Step5": {
+        "message": "İndirdiğiniz dosya flixmate'e eklenecektir."
+    },
+    "injGuideFeatUhdSec2Title": {
+        "message": "Video nasıl kırpılır veya farklı bir biçime (mkv, avi) dönüştürülür?"
+    },
+    "injGuideFeatUhdSec2Step1": {
+        "message": "Flixmate'i PC'nize yükleyin."
+    },
+    "injGuideFeatUhdSec2Step2P1": {
+        "message": "Tıkla"
+    },
+    "injGuideFeatUhdSec2Step2P2": {
+        "message": "araç çubuğundaki simge."
+    },
+    "injGuideFeatUhdSec2Step3": {
+        "message": "Video ayrıntılarının yüklenmesini bekleyin."
+    },
+    "injGuideFeatUhdSec2Step4": {
+        "message": "\"Gelişmiş\" düğmesine tıklayın."
+    },
+    "injGuideFeatUhdSec2Step5": {
+        "message": "İstediğiniz video kalitesini ve biçimini seçin ve videoyu kırpmanız gerekiyorsa video uzunluğunu ayarlayın."
+    },
+    "injGuideFeatUhdSec2Step6": {
+        "message": "İndirdiğiniz dosya flixmate'e eklenecektir."
+    },
+    "injGuideFeatUhdNote1": {
+        "message": "Flixmate, Mac OS veya Linux'ta desteklenmez."
+    },
+    "injGuideFeatThumbnailsHeading": {
+        "message": "Küçük resimler"
+    },
+    "injGuideFeatThumbnailsSec1Title": {
+        "message": "Video küçük resimleri nasıl indirilir?"
+    },
+    "injGuideFeatThumbnailsSec1Step1P1": {
+        "message": "Tıkla"
+    },
+    "injGuideFeatThumbnailsSec1Step1P2": {
+        "message": "araç çubuğundaki simge."
+    },
+    "injGuideFeatThumbnailsSec1Step2": {
+        "message": "Video ayrıntılarının yüklenmesini bekleyin."
+    },
+    "injGuideFeatThumbnailsSec1Step3": {
+        "message": "Açılır menüden küçük resim kalitesini seçin ve indir düğmesine tıklayın."
+    },
+    "injGuideFeatThumbnailsSec1Step4": {
+        "message": "Dosya indirme işleminiz başlayacaktır."
+    },
+    "injGuideFeatSubtitlesHeading": {
+        "message": "Alt yazılar"
+    },
+    "injGuideFeatSubtitlesSec1Step1P1": {
+        "message": "Tıkla"
+    },
+    "injGuideFeatSubtitlesSec1Title": {
+        "message": "Altyazılar nasıl indirilir?"
+    },
+    "injGuideFeatSubtitlesSec1Step1P2": {
+        "message": "araç çubuğundaki simge."
+    },
+    "injGuideFeatSubtitlesSec1Step2": {
+        "message": "Video ayrıntılarının yüklenmesini bekleyin."
+    },
+    "injGuideFeatSubtitlesSec1Step3": {
+        "message": "Açılır menüden dili ve biçimi seçin ve indir düğmesine tıklayın."
+    },
+    "injGuideFeatSubtitlesSec1Step4": {
+        "message": "Dosya indirme işleminiz başlayacaktır."
+    },
+    "injGuideFeatSubtitlesSec2Title": {
+        "message": "Altyazılı bir video indirebilir miyim?"
+    },
+    "injGuideFeatSubtitlesSec2Text": {
+        "message": "Altyazıları gömülü bir YouTube videosunu indiremezsiniz. Altyazı dosyasını ayrı olarak indirebilir ve VLC gibi desteklenen bir oynatıcıda kullanabilirsiniz."
+    },
+    "injGuideFeatSubtitlesNote1": {
+        "message": "Bazı videolarda altyazı bulunmayabilir."
+    },
+    "injGuideFeatSubtitlesNote2P1": {
+        "message": "Otomatik oluşturulan altyazılar işaretlenir"
+    },
+    "injGuideFeatSubtitlesNote2P2": {
+        "message": "simge ile."
+    },
+    "injGuideFeatSubtitlesNote3": {
+        "message": "YouTube, çoğu video oynatıcıda desteklenen WebVTT, TTML ve SRV3 formatlarını sağlar."
+    },
+    "injGuideFeatScreenshotHeading": {
+        "message": "Bir kran görüntüsü alın"
+    },
+    "injGuideFeatScreenshotDescriptionP1": {
+        "message": "Araç çubuğundaki simgesine tıklayarak bir ekran görüntüsü yakalayabilirsiniz."
+    },
+    "injGuideFeatScreenshotDescriptionP2": {
+        "message": "Ekran görüntüsünün kalitesi, videonun oynatma kalitesine bağlıdır."
+    },
+    "injGuideFeatDownloadsHeading": {
+        "message": "İndirme Yöneticisi"
+    },
+    "injGuideFeatDownloadsDescriptionP1": {
+        "message": "İndirilen öğelerinizi görüntülemek/iptal etmek/duraklatmak/oynatmak için indirme yöneticisini kullanabilirsiniz."
+    },
+    "injGuideFeatDownloadsDescriptionP2": {
+        "message": "İndirme yöneticisini açmak için araç çubuğundaki simgesine tıklayın."
+    },
+    "injGuideFeatDownloadsSec1Title": {
+        "message": "İndirilenler nerede saklanır veya indirilenler klasörü nasıl açılır?"
+    },
+    "injGuideFeatDownloadsSec1Step1P1": {
+        "message": "Tıklayın"
+    },
+    "injGuideFeatDownloadsSec1Step1P2": {
+        "message": "İndirme yöneticisini açmak için araç çubuğundaki simge."
+    },
+    "injGuideFeatDownloadsSec1Step2": {
+        "message": "İndirme yöneticisi sayfasında, sağ üst köşedeki \"İndirilenler klasörünü aç\" açılır menüsüne tıklayın."
+    },
+    "injGuideFeatDownloadsSec1Step3": {
+        "message": "İndirilenler klasörünü açmak için Uzantı indirmeleri/Flixmate indirmeleri'ne tıklayın."
+    },
+    "injGuideFeatDownloadsNote1": {
+        "message": "Flixmate'in kullanıcı dizinine erişimi yoktur, bu nedenle dosyalar genel bir dizinde saklanır."
+    },
+    "injGuideFeatDarkModeHeading": {
+        "message": "Karanlık Mod"
+    },
+    "injGuideFeatDarkModeDescription": {
+        "message": "Bu, YouTube'un karanlık modu için hızlı bir geçiş düğmesidir."
+    },
+    "injGuideFeatCinemaModeHeading": {
+        "message": "Sinema Modu"
+    },
+    "injGuideFeatCinemaModeDescriptionP1": {
+        "message": "Sinema modu, gelişmiş karanlık modu açarak ve dikkat dağıtıcı unsurları gizleyerek izleme deneyiminizi iyileştirebilir."
+    },
+    "injGuideFeatCinemaModeDescriptionP2": {
+        "message": "kullanarak sinema modunu değiştirebilirsiniz."
+    },
+    "injGuideFeatCinemaModeDescriptionP3": {
+        "message": "düğmesini"
+    },
+    "injGuideFeatPipHeading": {
+        "message": "Resim içinde resim modu"
+    },
+    "injGuideFeatPipDescriptionP1": {
+        "message": "Resim İçinde Resim, videoları kayan bir pencerede (her zaman diğer pencerelerin üstünde) izlemenize olanak tanır, böylece diğer sitelerle veya uygulamalarla etkileşim kurarken, izlediğiniz şeye göz kulak olabilirsiniz."
+    },
+    "injGuideFeatPipDescriptionP2": {
+        "message": "kullanarak PIP arasında geçiş yapabilirsiniz"
+    },
+    "injGuideFeatPipDescriptionP3": {
+        "message": "düğmesini."
+    },
+    "injGuideFeatFloatViewHeading": {
+        "message": "Kayan video oynatıcı"
+    },
+    "injGuideFeatFloatViewDescriptionP1": {
+        "message": "Kayan görünümü etkinleştirerek, kaydırma yaparken ve yorumları okurken YouTube videolarını izleyebilirsiniz."
+    },
+    "injGuideFeatFloatViewDescriptionP2": {
+        "message": "Kayan video oynatıcıyı değiştirmek için düğmeye tıklayın."
+    },
+    "injGuideFeatLooperHeading": {
+        "message": "Looper"
+    },
+    "injGuideFeatLooperDescriptionP1": {
+        "message": "YouTube bir video döngüsü özelliği sağlamaz, bu nedenle kullanıcılarımızı kolaylaştırmak için bu işlevi ekledik."
+    },
+    "injGuideFeatLooperDescriptionP2": {
+        "message": "Tıklayın"
+    },
+    "injGuideFeatLooperDescriptionP3": {
+        "message": "videoyu döngüye almak için simgeye. Simgeye tıklamak, bir videoyu belirli bir sayı için döngüye almak veya videonun bir bölümünü döngüye almak için kullanabileceğiniz gelişmiş bir döngüleyiciyi de ortaya çıkaracaktır."
+    },
+    "injGuideFeatSmartPauseHeading": {
+        "message": "Akıllı Duraklatma"
+    },
+    "injGuideFeatAutoPlayHeading": {
+        "message": "Otomatik oynatıcı"
+    },
+    "injGuideFeatSmartPauseDescription": {
+        "message": "Akıllı Duraklatma, mevcut YouTube videonuzda nerede olduğunuzu otomatik olarak hatırlayarak, kaldığınız yerden kolayca devam etmenizi sağlar. Sekmeleri her değiştirdiğinizde, yeni bir sekme açtığınızda veya yeni bir pencere açtığınızda, Akıllı Duraklatma videoya geri dönmenizi ve devam ettirmenizi bekleyecektir."
+    },
+    "injGuideFeatAutoPlayDescription": {
+        "message": "Bu, YouTube'un otomatik oynatma özelliklerinde hızlı bir geçiş düğmesidir."
+    },
+    "injGuideFeatAudioModeHeading": {
+        "message": "Ses modu"
+    },
+    "injGuideFeatAudioModeDescriptionP1": {
+        "message": "Kendinizi yalnızca müzik veya ses için YouTube videoları izlerken bulabilirsiniz."
+    },
+    "injGuideFeatAudioModeDescriptionP2": {
+        "message": "Bu seçeneği yalnızca ses çalmak için kullanarak, daha hızlı arabellek sürelerini desteklerken bant genişliğinden tasarruf ederek değiştirebilirsiniz. Bunun nedeni, ses modunun yalnızca ses biçimlerini yüklemesidir. Bu özellik, fon müziği, ders dinlemek ve daha fazlası için idealdir."
+    },
+    "injGuideFeatAudioModeNote1": {
+        "message": "Değişikliklerin etkili olması için bu özelliği değiştirdiğinizde sayfa yeniden yüklenecektir."
+    },
+    "injGuideFeatVolumeControlHeading": {
+        "message": "Fare Tekerleği Ses Kontrolü"
+    },
+    "injGuideFeatVolumeControlDescriptionP1": {
+        "message": "Düğmeye tıklayarak bu özelliği etkinleştirin"
+    },
+    "injGuideFeatVolumeControlDescriptionP2": {
+        "message": "ve fare tekerleğini kullanarak YouTube videolarında ses seviyesini kontrol edebileceksiniz."
+    },
+    "injGuideFeatVideoSearchHeading": {
+        "message": "Video Arama"
+    },
+    "injGuideFeatVideoSearchDescriptionP1": {
+        "message": "Bu özelliği kullanarak bir video izlerken YouTube aramasını kullanabilirsiniz."
+    },
+    "injGuideFeatVideoSearchDescriptionP2": {
+        "message": "Düğmeye tıklamak, sayfanın sağ tarafına bir arama çubuğu ekleyecektir. Videoyu kesmeden veya ayrılmadan yeni videolar bulmak için arama çubuğunu kullanarak aramaya devam edebilirsiniz."
+    },
+    "injGuideFeatHideCommentsHeading": {
+        "message": "Saklı yorumlar"
+    },
+    "injGuideFeatHideCommentsDescriptionP1": {
+        "message": "Tıkla"
+    },
+    "injGuideFeatHideCommentsDescriptionP2": {
+        "message": "Dikkatin dağılmasını önlemek için YouTube videolarındaki yorumları gizlemek için düğme."
+    },
+    "optHeading": {
+        "message": "Ayarlar"
+    },
+    "optRestoreButtonText": {
+        "message": "Ayarları varsayılan duruma getirmek"
+    },
+    "optRestoreConfirmTitle": {
+        "message": "Emin misiniz?"
+    },
+    "optRestoreConfirmMessage": {
+        "message": "Bu, ayarlarınızı varsayılana sıfırlayacaktır."
+    },
+    "optRestoreSuccessMessage": {
+        "message": "Ayarlar başarıyla geri yüklendi."
+    },
+    "optConfirmButtonText": {
+        "message": "Onayla"
+    },
+    "optCancelButtonText": {
+        "message": "İptal"
+    },
+    "optThemeSelectLabel": {
+        "message": "Uzantı temasını seçin"
+    },
+    "optThemeOptionSystemLabel": {
+        "message": "Sistem varsayılanı"
+    },
+    "optThemeOptionLightLabel": {
+        "message": "Açık tema"
+    },
+    "optThemeOptionDarkLabel": {
+        "message": "Karanlık tema"
+    },
+    "optDownloadNotificationsSwitchLabel": {
+        "message": "İndirme bildirimlerini göster"
+    },
+    "optEmbeddedDownloadsSwitchLabel": {
+        "message": "Gömülü videolarda indirme düğmesini göster"
+    },
+    "optDownloadButtonOnUrlsSwitchLabel": {
+        "message": "YouTube bağlantılarına indirme düğmesi ekle"
+    },
+    "optVideoQualityDisabledOptionLabel": {
+        "message": "Devre dışı"
+    },
+    "optDownloadSettingsHeading": {
+        "message": "İndirici ayarları"
+    },
+    "optFormatsLabel": {
+        "message": "İndirme menüsünde gösterilecek video biçimleri"
+    },
+    "optDashFormatsLabel": {
+        "message": "İndirme menüsünde gösterilecek dash biçimleri"
+    },
+    "optDashFormatsRadioNone": {
+        "message": "Hiç biri"
+    },
+    "optDashFormatsRadioBoth": {
+        "message": "Ses ve Video"
+    },
+    "optDashFormatsRadioVideo": {
+        "message": "Sadece Video"
+    },
+    "optDashFormatsRadioAudio": {
+        "message": "Sadece ses"
+    },
+    "optMp3BitrateLabel": {
+        "message": "MP3 dönüştürücü varsayılan bit hızı"
+    },
+    "optCopyButtonSwitchLabel": {
+        "message": "Panoya kopyala düğmesini etkinleştir"
+    },
+    "optQrButtonSwitchLabel": {
+        "message": "QR kodu oluşturucu düğmesini etkinleştir"
+    },
+    "optSaveAsSwitchLabel": {
+        "message": "Bir video indirmeyi seçtiğimde farklı kaydet iletişim kutusunu göster"
+    },
+    "optFlixmateSettingsHeading": {
+        "message": "Flixmate Medya İndirici"
+    },
+    "optFlixmateUnsupportedText": {
+        "message": "Flixmate, sisteminizde desteklenmiyor."
+    },
+    "optFlixmateUnsupportedLinkText": {
+        "message": "Daha fazla bilgi edin"
+    },
+    "optFlixmateDisconnectedText": {
+        "message": "Flixmate bağlı değil."
+    },
+    "optDisconnectedLinkText": {
+        "message": "İndir"
+    },
+    "optFlixmateConnectedText": {
+        "message": "bağlandı"
+    },
+    "optFlixmateUpdateAvailableText": {
+        "message": "Güncelle mevcut"
+    },
+    "optFlixmateInstallUpdateText": {
+        "message": "indirmek için."
+    },
+    "optFlixmateEnabledSwitchLabel": {
+        "message": "Flixmate Medya İndiricisini Etkinleştir"
+    },
+    "optFlixmateEnabledSwitchHelpText": {
+        "message": "Sınırsız MP3 ve Ultra HD formatlarını indirin"
+    },
+    "optFlixmateFormatsLabel": {
+        "message": "İndirilenler menüsünde gösterilecek dönüştürme biçimleri"
+    },
+    "optVideoQualityMenuLabel": {
+        "message": "Tercih edilen video oynatma kalitesini ayarlayın"
+    },
+    "optFloatVideoSwitchLabel": {
+        "message": "Kayan videoyu etkinleştir"
+    },
+    "optFloatVideoSwitchHelpText": {
+        "message": "(Aşağıya kaydırırken videoyu görmek için akıllı görünüm. Video sağ alt köşede gösterilecektir)"
+    },
+    "optSmartPauseSwitchLabel": {
+        "message": "Akıllı duraklatmayı etkinleştir"
+    },
+    "optSmartPauseSwitchHelpText": {
+        "message": "(Sayfadan ayrıldığınızda YouTube'da oynatılan videoları otomatik olarak duraklatır ve geri döndüğünüzde kaldığı yerden devam eder)"
+    },
+    "optAudioModeSwitchLabel": {
+        "message": "Ses modunu etkinleştir"
+    },
+    "optAudioModeSwitchHelpText": {
+        "message": "(Videoyu yüklemeden yalnızca sesi dinleyin)"
+    },
+    "optAudioModeChangeAlert": {
+        "message": "Değişikliklerin etkili olması için YouTube sekmelerini yenileyin."
+    },
+    "optMousewheelVolumeControlSwitchLabel": {
+        "message": "Fare tekerleği ile ses seviyesini kontrol edin"
+    },
+    "optMousewheelVolumeControlSwitchHelpText": {
+        "message": "(Sesi kontrol etmek için videonun içinde fare tekerleğini kullanın)"
+    },
+    "optVideoSearchSwitchLabel": {
+        "message": "Video izlerken arama yapın"
+    },
+    "optVideoSearchSwitchHelpText": {
+        "message": "(İlgili videolar bölümündeki arama sonuçlarını yükleyerek videoyu kesmeden YouTube'da arama yapın)"
+    },
+    "optHideCommentsSwitchLabel": {
+        "message": "YouTube yorumlarını gizle"
+    },
+    "optHideCommentsSwitchHelpText": {
+        "message": "(YouTube videolarındaki tüm kullanıcı yorumlarını gizler)"
+    },
+    "injDownloaderLoadingText": {
+        "message": "Video ayrıntıları yükleniyor..."
+    },
+    "injDownloaderErrorText": {
+        "message": "Video ayrıntıları alınamadı"
+    },
+    "injNotAvailableMessage": {
+        "message": "Canlı veya gelecek videolar için indirme yapılamaz."
+    },
+    "optMultithreadingSwitchHelpText": {
+        "message": "İndirme hızını artırmak için sunucuya birden çok bağlantısı olan dosyaları indirin."
+    },
+    "optMultithreadingSwitchLabel": {
+        "message": "İndirmeler için Çoklu İş Parçacığı Kullanın"
+    },
+    "optCompactDisplayModeButtonText": {
+        "message": "Değiştirmek"
+    },
+    "optCompactDisplayModeSubheading": {
+        "message": "Uzantı, YouTube'da kompakt bir düğme olarak görüntülenecektir, Tam moda geçmek için bu düğmeyi tıklayın."
+    },
+    "optCompactDisplayModeHeading": {
+        "message": "Uzantı, Kompakt modda görüntüleniyor"
+    },
+    "optChangeLanguageText": {
+        "message": "Dili değiştir"
+    },
+    "injCompactButtonTooltip": {
+        "message": "Bu düğmeyi kullanarak Addoncrop YouTube Downloader'ı Kompakt modda kullanın"
+    },
+    "injExpandBtnTooltip": {
+        "message": "Tam uzatma çubuğuna geç"
+    },
+    "injSwitchDisplayButtonTooltip": {
+        "message": "Kompakt moda geç"
+    },
+    "injSwitchDisplayButtonText": {
+        "message": "Kompakt moda geçmek için bu düğmeye tıklayın."
+    },
+    "injWelcomeMessageTooltip": {
+        "message": "Videoyu indirmek için bu düğmeye tıklayın."
+    },
+    "downloadsOpenVideoPageButtonTooltip": {
+        "message": "YouTube'da videoyu aç"
+    },
+    "downloadsFlixmateDownloadsHeading": {
+        "message": "Flixmate ile Ultra HD'yi indirin"
+    }
+}

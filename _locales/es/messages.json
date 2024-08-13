@@ -1,0 +1,1193 @@
+{
+    "extName": {
+        "message": "Descargar videos de Youtube y MP3"
+    },
+    "extDescription": {
+        "message": "Descarga vídeos de YouTube con diferentes calidades de vídeo: 1080P, 720P, 480P, 360p, etc. Soporta todos los formatos Mp3, MP4, FLV, WebM, 3GP"
+    },
+    "downloadsHeading": {
+        "message": "Descargas"
+    },
+    "downloadsError_FILE_FAILED": {
+        "message": "Fallido"
+    },
+    "downloadsError_FILE_ACCESS_DENIED": {
+        "message": "Acceso denegado"
+    },
+    "downloadsError_FILE_NO_SPACE": {
+        "message": "Espacio de almacenamiento insuficiente"
+    },
+    "downloadsError_FILE_NAME_TOO_LONG": {
+        "message": "el nombre del archivo es muy largo"
+    },
+    "downloadsError_FILE_TOO_LARGE": {
+        "message": "archivo demasiado grande"
+    },
+    "downloadsError_FILE_VIRUS_INFECTED": {
+        "message": "El archivo puede estar infectado"
+    },
+    "downloadsError_FILE_TRANSIENT_ERROR": {
+        "message": "Fallido"
+    },
+    "downloadsError_FILE_BLOCKED": {
+        "message": "bloqueado"
+    },
+    "downloadsError_FILE_SECURITY_CHECK_FAILED": {
+        "message": "revisión de seguridad fallida"
+    },
+    "downloadsError_FILE_TOO_SHORT": {
+        "message": "archivo demasiado pequeño"
+    },
+    "downloadsError_NETWORK_FAILED": {
+        "message": "fallo en la red"
+    },
+    "downloadsError_NETWORK_TIMEOUT": {
+        "message": "se ha agotado el tiempo de espera"
+    },
+    "downloadsError_NETWORK_DISCONNECTED": {
+        "message": "desconectado"
+    },
+    "downloadsError_NETWORK_SERVER_DOWN": {
+        "message": "servidor caído"
+    },
+    "downloadsError_NETWORK_INVALID_REQUEST": {
+        "message": "solicitud inválida"
+    },
+    "downloadsError_SERVER_FAILED": {
+        "message": "fallo en el servidor"
+    },
+    "downloadsError_SERVER_NO_RANGE": {
+        "message": "error en el alcance del servidor"
+    },
+    "downloadsError_SERVER_BAD_CONTENT": {
+        "message": "contenido malo"
+    },
+    "downloadsError_SERVER_UNAUTHORIZED": {
+        "message": "no autorizado"
+    },
+    "downloadsError_SERVER_CERT_PROBLEM": {
+        "message": "error certificado"
+    },
+    "downloadsError_SERVER_FORBIDDEN": {
+        "message": "prohibido"
+    },
+    "downloadsError_USER_CANCELED": {
+        "message": "cancelado"
+    },
+    "downloadsError_USER_SHUTDOWN": {
+        "message": "apagado"
+    },
+    "downloadsError_CRASH": {
+        "message": "dañado"
+    },
+    "bgFlixmateNotConnectedError": {
+        "message": "Flixmate no está conectado"
+    },
+    "popupHomeButtonTooltip": {
+        "message": "Ir a la sección de inicio"
+    },
+    "popupDownloadsButtonTooltip": {
+        "message": "mostrar descargas"
+    },
+    "popupVideoButtonTooltip": {
+        "message": "ir a la sección de videos"
+    },
+    "popupThemeToggleButtonTooltip": {
+        "message": "cambiar tema"
+    },
+    "popupThemeMenuSystemLabel": {
+        "message": "sistema predeterminado"
+    },
+    "popupThemeMenuDarkLabel": {
+        "message": "tema oscuro"
+    },
+    "popupThemeMenuLightLabel": {
+        "message": "tema iluminado"
+    },
+    "popupOptionsButtonTooltip": {
+        "message": "abrir página de opciones"
+    },
+    "popupHomeLinkHomePageText": {
+        "message": "página de inicio"
+    },
+    "popupHomeLinkHowToUseText": {
+        "message": "cómo utilizar"
+    },
+    "popupHomeLinkDownloadsText": {
+        "message": "descargar"
+    },
+    "popupHomeLinkReportBugText": {
+        "message": "reportar un error"
+    },
+    "popupHomeAlertsHeading": {
+        "message": "alertas recientes"
+    },
+    "popupDownloaderLoadingText": {
+        "message": "cargando detalles de video"
+    },
+    "popupDownloaderErrorText": {
+        "message": "Fallo en la obtención de detalles del video"
+    },
+    "popupDownloaderNotAvailableMessage": {
+        "message": "las descargas no están disponibles para videos en vivo o por salir"
+    },
+    "popupDownloaderTabSDLabel": {
+        "message": "descargas estándar"
+    },
+    "popupDownloaderTabMP3Label": {
+        "message": "Convertir a mp3"
+    },
+    "popupDownloaderTabUHDLabel": {
+        "message": "Ultra HD"
+    },
+    "popupDownloaderTabThumbnailsLabel": {
+        "message": "Miniaturas"
+    },
+    "popupDownloaderTabSubtitlesLabel": {
+        "message": "Subtítulos"
+    },
+    "videoInfoGenericError": {
+        "message": "ocurrió un error, por favor inténtelo de nuevo"
+    },
+    "genericDownloadError": {
+        "message": "ocurrió un error, por favor inténtelo de nuevo"
+    },
+    "downloadsQrCodeButtonTooltip": {
+        "message": "Generar código QR"
+    },
+    "downloadsCopyToClipboardButtonTooltip": {
+        "message": "copiar URL al portapapeles"
+    },
+    "downloadsVideoOnlyTooltip": {
+        "message": "Este archivo no contiene audio"
+    },
+    "downloadsAudioOnlyTooltip": {
+        "message": "archivo únicamente de audio"
+    },
+    "flixmateNotConnectedTitle": {
+        "message": "Flixmate no está conectado"
+    },
+    "flixmateNotConnectedText": {
+        "message": "no están disponibles las descargas Ultra HD"
+    },
+    "flixmateNotConnectedMp3Text": {
+        "message": "el largo de descargas mp3 será limitado"
+    },
+    "flixmateNotConnectedLinkText": {
+        "message": "aprender más"
+    },
+    "downloadsPrimaryDownloadsHeading": {
+        "message": "Descargas de youtube"
+    },
+    "downloadsApiDownloadsHeading": {
+        "message": "descargas de servicio externo"
+    },
+    "downloadsDashFormatsShowButtonText": {
+        "message": "formato de guiones"
+    },
+    "downloadsDashFormatsHideButtonText": {
+        "message": "ocultar"
+    },
+    "downloadsDownloadFailedText": {
+        "message": "descarga fallida"
+    },
+    "downloadsDownloadStartedText": {
+        "message": "descarga iniciada"
+    },
+    "downloadsUrlCopiedToClipboard": {
+        "message": "descargar la URL copiada al portapapeles"
+    },
+    "downloadsQrCodeNote": {
+        "message": "Escanear este código QR en su dispositivo para obtener la URL de descarga"
+    },
+    "downloadsQrCodeButtonText": {
+        "message": "Cerrar"
+    },
+    "downloadsApiRequestLoadingText": {
+        "message": "Solicitando descarga, esto puede tomar unos cuantos segundos"
+    },
+    "mp3ConverterBitrateLabel": {
+        "message": "Elegir la tasa de bits del MP3"
+    },
+    "mp3ConverterTimeLabel": {
+        "message": "Tiempo"
+    },
+    "mp3ConverterTimeFromLabel": {
+        "message": "De"
+    },
+    "mp3ConverterTimeToLabel": {
+        "message": "Para"
+    },
+    "mp3ConverterMp3DownloadButtonText": {
+        "message": "Descargar"
+    },
+    "mp3ConverterDownloadStartedText": {
+        "message": "Descarga iniciada"
+    },
+    "mp3ConverterDownloadFailedText": {
+        "message": "Descarga fallida"
+    },
+    "flixmateDownloadStartedText": {
+        "message": "Descarga agregada a Flixmate"
+    },
+    "flixmateInstallText": {
+        "message": "Instalar"
+    },
+    "flixmateAppName": {
+        "message": "Flixmate Media Downloader"
+    },
+    "flixmateAppTitle": {
+        "message": "Descargar videos Ultra HD, 4k y 8k"
+    },
+    "flixmateAppDescription": {
+        "message": "Descargue mp3 ilimitados y formatos HD incluyendo 1080p, 2k, 4k y 8k al utilizar Flixmate Media Downloader"
+    },
+    "flixmateAppDownloadButtonText": {
+        "message": "Descargar"
+    },
+    "flixmateHowToLinkText": {
+        "message": "¿Cómo funciona?"
+    },
+    "flixmateAdvancedShowButtonText": {
+        "message": "Avanzado (convertir o recortar)"
+    },
+    "flixmateAdvancedHideButtonText": {
+        "message": "Ocultar"
+    },
+    "flixmateSelectFormatLabel": {
+        "message": "Seleccionar formato"
+    },
+    "flixmateSelectQualityLabel": {
+        "message": "Seleccionar calidad"
+    },
+    "flixmateTimeLabel": {
+        "message": "Tiempo"
+    },
+    "flixmateFromLabel": {
+        "message": "De"
+    },
+    "flixmateToLabel": {
+        "message": "Para"
+    },
+    "flixmateDownloadButtonText": {
+        "message": "Descargar"
+    },
+    "flixmateDownloadFailedText": {
+        "message": "descarga fallida"
+    },
+    "thumbnailsQualityLabel": {
+        "message": "seleccione la calidad"
+    },
+    "thumbnailsDownloadButtonText": {
+        "message": "descargar"
+    },
+    "thumbnailsDownloadStartedText": {
+        "message": "descarga iniciada"
+    },
+    "thumbnailsDownloadFailedText": {
+        "message": "descarga fallida"
+    },
+    "subtitlesLanguageLabel": {
+        "message": "elegir idioma"
+    },
+    "subtitlesAutoGeneratedNote": {
+        "message": "los subtítulos autogenerados están marcados con este ícono"
+    },
+    "subtitlesFormatLabel": {
+        "message": "Seleccionar formato de archivo"
+    },
+    "subtitlesDownloadButtonText": {
+        "message": "descargar"
+    },
+    "subtitlesNotAvailableMessage": {
+        "message": "no se encontraron subtítulos para este video"
+    },
+    "subtitlesDownloadStartedText": {
+        "message": "descarga iniciada"
+    },
+    "subtitlesDownloadFailedText": {
+        "message": "descarga fallida"
+    },
+    "handleLinksDownloadButtonText": {
+        "message": "descargar"
+    },
+    "handleLinksDownloadButtonTooltip": {
+        "message": "Descargar utilizando el descargados para videos de YouTube y MP3"
+    },
+    "downloadsAddDownloadButtonText": {
+        "message": "agregar descarga"
+    },
+    "downloadsClearAllButtonText": {
+        "message": "vaciar todo"
+    },
+    "downloadsOpenFolderMenuText": {
+        "message": "abrir carpeta de descargas"
+    },
+    "downloadsExtensionFolderButtonText": {
+        "message": "descargas de extensiones"
+    },
+    "downloadsFlixmateFolderButtonText": {
+        "message": "descargas de Flixmate"
+    },
+    "downloadsTabBrowserButtonText": {
+        "message": "buscador"
+    },
+    "downloadsTabFlixmateButtonText": {
+        "message": "Flixmate"
+    },
+    "downloadsStateMenuAllLabel": {
+        "message": "Todas las descargas"
+    },
+    "downloadsStateMenuDownloadingLabel": {
+        "message": "descargando"
+    },
+    "downloadsStateMenuQueuedLabel": {
+        "message": "en fila"
+    },
+    "downloadsStateMenuPausedLabel": {
+        "message": "pausado"
+    },
+    "downloadsStateMenuProcessingLabel": {
+        "message": "procesando"
+    },
+    "downloadsStateMenuCompletedLabel": {
+        "message": "completado"
+    },
+    "downloadsStateMenuCanceledLabel": {
+        "message": "cancelado"
+    },
+    "downloadsStateMenuErrorLabel": {
+        "message": "error"
+    },
+    "downloadsSearchInputPlaceholder": {
+        "message": "buscar en descargas"
+    },
+    "downloadsSizeUnknownText": {
+        "message": "tamaño desconocido"
+    },
+    "downloadsPausedText": {
+        "message": "pausado"
+    },
+    "downloadsPauseButtonText": {
+        "message": "pausa"
+    },
+    "downloadsResumeButtonText": {
+        "message": "reanudar"
+    },
+    "downloadsCopyUrlButtonText": {
+        "message": "copiar URL"
+    },
+    "downloadsCancelButtonText": {
+        "message": "cancelar"
+    },
+    "downloadsPlayButtonText": {
+        "message": "reproducir"
+    },
+    "downloadsShowFolderButtonText": {
+        "message": "mostrar en carpeta"
+    },
+    "downloadsRemoveButtonText": {
+        "message": "eliminar"
+    },
+    "downloadsDeleteStateText": {
+        "message": "eliminado"
+    },
+    "downloadsLoadMoreButtonText": {
+        "message": "cargar más"
+    },
+    "downloadsDownloaderTitle": {
+        "message": "ingresar una URL de video de YouTube"
+    },
+    "downloadsDownloaderVideoIdErrorText": {
+        "message": "Fallo al extraer el ID del video, por favor verifique su URL"
+    },
+    "downloadsDownloaderLoadingText": {
+        "message": "cargando detalles del video..."
+    },
+    "downloadsDownloaderErrorText": {
+        "message": "fallo al obtener detalles del video"
+    },
+    "downloadsDownloaderNotAvailableMessage": {
+        "message": "las descargas no están disponibles para videos en vivo o próximos"
+    },
+    "downloadsDownloaderTabSDLabel": {
+        "message": "descargas estándar"
+    },
+    "downloadsDownloaderTabMP3Label": {
+        "message": "convertir a MP3"
+    },
+    "downloadsDownloaderTabUHDLabel": {
+        "message": "Ultra HD"
+    },
+    "downloadsDownloaderTabThumbnailsLabel": {
+        "message": "Miniaturas"
+    },
+    "downloadsDownloaderTabSubtitlesLabel": {
+        "message": "Subtítulos"
+    },
+    "injLooperPlayedText": {
+        "message": "Reproducido"
+    },
+    "injLooperPlayedTimesText": {
+        "message": "tiempo (s)"
+    },
+    "injLooperStoppedText": {
+        "message": "detenido"
+    },
+    "injLooperLoopForTimesText": {
+        "message": "Bucle durante (x veces)"
+    },
+    "injLooperLoopForPortionText": {
+        "message": "bucle por una porción"
+    },
+    "injLooperLoopFromLabel": {
+        "message": "de"
+    },
+    "injLooperLoopToLabel": {
+        "message": "para"
+    },
+    "injNotificationsBtnTooltip": {
+        "message": "notificaciones"
+    },
+    "injSdDownloadsBtnTooltip": {
+        "message": "descargas estándar"
+    },
+    "injMp3ConverterBtnTooltip": {
+        "message": "convertidor MP3"
+    },
+    "injUhdDownloadsBtnTooltip": {
+        "message": "descargas ultra HD"
+    },
+    "injThumbnailsBtnTooltip": {
+        "message": "Miniaturas"
+    },
+    "injSubtitlesBtnTooltip": {
+        "message": "Subtítulos"
+    },
+    "injDownloadsManagerBtnTooltip": {
+        "message": "Administrador de descargas"
+    },
+    "injScreenshotBtnTooltip": {
+        "message": "tomar una captura de pantalla"
+    },
+    "injMoreToggleButtonText": {
+        "message": "Más"
+    },
+    "injEnableEditModeText": {
+        "message": "editar fichas"
+    },
+    "injCancelEditModeText": {
+        "message": "cancelar"
+    },
+    "injDarkModeInactiveTooltip": {
+        "message": "activar el modo oscuro"
+    },
+    "injDarkModeActiveTooltip": {
+        "message": "desactivar el modo oscuro"
+    },
+    "injCinemaModeInactiveTooltip": {
+        "message": "activar el modo cine"
+    },
+    "injCinemaModeActiveTooltip": {
+        "message": "desactivar el modo cine"
+    },
+    "injPipInactiveTooltip": {
+        "message": "activar el modo imagen-por-imagen"
+    },
+    "injPipActiveTooltip": {
+        "message": "desactivar el modo imagen-por-imagen"
+    },
+    "injFloatVideoInactiveTooltip": {
+        "message": "activar el reproductor de video flotante"
+    },
+    "injFloatVideoActiveTooltip": {
+        "message": "desactivar el reproductor de video flotante"
+    },
+    "injLooperInactiveTooltip": {
+        "message": "Mostrar video bucle avanzado"
+    },
+    "injLooperActiveTooltip": {
+        "message": "ocultar video bucle"
+    },
+    "injSmartPauseInactiveTooltip": {
+        "message": "Activar la pausa inteligente de vídeo en el cambio de pestaña"
+    },
+    "injSmartPauseActiveTooltip": {
+        "message": "desactivar la pausa inteligente"
+    },
+    "injAutoplayInactiveTooltip": {
+        "message": "activar reproducción automática"
+    },
+    "injAutoplayActiveTooltip": {
+        "message": "desactivar reproducción automática"
+    },
+    "injAudioModeInactiveTooltip": {
+        "message": "activar modo únicamente audio"
+    },
+    "injAudioModeActiveTooltip": {
+        "message": "desactivar modo únicamente audio"
+    },
+    "injVolumeControlInactiveTooltip": {
+        "message": "Activar el control de volumen con la rueda del mouse"
+    },
+    "injVolumeControlActiveTooltip": {
+        "message": "desactivar el control de volumen con la rueda del mouse"
+    },
+    "injVideoSearchInactiveTooltip": {
+        "message": "Activar la búsqueda de vídeos mientras se ven"
+    },
+    "injVideoSearchActiveTooltip": {
+        "message": "desactivar la búsqueda de video"
+    },
+    "injHideCommentsInactiveTooltip": {
+        "message": "ocultar la sección de comentarios"
+    },
+    "injHideCommentsActiveTooltip": {
+        "message": "mostrar la sección de comentarios"
+    },
+    "injOptionsTooltip": {
+        "message": "abrir configuración de extensiones"
+    },
+    "downloadsDownloadStartedSubText": {
+        "message": "Haga click aquí para descargar el administrador de descargas"
+    },
+    "downloadsFlixmateDownloadsClearedNotificationText": {
+        "message": "Descargas desechadas"
+    },
+    "downloadsStateFilterAll": {
+        "message": "Todas las descargas"
+    },
+    "downloadsStateDownloading": {
+        "message": "Descargando"
+    },
+    "downloadsStateQueued": {
+        "message": "En fila"
+    },
+    "downloadsStateError": {
+        "message": "Error"
+    },
+    "downloadsStateCanceled": {
+        "message": "Cancelado"
+    },
+    "downloadsStatePaused": {
+        "message": "Pausado"
+    },
+    "downloadsStateProcessing": {
+        "message": "Procesando"
+    },
+    "downloadsStateCompleted": {
+        "message": "Completado"
+    },
+    "downloadsUrlCopiedText": {
+        "message": "URL copiada al portapapeles"
+    },
+    "injHelpButtonText": {
+        "message": "Ayuda & Preguntas Frecuentes"
+    },
+    "injGuideSdDownloadsButtonTooltip": {
+        "message": "Descargas estándar"
+    },
+    "injGuideDescription": {
+        "message": "Más información sobre las funciones de YouTube Video Downloader y cómo utilizarlas"
+    },
+    "injGuideMp3ConverterButtonTooltip": {
+        "message": "Convertidor MP3"
+    },
+    "injGuideUhdDownloadsButtonTooltip": {
+        "message": "Descargas Ultra HD"
+    },
+    "injGuideThumbnailsButtonTooltip": {
+        "message": "Miniaturas"
+    },
+    "injGuideSubtitlesButtonTooltip": {
+        "message": "Subtítulos"
+    },
+    "injGuideScreenshotButtonTooltip": {
+        "message": "Captura de pantalla"
+    },
+    "injGuideDownloadsManagerButtonTooltip": {
+        "message": "Administrador de Descargas"
+    },
+    "injGuideDarkModeButtonTooltip": {
+        "message": "Modo oscuro"
+    },
+    "injGuideCinemaModeButtonTooltip": {
+        "message": "Modo cine"
+    },
+    "injGuidePipButtonTooltip": {
+        "message": "Reproductor de video flotante"
+    },
+    "injGuideSmartPauseButtonTooltip": {
+        "message": "Pausa inteligente"
+    },
+    "injGuideLooperButtonTooltip": {
+        "message": "En bucle"
+    },
+    "injGuideAutoplayButtonTooltip": {
+        "message": "reproducción automática"
+    },
+    "injGuideAudioModeButtonTooltip": {
+        "message": "Modo Audio"
+    },
+    "injGuideVolumeControlButtonTooltip": {
+        "message": "Control de volumen de la rueda del ratón"
+    },
+    "injGuideVideoSearchButtonTooltip": {
+        "message": "Búsqueda de video"
+    },
+    "injGuideHideCommentsButtonTooltip": {
+        "message": "Ocultar comentarios"
+    },
+    "injGuideNoteText": {
+        "message": "Haga click en un icono para obtener más detalles o encuentre la respuesta en las preguntas frecuentes"
+    },
+    "injGuideFaqHeading": {
+        "message": "Preguntas Frecuentes"
+    },
+    "injGuideFaqSD": {
+        "message": "¿Cómo descargar un video desde YouTube?"
+    },
+    "injGuideFaqMP3": {
+        "message": "¿Cómo convertir un video de Youtube a MP3?"
+    },
+    "injGuideFaqDownloads": {
+        "message": "¿Dónde se almacenan mis descargas de video?"
+    },
+    "injGuideFaqSubtitles": {
+        "message": "¿Puedo descargar un video de YouTube con subtítulos?"
+    },
+    "injGuideContactUsNote": {
+        "message": "¿Aún tiene problemas?"
+    },
+    "injGuideContactUsButtonText": {
+        "message": "Contáctenos"
+    },
+    "injGuideBackButtonText": {
+        "message": "Regresar"
+    },
+    "injGuideFeatSdHeading": {
+        "message": "Descargas estándar"
+    },
+    "injGuideFeatSdSec1Title": {
+        "message": "¿Cómo descargar un video?"
+    },
+    "injGuideFeatSdSec1Step1P1": {
+        "message": "Hacer click"
+    },
+    "injGuideFeatSdSec1Step1P2": {
+        "message": "ícono en la barra de herramientas"
+    },
+    "injGuideFeatSdSec1Step2": {
+        "message": "Espere a que se carguen los detalles de video"
+    },
+    "injGuideFeatSdSec1Step3": {
+        "message": "Haga click en la calidad de video deseada de la lista"
+    },
+    "injGuideFeatSdSec1Step4": {
+        "message": "La descarga de su archivo empezará"
+    },
+    "injGuideFeatSdNote1P1": {
+        "message": "Usted puede"
+    },
+    "injGuideFeatSdNote1P2": {
+        "message": "generar un código QR"
+    },
+    "injGuideFeatSdNote1P3": {
+        "message": "y escanearlo para descargar el video en su teléfono"
+    },
+    "injGuideFeatSdNote2": {
+        "message": "YouTube no proporciona descargas en alta definición para algunos vídeos, por lo que utilizamos un servicio de descarga externo para esos vídeos"
+    },
+    "injGuideFeatSdNote3": {
+        "message": "Los vídeos en formato Dash no contienen audio"
+    },
+    "injGuideFeatMp3Heading": {
+        "message": "convertidor MP3"
+    },
+    "injGuideFeatMp3Sec1Title": {
+        "message": "¿Cómo convertir un video a MP3?"
+    },
+    "injGuideFeatMp3Sec1Step1P1": {
+        "message": "Hacer click"
+    },
+    "injGuideFeatMp3Sec1Step1P2": {
+        "message": "ícono en la barra de herramientas"
+    },
+    "injGuideFeatMp3Sec1Step2": {
+        "message": "Espere a que se carguen los detalles de video"
+    },
+    "injGuideFeatMp3Sec1Step3": {
+        "message": "Seleccione la tasa de bits de MP3 y ajuste la longitud del vídeo si necesita recortarlo"
+    },
+    "injGuideFeatMp3Sec1Step4": {
+        "message": "Pulse el botón de descarga y espere a que se complete la solicitud"
+    },
+    "injGuideFeatMp3Sec1Step5": {
+        "message": "La descarga de su archivo comenzará"
+    },
+    "injGuideFeatMp3Note1": {
+        "message": "Puede ajustar la duración del vídeo mediante el control deslizante de los cuadros de entrada para el recorte"
+    },
+    "injGuideFeatMp3Note2": {
+        "message": "YouTube no proporciona descargas de MP3, utilizamos un servicio de descarga externo para la conversión de MP3"
+    },
+    "injGuideFeatUhdHeading": {
+        "message": "Descargas Ultra HD"
+    },
+    "injGuideFeatUhdDescriptionP1": {
+        "message": "Flixmate"
+    },
+    "injGuideFeatMp3Note3": {
+        "message": "Si tiene flixmate instalado y activado, las descargas se añadirán a flixmate"
+    },
+    "injGuideFeatUhdDescriptionP2": {
+        "message": "es un servicio necesario para descargar vídeos de alta calidad, incluyendo 1080p, 2k, 4k y 8k. Es un servicio de escritorio que puede combinar flujos de audio/vídeo y convertir a diferentes formatos"
+    },
+    "injGuideFeatUhdSec1Title": {
+        "message": "¿Cómo descargar un vídeo Ultra HD (1080p, 4k, 8k)?"
+    },
+    "injGuideFeatUhdSec1Step1": {
+        "message": "Instale Flixmate en su PC"
+    },
+    "injGuideFeatUhdSec1Step2P1": {
+        "message": "Hacer click"
+    },
+    "injGuideFeatUhdSec1Step2P2": {
+        "message": "ícono en la barra de herramientas"
+    },
+    "injGuideFeatUhdSec1Step3": {
+        "message": "espere a que los detalles de video carguen"
+    },
+    "injGuideFeatUhdSec1Step4": {
+        "message": "Haga click en la calidad de video deseada en la lista"
+    },
+    "injGuideFeatUhdSec1Step5": {
+        "message": "Su descarga se añadirá a Flixmate"
+    },
+    "injGuideFeatUhdSec2Title": {
+        "message": "¿Cómo recortar o convertir un vídeo a otro formato (mkv, avi)?"
+    },
+    "injGuideFeatUhdSec2Step1": {
+        "message": "Instalar Flixmate en su PC"
+    },
+    "injGuideFeatUhdSec2Step2P1": {
+        "message": "Hacer click"
+    },
+    "injGuideFeatUhdSec2Step2P2": {
+        "message": "ícono en la barra de herramientas"
+    },
+    "injGuideFeatUhdSec2Step3": {
+        "message": "espere a que se carguen los detalles de video"
+    },
+    "injGuideFeatUhdSec2Step4": {
+        "message": "haga click en el botón \"avanzado\""
+    },
+    "injGuideFeatUhdSec2Step5": {
+        "message": "Seleccione la calidad y el formato de vídeo deseados y ajuste la duración del vídeo si necesita recortarlo"
+    },
+    "injGuideFeatUhdSec2Step6": {
+        "message": "Su descarga será añadida a Flixmate"
+    },
+    "injGuideFeatUhdNote1": {
+        "message": "Flixmate no es compatible con Mac OS o Linux"
+    },
+    "injGuideFeatThumbnailsHeading": {
+        "message": "Miniaturas"
+    },
+    "injGuideFeatThumbnailsSec1Title": {
+        "message": "¿Cómo descargar las miniaturas de los videos?"
+    },
+    "injGuideFeatThumbnailsSec1Step1P1": {
+        "message": "Hacer click"
+    },
+    "injGuideFeatThumbnailsSec1Step1P2": {
+        "message": "ícono en la barra de herramientas"
+    },
+    "injGuideFeatThumbnailsSec1Step2": {
+        "message": "espere a que se carguen los detalles de video"
+    },
+    "injGuideFeatThumbnailsSec1Step3": {
+        "message": "Seleccione la calidad de la miniatura en el menú desplegable y haga click en el botón de descarga"
+    },
+    "injGuideFeatThumbnailsSec1Step4": {
+        "message": "La descarga de su archivo comenzará"
+    },
+    "injGuideFeatSubtitlesHeading": {
+        "message": "subtítulos"
+    },
+    "injGuideFeatSubtitlesSec1Title": {
+        "message": "¿Cómo descargar los subtítulos?"
+    },
+    "injGuideFeatSubtitlesSec1Step1P1": {
+        "message": "hacer click"
+    },
+    "injGuideFeatSubtitlesSec1Step1P2": {
+        "message": "ícono en la barra de herramientas"
+    },
+    "injGuideFeatSubtitlesSec1Step2": {
+        "message": "espere a que se carguen los detalles de video"
+    },
+    "injGuideFeatSubtitlesSec1Step3": {
+        "message": "Seleccione el idioma en el desplegable y el formato y haga click en el botón de descarga"
+    },
+    "injGuideFeatSubtitlesSec1Step4": {
+        "message": "la descarga de su archivo comenzará"
+    },
+    "injGuideFeatSubtitlesSec2Title": {
+        "message": "¿puedo descargar un video con subtítulos?"
+    },
+    "injGuideFeatSubtitlesSec2Text": {
+        "message": "No se puede descargar un vídeo de YouTube con subtítulos incrustados. Puede descargar el archivo de subtítulos por separado y utilizarlo en un reproductor compatible como VLC"
+    },
+    "injGuideFeatSubtitlesNote1": {
+        "message": "Algunos vídeos pueden no tener subtítulos disponibles"
+    },
+    "injGuideFeatSubtitlesNote2P1": {
+        "message": "Los subtítulos generados automáticamente están marcados con"
+    },
+    "injGuideFeatSubtitlesNote2P2": {
+        "message": "ícono"
+    },
+    "injGuideFeatSubtitlesNote3": {
+        "message": "YouTube ofrece los formatos WebVTT, TTML y SRV3 que son compatibles con la mayoría de los reproductores de vídeo."
+    },
+    "injGuideFeatScreenshotHeading": {
+        "message": "Tomar una captura de pantalla"
+    },
+    "injGuideFeatScreenshotDescriptionP1": {
+        "message": "Puede tomar una captura de pantalla al hacer click en"
+    },
+    "injGuideFeatScreenshotDescriptionP2": {
+        "message": "en el icono de la barra de herramientas. La calidad de la captura de pantalla depende de la calidad de reproducción del vídeo."
+    },
+    "injGuideFeatDownloadsHeading": {
+        "message": "administrador de descargas"
+    },
+    "injGuideFeatDownloadsDescriptionP1": {
+        "message": "Puede utilizar el administrador de descargas para ver/cancelar/pausar/reproducir los elementos descargados. Haga click en"
+    },
+    "injGuideFeatDownloadsDescriptionP2": {
+        "message": "ícono en la barra de herramientas para abrir el administrador de descargas"
+    },
+    "injGuideFeatDownloadsSec1Title": {
+        "message": "¿Cómo se almacenan las descargas o cómo se abre la carpeta de descargas?"
+    },
+    "injGuideFeatDownloadsSec1Step1P1": {
+        "message": "Hacer click"
+    },
+    "injGuideFeatDownloadsSec1Step1P2": {
+        "message": "ícono en la barra de herramientas para abrir el administrador de descargas"
+    },
+    "injGuideFeatDownloadsSec1Step2": {
+        "message": "En la página del administrador de descargas, haga click en el menú desplegable \"Abrir carpeta de descargas\" en la esquina superior derecha"
+    },
+    "injGuideFeatDownloadsSec1Step3": {
+        "message": "Haga click en Extensión de descargas/Flixmate para abrir la carpeta de descargas"
+    },
+    "injGuideFeatDownloadsNote1": {
+        "message": "Flixmate no tiene acceso al directorio del usuario por lo que los archivos se almacenan en un directorio público"
+    },
+    "injGuideFeatDarkModeHeading": {
+        "message": "modo oscuro"
+    },
+    "injGuideFeatDarkModeDescription": {
+        "message": "Este es un botón de cambio rápido para el modo oscuro de YouTube"
+    },
+    "injGuideFeatCinemaModeHeading": {
+        "message": "modo cine"
+    },
+    "injGuideFeatCinemaModeDescriptionP1": {
+        "message": "El modo cine puede mejorar su experiencia de visualización al activar el modo oscuro mejorado y ocultar las distracciones"
+    },
+    "injGuideFeatCinemaModeDescriptionP3": {
+        "message": "botón"
+    },
+    "injGuideFeatPipHeading": {
+        "message": "modo imagen-en-imagen"
+    },
+    "injGuideFeatCinemaModeDescriptionP2": {
+        "message": "Puede alternar el modo de cine utilizando"
+    },
+    "injGuideFeatPipDescriptionP1": {
+        "message": "La función Imagen-en-imagen le permite ver vídeos en una ventana flotante (siempre encima de otras ventanas) para que pueda ver lo que está viendo mientras interactúa con otros sitios o aplicaciones."
+    },
+    "injGuideFeatPipDescriptionP2": {
+        "message": "Puede alternar el PIP con"
+    },
+    "injGuideFeatPipDescriptionP3": {
+        "message": "botón"
+    },
+    "injGuideFeatFloatViewHeading": {
+        "message": "Reproductor de vídeo flotante"
+    },
+    "injGuideFeatFloatViewDescriptionP1": {
+        "message": "Al activar la vista flotante, puede ver los vídeos de YouTube mientras se desplaza y lee los comentarios. Haga click en"
+    },
+    "injGuideFeatFloatViewDescriptionP2": {
+        "message": "botón para activar el reproductor de vídeo flotante"
+    },
+    "injGuideFeatLooperHeading": {
+        "message": "en bucle"
+    },
+    "injGuideFeatLooperDescriptionP1": {
+        "message": "YouTube no proporciona una función de bucle de vídeo, por lo que hemos añadido esta funcionalidad para facilitar a nuestros usuarios"
+    },
+    "injGuideFeatLooperDescriptionP2": {
+        "message": "hacer click"
+    },
+    "injGuideFeatLooperDescriptionP3": {
+        "message": "ícono para poner el vídeo en bucle. Al hacer click en el ícono, también aparecerá un bucle avanzado que se puede utilizar para hacer un bucle de un vídeo durante un recuento específico o un bucle de una parte del vídeo"
+    },
+    "injGuideFeatSmartPauseHeading": {
+        "message": "pausa inteligente"
+    },
+    "injGuideFeatSmartPauseDescription": {
+        "message": "Pausa Inteligente recuerda automáticamente en qué punto del vídeo de YouTube se encuentra, lo que le permite retomar fácilmente el vídeo donde lo dejó. Cada vez que se cambia de pestaña, se abre una nueva pestaña o se abre una nueva ventana, Pausa Inteligente esperará a que vuelva y reanude el vídeo"
+    },
+    "injGuideFeatAutoPlayHeading": {
+        "message": "reproducción automática"
+    },
+    "injGuideFeatAutoPlayDescription": {
+        "message": "Este es un botón de conmutación rápida de las funciones de reproducción automática de YouTube"
+    },
+    "injGuideFeatAudioModeHeading": {
+        "message": "modo audio"
+    },
+    "injGuideFeatAudioModeDescriptionP1": {
+        "message": "Es posible que vea los vídeos de YouTube sólo por la música o el audio. Puede activar esta opción con"
+    },
+    "injGuideFeatAudioModeDescriptionP2": {
+        "message": "para que sólo reproduzca audio, ahorrando ancho de banda y soportando tiempos de búfer más rápidos. Esto se debe a que el modo de audio sólo carga formatos de audio. Esta función es ideal para la música de fondo, para escuchar lecciones y mucho más."
+    },
+    "injGuideFeatAudioModeNote1": {
+        "message": "La página se recargará cuando se active esta función para que los cambios surtan efecto"
+    },
+    "injGuideFeatVolumeControlHeading": {
+        "message": "Control de volumen de la rueda del ratón"
+    },
+    "injGuideFeatVolumeControlDescriptionP1": {
+        "message": "Habilite esta función haciendo click en"
+    },
+    "injGuideFeatVolumeControlDescriptionP2": {
+        "message": "y usted podrá controlar el volumen de los vídeos de YouTube utilizando la rueda del ratón"
+    },
+    "injGuideFeatVideoSearchHeading": {
+        "message": "búsqueda de video"
+    },
+    "injGuideFeatVideoSearchDescriptionP1": {
+        "message": "Con esta función se puede utilizar la búsqueda en YouTube mientras se ve un vídeo. Haciendo click en"
+    },
+    "injGuideFeatVideoSearchDescriptionP2": {
+        "message": "añadirá una barra de búsqueda en la parte derecha de la página. Puede seguir buscando con la barra de búsqueda para encontrar nuevos vídeos sin interrumpir o salir del vídeo"
+    },
+    "injGuideFeatHideCommentsHeading": {
+        "message": "ocultar comentarios"
+    },
+    "injGuideFeatHideCommentsDescriptionP1": {
+        "message": "hacer click"
+    },
+    "injGuideFeatHideCommentsDescriptionP2": {
+        "message": "botón para ocultar los comentarios en los vídeos de YouTube para evitar distracciones"
+    },
+    "optHeading": {
+        "message": "ajustes"
+    },
+    "optRestoreButtonText": {
+        "message": "restablecer ajustes predeterminados"
+    },
+    "optRestoreConfirmTitle": {
+        "message": "¿Está seguro?"
+    },
+    "optRestoreConfirmMessage": {
+        "message": "Esto restablecerá sus ajustes a los predeterminados"
+    },
+    "optRestoreSuccessMessage": {
+        "message": "ajustes restaurados exitosamente"
+    },
+    "optConfirmButtonText": {
+        "message": "confirmar"
+    },
+    "optCancelButtonText": {
+        "message": "cancelar"
+    },
+    "optThemeSelectLabel": {
+        "message": "elegir tema de extensión"
+    },
+    "optThemeOptionSystemLabel": {
+        "message": "sistema predeterminado"
+    },
+    "optThemeOptionLightLabel": {
+        "message": "tema iluminado"
+    },
+    "optThemeOptionDarkLabel": {
+        "message": "tema oscuro"
+    },
+    "optDownloadNotificationsSwitchLabel": {
+        "message": "mostrar notificaciones de descarga"
+    },
+    "optEmbeddedDownloadsSwitchLabel": {
+        "message": "Mostrar el botón de descarga en los vídeos incrustados"
+    },
+    "optDownloadButtonOnUrlsSwitchLabel": {
+        "message": "Añadir botón de descarga en los enlaces de YouTube"
+    },
+    "optVideoQualityDisabledOptionLabel": {
+        "message": "deshabilitado"
+    },
+    "optDownloadSettingsHeading": {
+        "message": "ajustes de descarga"
+    },
+    "optFormatsLabel": {
+        "message": "Formatos de vídeo para mostrar en el menú de descarga"
+    },
+    "optDashFormatsLabel": {
+        "message": "Formatos de guiones para mostrar en el menú de descargas"
+    },
+    "optDashFormatsRadioNone": {
+        "message": "Ninguno"
+    },
+    "optDashFormatsRadioBoth": {
+        "message": "Audio y video"
+    },
+    "optDashFormatsRadioVideo": {
+        "message": "únicamente video"
+    },
+    "optDashFormatsRadioAudio": {
+        "message": "únicamente audio"
+    },
+    "optMp3BitrateLabel": {
+        "message": "Velocidad de bits por defecto del convertidor de MP3"
+    },
+    "optCopyButtonSwitchLabel": {
+        "message": "Habilitar el botón de copiar al portapapeles"
+    },
+    "optQrButtonSwitchLabel": {
+        "message": "Activar el botón generador de códigos QR"
+    },
+    "optSaveAsSwitchLabel": {
+        "message": "Mostrar el cuadro de diálogo de guardar como cuando elijo descargar un vídeo"
+    },
+    "optFlixmateSettingsHeading": {
+        "message": "Flixmate Media Downloader"
+    },
+    "optFlixmateUnsupportedText": {
+        "message": "Flixmate no es compatible con su sistema"
+    },
+    "optFlixmateUnsupportedLinkText": {
+        "message": "Aprender más"
+    },
+    "optFlixmateDisconnectedText": {
+        "message": "Flixmate no está conectado"
+    },
+    "optDisconnectedLinkText": {
+        "message": "Descargar"
+    },
+    "optFlixmateConnectedText": {
+        "message": "está conectado"
+    },
+    "optFlixmateUpdateAvailableText": {
+        "message": "actualización disponible para"
+    },
+    "optFlixmateInstallUpdateText": {
+        "message": "para instalar"
+    },
+    "optFlixmateEnabledSwitchLabel": {
+        "message": "Habilitar Flixmate Media Downloader"
+    },
+    "optFlixmateEnabledSwitchHelpText": {
+        "message": "Descarga ilimitada de formatos MP3 y Ultra HD"
+    },
+    "optFlixmateFormatsLabel": {
+        "message": "Formatos de conversión para mostrar en el menú de descargas"
+    },
+    "optVideoQualityMenuLabel": {
+        "message": "Establecer la calidad de reproducción de vídeo preferida"
+    },
+    "optFloatVideoSwitchLabel": {
+        "message": "Activar el vídeo flotante"
+    },
+    "optFloatVideoSwitchHelpText": {
+        "message": "(Smart view para ver el vídeo mientras se desplaza hacia abajo. El vídeo se mostrará en la esquina inferior derecha)"
+    },
+    "optSmartPauseSwitchLabel": {
+        "message": "Habilitar pausa inteligente"
+    },
+    "optSmartPauseSwitchHelpText": {
+        "message": "(Pone en pausa automáticamente los vídeos que se están reproduciendo en YouTube una vez que abandone la página y se reanuda cuando vuelva)"
+    },
+    "optAudioModeSwitchLabel": {
+        "message": "habilitar modo audio"
+    },
+    "optAudioModeSwitchHelpText": {
+        "message": "(Escuche sólo el audio sin cargar el vídeo)"
+    },
+    "optAudioModeChangeAlert": {
+        "message": "Actualice las pestañas de YouTube para que los cambios surtan efecto."
+    },
+    "optMousewheelVolumeControlSwitchLabel": {
+        "message": "Controle el volumen con la rueda del ratón"
+    },
+    "optMousewheelVolumeControlSwitchHelpText": {
+        "message": "(Utilice la rueda del ratón dentro del vídeo para controlar el volumen)"
+    },
+    "optVideoSearchSwitchLabel": {
+        "message": "Buscar mientras se ven vídeos"
+    },
+    "optVideoSearchSwitchHelpText": {
+        "message": "(Busque en YouTube sin interrumpir el vídeo, cargando los resultados de la búsqueda en la sección de vídeos relacionados)"
+    },
+    "optHideCommentsSwitchLabel": {
+        "message": "Ocultar comentarios de YouTube"
+    },
+    "optHideCommentsSwitchHelpText": {
+        "message": "(Oculte todos los comentarios de los usuarios en los vídeos de YouTube)"
+    },
+    "injDownloaderLoadingText": {
+        "message": "cargando detalles de video..."
+    },
+    "injDownloaderErrorText": {
+        "message": "fallo al obtener detalles de video"
+    },
+    "optMultithreadingSwitchHelpText": {
+        "message": "Descargue archivos con múltiples conexiones al servidor para aumentar la velocidad de descarga."
+    },
+    "optMultithreadingSwitchLabel": {
+        "message": "Use subprocesos múltiples para descargas"
+    },
+    "optCompactDisplayModeButtonText": {
+        "message": "Cambiar"
+    },
+    "optCompactDisplayModeSubheading": {
+        "message": "La extensión se mostrará como un botón compacto en YouTube. Haga clic en este botón para cambiar al modo completo."
+    },
+    "optCompactDisplayModeHeading": {
+        "message": "La extensión se muestra en modo compacto"
+    },
+    "optChangeLanguageText": {
+        "message": "Cambiar idioma"
+    },
+    "injCompactButtonTooltip": {
+        "message": "Use Addoncrop YouTube Downloader en modo compacto usando este botón"
+    },
+    "injExpandBtnTooltip": {
+        "message": "Cambiar a barra de extensión completa"
+    },
+    "injSwitchDisplayButtonTooltip": {
+        "message": "Cambiar al modo compacto"
+    },
+    "injSwitchDisplayButtonText": {
+        "message": "Haga clic en este botón para cambiar al modo compacto."
+    },
+    "injWelcomeMessageTooltip": {
+        "message": "Haga clic en este botón para descargar el video."
+    },
+    "downloadsOpenVideoPageButtonTooltip": {
+        "message": "Abrir vídeo en YouTube"
+    },
+    "downloadsFlixmateDownloadsHeading": {
+        "message": "Descargar Ultra HD con Flixmate"
+    },
+    "injNotAvailableMessage": {
+        "message": "Las descargas no están disponibles para videos en vivo o próximos."
+    }
+}

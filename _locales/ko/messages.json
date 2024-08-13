@@ -1,0 +1,1193 @@
+{
+    "extName": {
+        "message": "YouTube 비디오 및 MP3 다운로드 프로그램"
+    },
+    "extDescription": {
+        "message": "1080P, 720P, 480P, 360p 등 다양한 비디오 화질의 YouTube 비디오를 다운로드하세요. 모든 형식 Mp3, MP4, FLV, WebM, 3GP를 지원합니다."
+    },
+    "downloadsHeading": {
+        "message": "다운로드"
+    },
+    "downloadsError_FILE_FAILED": {
+        "message": "실패함"
+    },
+    "downloadsError_FILE_ACCESS_DENIED": {
+        "message": "엑세스 거부됨"
+    },
+    "downloadsError_FILE_NO_SPACE": {
+        "message": "저장 공간 부족"
+    },
+    "downloadsError_FILE_NAME_TOO_LONG": {
+        "message": "파일명이 너무 깁니다"
+    },
+    "downloadsError_FILE_TOO_LARGE": {
+        "message": "파일이 너무 큽니다"
+    },
+    "downloadsError_FILE_VIRUS_INFECTED": {
+        "message": "파일이 감염되었을 수 있습니다"
+    },
+    "downloadsError_FILE_TRANSIENT_ERROR": {
+        "message": "실패함"
+    },
+    "downloadsError_FILE_BLOCKED": {
+        "message": "차단됨"
+    },
+    "downloadsError_FILE_SECURITY_CHECK_FAILED": {
+        "message": "보안 검사 실패"
+    },
+    "downloadsError_FILE_TOO_SHORT": {
+        "message": "파일이 너무 작습니다"
+    },
+    "downloadsError_NETWORK_FAILED": {
+        "message": "네트워크 장애"
+    },
+    "downloadsError_NETWORK_TIMEOUT": {
+        "message": "시간 초과됨"
+    },
+    "downloadsError_NETWORK_DISCONNECTED": {
+        "message": "연결 끊김"
+    },
+    "downloadsError_NETWORK_SERVER_DOWN": {
+        "message": "서버 다운"
+    },
+    "downloadsError_NETWORK_INVALID_REQUEST": {
+        "message": "잘못된 요청"
+    },
+    "downloadsError_SERVER_FAILED": {
+        "message": "서버 장애"
+    },
+    "downloadsError_SERVER_NO_RANGE": {
+        "message": "서버 범위 오류"
+    },
+    "downloadsError_SERVER_BAD_CONTENT": {
+        "message": "불량 콘텐츠"
+    },
+    "downloadsError_SERVER_UNAUTHORIZED": {
+        "message": "무허가"
+    },
+    "downloadsError_SERVER_CERT_PROBLEM": {
+        "message": "인증서 오류"
+    },
+    "downloadsError_SERVER_FORBIDDEN": {
+        "message": "금지됨"
+    },
+    "downloadsError_USER_CANCELED": {
+        "message": "취소됨"
+    },
+    "downloadsError_USER_SHUTDOWN": {
+        "message": "셧다운"
+    },
+    "downloadsError_CRASH": {
+        "message": "충돌됨"
+    },
+    "bgFlixmateNotConnectedError": {
+        "message": "Flixmate가 연결되어 있지 않습니다"
+    },
+    "popupHomeButtonTooltip": {
+        "message": "홈 섹션으로 이동"
+    },
+    "popupDownloadsButtonTooltip": {
+        "message": "다운로드 표시"
+    },
+    "popupVideoButtonTooltip": {
+        "message": "비디오 섹션으로 이동"
+    },
+    "popupThemeToggleButtonTooltip": {
+        "message": "테마 전환"
+    },
+    "popupThemeMenuSystemLabel": {
+        "message": "시스템 기본값"
+    },
+    "popupThemeMenuDarkLabel": {
+        "message": "어두운 테마"
+    },
+    "popupThemeMenuLightLabel": {
+        "message": "밝은 테마"
+    },
+    "popupOptionsButtonTooltip": {
+        "message": "옵션 페이지 열기"
+    },
+    "popupHomeLinkHomePageText": {
+        "message": "홈페이지"
+    },
+    "popupHomeLinkHowToUseText": {
+        "message": "사용방법"
+    },
+    "popupHomeLinkDownloadsText": {
+        "message": "다운로드"
+    },
+    "popupHomeLinkReportBugText": {
+        "message": "버그 신고"
+    },
+    "popupHomeAlertsHeading": {
+        "message": "최근 알림"
+    },
+    "popupDownloaderLoadingText": {
+        "message": "비디오 세부정보 로딩 중..."
+    },
+    "popupDownloaderErrorText": {
+        "message": "비디오 세부정보를 가져오는데 실패함"
+    },
+    "popupDownloaderNotAvailableMessage": {
+        "message": "라이브 또는 미출시 비디오는 다운로드할 수 없습니다."
+    },
+    "popupDownloaderTabSDLabel": {
+        "message": "표준 다운로드"
+    },
+    "popupDownloaderTabMP3Label": {
+        "message": "MP3로 변환"
+    },
+    "popupDownloaderTabUHDLabel": {
+        "message": "울트라HD"
+    },
+    "popupDownloaderTabThumbnailsLabel": {
+        "message": "썸네일"
+    },
+    "popupDownloaderTabSubtitlesLabel": {
+        "message": "자막"
+    },
+    "videoInfoGenericError": {
+        "message": "오류가 발생했습니다. 다시 시도하세요."
+    },
+    "genericDownloadError": {
+        "message": "오류가 발생했습니다. 다시 시도하세요."
+    },
+    "downloadsQrCodeButtonTooltip": {
+        "message": "QR코드생성"
+    },
+    "downloadsCopyToClipboardButtonTooltip": {
+        "message": "클립보드에 URL 복사"
+    },
+    "downloadsVideoOnlyTooltip": {
+        "message": "이 파일에 오디오가 없습니다"
+    },
+    "downloadsAudioOnlyTooltip": {
+        "message": "오디오 전용 파일"
+    },
+    "flixmateNotConnectedTitle": {
+        "message": "Flixmate가 연결되어 있지 않습니다"
+    },
+    "flixmateNotConnectedText": {
+        "message": "Ultra HD 다운로드는 사용할 수 없습니다"
+    },
+    "flixmateNotConnectedMp3Text": {
+        "message": "MP3 다운로드 길이가 제한됩니다"
+    },
+    "flixmateNotConnectedLinkText": {
+        "message": "더 배우기"
+    },
+    "downloadsPrimaryDownloadsHeading": {
+        "message": "YouTube에서 다운로드"
+    },
+    "downloadsApiDownloadsHeading": {
+        "message": "외부 서비스에서 다운로드"
+    },
+    "downloadsDashFormatsShowButtonText": {
+        "message": "대시 형식"
+    },
+    "downloadsDashFormatsHideButtonText": {
+        "message": "숨기기"
+    },
+    "downloadsDownloadStartedText": {
+        "message": "다운로드가 시작되었습니다."
+    },
+    "downloadsDownloadFailedText": {
+        "message": "다운로드에 실패했습니다."
+    },
+    "downloadsUrlCopiedToClipboard": {
+        "message": "클립보드에 복사된 URL을 다운로드합니다."
+    },
+    "downloadsQrCodeNote": {
+        "message": "다운로드 URL을 얻기위해 장치에서 이 QR 코드를 스캔하세요."
+    },
+    "downloadsQrCodeButtonText": {
+        "message": "닫기"
+    },
+    "downloadsApiRequestLoadingText": {
+        "message": "다운로드를 요청하는 중입니다. 이 작업은 몇 초 정도 걸릴 수 있습니다."
+    },
+    "mp3ConverterBitrateLabel": {
+        "message": "MP3 비트 전송률 선택"
+    },
+    "mp3ConverterTimeLabel": {
+        "message": "시간"
+    },
+    "mp3ConverterTimeFromLabel": {
+        "message": "송신자"
+    },
+    "mp3ConverterTimeToLabel": {
+        "message": "수신자"
+    },
+    "mp3ConverterMp3DownloadButtonText": {
+        "message": "다운로드"
+    },
+    "mp3ConverterDownloadStartedText": {
+        "message": "다운로드가 시작되었습니다."
+    },
+    "mp3ConverterDownloadFailedText": {
+        "message": "다운로드에 실패했습니다."
+    },
+    "flixmateDownloadStartedText": {
+        "message": "Flixmate에 다운로드가 추가되었습니다."
+    },
+    "flixmateInstallText": {
+        "message": "설치"
+    },
+    "flixmateAppName": {
+        "message": "Flixmate 미디어 다운로드 프로그램"
+    },
+    "flixmateAppTitle": {
+        "message": "Ultra HD, 4K 및 8K 비디오 다운로드"
+    },
+    "flixmateAppDescription": {
+        "message": "Flixmate Media Downloader를 사용하여 1080p, 2k, 4K 및 8K를 포함한 무제한 MP3 및 HD 포맷 다운로드"
+    },
+    "flixmateAppDownloadButtonText": {
+        "message": "다운로드"
+    },
+    "flixmateHowToLinkText": {
+        "message": "어떻게 작동하나요?"
+    },
+    "flixmateAdvancedShowButtonText": {
+        "message": "고급(변환 또는 편집)"
+    },
+    "flixmateAdvancedHideButtonText": {
+        "message": "숨기기"
+    },
+    "flixmateSelectFormatLabel": {
+        "message": "포맷 선택"
+    },
+    "flixmateSelectQualityLabel": {
+        "message": "품질 선택"
+    },
+    "flixmateTimeLabel": {
+        "message": "시간"
+    },
+    "flixmateFromLabel": {
+        "message": "송신자"
+    },
+    "flixmateToLabel": {
+        "message": "수신자"
+    },
+    "flixmateDownloadButtonText": {
+        "message": "다운로드"
+    },
+    "flixmateDownloadFailedText": {
+        "message": "다운로드에 실패했습니다."
+    },
+    "thumbnailsQualityLabel": {
+        "message": "품질 선택"
+    },
+    "thumbnailsDownloadButtonText": {
+        "message": "다운로드"
+    },
+    "thumbnailsDownloadStartedText": {
+        "message": "다운로드가 시작되었습니다."
+    },
+    "thumbnailsDownloadFailedText": {
+        "message": "다운로드에 실패했습니다."
+    },
+    "subtitlesLanguageLabel": {
+        "message": "언어를 선택하세요"
+    },
+    "subtitlesAutoGeneratedNote": {
+        "message": "자동 생성된 자막에는 이 아이콘이 표시됩니다."
+    },
+    "subtitlesFormatLabel": {
+        "message": "파일 형식 선택"
+    },
+    "subtitlesDownloadButtonText": {
+        "message": "다운로드"
+    },
+    "subtitlesNotAvailableMessage": {
+        "message": "이 비디오에 대한 자막을 찾을 수 없습니다."
+    },
+    "subtitlesDownloadStartedText": {
+        "message": "다운로드가 시작되었습니다."
+    },
+    "subtitlesDownloadFailedText": {
+        "message": "다운로드에 실패했습니다."
+    },
+    "handleLinksDownloadButtonText": {
+        "message": "다운로드"
+    },
+    "handleLinksDownloadButtonTooltip": {
+        "message": "YouTube 비디오 및 MP3 다운로드기를 사용하여 다운로드"
+    },
+    "downloadsAddDownloadButtonText": {
+        "message": "다운로드 추가"
+    },
+    "downloadsClearAllButtonText": {
+        "message": "모두 비우기"
+    },
+    "downloadsOpenFolderMenuText": {
+        "message": "다운로드 폴더 열기"
+    },
+    "downloadsExtensionFolderButtonText": {
+        "message": "확장 다운로드"
+    },
+    "downloadsFlixmateFolderButtonText": {
+        "message": "플릭스메이트 다운로드"
+    },
+    "downloadsTabBrowserButtonText": {
+        "message": "브라우저"
+    },
+    "downloadsTabFlixmateButtonText": {
+        "message": "플릭스메이트"
+    },
+    "downloadsStateMenuAllLabel": {
+        "message": "모든 다운로드"
+    },
+    "downloadsStateMenuDownloadingLabel": {
+        "message": "다운로드 중"
+    },
+    "downloadsStateMenuQueuedLabel": {
+        "message": "대기 중"
+    },
+    "downloadsStateMenuPausedLabel": {
+        "message": "일시정지"
+    },
+    "downloadsStateMenuProcessingLabel": {
+        "message": "처리 중"
+    },
+    "downloadsStateMenuCompletedLabel": {
+        "message": "완료됨"
+    },
+    "downloadsStateMenuCanceledLabel": {
+        "message": "취소됨"
+    },
+    "downloadsStateMenuErrorLabel": {
+        "message": "에러"
+    },
+    "downloadsSearchInputPlaceholder": {
+        "message": "다운로드 시 검색"
+    },
+    "downloadsSizeUnknownText": {
+        "message": "크기를 알 수 없음"
+    },
+    "downloadsPausedText": {
+        "message": "일시정지됨"
+    },
+    "downloadsPauseButtonText": {
+        "message": "일시정지"
+    },
+    "downloadsResumeButtonText": {
+        "message": "재생"
+    },
+    "downloadsCopyUrlButtonText": {
+        "message": "URL 복사"
+    },
+    "downloadsCancelButtonText": {
+        "message": "취소"
+    },
+    "downloadsPlayButtonText": {
+        "message": "플레이"
+    },
+    "downloadsShowFolderButtonText": {
+        "message": "폴더에 표시"
+    },
+    "downloadsRemoveButtonText": {
+        "message": "제거"
+    },
+    "downloadsDeleteStateText": {
+        "message": "삭제됨"
+    },
+    "downloadsLoadMoreButtonText": {
+        "message": "추가 로드"
+    },
+    "downloadsDownloaderTitle": {
+        "message": "YouTube 비디오 URL 입력"
+    },
+    "downloadsDownloaderVideoIdErrorText": {
+        "message": "비디오 ID를 추출하지 못했습니다. URL을 확인하세요."
+    },
+    "downloadsDownloaderLoadingText": {
+        "message": "비디오 세부 정보를 로드하는 중..."
+    },
+    "downloadsDownloaderErrorText": {
+        "message": "비디오 세부 정보를 가져오지 못했습니다."
+    },
+    "downloadsDownloaderNotAvailableMessage": {
+        "message": "라이브 또는 예정된 비디오는 다운로드할 수 없습니다."
+    },
+    "downloadsDownloaderTabSDLabel": {
+        "message": "표준 다운로드"
+    },
+    "downloadsDownloaderTabMP3Label": {
+        "message": "MP3로 변환"
+    },
+    "downloadsDownloaderTabUHDLabel": {
+        "message": "울트라HD"
+    },
+    "downloadsDownloaderTabThumbnailsLabel": {
+        "message": "썸네일"
+    },
+    "downloadsDownloaderTabSubtitlesLabel": {
+        "message": "자막"
+    },
+    "injLooperPlayedText": {
+        "message": "플레이됨"
+    },
+    "injLooperPlayedTimesText": {
+        "message": "시간"
+    },
+    "injLooperStoppedText": {
+        "message": "중지됨"
+    },
+    "injLooperLoopForTimesText": {
+        "message": "(x회) 반복"
+    },
+    "injLooperLoopForPortionText": {
+        "message": "부분 반복"
+    },
+    "injLooperLoopFromLabel": {
+        "message": "송신자"
+    },
+    "injLooperLoopToLabel": {
+        "message": "수신자"
+    },
+    "injNotificationsBtnTooltip": {
+        "message": "알림"
+    },
+    "injSdDownloadsBtnTooltip": {
+        "message": "표준 다운로드"
+    },
+    "injMp3ConverterBtnTooltip": {
+        "message": "MP3 컨버터"
+    },
+    "injUhdDownloadsBtnTooltip": {
+        "message": "Ultra HD 다운로드"
+    },
+    "injThumbnailsBtnTooltip": {
+        "message": "썸네일"
+    },
+    "injSubtitlesBtnTooltip": {
+        "message": "자막"
+    },
+    "injDownloadsManagerBtnTooltip": {
+        "message": "다운로드 관리자"
+    },
+    "injScreenshotBtnTooltip": {
+        "message": "스크린샷 찍기"
+    },
+    "injEnableEditModeText": {
+        "message": "타일 편집"
+    },
+    "injMoreToggleButtonText": {
+        "message": "더 보기"
+    },
+    "injCancelEditModeText": {
+        "message": "취소"
+    },
+    "injDarkModeInactiveTooltip": {
+        "message": "다크 모드 활성화"
+    },
+    "injDarkModeActiveTooltip": {
+        "message": "다크 모드 사용 안함"
+    },
+    "injCinemaModeInactiveTooltip": {
+        "message": "시네마 모드 활성화"
+    },
+    "injCinemaModeActiveTooltip": {
+        "message": "시네마 모드 사용 안함"
+    },
+    "injPipInactiveTooltip": {
+        "message": "사진 모드 활성화"
+    },
+    "injPipActiveTooltip": {
+        "message": "사진 모드 사용 안함"
+    },
+    "injFloatVideoInactiveTooltip": {
+        "message": "부동 비디오 플레이어 활성화"
+    },
+    "injFloatVideoActiveTooltip": {
+        "message": "부동 비디오 플레이어 사용 안함"
+    },
+    "injLooperInactiveTooltip": {
+        "message": "고급 비디오 반복 표시"
+    },
+    "injLooperActiveTooltip": {
+        "message": "비디오 반복 숨기기"
+    },
+    "injSmartPauseInactiveTooltip": {
+        "message": "탭 스위치의 스마트 일시 중지 비디오 활성화"
+    },
+    "injSmartPauseActiveTooltip": {
+        "message": "스마트 일시 중지 사용 안함"
+    },
+    "injAutoplayInactiveTooltip": {
+        "message": "자동 실행 활성화"
+    },
+    "injAutoplayActiveTooltip": {
+        "message": "자동 실행 비활성화"
+    },
+    "injAudioModeInactiveTooltip": {
+        "message": "오디오 전용 모드 활성화"
+    },
+    "injAudioModeActiveTooltip": {
+        "message": "오디오 전용 모드 비활성화"
+    },
+    "injVolumeControlInactiveTooltip": {
+        "message": "마우스 휠을 사용하여 볼륨 제어 활성화"
+    },
+    "injVolumeControlActiveTooltip": {
+        "message": "마우스 휠을 사용하여 볼륨 제어 비활성화"
+    },
+    "injVideoSearchInactiveTooltip": {
+        "message": "비디오를 보는 동안 비디오 검색 활성화"
+    },
+    "injVideoSearchActiveTooltip": {
+        "message": "비디오 검색 비활성화"
+    },
+    "injHideCommentsInactiveTooltip": {
+        "message": "주석 섹션 숨기기"
+    },
+    "injHideCommentsActiveTooltip": {
+        "message": "주석 섹션 표시"
+    },
+    "injOptionsTooltip": {
+        "message": "확장 설정 열기"
+    },
+    "downloadsDownloadStartedSubText": {
+        "message": "다운로드 관리자를 열려면 여기를 클릭하세요."
+    },
+    "downloadsFlixmateDownloadsClearedNotificationText": {
+        "message": "다운로드가 삭제되었습니다."
+    },
+    "downloadsStateFilterAll": {
+        "message": "모든 다운로드"
+    },
+    "downloadsStateDownloading": {
+        "message": "다운로드 중"
+    },
+    "downloadsStateQueued": {
+        "message": "대기 중"
+    },
+    "downloadsStateError": {
+        "message": "에러"
+    },
+    "downloadsStateCanceled": {
+        "message": "취소됨"
+    },
+    "downloadsStatePaused": {
+        "message": "일시정지"
+    },
+    "downloadsStateProcessing": {
+        "message": "처리중"
+    },
+    "downloadsStateCompleted": {
+        "message": "완료됨"
+    },
+    "downloadsUrlCopiedText": {
+        "message": "URL이 클립보드에 복사되었습니다."
+    },
+    "injHelpButtonText": {
+        "message": "도움말 & FAQ"
+    },
+    "injGuideDescription": {
+        "message": "유튜브 영상 다운로더의 기능과 사용 방법에 대해 자세히 알아보기"
+    },
+    "injGuideSdDownloadsButtonTooltip": {
+        "message": "표준 다운로드"
+    },
+    "injGuideMp3ConverterButtonTooltip": {
+        "message": "MP3 컨버터"
+    },
+    "injGuideUhdDownloadsButtonTooltip": {
+        "message": "Ultra HD 다운로드"
+    },
+    "injGuideThumbnailsButtonTooltip": {
+        "message": "썸네일"
+    },
+    "injGuideSubtitlesButtonTooltip": {
+        "message": "자막"
+    },
+    "injGuideScreenshotButtonTooltip": {
+        "message": "스크린샷"
+    },
+    "injGuideDownloadsManagerButtonTooltip": {
+        "message": "다운로드 관리자"
+    },
+    "injGuideDarkModeButtonTooltip": {
+        "message": "다크 모드"
+    },
+    "injGuideCinemaModeButtonTooltip": {
+        "message": "시네마 모드"
+    },
+    "injGuidePipButtonTooltip": {
+        "message": "비디오 플레이어 띄우기"
+    },
+    "injGuideLooperButtonTooltip": {
+        "message": "루퍼"
+    },
+    "injGuideSmartPauseButtonTooltip": {
+        "message": "스마트 일시중지"
+    },
+    "injGuideAutoplayButtonTooltip": {
+        "message": "자동플레이"
+    },
+    "injGuideAudioModeButtonTooltip": {
+        "message": "오디오 모드"
+    },
+    "injGuideVolumeControlButtonTooltip": {
+        "message": "마우스 휠 볼륨 컨트롤"
+    },
+    "injGuideVideoSearchButtonTooltip": {
+        "message": "동영상 검색"
+    },
+    "injGuideHideCommentsButtonTooltip": {
+        "message": "주석 숨기기"
+    },
+    "injGuideNoteText": {
+        "message": "자세한 내용을 보거나 FAQ에서 답변을 찾으려면 아이콘을 클릭하세요"
+    },
+    "injGuideFaqHeading": {
+        "message": "자주 묻는 질문"
+    },
+    "injGuideFaqSD": {
+        "message": "유튜브에서 영상 다운로드하는 방법"
+    },
+    "injGuideFaqMP3": {
+        "message": "유튜브 영상을 MP3로 변환하는 방법"
+    },
+    "injGuideFaqDownloads": {
+        "message": "영상 다운로드가 저장되는 위치"
+    },
+    "injGuideFaqSubtitles": {
+        "message": "자막이 있는 유튜브 동영상을 다운 받을 수 있나요?"
+    },
+    "injGuideContactUsNote": {
+        "message": "아직도 문제가 있나요?"
+    },
+    "injGuideContactUsButtonText": {
+        "message": "문의해 주세요"
+    },
+    "injGuideBackButtonText": {
+        "message": "뒤로"
+    },
+    "injGuideFeatSdHeading": {
+        "message": "표준 다운로드"
+    },
+    "injGuideFeatSdSec1Title": {
+        "message": "영상 다운로드하는 방법"
+    },
+    "injGuideFeatSdSec1Step1P1": {
+        "message": "클릭"
+    },
+    "injGuideFeatSdSec1Step1P2": {
+        "message": "툴바의 아이콘을 클릭합니다."
+    },
+    "injGuideFeatSdSec1Step2": {
+        "message": "영상 세부 정보가 로드될 때까지 기다립니다."
+    },
+    "injGuideFeatSdSec1Step3": {
+        "message": "목록에서 원하는 영상 화질을 클릭합니다."
+    },
+    "injGuideFeatSdSec1Step4": {
+        "message": "파일 다운로드가 시작됩니다."
+    },
+    "injGuideFeatSdNote1P1": {
+        "message": "다음을 할 수 있습니다"
+    },
+    "injGuideFeatSdNote1P2": {
+        "message": "QR코드 생성"
+    },
+    "injGuideFeatSdNote1P3": {
+        "message": "스캔해서 휴대폰으로 영상을 다운로드하세요"
+    },
+    "injGuideFeatSdNote2": {
+        "message": "유튜브는 일부 비디오에 대해 HD 다운로드를 제공하지 않으며, 외부 다운로드 서비스를 사용합니다."
+    },
+    "injGuideFeatSdNote3": {
+        "message": "Dash 형식 영상에는 오디오가 포함되어 있지 않습니다"
+    },
+    "injGuideFeatMp3Heading": {
+        "message": "MP3 컨버터"
+    },
+    "injGuideFeatMp3Sec1Title": {
+        "message": "영상을  MP3로 변환하는 방법은?"
+    },
+    "injGuideFeatMp3Sec1Step1P1": {
+        "message": "클릭"
+    },
+    "injGuideFeatMp3Sec1Step1P2": {
+        "message": "툴바의 아이콘을 클릭합니다."
+    },
+    "injGuideFeatMp3Sec1Step2": {
+        "message": "영상 세부 정보가 로드될 때까지 기다립니다."
+    },
+    "injGuideFeatMp3Sec1Step3": {
+        "message": "MP3 비트 전송률을 선택하고 영상을 트리밍해야 할 경우 비디오 길이를 조정하세요."
+    },
+    "injGuideFeatMp3Sec1Step4": {
+        "message": "다운로드 버튼을 클릭하고 요청이 완료될 때까지 기다립니다."
+    },
+    "injGuideFeatMp3Sec1Step5": {
+        "message": "파일 다운로드가 시작됩니다."
+    },
+    "injGuideFeatMp3Note1": {
+        "message": "트리밍을 위해 입력 상자의 슬라이더를 사용하여 영상 길이를 조정할 수 있습니다."
+    },
+    "injGuideFeatMp3Note2": {
+        "message": "유튜브는 MP3 다운로드를 제공하지 않으며, MP3 변환 시 외부 다운로드 서비스를 사용합니다."
+    },
+    "injGuideFeatMp3Note3": {
+        "message": "flixmate를 설치하고 활성화한 경우 다운로드가 flixmate에 추가됩니다."
+    },
+    "injGuideFeatUhdHeading": {
+        "message": "Ultra HD 다운로드"
+    },
+    "injGuideFeatUhdDescriptionP1": {
+        "message": "Flixmate"
+    },
+    "injGuideFeatUhdDescriptionP2": {
+        "message": "는 1080p, 2k, 4k, 8k 등 고품질 영상을 다운로드하기 위해 필요합니다. 이는 오디오/비디오 스트림을 결합하여 다른 형식으로 변환할 수 있는 데스크톱 서비스입니다."
+    },
+    "injGuideFeatUhdSec1Title": {
+        "message": "Ultra HD(1080p, 4k, 8k) 비디오를 다운로드하는 방법"
+    },
+    "injGuideFeatUhdSec1Step1": {
+        "message": "PC에 Flixmate를 설치합니다."
+    },
+    "injGuideFeatUhdSec1Step2P1": {
+        "message": "클릭"
+    },
+    "injGuideFeatUhdSec1Step2P2": {
+        "message": "툴바의 아이콘을 클릭합니다."
+    },
+    "injGuideFeatUhdSec1Step3": {
+        "message": "영상 세부 정보가 로드될 때까지 기다립니다."
+    },
+    "injGuideFeatUhdSec1Step4": {
+        "message": "목록에서 원하는 영상 화질을 클릭합니다."
+    },
+    "injGuideFeatUhdSec1Step5": {
+        "message": "다운로드가 Flixmate에 추가됩니다."
+    },
+    "injGuideFeatUhdSec2Title": {
+        "message": "영상을 다른 형식(mkv, vi)으로 트리밍하거나 변환하는 방법은 어떻게 되나요?"
+    },
+    "injGuideFeatUhdSec2Step1": {
+        "message": "PC에 Flixmate를 설치합니다."
+    },
+    "injGuideFeatUhdSec2Step2P1": {
+        "message": "클릭"
+    },
+    "injGuideFeatUhdSec2Step2P2": {
+        "message": "툴바의 아이콘을 클릭합니다."
+    },
+    "injGuideFeatUhdSec2Step3": {
+        "message": "영상 세부 정보가 로드될 때까지 기다립니다."
+    },
+    "injGuideFeatUhdSec2Step4": {
+        "message": "Advanced(고급) 버튼을 클릭합니다."
+    },
+    "injGuideFeatUhdSec2Step5": {
+        "message": "원하는 영상 품질과 형식을 선택하고 영상을 트리밍해야 하는 경우 영상 길이를 조정합니다."
+    },
+    "injGuideFeatUhdSec2Step6": {
+        "message": "다운로드가 Flixmate에 추가됩니다."
+    },
+    "injGuideFeatUhdNote1": {
+        "message": "Flixmate는 Mac OS 또는 Linux에서 지원되지 않습니다."
+    },
+    "injGuideFeatThumbnailsHeading": {
+        "message": "썸네일"
+    },
+    "injGuideFeatThumbnailsSec1Title": {
+        "message": "영상 미리 보기를 다운로드하는 방법은 어떻게 되나요?"
+    },
+    "injGuideFeatThumbnailsSec1Step1P1": {
+        "message": "클릭"
+    },
+    "injGuideFeatThumbnailsSec1Step1P2": {
+        "message": "툴바의 아이콘을 클릭합니다."
+    },
+    "injGuideFeatThumbnailsSec1Step2": {
+        "message": "영상 세부 정보가 로드될 때까지 기다립니다."
+    },
+    "injGuideFeatThumbnailsSec1Step3": {
+        "message": "드롭다운에서 썸네일 품질을 선택하고 다운로드 버튼을 클릭합니다."
+    },
+    "injGuideFeatThumbnailsSec1Step4": {
+        "message": "파일 다운로드가 시작됩니다."
+    },
+    "injGuideFeatSubtitlesHeading": {
+        "message": "자막"
+    },
+    "injGuideFeatSubtitlesSec1Title": {
+        "message": "자막 다운로드 방법은 어떻게 되나요?"
+    },
+    "injGuideFeatSubtitlesSec1Step1P1": {
+        "message": "클릭"
+    },
+    "injGuideFeatSubtitlesSec1Step1P2": {
+        "message": "툴바의 아이콘을 클릭합니다."
+    },
+    "injGuideFeatSubtitlesSec1Step2": {
+        "message": "영상 세부 정보가 로드될 때까지 기다립니다."
+    },
+    "injGuideFeatSubtitlesSec1Step3": {
+        "message": "드롭다운 및 형식에서 언어를 선택하고 다운로드 버튼을 클릭합니다."
+    },
+    "injGuideFeatSubtitlesSec1Step4": {
+        "message": "파일 다운로드가 시작됩니다."
+    },
+    "injGuideFeatSubtitlesSec2Title": {
+        "message": "자막이 있는 동영상을 다운 받을 수 있나요?"
+    },
+    "injGuideFeatSubtitlesSec2Text": {
+        "message": "자막이 포함된 유튜브 영상은 다운로드할 수 없습니다. 자막 파일은 별도로 다운로드하여 VLC와 같은 지원되는 플레이어에서 사용할 수 있습니다."
+    },
+    "injGuideFeatSubtitlesNote1": {
+        "message": "일부 영상에는 자막이 제공되지 않을 수 있습니다."
+    },
+    "injGuideFeatSubtitlesNote2P1": {
+        "message": "자동 생성된 자막에는 다음이 표시됩니다."
+    },
+    "injGuideFeatSubtitlesNote2P2": {
+        "message": "아이콘"
+    },
+    "injGuideFeatSubtitlesNote3": {
+        "message": "유튜브는 대부분의 영상 플레이어에서 지원되는 WebVTT, TTML 및 SRV3 형식을 제공합니다."
+    },
+    "injGuideFeatScreenshotHeading": {
+        "message": "스크린샷 찍기"
+    },
+    "injGuideFeatScreenshotDescriptionP1": {
+        "message": "다음을 클릭하여 스크린샷을 캡처할 수 있습니다"
+    },
+    "injGuideFeatScreenshotDescriptionP2": {
+        "message": "툴바의 아이콘을 클릭합니다. 스크린샷의 품질은 비디오 재생 품질에 따라 달라집니다."
+    },
+    "injGuideFeatDownloadsHeading": {
+        "message": "다운로드 관리자"
+    },
+    "injGuideFeatDownloadsDescriptionP1": {
+        "message": "다운로드 관리자를 사용하여 다운로드한 항목을 확인/취소/일시 중지 또는 플레이할 수 있습니다. 클릭"
+    },
+    "injGuideFeatDownloadsDescriptionP2": {
+        "message": "툴바의 아이콘을 클릭하여 다운로드 관리자를 엽니다."
+    },
+    "injGuideFeatDownloadsSec1Title": {
+        "message": "다운로드가 저장되는 위치 또는 다운로드 폴더를 여는 방법은 어떻게 되나요?"
+    },
+    "injGuideFeatDownloadsSec1Step1P1": {
+        "message": "클릭"
+    },
+    "injGuideFeatDownloadsSec1Step1P2": {
+        "message": "툴바에서 아이콘을 클릭하여 다운로드 관리자를 엽니다."
+    },
+    "injGuideFeatDownloadsSec1Step2": {
+        "message": "다운로드 관리자 페이지의 오른쪽 상단 측면에 있는 드롭다운 메뉴 \"다운로드 폴더 열기\"를 클릭합니다."
+    },
+    "injGuideFeatDownloadsSec1Step3": {
+        "message": "Extension downloads/Flixmate downloads를 클릭하여 다운로드 폴더를 엽니다."
+    },
+    "injGuideFeatDownloadsNote1": {
+        "message": "Flixmate는 사용자 디렉토리에 액세스할 수 없으므로 파일이 공용 디렉토리에 저장됩니다."
+    },
+    "injGuideFeatDarkModeHeading": {
+        "message": "다크 모드"
+    },
+    "injGuideFeatDarkModeDescription": {
+        "message": "유튜브의 다크 모드를 위한 빠른 토글 버튼입니다."
+    },
+    "injGuideFeatCinemaModeHeading": {
+        "message": "시네마 모드"
+    },
+    "injGuideFeatCinemaModeDescriptionP1": {
+        "message": "시네마 모드는 향상된 다크 모드를 켜고 집중을 방해하는 요소를 숨겨서 시청 환경을 향상시킬 수 있습니다."
+    },
+    "injGuideFeatCinemaModeDescriptionP2": {
+        "message": "다음을 사용하여 시네마 모드를 전환할 수 있습니다."
+    },
+    "injGuideFeatCinemaModeDescriptionP3": {
+        "message": "버튼을 누르세요."
+    },
+    "injGuideFeatPipHeading": {
+        "message": "PIP모드"
+    },
+    "injGuideFeatPipDescriptionP1": {
+        "message": "픽처-인-픽처모드를 사용하면 창 띄우기(다른 창 위)에서 영상을 볼 수 있으므로 다른 사이트 또는 응용 프로그램과 상호 작용하는 동안 보고 있는 내용을 계속 확인할 수 있습니다."
+    },
+    "injGuideFeatPipDescriptionP2": {
+        "message": "다음을 사용하여 PIP를 전환할 수 있습니다."
+    },
+    "injGuideFeatPipDescriptionP3": {
+        "message": "버튼을 누르세요."
+    },
+    "injGuideFeatFloatViewHeading": {
+        "message": "플로트 영상 플레이어"
+    },
+    "injGuideFeatFloatViewDescriptionP1": {
+        "message": "Float View(플로트 뷰)를 활성화하면 스크롤 및 댓글 읽기 도중 유튜브 영상을 볼 수 있습니다. 클릭하세요"
+    },
+    "injGuideFeatFloatViewDescriptionP2": {
+        "message": "플로트 영상 플레이어를 전환하기 위한 버튼입니다."
+    },
+    "injGuideFeatLooperHeading": {
+        "message": "루퍼"
+    },
+    "injGuideFeatLooperDescriptionP1": {
+        "message": "유튜브는 영상 루프 기능을 제공하지 않으므로 사용자를 원활하게 하기 위해 이 기능을 추가했습니다."
+    },
+    "injGuideFeatLooperDescriptionP2": {
+        "message": "클릭"
+    },
+    "injGuideFeatLooperDescriptionP3": {
+        "message": "아이콘을 클릭하여 영상을 루핑합니다. 아이콘을 클릭하면 특정 카운트에 대해 영상을 루프하거나 영상의 일부를 루프하는 데 사용할 수 있는 고급 루퍼도 표시됩니다."
+    },
+    "injGuideFeatSmartPauseHeading": {
+        "message": "스마트 일시 중지"
+    },
+    "injGuideFeatSmartPauseDescription": {
+        "message": "스마트 일시중지는 현재 유튜브 영상의 위치를 자동으로 기억하여 중단되었던 부분을 쉽게 찾을 수 있도록 합니다. 탭을 변경하거나, 새 탭을 열거나, 새 창을 끌어올릴 때마다 스마트 일시 중지는 영상을 다시 시작하고 시작할 때까지 기다립니다."
+    },
+    "injGuideFeatAutoPlayHeading": {
+        "message": "자동 재생"
+    },
+    "injGuideFeatAutoPlayDescription": {
+        "message": "유튜브의 자동 재생 기능을 빠르게 전환해 주는 버튼이다."
+    },
+    "injGuideFeatAudioModeHeading": {
+        "message": "오디오 모드"
+    },
+    "injGuideFeatAudioModeDescriptionP1": {
+        "message": "당신은 음악이나 오디오를 위해서 유튜브 영상을 보고 있는 자신을 발견할 수도 있다. 다음을 사용하여 이 옵션을 전환할 수 있습니다."
+    },
+    "injGuideFeatAudioModeDescriptionP2": {
+        "message": "더 빠른 버퍼 시간을 지원하면서 대역폭을 절약하여 오디오만 재생합니다. 그 이유는 오디오 모드가 오디오 형식만 로드하기 때문입니다. 이 기능은 배경 음악, 레슨 듣기 등에 이상적입니다."
+    },
+    "injGuideFeatAudioModeNote1": {
+        "message": "변경 내용을 적용하려면 이 기능을 전환하면 페이지가 다시 로드됩니다."
+    },
+    "injGuideFeatVolumeControlHeading": {
+        "message": "마우스 휠 볼륨 컨트롤"
+    },
+    "injGuideFeatVolumeControlDescriptionP1": {
+        "message": "다음을 클릭하여 이 기능 사용"
+    },
+    "injGuideFeatVolumeControlDescriptionP2": {
+        "message": "버튼을 누르면 마우스 휠을 사용하여 유튜브 영상의 볼륨을 제어할 수 있습니다."
+    },
+    "injGuideFeatVideoSearchHeading": {
+        "message": "영상 검색"
+    },
+    "injGuideFeatVideoSearchDescriptionP1": {
+        "message": "이 기능을 사용하여 영상을 보는 동안 유튜브 검색을 사용할 수 있습니다. 클릭"
+    },
+    "injGuideFeatVideoSearchDescriptionP2": {
+        "message": "버튼은 페이지 오른쪽에 검색 막대를 추가합니다. 검색 표시줄을 사용하여 계속 검색하여 영상을 중단하거나 종료하지 않고 새 영상을 찾을 수 있습니다."
+    },
+    "injGuideFeatHideCommentsHeading": {
+        "message": "주석 숨기기"
+    },
+    "injGuideFeatHideCommentsDescriptionP1": {
+        "message": "클릭"
+    },
+    "injGuideFeatHideCommentsDescriptionP2": {
+        "message": "유튜브 영상에서 주의를 산만하게 하지 않도록 댓글을 숨기기 위한 버튼입니다."
+    },
+    "optHeading": {
+        "message": "설정"
+    },
+    "optRestoreButtonText": {
+        "message": "기본 설정 복원"
+    },
+    "optRestoreConfirmTitle": {
+        "message": "확실한가요?"
+    },
+    "optRestoreConfirmMessage": {
+        "message": "설정이 기본값으로 재설정됩니다."
+    },
+    "optRestoreSuccessMessage": {
+        "message": "설정이 성공적으로 복원되었습니다."
+    },
+    "optConfirmButtonText": {
+        "message": "확인"
+    },
+    "optCancelButtonText": {
+        "message": "취소"
+    },
+    "optThemeSelectLabel": {
+        "message": "확장 테마 선택"
+    },
+    "optThemeOptionSystemLabel": {
+        "message": "시스템 기본값"
+    },
+    "optThemeOptionLightLabel": {
+        "message": "라이트 테마"
+    },
+    "optThemeOptionDarkLabel": {
+        "message": "어두운 테마"
+    },
+    "optDownloadNotificationsSwitchLabel": {
+        "message": "다운로드 알림 표시"
+    },
+    "optEmbeddedDownloadsSwitchLabel": {
+        "message": "임베디드 비디오에 다운로드 버튼 표시"
+    },
+    "optDownloadButtonOnUrlsSwitchLabel": {
+        "message": "유튜브 링크의 다운로드 추가 버튼"
+    },
+    "optVideoQualityDisabledOptionLabel": {
+        "message": "비활성화"
+    },
+    "optDownloadSettingsHeading": {
+        "message": "다운로더 설정"
+    },
+    "optFormatsLabel": {
+        "message": "다운로드 메뉴에 표시할 비디오 형식"
+    },
+    "optDashFormatsLabel": {
+        "message": "다운로드 메뉴에 표시할 Dash 형식"
+    },
+    "optDashFormatsRadioNone": {
+        "message": "없음"
+    },
+    "optDashFormatsRadioBoth": {
+        "message": "오디오 및 비디오"
+    },
+    "optDashFormatsRadioVideo": {
+        "message": "비디오 전용"
+    },
+    "optDashFormatsRadioAudio": {
+        "message": "오디오 전용"
+    },
+    "optMp3BitrateLabel": {
+        "message": "MP3 컨버터 기본 비트 전송률"
+    },
+    "optCopyButtonSwitchLabel": {
+        "message": "클립보드로 복사 사용 버튼"
+    },
+    "optQrButtonSwitchLabel": {
+        "message": "QR 코드 생성기 활성화 버튼"
+    },
+    "optSaveAsSwitchLabel": {
+        "message": "영상을 다운로드하도록 선택한 경우 다른 이름으로 저장 대화 상자 표시"
+    },
+    "optFlixmateSettingsHeading": {
+        "message": "Flixmate 미디어 다운로드 프로그램"
+    },
+    "optFlixmateUnsupportedText": {
+        "message": "시스템에서 Flixmate가 지원되지 않습니다."
+    },
+    "optFlixmateUnsupportedLinkText": {
+        "message": "더 배우기"
+    },
+    "optFlixmateDisconnectedText": {
+        "message": "Flixmate가 연결되어 있지 않습니다."
+    },
+    "optDisconnectedLinkText": {
+        "message": "다운로드"
+    },
+    "optFlixmateConnectedText": {
+        "message": "이(가) 연결되었습니다."
+    },
+    "optFlixmateUpdateAvailableText": {
+        "message": "다음에 대한 업데이트를 사용할 수 있습니다."
+    },
+    "optFlixmateInstallUpdateText": {
+        "message": "설치를 위해."
+    },
+    "optFlixmateEnabledSwitchLabel": {
+        "message": "Flixmate 미디어 다운로드 사용"
+    },
+    "optFlixmateEnabledSwitchHelpText": {
+        "message": "무제한 MP3 및 Ultra HD 포맷 다운로드"
+    },
+    "optFlixmateFormatsLabel": {
+        "message": "다운로드 메뉴에 표시할 변환 형식"
+    },
+    "optVideoQualityMenuLabel": {
+        "message": "기본 비디오 재생 품질 설정"
+    },
+    "optFloatVideoSwitchLabel": {
+        "message": "플로팅 비디오 사용"
+    },
+    "optFloatVideoSwitchHelpText": {
+        "message": "(스마트 뷰는 아래로 스크롤하는 동안 영상을 볼 수 있습니다. 우측 하단에 영상을 표시됩니다.)"
+    },
+    "optSmartPauseSwitchLabel": {
+        "message": "스마트 일시 중지 사용"
+    },
+    "optSmartPauseSwitchHelpText": {
+        "message": "(페이지에서 나가면 현재 유튜브에서 영상을 재생하는 것을 자동 일시 중지하고 돌아오면 다시 시작합니다.)"
+    },
+    "optAudioModeSwitchLabel": {
+        "message": "오디오 모드 활성화"
+    },
+    "optAudioModeSwitchHelpText": {
+        "message": "(영상을 로드하지 않고 오디오만 듣습니다.)"
+    },
+    "optAudioModeChangeAlert": {
+        "message": "변경 내용을 적용하려면 유튜브 탭을 새로 고치십시오."
+    },
+    "optMousewheelVolumeControlSwitchLabel": {
+        "message": "마우스휠로 볼륨 제어"
+    },
+    "optMousewheelVolumeControlSwitchHelpText": {
+        "message": "(영상 내부의 마우스 휠을 사용하여 볼륨을 조절합니다.)"
+    },
+    "optVideoSearchSwitchLabel": {
+        "message": "영상을 보는 동안 검색"
+    },
+    "optVideoSearchSwitchHelpText": {
+        "message": "(영상을 중단하지 않고 관련 동영상 섹션에 검색 결과를 로드하여 유튜브 검색)"
+    },
+    "optHideCommentsSwitchLabel": {
+        "message": "유튜브 댓글 숨기기"
+    },
+    "optHideCommentsSwitchHelpText": {
+        "message": "(유튜브 동영상의 모든 사용자 의견 숨기기)"
+    },
+    "injDownloaderLoadingText": {
+        "message": "영상 세부 정보를 로드하는 중..."
+    },
+    "injDownloaderErrorText": {
+        "message": "영상 세부 정보를 가져오지 못했습니다."
+    },
+    "injNotAvailableMessage": {
+        "message": "라이브 또는 예정된 영상은 다운로드할 수 없습니다."
+    },
+    "downloadsFlixmateDownloadsHeading": {
+        "message": "Flixmate로 Ultra HD 다운로드"
+    },
+    "downloadsOpenVideoPageButtonTooltip": {
+        "message": "YouTube에서 동영상 열기"
+    },
+    "injWelcomeMessageTooltip": {
+        "message": "이 버튼을 클릭하면 비디오를 다운로드할 수 있습니다."
+    },
+    "injSwitchDisplayButtonText": {
+        "message": "이 버튼을 클릭하면 컴팩트 모드로 전환됩니다."
+    },
+    "injSwitchDisplayButtonTooltip": {
+        "message": "컴팩트 모드로 전환"
+    },
+    "injExpandBtnTooltip": {
+        "message": "전체 확장 막대로 전환"
+    },
+    "injCompactButtonTooltip": {
+        "message": "이 버튼을 사용하여 컴팩트 모드에서 Addoncrop YouTube 다운로더 사용"
+    },
+    "optChangeLanguageText": {
+        "message": "언어 변경"
+    },
+    "optCompactDisplayModeHeading": {
+        "message": "확장은 압축 모드에서 표시됩니다."
+    },
+    "optCompactDisplayModeSubheading": {
+        "message": "확장 프로그램은 YouTube에 압축 버튼으로 표시됩니다. 전체 모드로 전환하려면 이 버튼을 클릭하세요."
+    },
+    "optCompactDisplayModeButtonText": {
+        "message": "스위치"
+    },
+    "optMultithreadingSwitchLabel": {
+        "message": "다운로드에 멀티 스레딩 사용"
+    },
+    "optMultithreadingSwitchHelpText": {
+        "message": "다운로드 속도를 높이려면 서버에 대한 다중 연결이 있는 파일을 다운로드하십시오."
+    }
+}

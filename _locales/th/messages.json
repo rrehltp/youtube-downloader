@@ -1,0 +1,1193 @@
+{
+    "extName": {
+        "message": "ตัวช่วยดาวน์โหลดวิดีโอ YouTube และ MP3"
+    },
+    "extDescription": {
+        "message": "ดาวน์โหลดวิดีโอ YouTube ในระดับความคชัดต่าง ๆ ได้แก่ 1080P, 720P, 480P, 360p และอื่น ๆ รองรับทุกนามสกุลไฟล์ Mp3, MP4, FLV, WebM, 3GP"
+    },
+    "downloadsHeading": {
+        "message": "การดาวน์โหลด"
+    },
+    "downloadsError_FILE_FAILED": {
+        "message": "ล้มเหลว"
+    },
+    "downloadsError_FILE_ACCESS_DENIED": {
+        "message": "การเข้าถึงถูกปฏิเสธ"
+    },
+    "downloadsError_FILE_NO_SPACE": {
+        "message": "พื้นที่จัดเก็บไม่เพียงพอ"
+    },
+    "downloadsError_FILE_NAME_TOO_LONG": {
+        "message": "ชื่อไฟล์ยาวเกินไป"
+    },
+    "downloadsError_FILE_TOO_LARGE": {
+        "message": "ไฟล์มีขนาดใหญ่เกินไป"
+    },
+    "downloadsError_FILE_VIRUS_INFECTED": {
+        "message": "ไฟล์อาจติดไวรัส"
+    },
+    "downloadsError_FILE_TRANSIENT_ERROR": {
+        "message": "ล้มเหลว"
+    },
+    "downloadsError_FILE_BLOCKED": {
+        "message": "ถูกบล็อก"
+    },
+    "downloadsError_FILE_SECURITY_CHECK_FAILED": {
+        "message": "การตรวจสอบความปลอดภัยล้มเหลว"
+    },
+    "downloadsError_FILE_TOO_SHORT": {
+        "message": "ไฟล์มีขนาดเล็กเกินไป"
+    },
+    "downloadsError_NETWORK_FAILED": {
+        "message": "เครือข่ายล้มเหลว"
+    },
+    "downloadsError_NETWORK_TIMEOUT": {
+        "message": "หมดเวลา"
+    },
+    "downloadsError_NETWORK_DISCONNECTED": {
+        "message": "ถูกตัดการเชื่อมต่อ"
+    },
+    "downloadsError_NETWORK_SERVER_DOWN": {
+        "message": "เซิร์ฟเวอร์ล่ม"
+    },
+    "downloadsError_NETWORK_INVALID_REQUEST": {
+        "message": "คำขอไม่ถูกต้อง"
+    },
+    "downloadsError_SERVER_FAILED": {
+        "message": "เซิร์ฟเวอร์ล้มเหลว"
+    },
+    "downloadsError_SERVER_NO_RANGE": {
+        "message": "ขอบเขตเซิร์ฟเวอร์เกิดข้อผิดพลาด"
+    },
+    "downloadsError_SERVER_BAD_CONTENT": {
+        "message": "เนื้อหาไม่ดี"
+    },
+    "downloadsError_SERVER_UNAUTHORIZED": {
+        "message": "ไม่ได้รับอนุญาต"
+    },
+    "downloadsError_SERVER_CERT_PROBLEM": {
+        "message": "ใบรับรองเกิดข้อผิดพลาด"
+    },
+    "downloadsError_SERVER_FORBIDDEN": {
+        "message": "ต้องห้าม"
+    },
+    "downloadsError_USER_CANCELED": {
+        "message": "ยกเลิก"
+    },
+    "downloadsError_USER_SHUTDOWN": {
+        "message": "ปิดตัวลง"
+    },
+    "downloadsError_CRASH": {
+        "message": "หยุดทำงาน"
+    },
+    "bgFlixmateNotConnectedError": {
+        "message": "ยังไม่ได้เชื่อมต่อ Flixmate"
+    },
+    "popupHomeButtonTooltip": {
+        "message": "ไปยังส่วนหน้าหลัก"
+    },
+    "popupDownloadsButtonTooltip": {
+        "message": "แสดงการดาวน์โหลด"
+    },
+    "popupVideoButtonTooltip": {
+        "message": "ไปยังส่วนวิดีโอ"
+    },
+    "popupThemeToggleButtonTooltip": {
+        "message": "เปลี่ยนธีม"
+    },
+    "popupThemeMenuSystemLabel": {
+        "message": "ค่าเริ่มต้นของระบบ"
+    },
+    "popupThemeMenuDarkLabel": {
+        "message": "ธีมมืด"
+    },
+    "popupThemeMenuLightLabel": {
+        "message": "ธีมสว่าง"
+    },
+    "popupOptionsButtonTooltip": {
+        "message": "เปิดหน้าตัวเลือก"
+    },
+    "popupHomeLinkHomePageText": {
+        "message": "หน้าหลัก"
+    },
+    "popupHomeLinkHowToUseText": {
+        "message": "วิธีใช้งาน"
+    },
+    "popupHomeLinkDownloadsText": {
+        "message": "การดาวน์โหลด"
+    },
+    "popupHomeLinkReportBugText": {
+        "message": "รายงานบัค"
+    },
+    "popupHomeAlertsHeading": {
+        "message": "การแจ้งเตือนล่าสุด"
+    },
+    "popupDownloaderLoadingText": {
+        "message": "กำลังโหลดรายละเอียดของวิดีโอ..."
+    },
+    "popupDownloaderErrorText": {
+        "message": "การโหลดรายละเอียดของวิดีโอล้มเหลว"
+    },
+    "popupDownloaderNotAvailableMessage": {
+        "message": "การดาวน์โหลดไม่พร้อมใช้งานสำหรับวิดีโอถ่ายทอดสดหรือวิดีโอในอนาคต"
+    },
+    "popupDownloaderTabSDLabel": {
+        "message": "การดาวน์โหลดแบบมาตรฐาน"
+    },
+    "popupDownloaderTabMP3Label": {
+        "message": "แปลงเป็น MP3"
+    },
+    "popupDownloaderTabUHDLabel": {
+        "message": "Ultra HD"
+    },
+    "popupDownloaderTabThumbnailsLabel": {
+        "message": "รูปขนาดย่อ"
+    },
+    "popupDownloaderTabSubtitlesLabel": {
+        "message": "คำบรรยาย"
+    },
+    "videoInfoGenericError": {
+        "message": "เกิดข้อผิดพลาดขึ้น โปรดลองใหม่อีกครั้ง"
+    },
+    "genericDownloadError": {
+        "message": "เกิดข้อผิดพลาดขึ้น โปรดลองใหม่อีกครั้ง"
+    },
+    "downloadsQrCodeButtonTooltip": {
+        "message": "สร้าง QR code"
+    },
+    "downloadsCopyToClipboardButtonTooltip": {
+        "message": "คัดลอก URL ไปยังคลิปบอร์ด"
+    },
+    "downloadsVideoOnlyTooltip": {
+        "message": "ไฟล์นี้ไม่มีเสียง"
+    },
+    "downloadsAudioOnlyTooltip": {
+        "message": "ไฟล์ที่มีเสียงเท่านั้น"
+    },
+    "flixmateNotConnectedTitle": {
+        "message": "ยังไม่ได้เชื่อมต่อกับ Flixmate"
+    },
+    "flixmateNotConnectedText": {
+        "message": "การดาวน์โหลดแบบ Ultra HD ไม่พร้อมใช้งาน"
+    },
+    "flixmateNotConnectedMp3Text": {
+        "message": "ความยาวในการดาวน์โหลด MP3 จะถูกจำกัด"
+    },
+    "flixmateNotConnectedLinkText": {
+        "message": "เรียนรู้เพิ่มเติม"
+    },
+    "downloadsPrimaryDownloadsHeading": {
+        "message": "ดาวน์โหลดจาก YouTube"
+    },
+    "downloadsApiDownloadsHeading": {
+        "message": "ดาวน์โหลดจากบริการภายนอก"
+    },
+    "downloadsDashFormatsShowButtonText": {
+        "message": "รูปแบบแดช"
+    },
+    "downloadsDashFormatsHideButtonText": {
+        "message": "ซ่อน"
+    },
+    "downloadsDownloadStartedText": {
+        "message": "เริ่มดาวน์โหลดแล้ว"
+    },
+    "downloadsDownloadFailedText": {
+        "message": "การดาวน์โหลดล้มเหลว"
+    },
+    "downloadsUrlCopiedToClipboard": {
+        "message": "URL สำหรับดาวน์โหลดถูกคัดลอกไปยังคลิปบอร์ดแล้ว"
+    },
+    "downloadsQrCodeNote": {
+        "message": "สแกน QR code นี้บนอุปกรณ์ของคุณเพื่อนรับ URL สำหรับดาวน์โหลด"
+    },
+    "downloadsQrCodeButtonText": {
+        "message": "ปิด"
+    },
+    "downloadsApiRequestLoadingText": {
+        "message": "กำลังส่งคำขอดาวน์โหลด อาจใช้เวลาสองสามวินาที"
+    },
+    "mp3ConverterBitrateLabel": {
+        "message": "เลือกบิทเรทของ MP3"
+    },
+    "mp3ConverterTimeLabel": {
+        "message": "เวลา"
+    },
+    "mp3ConverterTimeFromLabel": {
+        "message": "ตั้งแต่"
+    },
+    "mp3ConverterTimeToLabel": {
+        "message": "ถึง"
+    },
+    "mp3ConverterMp3DownloadButtonText": {
+        "message": "ดาวน์โหลด"
+    },
+    "mp3ConverterDownloadStartedText": {
+        "message": "เริ่มดาวน์โหลดแล้ว"
+    },
+    "mp3ConverterDownloadFailedText": {
+        "message": "การดาวน์โหลดล้มเหลว"
+    },
+    "flixmateDownloadStartedText": {
+        "message": "เพิ่มการดาวน์โหลดไปยัง Flixmate แล้ว"
+    },
+    "flixmateInstallText": {
+        "message": "ติดตั้ง"
+    },
+    "flixmateAppName": {
+        "message": "ตัวช่วยดาวน์โหลด Flixmate Media"
+    },
+    "flixmateAppTitle": {
+        "message": "ดาวน์โหลดวิดีโอ Ultra HD, 4K และ 8K"
+    },
+    "flixmateAppDescription": {
+        "message": "ดาวน์โหลดรูปแบบไฟล์ MP3 และ HD แบบไม่จำกัด ได้แก่1080p, 2k, 4K และ 8K โดยใช้ Flixmate Media Downloader"
+    },
+    "flixmateAppDownloadButtonText": {
+        "message": "ดาวน์โหลด"
+    },
+    "flixmateHowToLinkText": {
+        "message": "มันทำงานอย่างไร?"
+    },
+    "flixmateAdvancedShowButtonText": {
+        "message": "ขั้นสูง (แปลงหรือตัดแต่ง)"
+    },
+    "flixmateAdvancedHideButtonText": {
+        "message": "ซ่อน"
+    },
+    "flixmateSelectFormatLabel": {
+        "message": "เลือกรูปแบบ"
+    },
+    "flixmateSelectQualityLabel": {
+        "message": "เลือกความคมชัด"
+    },
+    "flixmateTimeLabel": {
+        "message": "เวลา"
+    },
+    "flixmateFromLabel": {
+        "message": "ตั้งแต่"
+    },
+    "flixmateToLabel": {
+        "message": "ถึง"
+    },
+    "flixmateDownloadButtonText": {
+        "message": "ดาวน์โหลด"
+    },
+    "flixmateDownloadFailedText": {
+        "message": "การดาวน์โหลดล้มเหลว"
+    },
+    "thumbnailsQualityLabel": {
+        "message": "เลือกความคมชัด"
+    },
+    "thumbnailsDownloadButtonText": {
+        "message": "ดาวน์โหลด"
+    },
+    "thumbnailsDownloadStartedText": {
+        "message": "เริ่มดาวน์โหลดแล้ว"
+    },
+    "thumbnailsDownloadFailedText": {
+        "message": "การดาวน์โหลดล้มเหลว"
+    },
+    "subtitlesLanguageLabel": {
+        "message": "เลือกภาษา"
+    },
+    "subtitlesAutoGeneratedNote": {
+        "message": "คำบรรยายที่ถูกสร้างโดยอัตโนมัติจะทำเครื่องหมายไว้ด้วยไอคอนนี้"
+    },
+    "subtitlesFormatLabel": {
+        "message": "เลือกรูปแบบไฟล์"
+    },
+    "subtitlesDownloadButtonText": {
+        "message": "ดาวน์โหลด"
+    },
+    "subtitlesNotAvailableMessage": {
+        "message": "ไม่พบคำบรรยายสำหรับวิดีโอนี้"
+    },
+    "subtitlesDownloadStartedText": {
+        "message": "เริ่มดาวน์โหลดแล้ว"
+    },
+    "subtitlesDownloadFailedText": {
+        "message": "การดาวน์โหลดล้มเหลว"
+    },
+    "handleLinksDownloadButtonText": {
+        "message": "ดาวน์โหลด"
+    },
+    "handleLinksDownloadButtonTooltip": {
+        "message": "ดาวน์โหลดโดยใช้ตัวช่วยดาวน์โหลดวิดีโอ YouTube และ MP3"
+    },
+    "downloadsAddDownloadButtonText": {
+        "message": "เพิ่มการดาวน์โหลด"
+    },
+    "downloadsClearAllButtonText": {
+        "message": "ล้างทั้งหมด"
+    },
+    "downloadsOpenFolderMenuText": {
+        "message": "เปิดโฟลเดอร์ที่ดาวน์โหลด"
+    },
+    "downloadsExtensionFolderButtonText": {
+        "message": "การดาวน์โหลดส่วนขยาย"
+    },
+    "downloadsFlixmateFolderButtonText": {
+        "message": "การดาวน์โหลด Flixmate"
+    },
+    "downloadsTabBrowserButtonText": {
+        "message": "เบราว์เซอร์"
+    },
+    "downloadsTabFlixmateButtonText": {
+        "message": "Flixmate"
+    },
+    "downloadsStateMenuAllLabel": {
+        "message": "การดาวน์โหลดทั้งหมด"
+    },
+    "downloadsStateMenuDownloadingLabel": {
+        "message": "การดาวน์โหลด"
+    },
+    "downloadsStateMenuQueuedLabel": {
+        "message": "เข้าคิวแล้ว"
+    },
+    "downloadsStateMenuPausedLabel": {
+        "message": "หยุดชั่วคราว"
+    },
+    "downloadsStateMenuProcessingLabel": {
+        "message": "กำลังดำเนินการ"
+    },
+    "downloadsStateMenuCompletedLabel": {
+        "message": "เสร็จสิ้นแล้ว"
+    },
+    "downloadsStateMenuCanceledLabel": {
+        "message": "ยกเลิกแล้ว"
+    },
+    "downloadsStateMenuErrorLabel": {
+        "message": "เกิดข้อผิดพลาด"
+    },
+    "downloadsSearchInputPlaceholder": {
+        "message": "ค้นหาในการดาวน์โหลด"
+    },
+    "downloadsSizeUnknownText": {
+        "message": "ไม่ทราบขนาด"
+    },
+    "downloadsPausedText": {
+        "message": "หยุดชั่วคราวแล้ว"
+    },
+    "downloadsPauseButtonText": {
+        "message": "หยุดชั่วคราว"
+    },
+    "downloadsResumeButtonText": {
+        "message": "ดำเนินการต่อ"
+    },
+    "downloadsCopyUrlButtonText": {
+        "message": "คัดลอก URL"
+    },
+    "downloadsCancelButtonText": {
+        "message": "ยกเลิก"
+    },
+    "downloadsPlayButtonText": {
+        "message": "เล่น"
+    },
+    "downloadsShowFolderButtonText": {
+        "message": "แสดงในโฟลเดอร์"
+    },
+    "downloadsRemoveButtonText": {
+        "message": "ลบ"
+    },
+    "downloadsDeleteStateText": {
+        "message": "ลบแล้ว"
+    },
+    "downloadsLoadMoreButtonText": {
+        "message": "โหลดเพิ่มเติม"
+    },
+    "downloadsDownloaderTitle": {
+        "message": "กรอก URL วิดีโอ YouTube"
+    },
+    "downloadsDownloaderVideoIdErrorText": {
+        "message": "ไม่สามารถแตก ID ของวิดีโอได้ โปรดตรวจสอบ URL ของคุณ"
+    },
+    "downloadsDownloaderLoadingText": {
+        "message": "กำลังโหลดรายละเอียดของวิดีโอ..."
+    },
+    "downloadsDownloaderErrorText": {
+        "message": "การโหลดรายละเอียดของวิดีโอล้มเหลว"
+    },
+    "downloadsDownloaderNotAvailableMessage": {
+        "message": "การดาวน์โหลดไม่พร้อมใช้งานสำหรับวิดีโอถ่ายทอดสดหรือวิดีโอในอนาคต"
+    },
+    "downloadsDownloaderTabSDLabel": {
+        "message": "การดาวน์โหลดแบบมาตรฐาน"
+    },
+    "downloadsDownloaderTabMP3Label": {
+        "message": "แปลงเป็น MP3"
+    },
+    "downloadsDownloaderTabUHDLabel": {
+        "message": "Ultra HD"
+    },
+    "downloadsDownloaderTabThumbnailsLabel": {
+        "message": "รูปขนาดย่อ"
+    },
+    "downloadsDownloaderTabSubtitlesLabel": {
+        "message": "คำบรรยาย"
+    },
+    "injLooperPlayedText": {
+        "message": "เล่นแล้ว"
+    },
+    "injLooperPlayedTimesText": {
+        "message": "ครั้ง"
+    },
+    "injLooperStoppedText": {
+        "message": "หยุดแล้ว"
+    },
+    "injLooperLoopForTimesText": {
+        "message": "วนซ้ำเป็นจำนวน (x ครั้ง)"
+    },
+    "injLooperLoopForPortionText": {
+        "message": "วนซ้ำบางส่วน"
+    },
+    "injLooperLoopFromLabel": {
+        "message": "ตั้งแต่"
+    },
+    "injLooperLoopToLabel": {
+        "message": "ถึง"
+    },
+    "injNotificationsBtnTooltip": {
+        "message": "การแจ้งเตือน"
+    },
+    "injSdDownloadsBtnTooltip": {
+        "message": "การดาวน์โหลดแบบมาตรฐาน"
+    },
+    "injMp3ConverterBtnTooltip": {
+        "message": "ตัวช่วยแปลง MP3"
+    },
+    "injUhdDownloadsBtnTooltip": {
+        "message": "การดาวน์โหลด Ultra HD"
+    },
+    "injThumbnailsBtnTooltip": {
+        "message": "รูปขนาดย่อ"
+    },
+    "injSubtitlesBtnTooltip": {
+        "message": "คำบรรยาย"
+    },
+    "injDownloadsManagerBtnTooltip": {
+        "message": "ตัวช่วยจัดการดาวน์โหลด"
+    },
+    "injScreenshotBtnTooltip": {
+        "message": "ถ่ายภาพหน้าจอ"
+    },
+    "injEnableEditModeText": {
+        "message": "แก้ไขไทล์"
+    },
+    "injMoreToggleButtonText": {
+        "message": "เพิ่มเติม"
+    },
+    "injCancelEditModeText": {
+        "message": "ยกเลิก"
+    },
+    "injDarkModeInactiveTooltip": {
+        "message": "เปิดใช้งานโหมดมืด"
+    },
+    "injDarkModeActiveTooltip": {
+        "message": "ปิดใช้งานโหมดมืด"
+    },
+    "injCinemaModeInactiveTooltip": {
+        "message": "เปิดใช้งานโหมดโรงภาพยนตร์"
+    },
+    "injCinemaModeActiveTooltip": {
+        "message": "ปิดใช้งานโหมดโรงภาพยนตร์"
+    },
+    "injPipInactiveTooltip": {
+        "message": "เปิดใช้งานโหมด picture-in-picture"
+    },
+    "injPipActiveTooltip": {
+        "message": "ปิดใช้งานโหมด picture-in-picture"
+    },
+    "injFloatVideoInactiveTooltip": {
+        "message": "เปิดใช้งานตัวช่วยเล่นวิดีโอแบบลอย"
+    },
+    "injFloatVideoActiveTooltip": {
+        "message": "เปิดใช้งานตัวช่วยเล่นวิดีโอแบบลอย"
+    },
+    "injLooperInactiveTooltip": {
+        "message": "แสดงตัวช่วยวนซ้ำวิดีโอขั้นสูง"
+    },
+    "injLooperActiveTooltip": {
+        "message": "ซ่อนตัวช่วยวนซ้ำวิดีโอขั้นสูง"
+    },
+    "injSmartPauseInactiveTooltip": {
+        "message": "เปิดใช้งานการหยุดวิดีโอชั่วคราวอัจฉริยะเมื่อเปลี่ยนแท็บ"
+    },
+    "injSmartPauseActiveTooltip": {
+        "message": "ปิดใช้งานการหยุดชั่วคราวอัจฉริยะ"
+    },
+    "injAutoplayInactiveTooltip": {
+        "message": "เปิดใช้งานการเล่นอัตโนมัติ"
+    },
+    "injAutoplayActiveTooltip": {
+        "message": "ปิดใช้งานการเล่นอัตโนมัติ"
+    },
+    "injAudioModeInactiveTooltip": {
+        "message": "เปิดใช้งานโหมดเฉพาะเสียง"
+    },
+    "injAudioModeActiveTooltip": {
+        "message": "ปิดใช้งานโหมดเฉพาะเสียง"
+    },
+    "injVolumeControlInactiveTooltip": {
+        "message": "เปิดใช้งานการคุมระดับเสียงโดยใช้ลูกกลิ้งบนเมาส์"
+    },
+    "injVolumeControlActiveTooltip": {
+        "message": "ปิดใช้งานการคุมระดับเสียงโดยใช้ลูกกลิ้งบนเมาส์"
+    },
+    "injVideoSearchInactiveTooltip": {
+        "message": "เปิดใช้งานการค้นวิดีโอในขณะที่ดูวิดีโอ"
+    },
+    "injVideoSearchActiveTooltip": {
+        "message": "ปิดใช้งานการค้นวิดีโอ"
+    },
+    "injHideCommentsInactiveTooltip": {
+        "message": "ซ่อนส่วนความคิดเห็น"
+    },
+    "injHideCommentsActiveTooltip": {
+        "message": "แสดงส่วนความคิดเห็น"
+    },
+    "injOptionsTooltip": {
+        "message": "เปิดการตั้งค่าส่วนขยาย"
+    },
+    "downloadsDownloadStartedSubText": {
+        "message": "คลิกที่นี่เพื่อเปิด ตัวช่วยจัดการดาวน์โหลด"
+    },
+    "downloadsFlixmateDownloadsClearedNotificationText": {
+        "message": "ล้างการดาวน์โหลด้แล้ว"
+    },
+    "downloadsStateFilterAll": {
+        "message": "การดาวน์โหลดทั้งหมด"
+    },
+    "downloadsStateDownloading": {
+        "message": "กำลังดาวน์โหลด"
+    },
+    "downloadsStateQueued": {
+        "message": "เข้าคิวแล้ว"
+    },
+    "downloadsStateError": {
+        "message": "เกิดข้อผิดพลาด"
+    },
+    "downloadsStateCanceled": {
+        "message": "ยกเลิกแล้ว"
+    },
+    "downloadsStatePaused": {
+        "message": "หยุดชั่วคราวแล้ว"
+    },
+    "downloadsStateProcessing": {
+        "message": "กำลังประมวลผล"
+    },
+    "downloadsStateCompleted": {
+        "message": "เสร็จสิ้น"
+    },
+    "downloadsUrlCopiedText": {
+        "message": "คัดลอก URL ไปยังคลิปบอร์ดแล้ว"
+    },
+    "injHelpButtonText": {
+        "message": "การช่วยเหลือและคำถามที่พบบ่อย"
+    },
+    "injGuideDescription": {
+        "message": "เรียนรู้เพิ่มเติมเกี่ยวกับคุณสมบัติของตัวช่วยดาวน์โหลดวิดีโอ YouTube และวิธีใช้งาน"
+    },
+    "injGuideSdDownloadsButtonTooltip": {
+        "message": "การดาวน์โหลดแบบมาตรฐาน"
+    },
+    "injGuideMp3ConverterButtonTooltip": {
+        "message": "ตัวช่วยแปลง MP3"
+    },
+    "injGuideUhdDownloadsButtonTooltip": {
+        "message": "การดาวน์โหลด Ultra HD"
+    },
+    "injGuideThumbnailsButtonTooltip": {
+        "message": "รูปขนาดย่อ"
+    },
+    "injGuideSubtitlesButtonTooltip": {
+        "message": "คำบรรยาย"
+    },
+    "injGuideScreenshotButtonTooltip": {
+        "message": "ภาพถ่ายหน้าจอ"
+    },
+    "injGuideDownloadsManagerButtonTooltip": {
+        "message": "ตัวช่วยจัดการการดาวน์โหลด"
+    },
+    "injGuideDarkModeButtonTooltip": {
+        "message": "ธีมมืด"
+    },
+    "injGuideCinemaModeButtonTooltip": {
+        "message": "โหมดโรงภาพยนตร์"
+    },
+    "injGuidePipButtonTooltip": {
+        "message": "ตัวช่วยเล่นวิดีโอแบบลอย"
+    },
+    "injGuideFeatLooperHeading": {
+        "message": "ตัวช่วยวนซ้ำ"
+    },
+    "injGuideLooperButtonTooltip": {
+        "message": "ตัวช่วยวนซ้ำ"
+    },
+    "injGuideSmartPauseButtonTooltip": {
+        "message": "การหยุดชั่วคราวอัจฉริยะ"
+    },
+    "injGuideAutoplayButtonTooltip": {
+        "message": "การเล่นอัตโนมัติ"
+    },
+    "injGuideFeatAutoPlayHeading": {
+        "message": "การเล่นอัตโนมัติ"
+    },
+    "injGuideAudioModeButtonTooltip": {
+        "message": "โหมดเสียง"
+    },
+    "injGuideVolumeControlButtonTooltip": {
+        "message": "การควบคุมเสียงโดยใช้ลูกกลิ้งเมาส์"
+    },
+    "injGuideVideoSearchButtonTooltip": {
+        "message": "การค้นหาวิดีโอ"
+    },
+    "injGuideHideCommentsButtonTooltip": {
+        "message": "ซ่อนความคิดเห็น"
+    },
+    "injGuideNoteText": {
+        "message": "คลิกที่ไอคอนสำหรับรายละเอียดเพิ่มเติม หรือค้นหาคำตอบของคุณในคำถามที่พบบ่อย"
+    },
+    "injGuideFaqHeading": {
+        "message": "คำถามที่พบบ่อย"
+    },
+    "injGuideFaqSD": {
+        "message": "จะดาวน์โหลดวิดีโอจาก YouTube ได้อย่างไร?"
+    },
+    "injGuideFaqMP3": {
+        "message": "จะแปลงวิดีโอ YouTube เป็น MP3 ได้อย่างไร?"
+    },
+    "injGuideFaqDownloads": {
+        "message": "วิดีโอที่ฉันดาวน์โหลดจะถูกจัดเก็บอยู่ที่ไหน?"
+    },
+    "injGuideFaqSubtitles": {
+        "message": "ฉันสามารถดาวน์โหลดวิดีโอ YouTube พร้อมคำบรรยายได้หรือไม่?"
+    },
+    "injGuideContactUsNote": {
+        "message": "ยังคงมีปัญหาอยู่เหรอ?"
+    },
+    "injGuideContactUsButtonText": {
+        "message": "ติดต่อเรา"
+    },
+    "injGuideBackButtonText": {
+        "message": "ย้อนกลับ"
+    },
+    "injGuideFeatSdHeading": {
+        "message": "การดาวน์โหลดมาตรฐาน"
+    },
+    "injGuideFeatSdSec1Title": {
+        "message": "จะดาวน์โหลดวิดีโอได้อย่างไร?"
+    },
+    "injGuideFeatSdSec1Step1P1": {
+        "message": "คลิก"
+    },
+    "injGuideFeatSdSec1Step1P2": {
+        "message": "ไอคอนในแถบเครื่องมือ"
+    },
+    "injGuideFeatSdSec1Step2": {
+        "message": "รอให้รายละเอียดของวิดีโอโหลด"
+    },
+    "injGuideFeatSdSec1Step3": {
+        "message": "คลิกเลือกคุณภาพวิดีโอที่ต้องการจากรายการ"
+    },
+    "injGuideFeatSdSec1Step4": {
+        "message": "ไฟล์ของคุณจะเริ่มดาวน์โหลด"
+    },
+    "injGuideFeatSdNote1P1": {
+        "message": "คุณสามารถ"
+    },
+    "injGuideFeatSdNote1P2": {
+        "message": "สร้าง QR code"
+    },
+    "injGuideFeatSdNote1P3": {
+        "message": "แล้วสแกนเพื่อดาวน์โหลดวิดีโอได้จากมือถือของคุณ"
+    },
+    "injGuideFeatSdNote2": {
+        "message": "YouTube อาจไม่อนุญาตให้ดาวน์โหลดแบบ HD ในบางวิดีโอ เราจึงใช้บริการดาวน์โหลดจากภายนอกสำหรับวิดีโอเหล่านั้น"
+    },
+    "injGuideFeatSdNote3": {
+        "message": "วิดีโอรูปแบบ Dash จะไม่มีเสียง"
+    },
+    "injGuideFeatMp3Heading": {
+        "message": "ตัวช่วยแปลง MP3"
+    },
+    "optMp3BitrateLabel": {
+        "message": "บิตเรทเริ่มต้นของตัวช่วยแปลง MP3"
+    },
+    "optDashFormatsRadioAudio": {
+        "message": "เสียงเท่านั้น"
+    },
+    "optDashFormatsRadioVideo": {
+        "message": "วิดีโอเท่านั้น"
+    },
+    "optDashFormatsRadioBoth": {
+        "message": "เสียงและวิดีโอ"
+    },
+    "optDashFormatsRadioNone": {
+        "message": "ไม่มี"
+    },
+    "optDownloadSettingsHeading": {
+        "message": "การตั้งค่าตัวช่วยดาวน์โหลด"
+    },
+    "optDashFormatsLabel": {
+        "message": "รูปแบบ Dash จะแสดงในเมนูดาวน์โหลด"
+    },
+    "optFormatsLabel": {
+        "message": "รูปแบบวิดีโอจะแสดงในเมนูดาวน์โหลด"
+    },
+    "optVideoQualityDisabledOptionLabel": {
+        "message": "ปิดใช้งานแล้ว"
+    },
+    "injGuideFeatMp3Sec1Title": {
+        "message": "จะแปลงวิดีโอเป็น MP3 ได้อย่างไร?"
+    },
+    "injGuideFeatMp3Sec1Step1P1": {
+        "message": "คลิก"
+    },
+    "injGuideFeatMp3Sec1Step1P2": {
+        "message": "ไอคอนในแถบเครื่องมือ"
+    },
+    "injGuideFeatMp3Sec1Step2": {
+        "message": "รอให้รายละเอียดของวิดีโอโหลด"
+    },
+    "injGuideFeatUhdSec1Step3": {
+        "message": "รอให้รายละเอียดของวิดีโอโหลด"
+    },
+    "injGuideFeatUhdSec2Step3": {
+        "message": "รอให้รายละเอียดของวิดีโอโหลด"
+    },
+    "injGuideFeatThumbnailsSec1Step2": {
+        "message": "รอให้รายละเอียดของวิดีโอโหลด"
+    },
+    "injGuideFeatSubtitlesSec1Step2": {
+        "message": "รอให้รายละเอียดของวิดีโอโหลด"
+    },
+    "injGuideFeatMp3Sec1Step3": {
+        "message": "เลือกบิตเรท MP3 และปรับความยาววิดีโอหากคุณต้องการตัดแต่งวิดีโอ"
+    },
+    "injGuideFeatMp3Sec1Step4": {
+        "message": "คลิกที่ปุ่ม ดาวน์โหลด แล้วรอให้คำขอเสร็จสิ้น"
+    },
+    "injGuideFeatMp3Sec1Step5": {
+        "message": "ไฟล์ของคุณจะเริ่มดาวน์โหลด"
+    },
+    "injGuideFeatThumbnailsSec1Step4": {
+        "message": "ไฟล์ของคุณจะเริ่มดาวน์โหลด"
+    },
+    "injGuideFeatSubtitlesSec1Step4": {
+        "message": "ไฟล์ของคุณจะเริ่มดาวน์โหลด"
+    },
+    "injGuideFeatMp3Note1": {
+        "message": "คุณสามารถปรับความยาววิดีโอได้โดยใช้แถบเลื่อนบนช่องอินพุตเพื่อตัดแต่ง"
+    },
+    "injGuideFeatMp3Note2": {
+        "message": "YouTube อาจไม่อนุญาตให้ดาวน์โหลดแบบ MP3 เราจึงใช้บริการดาวน์โหลดจากภายนอกสำหรับการแปลง MP3"
+    },
+    "injGuideFeatMp3Note3": {
+        "message": "หากคุณติดตั้งและเปิดใช้งาน flixmate อยู่แล้ว การดาวน์โหลดจะถูกเพิ่มไปยัง Flixmate"
+    },
+    "injGuideFeatUhdHeading": {
+        "message": "การดาวน์โหลด Ultra HD"
+    },
+    "injGuideFeatUhdDescriptionP1": {
+        "message": "Flixmate"
+    },
+    "injGuideFeatUhdDescriptionP2": {
+        "message": "จำเป็นสำหรับการดาวน์โหลดวิดีโอคุณภาพสูง ได้แก่ 1080p, 2k, 4k และ 8k นี่เป็นบริการบนเดสก์ท็อปที่สามารถนำ เสียง/วิดีโอ มารวมกันแล้วแปลงเป็นรูปแบบอื่น ๆ ได้"
+    },
+    "injGuideFeatUhdSec1Title": {
+        "message": "จะดาวน์โหลดวิดีโอระดับ Ultra HD (1080p, 4k, 8k) ได้อย่างไร?"
+    },
+    "injGuideFeatUhdSec1Step1": {
+        "message": "ติดตั้ง Flixmate ในเครื่อง PC ของคุณ"
+    },
+    "injGuideFeatUhdSec1Step2P1": {
+        "message": "คลิก"
+    },
+    "injGuideFeatUhdSec1Step2P2": {
+        "message": "ไอคอนในแถบเครื่องมือ"
+    },
+    "injGuideFeatUhdSec1Step4": {
+        "message": "คลิกเลือกคุณภาพวิดีโอที่ต้องการจากรายการ"
+    },
+    "injGuideFeatUhdSec1Step5": {
+        "message": "การดาวน์โหลดของคุณจะถูกเพิ่มไปยัง Flixmate"
+    },
+    "injGuideFeatUhdSec2Step6": {
+        "message": "การดาวน์โหลดของคุณจะถูกเพิ่มไปยัง Flixmate"
+    },
+    "injGuideFeatUhdSec2Title": {
+        "message": "จะตัดแต่งหรือแปลงวิดีโอเป็นรูปแบบอื่น ๆ (mkv,avi) ได้อย่างไร?"
+    },
+    "injGuideFeatUhdSec2Step1": {
+        "message": "ติดตั้ง Flixmate ในเครื่อง PC ของคุณ"
+    },
+    "injGuideFeatUhdSec2Step2P1": {
+        "message": "คลิก"
+    },
+    "injGuideFeatUhdSec2Step2P2": {
+        "message": "ไอคอนในแถบเครื่องมือ"
+    },
+    "injGuideFeatUhdSec2Step4": {
+        "message": "คลิกที่ปุ่ม \"ขั้นสูง\""
+    },
+    "injGuideFeatUhdSec2Step5": {
+        "message": "เลือกคุณภาพวิดีโอและรูปแบบที่ต้องการ จากนั้นปรับแต่งความยาวของวิดีโอหากคุณต้องการตัดแต่ง"
+    },
+    "injGuideFeatUhdNote1": {
+        "message": "Mac OS หรือ Linux ไม่รองรับ Flixmate"
+    },
+    "injGuideFeatThumbnailsHeading": {
+        "message": "รูปขนาดย่อ"
+    },
+    "injGuideFeatThumbnailsSec1Step1P1": {
+        "message": "คลิก"
+    },
+    "injGuideFeatThumbnailsSec1Step1P2": {
+        "message": "ไอคอนในแถบเครื่องมือ"
+    },
+    "injGuideFeatThumbnailsSec1Title": {
+        "message": "จะดาวน์โหลดรูปขนาดย่อวิดีโอได้อย่างไร?"
+    },
+    "injGuideFeatThumbnailsSec1Step3": {
+        "message": "เลือกคุณภาพของภาพขนาดย่อจากรายการดรอปดาวน์ แล้วคลิกที่ปุ่ม ดาวน์โหลด"
+    },
+    "injGuideFeatSubtitlesHeading": {
+        "message": "คำบรรยาย"
+    },
+    "injGuideFeatSubtitlesSec1Title": {
+        "message": "จะดาวน์โหลดคำบรรยายได้อย่างไร?"
+    },
+    "injGuideFeatSubtitlesSec1Step1P1": {
+        "message": "คลิก"
+    },
+    "injGuideFeatSubtitlesSec1Step1P2": {
+        "message": "ไอคอนในแถบเครื่องมือ"
+    },
+    "injGuideFeatSubtitlesSec1Step3": {
+        "message": "เลือกภาษาและรูปแบบจากดรอปดาวน์ จากนั้นคลิกที่ปุ่ม ดาวน์โหลด"
+    },
+    "injGuideFeatSubtitlesSec2Title": {
+        "message": "ฉันสามารถดาวน์โหลดวิดีโอพร้อมกับคำบรรยายได้หรือไม่?"
+    },
+    "injGuideFeatSubtitlesSec2Text": {
+        "message": "คุณไม่สามารถดาวน์โหลดวิดีโอ YouTube พร้อมกับคำบรรยายแบบฝังได้ คุณสามารถดาวน์โหลดไฟล์คำบรรยายแยกแล้วนำมาเล่นในตัวช่วยเล่นวิดีโอที่รองรับ อย่างเช่น VLC"
+    },
+    "injGuideFeatSubtitlesNote1": {
+        "message": "บางวิดีโออาจไม่มีคำบรรยาย"
+    },
+    "injGuideFeatSubtitlesNote2P1": {
+        "message": "คำบรรยายที่สร้างขึ้นโดยอัตโนมัติจะถูกทำเครื่องหมายด้วย"
+    },
+    "injGuideFeatSubtitlesNote2P2": {
+        "message": "ไอคอน"
+    },
+    "injGuideFeatSubtitlesNote3": {
+        "message": "YouTube ให้บริการไฟล์รูปแบบ WebVTT, TTML และ SRV3 ซึ่งรองรับในตัวช่วยเล่นวิดีโอส่วนใหญ่"
+    },
+    "injGuideFeatScreenshotHeading": {
+        "message": "ถ่ายภาพหน้าจอ"
+    },
+    "injGuideFeatScreenshotDescriptionP1": {
+        "message": "คุณสามารถถ่ายภาพหน้าจอได้โดยคลิกที่"
+    },
+    "injGuideFeatScreenshotDescriptionP2": {
+        "message": "ไอคอนในแถบเครื่องมือ คุณภาพของภาพหน้าจอจะขึ้นอยู่กับคุณภาพของการเล่นวิดีโอ"
+    },
+    "injGuideFeatDownloadsHeading": {
+        "message": "ตัวช่วยดาวน์โหลดวิดีโอ"
+    },
+    "injGuideFeatDownloadsDescriptionP1": {
+        "message": "คุณสามารถใช้ตัวช่วยจัดการการดาวน์โหลดเพื่อดู/ยกเลิก/หยุดชั่วคราว/เล่นรายการที่คุณดาวน์โหลดได้ คลิกที่"
+    },
+    "injGuideFeatDownloadsDescriptionP2": {
+        "message": "ไอคอนในแถบเครื่องมือเพื่อเปิดตัวช่วยจัดการการดาวน์โหลด"
+    },
+    "injGuideFeatDownloadsSec1Title": {
+        "message": "ไฟล์ที่ดาวน์โหลดจะถูกเก็บไว้ที่ไหน หรือจะเปิดโฟลเดอร์ดาวน์โหลดได้อย่างไร?"
+    },
+    "injGuideFeatDownloadsSec1Step1P1": {
+        "message": "คลิก"
+    },
+    "injGuideFeatDownloadsSec1Step1P2": {
+        "message": "ไอคอนในแถบเครื่องมือเพื่อเปิดตัวช่วยจัดการการดาวน์โหลด"
+    },
+    "injGuideFeatDownloadsSec1Step2": {
+        "message": "ในหน้าตัวช่วยจัดการการดาวน์โหลด คลิกที่เมนูดรอปดาวน์ \"เปิดโฟลเดอร์ดาวน์โหลด\" ที่มุมขวาบน"
+    },
+    "injGuideFeatDownloadsSec1Step3": {
+        "message": "คลิกที่ การดาวน์โหลดส่วนขยาย/การดาวน์โหลด Flixmate เพื่อเปิดโฟลเดอร์ดาวน์โหลด"
+    },
+    "injGuideFeatDownloadsNote1": {
+        "message": "Flixmate ไม่สามารถเข้าถึงไดเรกทอรี่ของผู้ใช้งานได้ ดังนั้นไฟล์จึงถูกจัดเก็บไว้ในไดเรกทอรี่สาธารณะ"
+    },
+    "injGuideFeatDarkModeHeading": {
+        "message": "โหมดมืด"
+    },
+    "injGuideFeatDarkModeDescription": {
+        "message": "นี่คือปุ่มสลับโหมดมืดของ YouTube ได้อย่างรวดเร็ว"
+    },
+    "injGuideFeatCinemaModeHeading": {
+        "message": "โหมดโรงภาพยนตร์"
+    },
+    "injGuideFeatCinemaModeDescriptionP1": {
+        "message": "โหมดโรงภาพยนตร์จะทำให้ประสบการณ์การรับชมของคุณดีขึ้น โดยการเปิดโหมดมืดและซ่อนสิ่งกวนใจเอาไว้"
+    },
+    "injGuideFeatCinemaModeDescriptionP2": {
+        "message": "คุณสามารถสลับโหมดโรงภาพยนตร์ได้โดยใช้"
+    },
+    "injGuideFeatCinemaModeDescriptionP3": {
+        "message": "ปุ่ม"
+    },
+    "injGuideFeatPipHeading": {
+        "message": "โหมด Picture-in-picture"
+    },
+    "injGuideFeatPipDescriptionP1": {
+        "message": "Picture-in-picture จะทำให้คุณได้ดูวิดีโอในหน้าต่างแบบลอย (อยู่ทับหน้าต่างอื่น ๆ เสมอ) เพื่อให้คุณสามารถดูไปได้พร้อม ๆ กับใช้งานเว็บไซต์หรือแอปพลิเคชันอื่น ๆ"
+    },
+    "injGuideFeatPipDescriptionP2": {
+        "message": "คุณสามารถสลับ PIP ได้โดยใช้"
+    },
+    "injGuideFeatPipDescriptionP3": {
+        "message": "ปุ่ม"
+    },
+    "injGuideFeatFloatViewHeading": {
+        "message": "ตัวช่วยเล่นวิดีโอแบบลอย"
+    },
+    "injGuideFeatFloatViewDescriptionP1": {
+        "message": "เมื่อเปิดใช้งานมุมมองแบบลอย คุณจะสามารถดูวิดีโอ YouTube ได้ไปพร้อมกับการเลื่อนอ่านความคิดเห็น คลิกที่"
+    },
+    "injGuideFeatFloatViewDescriptionP2": {
+        "message": "ปุ่มเพื่อสลับตัวช่วยเล่นวิดีโอแบบลอย"
+    },
+    "injGuideFeatLooperDescriptionP1": {
+        "message": "YouTube ไม่มีคุณสมบัติวนซ้ำวิดีโอให้ เราจึงเพิ่มฟังก์ชั่นนี้เข้ามาเพื่อให้ผู้ใช้สะดวกสบาย"
+    },
+    "injGuideFeatLooperDescriptionP2": {
+        "message": "คลิกที่"
+    },
+    "injGuideFeatLooperDescriptionP3": {
+        "message": "ไอคอนเพื่อวนซ้ำวิดีโอ การคลิกที่ไอคอนจะเผยให้ได้เห็นตัวช่วยวนซ้ำขั้นสูง ที่สามารถใช้เพื่อวนซ้ำวิดีโอตามจำนวนครั้งที่กำหนด หรือวนซ้ำแค่บางส่วนของวิดีโอ"
+    },
+    "injGuideFeatSmartPauseHeading": {
+        "message": "การหยุดชั่วคราวอัจฉริยะ"
+    },
+    "injGuideFeatSmartPauseDescription": {
+        "message": "การหยุดชั่วคราวอัจฉริยะจะจดจำว่าคุณรับชมวิดีโอ YouTube ปัจจุบันไปถึงไหนแล้วโดยอัตโนมัติ ทำให้คุณสามารถรับชมต่อได้อย่างง่ายดาย เมื่อใดก็ตามที่คุณเปลี่ยนแท็บ เปิดแท็บใหม่ หรือดึงหน้าต่างใหม่ขึ้นมา การหยุดชั่วคราวอัจฉริยะจะรอให้คุณกลับมาที่หน้าวิดีโออีกครั้ง จากนั้นค่อยเล่นต่อ"
+    },
+    "injGuideFeatAutoPlayDescription": {
+        "message": "นี่คือปุ่มสลับคุณสมบัติการเล่นอัตโนมัติของ YouTube อย่างรวดเร็ว"
+    },
+    "injGuideFeatAudioModeHeading": {
+        "message": "โหมดเสียง"
+    },
+    "injGuideFeatAudioModeDescriptionP1": {
+        "message": "คุณอาจจะอยากฟังเพลงหรือฟังแค่เสียงจากวิดีโอ YouTube คุณสามารถทำเช่นนั้นได้โดยการสลับมาใช้ตัวเลือกนี้โดยใช้"
+    },
+    "injGuideFeatAudioModeDescriptionP2": {
+        "message": "เพื่อเล่นเฉพาะเสียงเท่านั้น เป็นการประหยัดแบนด์วิธไปพร้อม ๆ กับทำให้โหลดได้ไวขึ้น นั่นเป็นเพราะโหมดเสียงจะโหลดมาเฉพาะรูปแบบของเสียงเท่านั้น คุณสมบัตินี้เหมาะสำหรับการใช้เปิดเพลงพื้นหลัง ฟังบทเรียน และอื่น ๆ"
+    },
+    "injGuideFeatAudioModeNote1": {
+        "message": "เมื่อคุณสลับมาใช้คุณสมบัตินี้ หน้านี้จะถูกรีโหลดเพื่อให้การเปลี่ยนแปลงมีผล"
+    },
+    "injGuideFeatVolumeControlHeading": {
+        "message": "การควบคุมเสียงโดยใช้ลูกกลิ้งเมาส์"
+    },
+    "injGuideFeatVolumeControlDescriptionP1": {
+        "message": "เปิดใช้งานฟีเจอร์นี้โดยคลิกที่"
+    },
+    "injGuideFeatVolumeControlDescriptionP2": {
+        "message": "ปุ่ม แล้วคุณจะสามารถควบคุมระดับเสียงของวิดีโอ YouTube ได้โดยการใช้ลูกกลิ้งเมาส์"
+    },
+    "injGuideFeatVideoSearchHeading": {
+        "message": "การค้นหาวิดีโอ"
+    },
+    "injGuideFeatHideCommentsHeading": {
+        "message": "ซ่อนความคิดเห็น"
+    },
+    "injGuideFeatHideCommentsDescriptionP1": {
+        "message": "คลิก"
+    },
+    "injGuideFeatVideoSearchDescriptionP1": {
+        "message": "เมื่อใช้คุณสมบัตินี้ คุณจะสามารถใช้การค้นหาบน YouTube ระหว่างที่รับชมวิดีโอได้ เมื่อคลิกที่"
+    },
+    "injGuideFeatVideoSearchDescriptionP2": {
+        "message": "ปุ่มจะเพิ่มแถบค้นหาที่ด้านขวาของหน้า คุณสามารถค้นต่อไปโดยใช้แถบค้นหาเพื่อหาวิดีโอใหม่ ๆ โดยที่ไม่รบกวนหรือออกจากวิดีโอปัจจุบัน"
+    },
+    "injGuideFeatHideCommentsDescriptionP2": {
+        "message": "ปุ่มเพื่อซ่อนความคิดเห็นบนวิดีโอ YouTube เพื่อหลีกเลี่ยงสิ่งกวนใจ"
+    },
+    "optHeading": {
+        "message": "การตั้งค่า"
+    },
+    "optRestoreButtonText": {
+        "message": "เรียกคืนการตั้งค่าเริ่มต้น"
+    },
+    "optRestoreConfirmTitle": {
+        "message": "คุณแน่ใจหรือไม่?"
+    },
+    "optRestoreConfirmMessage": {
+        "message": "การทำเช่นนี้จะเป็นการรีเซ็ตการตั้งค่าของคุณเป็นค่าเริ่มต้น"
+    },
+    "optRestoreSuccessMessage": {
+        "message": "เรียกคืนการตั้งค่าสำเร็จแล้ว"
+    },
+    "optConfirmButtonText": {
+        "message": "ยืนยัน"
+    },
+    "optCancelButtonText": {
+        "message": "ยกเลิก"
+    },
+    "optThemeSelectLabel": {
+        "message": "เลือกธีมส่วนขยาย"
+    },
+    "optThemeOptionSystemLabel": {
+        "message": "ค่าเริ่มต้นของระบบ"
+    },
+    "optThemeOptionLightLabel": {
+        "message": "ธีมสว่าง"
+    },
+    "optThemeOptionDarkLabel": {
+        "message": "ธีมมืด"
+    },
+    "optDownloadNotificationsSwitchLabel": {
+        "message": "แสดงแจ้งเตือนการดาวน์โหลด"
+    },
+    "optEmbeddedDownloadsSwitchLabel": {
+        "message": "แสดงปุ่มดาวน์โหลดในวิดีโอแบบฝัง"
+    },
+    "optDownloadButtonOnUrlsSwitchLabel": {
+        "message": "เพิ่มปุ่มดาวน์โหลดบนลิงก์ YouTube"
+    },
+    "optCopyButtonSwitchLabel": {
+        "message": "เปิดใช้งานปุ่ม คัดลอกไปยังคลิปบอร์ด"
+    },
+    "optQrButtonSwitchLabel": {
+        "message": "เปิดใช้งานปุ่ม ตัวช่วยสร้าง QR code"
+    },
+    "optSaveAsSwitchLabel": {
+        "message": "แสดงกล่องข้อความ บันทึกเป็น เมื่อฉันเลือกที่จะดาวน์โหลดวิดีโอ"
+    },
+    "optFlixmateSettingsHeading": {
+        "message": "ตัวช่วยดาวน์โหลดสื่อ Flixmate"
+    },
+    "optFlixmateUnsupportedText": {
+        "message": "Flixmate ไม่รองรับกับระบบของคุณ"
+    },
+    "optFlixmateUnsupportedLinkText": {
+        "message": "เรียนรู้เพิ่มเติม"
+    },
+    "optFlixmateDisconnectedText": {
+        "message": "ยังไม่ได้เชื่อมต่อ Flixmate"
+    },
+    "optDisconnectedLinkText": {
+        "message": "ดาวน์โหลด"
+    },
+    "optFlixmateConnectedText": {
+        "message": "เชื่อมต่อแล้ว"
+    },
+    "optFlixmateUpdateAvailableText": {
+        "message": "มีการอัปเดตพร้อมสำหรับ"
+    },
+    "optFlixmateInstallUpdateText": {
+        "message": "เพื่อติดตั้ง"
+    },
+    "optFlixmateEnabledSwitchLabel": {
+        "message": "เปิดใช้งานตัวช่วยดาวน์โหลดสื่อ Flixmate"
+    },
+    "optFlixmateEnabledSwitchHelpText": {
+        "message": "ดาวน์โหลดรูปแบบ MP3 และ Ultra HD แบบไม่จำกัด"
+    },
+    "optFlixmateFormatsLabel": {
+        "message": "รูปแบบการแปลงเพื่อแสดงในเมนูการดาวน์โหลด"
+    },
+    "optVideoQualityMenuLabel": {
+        "message": "ตั้งระดับคุณภาพการเล่นวิดีโอที่ต้องการ"
+    },
+    "optFloatVideoSwitchLabel": {
+        "message": "เปิดใช้งานวิดีโอแบบลอย"
+    },
+    "optFloatVideoSwitchHelpText": {
+        "message": "(การดูอัจฉริยะเพื่อดูวิธีโอในระหว่างที่เลื่อนลง วิดีโอจะแสดงอยู่ที่มุมขวาล่าง)"
+    },
+    "optSmartPauseSwitchLabel": {
+        "message": "เปิดใช้งานการหยุดชั่วคราวอัจฉริยะ"
+    },
+    "optSmartPauseSwitchHelpText": {
+        "message": "(การหยุดชั่วคราวอัตโนมัติจะเล่นวิดีโอปัจจุบันบน YouTube เมื่อคุณออกจากหน้าเพจ และเล่นต่อเมื่อคุณกลับมา)"
+    },
+    "optAudioModeSwitchLabel": {
+        "message": "เปิดใช้งานโหมดเสียง"
+    },
+    "optAudioModeSwitchHelpText": {
+        "message": "(ฟังเฉพาะเสียงเท่านั้นโดยที่ไม่ต้องโหลดวิดีโอ)"
+    },
+    "optAudioModeChangeAlert": {
+        "message": "รีเฟรชแท็บ YouTube เพื่อให้การเปลี่ยนแปลงมีผล"
+    },
+    "optMousewheelVolumeControlSwitchLabel": {
+        "message": "ควบคุมระดับเสียงด้วยลูกกลิ้งเมาส์"
+    },
+    "optMousewheelVolumeControlSwitchHelpText": {
+        "message": "(ใช้ลูกกลิ้งเมาส์ภายในวิดีโอเพื่อควบคุมระดับเสียง)"
+    },
+    "optVideoSearchSwitchLabel": {
+        "message": "ค้นหาระหว่างรับชมวิดีโอ"
+    },
+    "optVideoSearchSwitchHelpText": {
+        "message": "(ค้น YouTube แบบไม่รบกวนวิดีโอโดยโหลดผลการค้นหาในส่วนของวิดีโอที่เกี่ยวข้อง)"
+    },
+    "optHideCommentsSwitchLabel": {
+        "message": "ซ่อนความคิดเห็น YouTube"
+    },
+    "optHideCommentsSwitchHelpText": {
+        "message": "(ซ่อนความคิดเห็นของผู้ใช้งานทั้งหมดบนวิดีโอ YouTube)"
+    },
+    "injDownloaderLoadingText": {
+        "message": "กำลังโหลดรายละเอียดของวิดีโอ..."
+    },
+    "injDownloaderErrorText": {
+        "message": "ไม่สามารถโหลดรายละเอียดของวิดีโอได้"
+    },
+    "injNotAvailableMessage": {
+        "message": "การดาวน์โหลดไม่พร้อมใช้งานสำหรับวิดีโอแบบสดหรือวิดีโอในอนาคต"
+    },
+    "optMultithreadingSwitchHelpText": {
+        "message": "ดาวน์โหลดไฟล์ที่มีหลายการเชื่อมต่อไปยังเซิร์ฟเวอร์เพื่อเพิ่มความเร็วในการดาวน์โหลด"
+    },
+    "optMultithreadingSwitchLabel": {
+        "message": "ใช้ Multi Threading สำหรับดาวน์โหลด"
+    },
+    "optCompactDisplayModeButtonText": {
+        "message": "สวิตช์"
+    },
+    "optCompactDisplayModeSubheading": {
+        "message": "ส่วนขยายจะแสดงเป็นปุ่มขนาดเล็กบน YouTube ให้คลิกปุ่มนี้เพื่อเปลี่ยนเป็นโหมดเต็ม"
+    },
+    "optCompactDisplayModeHeading": {
+        "message": "ส่วนขยายจะแสดงในโหมดกะทัดรัด"
+    },
+    "optChangeLanguageText": {
+        "message": "เปลี่ยนภาษา"
+    },
+    "injCompactButtonTooltip": {
+        "message": "ใช้ Addoncrop YouTube Downloader ในโหมดกะทัดรัดโดยใช้ปุ่มนี้"
+    },
+    "injExpandBtnTooltip": {
+        "message": "เปลี่ยนเป็นแถบส่วนขยายแบบเต็ม"
+    },
+    "injSwitchDisplayButtonTooltip": {
+        "message": "เปลี่ยนเป็นโหมดกะทัดรัด"
+    },
+    "injSwitchDisplayButtonText": {
+        "message": "คลิกปุ่มนี้เพื่อเปลี่ยนเป็นโหมดกะทัดรัด"
+    },
+    "injWelcomeMessageTooltip": {
+        "message": "คลิกปุ่มนี้เพื่อดาวน์โหลดวิดีโอ"
+    },
+    "downloadsOpenVideoPageButtonTooltip": {
+        "message": "เปิดวิดีโอบน YouTube"
+    },
+    "downloadsFlixmateDownloadsHeading": {
+        "message": "ดาวน์โหลด Ultra HD ด้วย Flixmate"
+    }
+}

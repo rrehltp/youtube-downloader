@@ -1,0 +1,1193 @@
+{
+    "extName": {
+        "message": "YouTube视频和MP3下载器"
+    },
+    "extDescription": {
+        "message": "下载不同视频质量的YouTube视频：1080P、720P、480P、360P等。支持所有格式 Mp3、MP4、FLV、WebM、3GP"
+    },
+    "downloadsHeading": {
+        "message": "下载"
+    },
+    "downloadsError_FILE_FAILED": {
+        "message": "失败"
+    },
+    "downloadsError_FILE_ACCESS_DENIED": {
+        "message": "拒绝访问"
+    },
+    "downloadsError_FILE_NO_SPACE": {
+        "message": "存储空间不足"
+    },
+    "downloadsError_FILE_NAME_TOO_LONG": {
+        "message": "文件名太长"
+    },
+    "downloadsError_FILE_TOO_LARGE": {
+        "message": "文件过大"
+    },
+    "downloadsError_FILE_VIRUS_INFECTED": {
+        "message": "文件可能被感染"
+    },
+    "downloadsError_FILE_TRANSIENT_ERROR": {
+        "message": "失败"
+    },
+    "downloadsError_FILE_BLOCKED": {
+        "message": "被封"
+    },
+    "downloadsError_FILE_TOO_SHORT": {
+        "message": "文件过小"
+    },
+    "downloadsError_FILE_SECURITY_CHECK_FAILED": {
+        "message": "安全检查失败"
+    },
+    "downloadsError_NETWORK_FAILED": {
+        "message": "网络失败"
+    },
+    "downloadsError_NETWORK_TIMEOUT": {
+        "message": "时间到"
+    },
+    "downloadsError_NETWORK_DISCONNECTED": {
+        "message": "断开连接"
+    },
+    "downloadsError_NETWORK_SERVER_DOWN": {
+        "message": "服务器宕机"
+    },
+    "downloadsError_NETWORK_INVALID_REQUEST": {
+        "message": "无效请求"
+    },
+    "downloadsError_SERVER_FAILED": {
+        "message": "服务器失败"
+    },
+    "downloadsError_SERVER_NO_RANGE": {
+        "message": "服务器范围错误"
+    },
+    "downloadsError_SERVER_BAD_CONTENT": {
+        "message": "不良内容"
+    },
+    "downloadsError_SERVER_UNAUTHORIZED": {
+        "message": "未经授权"
+    },
+    "downloadsError_SERVER_CERT_PROBLEM": {
+        "message": "证书错误"
+    },
+    "downloadsError_SERVER_FORBIDDEN": {
+        "message": "被禁止"
+    },
+    "downloadsError_USER_CANCELED": {
+        "message": "已取消"
+    },
+    "downloadsError_USER_SHUTDOWN": {
+        "message": "已关闭"
+    },
+    "downloadsError_CRASH": {
+        "message": "已崩溃"
+    },
+    "bgFlixmateNotConnectedError": {
+        "message": "Flixmate未连接。"
+    },
+    "popupHomeButtonTooltip": {
+        "message": "进入首页"
+    },
+    "popupDownloadsButtonTooltip": {
+        "message": "显示下载"
+    },
+    "popupVideoButtonTooltip": {
+        "message": "转到视频部分"
+    },
+    "popupThemeToggleButtonTooltip": {
+        "message": "切换主题"
+    },
+    "popupThemeMenuSystemLabel": {
+        "message": "系统默认"
+    },
+    "popupThemeMenuDarkLabel": {
+        "message": "深色主题"
+    },
+    "popupThemeMenuLightLabel": {
+        "message": "浅色主题"
+    },
+    "popupOptionsButtonTooltip": {
+        "message": "打开选项页面"
+    },
+    "popupHomeLinkHomePageText": {
+        "message": "主页"
+    },
+    "popupHomeLinkHowToUseText": {
+        "message": "如何使用"
+    },
+    "popupHomeLinkDownloadsText": {
+        "message": "下载"
+    },
+    "popupHomeLinkReportBugText": {
+        "message": "报告错误"
+    },
+    "popupHomeAlertsHeading": {
+        "message": "最近的警报"
+    },
+    "popupDownloaderLoadingText": {
+        "message": "正在加载视频详情..."
+    },
+    "popupDownloaderErrorText": {
+        "message": "获取视频详情失败"
+    },
+    "popupDownloaderNotAvailableMessage": {
+        "message": "无法下载直播或即将播放的视频。"
+    },
+    "popupDownloaderTabSDLabel": {
+        "message": "标准下载"
+    },
+    "popupDownloaderTabMP3Label": {
+        "message": "转换为MP3"
+    },
+    "popupDownloaderTabUHDLabel": {
+        "message": "超高清"
+    },
+    "popupDownloaderTabThumbnailsLabel": {
+        "message": "封面图"
+    },
+    "popupDownloaderTabSubtitlesLabel": {
+        "message": "字幕"
+    },
+    "videoInfoGenericError": {
+        "message": "发生错误，请重试。"
+    },
+    "genericDownloadError": {
+        "message": "发生错误，请重试。"
+    },
+    "downloadsQrCodeButtonTooltip": {
+        "message": "生成二维码"
+    },
+    "downloadsCopyToClipboardButtonTooltip": {
+        "message": "将链接复制到剪贴板"
+    },
+    "downloadsVideoOnlyTooltip": {
+        "message": "此文件不包含音频"
+    },
+    "downloadsAudioOnlyTooltip": {
+        "message": "纯音频文件"
+    },
+    "flixmateNotConnectedTitle": {
+        "message": "Flixmate未连接"
+    },
+    "flixmateNotConnectedText": {
+        "message": "超高清下载不可用。"
+    },
+    "flixmateNotConnectedMp3Text": {
+        "message": "MP3下载长度将受到限制。"
+    },
+    "flixmateNotConnectedLinkText": {
+        "message": "了解更多"
+    },
+    "downloadsPrimaryDownloadsHeading": {
+        "message": "从YouTube下载"
+    },
+    "downloadsApiDownloadsHeading": {
+        "message": "从外部服务下载"
+    },
+    "downloadsDashFormatsShowButtonText": {
+        "message": "Dash格式"
+    },
+    "downloadsDashFormatsHideButtonText": {
+        "message": "隐藏"
+    },
+    "downloadsDownloadStartedText": {
+        "message": "下载开始。"
+    },
+    "downloadsDownloadFailedText": {
+        "message": "下载失败。"
+    },
+    "downloadsUrlCopiedToClipboard": {
+        "message": "下载链接已复制到剪贴板。"
+    },
+    "downloadsQrCodeNote": {
+        "message": "在您的设备上扫描此二维码以获取下载链接。"
+    },
+    "downloadsQrCodeButtonText": {
+        "message": "关闭"
+    },
+    "downloadsApiRequestLoadingText": {
+        "message": "请求下载，这可能需要几秒钟。"
+    },
+    "mp3ConverterBitrateLabel": {
+        "message": "选择MP3比特率"
+    },
+    "mp3ConverterTimeLabel": {
+        "message": "时间"
+    },
+    "mp3ConverterTimeFromLabel": {
+        "message": "从"
+    },
+    "mp3ConverterTimeToLabel": {
+        "message": "到"
+    },
+    "mp3ConverterMp3DownloadButtonText": {
+        "message": "下载"
+    },
+    "mp3ConverterDownloadStartedText": {
+        "message": "下载开始。"
+    },
+    "mp3ConverterDownloadFailedText": {
+        "message": "下载失败。"
+    },
+    "flixmateDownloadStartedText": {
+        "message": "下载已添加到Flixmate。"
+    },
+    "flixmateInstallText": {
+        "message": "安装"
+    },
+    "flixmateAppName": {
+        "message": "Flixmate媒体下载器"
+    },
+    "flixmateAppTitle": {
+        "message": "下载超高清、4K和8K视频"
+    },
+    "flixmateAppDescription": {
+        "message": "使用媒体下载器下载无限制的MP3和包括1080P、2K、4K和8K高清格式视频"
+    },
+    "flixmateAppDownloadButtonText": {
+        "message": "下载"
+    },
+    "flixmateHowToLinkText": {
+        "message": "它是怎么运作的？"
+    },
+    "flixmateAdvancedShowButtonText": {
+        "message": "高级版（转换或修剪）"
+    },
+    "flixmateAdvancedHideButtonText": {
+        "message": "隐藏"
+    },
+    "flixmateSelectFormatLabel": {
+        "message": "选择格式"
+    },
+    "flixmateSelectQualityLabel": {
+        "message": "选择品质"
+    },
+    "flixmateTimeLabel": {
+        "message": "时间"
+    },
+    "flixmateFromLabel": {
+        "message": "从"
+    },
+    "flixmateToLabel": {
+        "message": "到"
+    },
+    "flixmateDownloadButtonText": {
+        "message": "下载"
+    },
+    "flixmateDownloadFailedText": {
+        "message": "下载失败。"
+    },
+    "thumbnailsQualityLabel": {
+        "message": "选择品质"
+    },
+    "thumbnailsDownloadButtonText": {
+        "message": "下载"
+    },
+    "thumbnailsDownloadStartedText": {
+        "message": "下载开始。"
+    },
+    "thumbnailsDownloadFailedText": {
+        "message": "下载失败。"
+    },
+    "subtitlesLanguageLabel": {
+        "message": "选择语言"
+    },
+    "subtitlesAutoGeneratedNote": {
+        "message": "自动生成的字幕标有此图标。"
+    },
+    "subtitlesFormatLabel": {
+        "message": "选择文件格式"
+    },
+    "subtitlesDownloadButtonText": {
+        "message": "下载"
+    },
+    "subtitlesNotAvailableMessage": {
+        "message": "未找到此视频的字幕。"
+    },
+    "subtitlesDownloadStartedText": {
+        "message": "下载开始。"
+    },
+    "subtitlesDownloadFailedText": {
+        "message": "下载失败。"
+    },
+    "handleLinksDownloadButtonText": {
+        "message": "下载"
+    },
+    "handleLinksDownloadButtonTooltip": {
+        "message": "使用YouTube视频和MP3下载器下载"
+    },
+    "downloadsAddDownloadButtonText": {
+        "message": "添加下载"
+    },
+    "downloadsClearAllButtonText": {
+        "message": "清除所有"
+    },
+    "downloadsOpenFolderMenuText": {
+        "message": "打开下载文件夹"
+    },
+    "downloadsExtensionFolderButtonText": {
+        "message": "扩展下载"
+    },
+    "downloadsFlixmateFolderButtonText": {
+        "message": "Flixmate下载"
+    },
+    "downloadsTabBrowserButtonText": {
+        "message": "浏览器"
+    },
+    "downloadsTabFlixmateButtonText": {
+        "message": "Flixmate"
+    },
+    "downloadsStateMenuAllLabel": {
+        "message": "所有下载"
+    },
+    "downloadsStateMenuDownloadingLabel": {
+        "message": "下载"
+    },
+    "downloadsStateMenuQueuedLabel": {
+        "message": "排队中"
+    },
+    "downloadsStateMenuPausedLabel": {
+        "message": "已暂停"
+    },
+    "downloadsStateMenuProcessingLabel": {
+        "message": "处理中"
+    },
+    "downloadsStateMenuCompletedLabel": {
+        "message": "已完成"
+    },
+    "downloadsStateMenuCanceledLabel": {
+        "message": "已取消"
+    },
+    "downloadsStateMenuErrorLabel": {
+        "message": "错误"
+    },
+    "downloadsSearchInputPlaceholder": {
+        "message": "在下载中搜索"
+    },
+    "downloadsSizeUnknownText": {
+        "message": "大小未知"
+    },
+    "downloadsPausedText": {
+        "message": "已暂停"
+    },
+    "downloadsPauseButtonText": {
+        "message": "暂停"
+    },
+    "downloadsResumeButtonText": {
+        "message": "恢复"
+    },
+    "downloadsCopyUrlButtonText": {
+        "message": "复制链接"
+    },
+    "downloadsCancelButtonText": {
+        "message": "取消"
+    },
+    "downloadsPlayButtonText": {
+        "message": "播放"
+    },
+    "downloadsShowFolderButtonText": {
+        "message": "在文件夹中显示"
+    },
+    "downloadsRemoveButtonText": {
+        "message": "移除"
+    },
+    "downloadsDeleteStateText": {
+        "message": "已删除"
+    },
+    "downloadsLoadMoreButtonText": {
+        "message": "了解更多"
+    },
+    "downloadsDownloaderTitle": {
+        "message": "输入YouTube视频链接"
+    },
+    "downloadsDownloaderVideoIdErrorText": {
+        "message": "提取视频ID失败，请检查您的链接。"
+    },
+    "downloadsDownloaderLoadingText": {
+        "message": "正在加载视频详情..."
+    },
+    "downloadsDownloaderErrorText": {
+        "message": "获取视频详情失败"
+    },
+    "downloadsDownloaderNotAvailableMessage": {
+        "message": "无法下载直播或即将播放的视频。"
+    },
+    "downloadsDownloaderTabSDLabel": {
+        "message": "标准下载"
+    },
+    "downloadsDownloaderTabMP3Label": {
+        "message": "转换为MP3"
+    },
+    "downloadsDownloaderTabUHDLabel": {
+        "message": "超高清"
+    },
+    "downloadsDownloaderTabThumbnailsLabel": {
+        "message": "封面图"
+    },
+    "downloadsDownloaderTabSubtitlesLabel": {
+        "message": "字幕"
+    },
+    "injLooperPlayedText": {
+        "message": "已播放"
+    },
+    "injLooperPlayedTimesText": {
+        "message": "次"
+    },
+    "injLooperStoppedText": {
+        "message": "已停止"
+    },
+    "injLooperLoopForTimesText": {
+        "message": "循环 (x次)"
+    },
+    "injLooperLoopForPortionText": {
+        "message": "循环部分"
+    },
+    "injLooperLoopFromLabel": {
+        "message": "从"
+    },
+    "injLooperLoopToLabel": {
+        "message": "到"
+    },
+    "injNotificationsBtnTooltip": {
+        "message": "通知"
+    },
+    "injSdDownloadsBtnTooltip": {
+        "message": "标准下载"
+    },
+    "injMp3ConverterBtnTooltip": {
+        "message": "MP3转换器"
+    },
+    "injUhdDownloadsBtnTooltip": {
+        "message": "超高清下载"
+    },
+    "injThumbnailsBtnTooltip": {
+        "message": "封面图"
+    },
+    "injSubtitlesBtnTooltip": {
+        "message": "字幕"
+    },
+    "injDownloadsManagerBtnTooltip": {
+        "message": "下载管理器"
+    },
+    "injScreenshotBtnTooltip": {
+        "message": "截图"
+    },
+    "injEnableEditModeText": {
+        "message": "编辑平铺展示"
+    },
+    "injMoreToggleButtonText": {
+        "message": "更多"
+    },
+    "injCancelEditModeText": {
+        "message": "取消"
+    },
+    "injDarkModeInactiveTooltip": {
+        "message": "启用深色模式"
+    },
+    "injDarkModeActiveTooltip": {
+        "message": "禁用深色模式"
+    },
+    "injCinemaModeInactiveTooltip": {
+        "message": "启用影院模式"
+    },
+    "injCinemaModeActiveTooltip": {
+        "message": "禁用影院模式"
+    },
+    "injPipInactiveTooltip": {
+        "message": "启用画中画模式"
+    },
+    "injPipActiveTooltip": {
+        "message": "禁用画中画模式"
+    },
+    "injFloatVideoInactiveTooltip": {
+        "message": "启用浮窗播放器"
+    },
+    "injFloatVideoActiveTooltip": {
+        "message": "禁用浮窗播放器"
+    },
+    "injLooperInactiveTooltip": {
+        "message": "显示高级视频循环播放器"
+    },
+    "injLooperActiveTooltip": {
+        "message": "隐藏视频循环播放器"
+    },
+    "injSmartPauseInactiveTooltip": {
+        "message": "在选项卡开关上启用智能暂停视频"
+    },
+    "injSmartPauseActiveTooltip": {
+        "message": "禁用智能暂停"
+    },
+    "injAutoplayInactiveTooltip": {
+        "message": "启用自动播放"
+    },
+    "injAutoplayActiveTooltip": {
+        "message": "禁用自动播放"
+    },
+    "injAudioModeInactiveTooltip": {
+        "message": "启用纯音频模式"
+    },
+    "injAudioModeActiveTooltip": {
+        "message": "禁用纯音频模式"
+    },
+    "injVolumeControlInactiveTooltip": {
+        "message": "启用鼠标滚轮控制音量"
+    },
+    "injVolumeControlActiveTooltip": {
+        "message": "禁用鼠标滚轮控制音量"
+    },
+    "injVideoSearchInactiveTooltip": {
+        "message": "启用观看视频时视频搜索"
+    },
+    "injVideoSearchActiveTooltip": {
+        "message": "禁用视频搜索"
+    },
+    "injHideCommentsInactiveTooltip": {
+        "message": "隐藏评论部分"
+    },
+    "injHideCommentsActiveTooltip": {
+        "message": "显示评论部分"
+    },
+    "injOptionsTooltip": {
+        "message": "打开扩展设置"
+    },
+    "downloadsDownloadStartedSubText": {
+        "message": "点击此处打开下载管理器"
+    },
+    "downloadsFlixmateDownloadsClearedNotificationText": {
+        "message": "下载已清除。"
+    },
+    "downloadsStateFilterAll": {
+        "message": "所有下载"
+    },
+    "downloadsStateDownloading": {
+        "message": "下载"
+    },
+    "downloadsStateQueued": {
+        "message": "排队中"
+    },
+    "downloadsStateError": {
+        "message": "错误"
+    },
+    "downloadsStateCanceled": {
+        "message": "已取消"
+    },
+    "downloadsStatePaused": {
+        "message": "已暂停"
+    },
+    "downloadsStateProcessing": {
+        "message": "处理中"
+    },
+    "downloadsStateCompleted": {
+        "message": "已完成"
+    },
+    "downloadsUrlCopiedText": {
+        "message": "链接已复制到剪贴板。"
+    },
+    "injHelpButtonText": {
+        "message": "帮助和常见问题"
+    },
+    "injGuideDescription": {
+        "message": "详细了解YouTube视频下载器的功能以及如何使用它们"
+    },
+    "injGuideSdDownloadsButtonTooltip": {
+        "message": "标准下载"
+    },
+    "injGuideMp3ConverterButtonTooltip": {
+        "message": "MP3转换器"
+    },
+    "injGuideUhdDownloadsButtonTooltip": {
+        "message": "超高清下载"
+    },
+    "injGuideThumbnailsButtonTooltip": {
+        "message": "封面图"
+    },
+    "injGuideSubtitlesButtonTooltip": {
+        "message": "字幕"
+    },
+    "injGuideScreenshotButtonTooltip": {
+        "message": "截屏"
+    },
+    "injGuideDownloadsManagerButtonTooltip": {
+        "message": "下载管理器"
+    },
+    "injGuideDarkModeButtonTooltip": {
+        "message": "深色模式"
+    },
+    "injGuideCinemaModeButtonTooltip": {
+        "message": "影院模式"
+    },
+    "injGuidePipButtonTooltip": {
+        "message": "视频浮窗播放器"
+    },
+    "injGuideLooperButtonTooltip": {
+        "message": "循环"
+    },
+    "injGuideSmartPauseButtonTooltip": {
+        "message": "智能暂停"
+    },
+    "injGuideAutoplayButtonTooltip": {
+        "message": "自动播放"
+    },
+    "injGuideAudioModeButtonTooltip": {
+        "message": "音频模式"
+    },
+    "injGuideVolumeControlButtonTooltip": {
+        "message": "鼠标滚轮音量控制"
+    },
+    "injGuideVideoSearchButtonTooltip": {
+        "message": "视频搜索"
+    },
+    "injGuideHideCommentsButtonTooltip": {
+        "message": "隐藏评论"
+    },
+    "injGuideNoteText": {
+        "message": "点击图标了解更多详细信息或在常见问答中找到答案"
+    },
+    "injGuideFaqHeading": {
+        "message": "常见问题"
+    },
+    "injGuideFaqSD": {
+        "message": "如何从YouTube下载视频？"
+    },
+    "injGuideFaqMP3": {
+        "message": "如何将YouTube视频转换为MP3？"
+    },
+    "injGuideFaqDownloads": {
+        "message": "我下载的视频存储在哪里？"
+    },
+    "injGuideFaqSubtitles": {
+        "message": "我可以带字幕一起下载YouTube视频吗？"
+    },
+    "injGuideContactUsNote": {
+        "message": "还是有问题？"
+    },
+    "injGuideContactUsButtonText": {
+        "message": "联系我们"
+    },
+    "injGuideBackButtonText": {
+        "message": "后退"
+    },
+    "injGuideFeatSdHeading": {
+        "message": "标准下载"
+    },
+    "injGuideFeatSdSec1Title": {
+        "message": "如何下载视频？"
+    },
+    "injGuideFeatSdSec1Step1P1": {
+        "message": "点击"
+    },
+    "injGuideFeatSdSec1Step1P2": {
+        "message": "工具栏中的图标。"
+    },
+    "injGuideFeatSdSec1Step2": {
+        "message": "等待视频详情加载。"
+    },
+    "injGuideFeatSdSec1Step3": {
+        "message": "从列表中点击所需的视频质量。"
+    },
+    "injGuideFeatSdSec1Step4": {
+        "message": "您的文件下载将开始。"
+    },
+    "injGuideFeatSdNote1P1": {
+        "message": "您可以"
+    },
+    "injGuideFeatSdNote1P2": {
+        "message": "生成二维码"
+    },
+    "injGuideFeatSdNote1P3": {
+        "message": "并扫描它以将视频下载到您的手机上。"
+    },
+    "injGuideFeatSdNote2": {
+        "message": "YouTube不提供某些视频的高清下载，我们使用外部下载服务"
+    },
+    "injGuideFeatSdNote3": {
+        "message": "Dash格式的视频不包含音频。"
+    },
+    "injGuideFeatMp3Heading": {
+        "message": "MP3转换器"
+    },
+    "injGuideFeatMp3Sec1Title": {
+        "message": "如何将视频转换为MP3？"
+    },
+    "injGuideFeatMp3Sec1Step1P1": {
+        "message": "点击"
+    },
+    "injGuideFeatMp3Sec1Step1P2": {
+        "message": "工具栏中的图标。"
+    },
+    "injGuideFeatMp3Sec1Step2": {
+        "message": "等待视频详情加载。"
+    },
+    "injGuideFeatMp3Sec1Step3": {
+        "message": "如果您需要修剪视频，请选择MP3比特率并调整视频长度。"
+    },
+    "injGuideFeatMp3Sec1Step4": {
+        "message": "点击下载按钮并等待请求完成。"
+    },
+    "injGuideFeatMp3Sec1Step5": {
+        "message": "您的文件下载将开始。"
+    },
+    "injGuideFeatMp3Note1": {
+        "message": "您可以使用输入框上的滑块调整视频长度以进行修剪。"
+    },
+    "injGuideFeatMp3Note2": {
+        "message": "YouTube不提供MP3下载，我们使用外部下载服务进行MP3转换。"
+    },
+    "injGuideFeatMp3Note3": {
+        "message": "如果您安装并启用了 flixmate，下载将添加到flixmate。"
+    },
+    "injGuideFeatUhdHeading": {
+        "message": "超高清下载"
+    },
+    "injGuideFeatUhdDescriptionP1": {
+        "message": "Flixmate"
+    },
+    "injGuideFeatUhdDescriptionP2": {
+        "message": "用于下载高质量的视频，包括1080p、2k、4k和8k。它是一种桌面服务，可以组合音频/视频流并转换为不同的格式。"
+    },
+    "injGuideFeatUhdSec1Title": {
+        "message": "如何下载超高清（1080p、4k、8k）视频？"
+    },
+    "injGuideFeatUhdSec1Step1": {
+        "message": "在您的电脑上安装Flixmate。"
+    },
+    "injGuideFeatUhdSec1Step2P1": {
+        "message": "点击"
+    },
+    "injGuideFeatUhdSec1Step2P2": {
+        "message": "工具栏中的图标。"
+    },
+    "injGuideFeatUhdSec1Step3": {
+        "message": "等待视频详情加载。"
+    },
+    "injGuideFeatUhdSec1Step4": {
+        "message": "从列表中单击所需的视频质量。"
+    },
+    "injGuideFeatUhdSec1Step5": {
+        "message": "您的下载将添加到flixmate。"
+    },
+    "injGuideFeatUhdSec2Title": {
+        "message": "如何修剪或转换视频为不同的格式（mkv、avi）？"
+    },
+    "injGuideFeatUhdSec2Step1": {
+        "message": "在您的电脑中安装Flixmate。"
+    },
+    "injGuideFeatUhdSec2Step2P1": {
+        "message": "点击"
+    },
+    "injGuideFeatUhdSec2Step2P2": {
+        "message": "工具栏中的图标。"
+    },
+    "injGuideFeatUhdSec2Step3": {
+        "message": "等待视频详情加载。"
+    },
+    "injGuideFeatUhdSec2Step4": {
+        "message": "单击“高级”按钮。"
+    },
+    "injGuideFeatUhdSec2Step5": {
+        "message": "如果需要修剪视频，请选择所需的视频质量和格式并调整视频长度。"
+    },
+    "injGuideFeatUhdSec2Step6": {
+        "message": "您的下载将添加到flixmate。"
+    },
+    "injGuideFeatUhdNote1": {
+        "message": "Flixmate不支持Mac OS或Linux。"
+    },
+    "injGuideFeatThumbnailsHeading": {
+        "message": "封面图"
+    },
+    "injGuideFeatThumbnailsSec1Title": {
+        "message": "如何下载视频封面图？"
+    },
+    "injGuideFeatThumbnailsSec1Step1P1": {
+        "message": "点击"
+    },
+    "injGuideFeatThumbnailsSec1Step1P2": {
+        "message": "工具栏中的图标。"
+    },
+    "injGuideFeatThumbnailsSec1Step2": {
+        "message": "等待视频详情加载。"
+    },
+    "injGuideFeatThumbnailsSec1Step3": {
+        "message": "从下拉列表中选择缩略图质量，然后单击下载按钮。"
+    },
+    "injGuideFeatThumbnailsSec1Step4": {
+        "message": "您的文件下载将开始。"
+    },
+    "injGuideFeatSubtitlesHeading": {
+        "message": "字幕"
+    },
+    "injGuideFeatSubtitlesSec1Title": {
+        "message": "怎么下载字幕？"
+    },
+    "injGuideFeatSubtitlesSec1Step1P1": {
+        "message": "点击"
+    },
+    "injGuideFeatSubtitlesSec1Step2": {
+        "message": "等待视频详情加载。"
+    },
+    "injGuideFeatSubtitlesSec1Step1P2": {
+        "message": "工具栏中的图标。"
+    },
+    "injGuideFeatSubtitlesSec1Step3": {
+        "message": "从下拉菜单和格式中选择语言，然后单击下载按钮。"
+    },
+    "injGuideFeatSubtitlesSec1Step4": {
+        "message": "您的文件下载将开始。"
+    },
+    "injGuideFeatSubtitlesSec2Title": {
+        "message": "我可以下载带字幕的视频吗？"
+    },
+    "injGuideFeatSubtitlesSec2Text": {
+        "message": "您无法将嵌入式字幕和YouTube视频一起下载。您可以单独下载字幕文件并在支持的播放器（如 VLC）中使用。"
+    },
+    "injGuideFeatSubtitlesNote1": {
+        "message": "某些视频可能没有可用的字幕。"
+    },
+    "injGuideFeatSubtitlesNote2P1": {
+        "message": "自动生成的字幕标有"
+    },
+    "injGuideFeatSubtitlesNote2P2": {
+        "message": "图标。"
+    },
+    "injGuideFeatSubtitlesNote3": {
+        "message": "YouTube提供了大多数视频播放器都支持的WebVTT、TTML和SRV3格式。"
+    },
+    "injGuideFeatScreenshotHeading": {
+        "message": "截图"
+    },
+    "injGuideFeatScreenshotDescriptionP1": {
+        "message": "您可以进行截图通过点击"
+    },
+    "injGuideFeatScreenshotDescriptionP2": {
+        "message": "工具栏中的图标。截图的质量取决于视频的播放质量。"
+    },
+    "injGuideFeatDownloadsHeading": {
+        "message": "下载管理器"
+    },
+    "injGuideFeatDownloadsDescriptionP1": {
+        "message": "您可以使用下载管理器查看/取消/暂停/播放您下载的项目。点击"
+    },
+    "injGuideFeatDownloadsDescriptionP2": {
+        "message": "工具栏中的图标以打开下载管理器。"
+    },
+    "injGuideFeatDownloadsSec1Title": {
+        "message": "下载存储在哪里或如何打开下载文件夹？"
+    },
+    "injGuideFeatDownloadsSec1Step1P1": {
+        "message": "点击"
+    },
+    "injGuideFeatDownloadsSec1Step1P2": {
+        "message": "工具栏中的图标以打开下载管理器。"
+    },
+    "injGuideFeatDownloadsSec1Step2": {
+        "message": "在下载管理器页面，点击右上角的下拉菜单“打开下载文件夹”。"
+    },
+    "injGuideFeatDownloadsSec1Step3": {
+        "message": "单击扩展下载/Flixmate下载打开下载文件夹。"
+    },
+    "injGuideFeatDownloadsNote1": {
+        "message": "Flixmate无权访问用户目录，因此文件存储在公共目录中。"
+    },
+    "injGuideFeatDarkModeHeading": {
+        "message": "深色模式"
+    },
+    "injGuideFeatDarkModeDescription": {
+        "message": "这是YouTube深色模式的快速切换按钮。"
+    },
+    "injGuideFeatCinemaModeHeading": {
+        "message": "影院模式"
+    },
+    "injGuideFeatCinemaModeDescriptionP1": {
+        "message": "影院模式可以通过打开增强的暗黑模式和隐藏干扰来增强您的观看体验。"
+    },
+    "injGuideFeatCinemaModeDescriptionP2": {
+        "message": "您可以切换到影院模式通过点击"
+    },
+    "injGuideFeatCinemaModeDescriptionP3": {
+        "message": "按钮"
+    },
+    "injGuideFeatPipHeading": {
+        "message": "画中画模式"
+    },
+    "injGuideFeatPipDescriptionP1": {
+        "message": "画中画允许您在浮窗中观看视频（始终在其他窗口的顶部），以便您在与其他网站或应用程序交互时密切关注正在观看的内容。"
+    },
+    "injGuideFeatPipDescriptionP2": {
+        "message": "您可以切换到画中画模式通过点击"
+    },
+    "injGuideFeatPipDescriptionP3": {
+        "message": "按钮"
+    },
+    "injGuideFeatFloatViewHeading": {
+        "message": "浮窗视频播放器"
+    },
+    "injGuideFeatFloatViewDescriptionP1": {
+        "message": "通过启用浮动视图，您可以在滚动和阅读评论的同时观看YouTube视频。点击"
+    },
+    "injGuideFeatFloatViewDescriptionP2": {
+        "message": "按钮切换浮窗视频播放器。"
+    },
+    "injGuideFeatLooperHeading": {
+        "message": "循环"
+    },
+    "injGuideFeatLooperDescriptionP1": {
+        "message": "YouTube不提供视频循环功能，因此我们添加了此功能以方便我们的用户。"
+    },
+    "injGuideFeatLooperDescriptionP2": {
+        "message": "点击"
+    },
+    "injGuideFeatLooperDescriptionP3": {
+        "message": "图标来循环播放视频。点击该图标还会显示一个高级循环播放器，您可以使用它来循环播放特定次数的视频或循环播放部分视频。"
+    },
+    "injGuideFeatSmartPauseHeading": {
+        "message": "智能暂停"
+    },
+    "injGuideFeatSmartPauseDescription": {
+        "message": "智能暂停会自动记住您在当前YouTube视频中的位置，让您可以轻松地从上次中断的地方继续。每当您更改标签页、打开新标签页或拉出新窗口时，智能暂停都会等待您返回并继续播放视频。"
+    },
+    "injGuideFeatAutoPlayHeading": {
+        "message": "自动播放"
+    },
+    "injGuideFeatAutoPlayDescription": {
+        "message": "这是YouTube自动播放功能的快速切换按钮。"
+    },
+    "injGuideFeatAudioModeHeading": {
+        "message": "音频模式"
+    },
+    "injGuideFeatAudioModeDescriptionP1": {
+        "message": "您可能会发现自己只是为了音乐或听音频而观看YouTube视频。您可以切换此选项通过使用"
+    },
+    "injGuideFeatAudioModeDescriptionP2": {
+        "message": "只播放音频，节省带宽，同时减少缓冲时间。那是因为音频模式只加载音频格式。此功能非常适合用于听背景音乐、听课等。"
+    },
+    "injGuideFeatAudioModeNote1": {
+        "message": "当您切换此功能以使更改生效时，将重新加载页面。"
+    },
+    "injGuideFeatVolumeControlHeading": {
+        "message": "鼠标滚轮音量控制"
+    },
+    "injGuideFeatVolumeControlDescriptionP1": {
+        "message": "启用此功能通过单击"
+    },
+    "injGuideFeatVolumeControlDescriptionP2": {
+        "message": "按钮，您将能够使用鼠标滚轮控制YouTube视频的音量。"
+    },
+    "injGuideFeatVideoSearchHeading": {
+        "message": "视频搜索"
+    },
+    "injGuideFeatVideoSearchDescriptionP1": {
+        "message": "使用此功能，您可以在观看视频时使用YouTube搜索。点击"
+    },
+    "injGuideFeatVideoSearchDescriptionP2": {
+        "message": "按钮将在页面右侧添加一个搜索栏。您可以使用搜索栏继续搜索以查找新视频，而不会中断或离开视频。"
+    },
+    "injGuideFeatHideCommentsHeading": {
+        "message": "隐藏评论"
+    },
+    "injGuideFeatHideCommentsDescriptionP1": {
+        "message": "点击"
+    },
+    "injGuideFeatHideCommentsDescriptionP2": {
+        "message": "按钮隐藏对YouTube视频的评论以避免分心。"
+    },
+    "optHeading": {
+        "message": "设置"
+    },
+    "optRestoreButtonText": {
+        "message": "恢复默认设置"
+    },
+    "optRestoreConfirmTitle": {
+        "message": "您确定吗？"
+    },
+    "optRestoreConfirmMessage": {
+        "message": "这会将您的设置重置为默认值。"
+    },
+    "optRestoreSuccessMessage": {
+        "message": "设置已成功恢复。"
+    },
+    "optConfirmButtonText": {
+        "message": "确认"
+    },
+    "optCancelButtonText": {
+        "message": "取消"
+    },
+    "optThemeSelectLabel": {
+        "message": "选择扩展主题"
+    },
+    "optThemeOptionSystemLabel": {
+        "message": "系统默认"
+    },
+    "optThemeOptionLightLabel": {
+        "message": "浅色主题"
+    },
+    "optThemeOptionDarkLabel": {
+        "message": "深色主题"
+    },
+    "optDownloadNotificationsSwitchLabel": {
+        "message": "显示下载通知"
+    },
+    "optEmbeddedDownloadsSwitchLabel": {
+        "message": "在嵌入视频上显示下载按钮"
+    },
+    "optDownloadButtonOnUrlsSwitchLabel": {
+        "message": "在YouTube链接上添加下载按钮"
+    },
+    "optVideoQualityDisabledOptionLabel": {
+        "message": "已禁用"
+    },
+    "optDownloadSettingsHeading": {
+        "message": "下载器设置"
+    },
+    "optFormatsLabel": {
+        "message": "在下载菜单中显示的视频格式"
+    },
+    "optDashFormatsLabel": {
+        "message": "在下载菜单中显示的Dash格式"
+    },
+    "optDashFormatsRadioNone": {
+        "message": "无"
+    },
+    "optDashFormatsRadioBoth": {
+        "message": "音频和视频"
+    },
+    "optDashFormatsRadioVideo": {
+        "message": "仅视频"
+    },
+    "optDashFormatsRadioAudio": {
+        "message": "仅音频"
+    },
+    "optMp3BitrateLabel": {
+        "message": "MP3转换器默认比特率"
+    },
+    "optCopyButtonSwitchLabel": {
+        "message": "启用复制到剪贴板按钮"
+    },
+    "optQrButtonSwitchLabel": {
+        "message": "启用二维码生成器按钮"
+    },
+    "optSaveAsSwitchLabel": {
+        "message": "当我选择下载视频时显示另存为对话框"
+    },
+    "optFlixmateSettingsHeading": {
+        "message": "Flixmate媒体下载器"
+    },
+    "optFlixmateUnsupportedText": {
+        "message": "您的系统不支持Flixmate。"
+    },
+    "optFlixmateUnsupportedLinkText": {
+        "message": "了解更多"
+    },
+    "optFlixmateDisconnectedText": {
+        "message": "Flixmate未连接。"
+    },
+    "optDisconnectedLinkText": {
+        "message": "下载"
+    },
+    "optFlixmateConnectedText": {
+        "message": "已连接。"
+    },
+    "optFlixmateUpdateAvailableText": {
+        "message": "更新已可用于"
+    },
+    "optFlixmateInstallUpdateText": {
+        "message": "安装。"
+    },
+    "optFlixmateEnabledSwitchLabel": {
+        "message": "启用Flixmate媒体下载器"
+    },
+    "optFlixmateEnabledSwitchHelpText": {
+        "message": "下载无限制MP3和超高清格式"
+    },
+    "optFlixmateFormatsLabel": {
+        "message": "在下载菜单中显示的转换格式"
+    },
+    "optVideoQualityMenuLabel": {
+        "message": "设置首选视频播放质量"
+    },
+    "optFloatVideoSwitchLabel": {
+        "message": "启用浮窗视频"
+    },
+    "optFloatVideoSwitchHelpText": {
+        "message": "（智能视图可在向下滚动时查看视频。视频将显示在右下角）"
+    },
+    "optSmartPauseSwitchLabel": {
+        "message": "启用智能暂停"
+    },
+    "optSmartPauseSwitchHelpText": {
+        "message": "（离开页面后自动暂停当前在YouTube上播放的视频，并在您返回时继续播放）"
+    },
+    "optAudioModeSwitchLabel": {
+        "message": "启用音频模式"
+    },
+    "optAudioModeSwitchHelpText": {
+        "message": "（只听音频而不加载视频）"
+    },
+    "optAudioModeChangeAlert": {
+        "message": "刷新YouTube标签以使更改生效。"
+    },
+    "optMousewheelVolumeControlSwitchLabel": {
+        "message": "使用鼠标滚轮控制音量"
+    },
+    "optMousewheelVolumeControlSwitchHelpText": {
+        "message": "（在视频内使用鼠标滚轮控制音量）"
+    },
+    "optVideoSearchSwitchLabel": {
+        "message": "边看视频边搜索"
+    },
+    "optVideoSearchSwitchHelpText": {
+        "message": "（通过在相关视频部分加载搜索结果，在不中断视频的情况下搜索YouTube视频）"
+    },
+    "optHideCommentsSwitchLabel": {
+        "message": "隐藏YouTube评论"
+    },
+    "optHideCommentsSwitchHelpText": {
+        "message": "（隐藏所有用户对 YouTube 视频的评论）"
+    },
+    "injDownloaderLoadingText": {
+        "message": "正在加载视频详情..."
+    },
+    "injDownloaderErrorText": {
+        "message": "获取视频详情失败"
+    },
+    "injNotAvailableMessage": {
+        "message": "无法下载直播或即将播放的视频。"
+    },
+    "optMultithreadingSwitchHelpText": {
+        "message": "下载具有多个连接到服务器的文件以提高下载速度。"
+    },
+    "optMultithreadingSwitchLabel": {
+        "message": "使用多线程下载"
+    },
+    "optCompactDisplayModeButtonText": {
+        "message": "转变"
+    },
+    "optCompactDisplayModeSubheading": {
+        "message": "扩展程序将在 YouTube 上显示为紧凑按钮，单击此按钮可切换到完整模式。"
+    },
+    "optCompactDisplayModeHeading": {
+        "message": "扩展以紧凑模式显示"
+    },
+    "optChangeLanguageText": {
+        "message": "改变语言"
+    },
+    "injCompactButtonTooltip": {
+        "message": "使用此按钮在紧凑模式下使用 Addoncrop YouTube 下载器"
+    },
+    "injExpandBtnTooltip": {
+        "message": "切换到完整的扩展栏"
+    },
+    "injSwitchDisplayButtonTooltip": {
+        "message": "切换到紧凑模式"
+    },
+    "injSwitchDisplayButtonText": {
+        "message": "单击此按钮可切换到精简模式。"
+    },
+    "injWelcomeMessageTooltip": {
+        "message": "单击此按钮下载视频。"
+    },
+    "downloadsOpenVideoPageButtonTooltip": {
+        "message": "在 YouTube 上打开视频"
+    },
+    "downloadsFlixmateDownloadsHeading": {
+        "message": "使用 Flixmate 下载超高清"
+    }
+}

@@ -1,0 +1,1193 @@
+{
+    "extName": {
+        "message": "YouTubeの動画とMP3のダウンローダ"
+    },
+    "downloadsHeading": {
+        "message": "ダウンロード済み"
+    },
+    "downloadsError_FILE_FAILED": {
+        "message": "失敗しました"
+    },
+    "downloadsError_FILE_ACCESS_DENIED": {
+        "message": "アクセスが拒否されました"
+    },
+    "downloadsError_FILE_TOO_LARGE": {
+        "message": "ファイルサイズが大きすぎます"
+    },
+    "downloadsError_FILE_TRANSIENT_ERROR": {
+        "message": "失敗しました"
+    },
+    "downloadsError_NETWORK_FAILED": {
+        "message": "ネットワークエラーが発生しました."
+    },
+    "popupHomeLinkReportBugText": {
+        "message": "バグを報告"
+    },
+    "popupHomeLinkDownloadsText": {
+        "message": "ダウンロード"
+    },
+    "popupHomeLinkHowToUseText": {
+        "message": "使い方"
+    },
+    "popupHomeLinkHomePageText": {
+        "message": "ホームページ"
+    },
+    "handleLinksDownloadButtonText": {
+        "message": "ダウンロード"
+    },
+    "subtitlesDownloadFailedText": {
+        "message": "ダウンロードに失敗しました"
+    },
+    "downloadsClearAllButtonText": {
+        "message": "すべてクリア"
+    },
+    "downloadsTabBrowserButtonText": {
+        "message": "ち"
+    },
+    "downloadsStateMenuAllLabel": {
+        "message": "ダウンロード済みファイル"
+    },
+    "downloadsStateMenuDownloadingLabel": {
+        "message": "ダウンロード中"
+    },
+    "downloadsStateMenuPausedLabel": {
+        "message": "一時停止されました"
+    },
+    "downloadsStateMenuCanceledLabel": {
+        "message": "キャンセルされました"
+    },
+    "downloadsStateMenuErrorLabel": {
+        "message": "エラー"
+    },
+    "downloadsSizeUnknownText": {
+        "message": "サイズ不明"
+    },
+    "downloadsPausedText": {
+        "message": "一時停止されました"
+    },
+    "downloadsPauseButtonText": {
+        "message": "一時停止"
+    },
+    "downloadsResumeButtonText": {
+        "message": "再開"
+    },
+    "downloadsPlayButtonText": {
+        "message": "再生"
+    },
+    "downloadsCancelButtonText": {
+        "message": "キャンセル"
+    },
+    "downloadsCopyUrlButtonText": {
+        "message": "URLをコピー"
+    },
+    "downloadsDeleteStateText": {
+        "message": "削除されました"
+    },
+    "downloadsError_NETWORK_TIMEOUT": {
+        "message": "タイムアウトしました"
+    },
+    "downloadsError_NETWORK_DISCONNECTED": {
+        "message": "切断されました"
+    },
+    "downloadsError_NETWORK_SERVER_DOWN": {
+        "message": "サーバーダウン"
+    },
+    "downloadsError_NETWORK_INVALID_REQUEST": {
+        "message": "無効なリクエスト"
+    },
+    "downloadsError_SERVER_FAILED": {
+        "message": "サーバーエラーが発生しました"
+    },
+    "downloadsError_SERVER_BAD_CONTENT": {
+        "message": "悪いコンテンツ"
+    },
+    "downloadsError_SERVER_UNAUTHORIZED": {
+        "message": "許可されていません"
+    },
+    "downloadsError_SERVER_CERT_PROBLEM": {
+        "message": "証明書エラー"
+    },
+    "downloadsError_SERVER_FORBIDDEN": {
+        "message": "403エラー"
+    },
+    "downloadsError_USER_CANCELED": {
+        "message": "キャンセルされました"
+    },
+    "downloadsError_USER_SHUTDOWN": {
+        "message": "シャットダウン"
+    },
+    "downloadsError_CRASH": {
+        "message": "強制終了されました"
+    },
+    "popupHomeButtonTooltip": {
+        "message": "ホームに移動"
+    },
+    "popupDownloadsButtonTooltip": {
+        "message": "ダウンロードを表示"
+    },
+    "popupVideoButtonTooltip": {
+        "message": "動画セクションに移動"
+    },
+    "popupThemeToggleButtonTooltip": {
+        "message": "テーマを切り替える"
+    },
+    "popupThemeMenuSystemLabel": {
+        "message": "システムデフォルト"
+    },
+    "popupThemeMenuDarkLabel": {
+        "message": "ダークモード"
+    },
+    "popupThemeMenuLightLabel": {
+        "message": "ライトモード"
+    },
+    "popupOptionsButtonTooltip": {
+        "message": "オプションページを開く"
+    },
+    "popupHomeAlertsHeading": {
+        "message": "新着通知"
+    },
+    "popupDownloaderLoadingText": {
+        "message": "動画を読み込み中..."
+    },
+    "popupDownloaderErrorText": {
+        "message": "動画を取得できませんでした"
+    },
+    "popupDownloaderTabSDLabel": {
+        "message": "標準ダウンロード"
+    },
+    "popupDownloaderTabMP3Label": {
+        "message": "MP3に変換する"
+    },
+    "popupDownloaderTabUHDLabel": {
+        "message": "UHD"
+    },
+    "popupDownloaderTabThumbnailsLabel": {
+        "message": "サムネイル"
+    },
+    "popupDownloaderTabSubtitlesLabel": {
+        "message": "字幕"
+    },
+    "videoInfoGenericError": {
+        "message": "エラーが発生しました。もう一度やり直してください。"
+    },
+    "genericDownloadError": {
+        "message": "エラーが発生しました。もう一度やり直してください。"
+    },
+    "downloadsQrCodeButtonTooltip": {
+        "message": "QRコードを作成する"
+    },
+    "downloadsCopyToClipboardButtonTooltip": {
+        "message": "URLをクリップボードにコピー"
+    },
+    "downloadsVideoOnlyTooltip": {
+        "message": "このファイルには音声が含まれていません"
+    },
+    "downloadsAudioOnlyTooltip": {
+        "message": "音声のみファイル"
+    },
+    "flixmateNotConnectedLinkText": {
+        "message": "さらに詳しく"
+    },
+    "downloadsPrimaryDownloadsHeading": {
+        "message": "YouTubeからのダウンロード"
+    },
+    "downloadsApiDownloadsHeading": {
+        "message": "外部サービスからのダウンロード"
+    },
+    "downloadsDashFormatsHideButtonText": {
+        "message": "非表示"
+    },
+    "downloadsDownloadStartedText": {
+        "message": "ダウンロードが開始されました。"
+    },
+    "downloadsDownloadFailedText": {
+        "message": "ダウンロードに失敗しました。"
+    },
+    "downloadsQrCodeButtonText": {
+        "message": "閉じる"
+    },
+    "mp3ConverterTimeFromLabel": {
+        "message": "から"
+    },
+    "mp3ConverterTimeToLabel": {
+        "message": "まで"
+    },
+    "mp3ConverterMp3DownloadButtonText": {
+        "message": "ダウンロード"
+    },
+    "mp3ConverterDownloadStartedText": {
+        "message": "ダウンロードが開始されました。"
+    },
+    "mp3ConverterDownloadFailedText": {
+        "message": "ダウンロードに失敗しました。"
+    },
+    "flixmateInstallText": {
+        "message": "インストール"
+    },
+    "flixmateAdvancedHideButtonText": {
+        "message": "非表示"
+    },
+    "flixmateSelectFormatLabel": {
+        "message": "フォーマット形式を選択"
+    },
+    "flixmateSelectQualityLabel": {
+        "message": "画質を選択"
+    },
+    "flixmateTimeLabel": {
+        "message": "時間"
+    },
+    "flixmateFromLabel": {
+        "message": "から"
+    },
+    "flixmateToLabel": {
+        "message": "まで"
+    },
+    "flixmateDownloadButtonText": {
+        "message": "ダウンロード"
+    },
+    "flixmateDownloadFailedText": {
+        "message": "ダウンロードに失敗しました。"
+    },
+    "thumbnailsDownloadFailedText": {
+        "message": "ダウンロードに失敗しました。"
+    },
+    "downloadsError_FILE_VIRUS_INFECTED": {
+        "message": "ファイルがウイルスに感染している可能性があります"
+    },
+    "downloadsError_FILE_BLOCKED": {
+        "message": "ブロックされました"
+    },
+    "downloadsError_FILE_SECURITY_CHECK_FAILED": {
+        "message": "セキュリティ認証に失敗しました"
+    },
+    "downloadsError_FILE_TOO_SHORT": {
+        "message": "ファイルサイズが小さすぎます"
+    },
+    "downloadsError_SERVER_NO_RANGE": {
+        "message": "サーバー範囲エラー"
+    },
+    "flixmateNotConnectedTitle": {
+        "message": "Flixmateが接続されていません"
+    },
+    "bgFlixmateNotConnectedError": {
+        "message": "Flixmateが接続されていません"
+    },
+    "mp3ConverterTimeLabel": {
+        "message": "時間"
+    },
+    "mp3ConverterBitrateLabel": {
+        "message": "MP3ビットレートを選択"
+    },
+    "flixmateAppName": {
+        "message": "Flixmateメディアダウンローダ"
+    },
+    "downloadsUrlCopiedToClipboard": {
+        "message": "クリップボードにコピーされたURLをダウンロード"
+    },
+    "downloadsQrCodeNote": {
+        "message": "このQRコードをお持ちのデバイスでスキャンし、ダウンロード用のURLを取得します。"
+    },
+    "flixmateDownloadStartedText": {
+        "message": "ダウンロード済みファイルがFlixmateに追加されました。"
+    },
+    "flixmateAppTitle": {
+        "message": "UHD、4K、8Kの動画をダウンロード"
+    },
+    "flixmateNotConnectedText": {
+        "message": "UHD画質のダウンロードはご利用いただけません。"
+    },
+    "flixmateNotConnectedMp3Text": {
+        "message": "MP3のダウンロード可能サイズが制限されています。"
+    },
+    "downloadsDashFormatsShowButtonText": {
+        "message": "ダッシュフォーマット"
+    },
+    "flixmateAppDownloadButtonText": {
+        "message": "ダウンロード"
+    },
+    "flixmateHowToLinkText": {
+        "message": "使い方について"
+    },
+    "flixmateAdvancedShowButtonText": {
+        "message": "高度（変換またはトリム）"
+    },
+    "thumbnailsDownloadButtonText": {
+        "message": "ダウンロード"
+    },
+    "subtitlesDownloadStartedText": {
+        "message": "ダウンロードが開始されました。"
+    },
+    "thumbnailsDownloadStartedText": {
+        "message": "ダウンロードが開始されました。"
+    },
+    "subtitlesDownloadButtonText": {
+        "message": "ダウンロード"
+    },
+    "downloadsTabFlixmateButtonText": {
+        "message": "Flixmate"
+    },
+    "downloadsApiRequestLoadingText": {
+        "message": "ダウンロードをリクエスト中。数秒かかる場合があります。"
+    },
+    "thumbnailsQualityLabel": {
+        "message": "画質を選択"
+    },
+    "subtitlesLanguageLabel": {
+        "message": "言語変更"
+    },
+    "subtitlesAutoGeneratedNote": {
+        "message": "自動作成された字幕にはこのアイコンが付きます。"
+    },
+    "subtitlesFormatLabel": {
+        "message": "ファイルフォーマット形式を選択"
+    },
+    "subtitlesNotAvailableMessage": {
+        "message": "この動画の字幕が見つかりませんでした。"
+    },
+    "downloadsAddDownloadButtonText": {
+        "message": "ダウンロードを追加"
+    },
+    "downloadsOpenFolderMenuText": {
+        "message": "ダウンロード済みフォルダを開く"
+    },
+    "downloadsExtensionFolderButtonText": {
+        "message": "ダウンロード済み拡張機能"
+    },
+    "downloadsFlixmateFolderButtonText": {
+        "message": "ダウンロード済みFlixmate"
+    },
+    "downloadsStateMenuQueuedLabel": {
+        "message": "順番待ち中"
+    },
+    "downloadsStateMenuProcessingLabel": {
+        "message": "処理中"
+    },
+    "downloadsStateMenuCompletedLabel": {
+        "message": "完了"
+    },
+    "downloadsSearchInputPlaceholder": {
+        "message": "ダウンロード済みで検索"
+    },
+    "downloadsShowFolderButtonText": {
+        "message": "フォルダ内で表示"
+    },
+    "downloadsRemoveButtonText": {
+        "message": "削除"
+    },
+    "downloadsLoadMoreButtonText": {
+        "message": "さらに読み込む"
+    },
+    "downloadsDownloaderTitle": {
+        "message": "YouTube動画のURLを入力してください"
+    },
+    "downloadsDownloaderLoadingText": {
+        "message": "動画を読み込み中..."
+    },
+    "downloadsDownloaderErrorText": {
+        "message": "動画を取得できませんでした"
+    },
+    "downloadsDownloaderTabSDLabel": {
+        "message": "標準ダウンロード"
+    },
+    "injSdDownloadsBtnTooltip": {
+        "message": "標準ダウンロード"
+    },
+    "injNotificationsBtnTooltip": {
+        "message": "通知"
+    },
+    "injMp3ConverterBtnTooltip": {
+        "message": "MP3変換機"
+    },
+    "injUhdDownloadsBtnTooltip": {
+        "message": "UHD画質ダウンロード"
+    },
+    "injThumbnailsBtnTooltip": {
+        "message": "サムネイル"
+    },
+    "downloadsDownloaderTabThumbnailsLabel": {
+        "message": "サムネイル"
+    },
+    "downloadsDownloaderTabSubtitlesLabel": {
+        "message": "字幕"
+    },
+    "downloadsDownloaderTabUHDLabel": {
+        "message": "UHD"
+    },
+    "downloadsDownloaderTabMP3Label": {
+        "message": "MP3に変換する"
+    },
+    "injLooperPlayedText": {
+        "message": "再生された"
+    },
+    "injLooperPlayedTimesText": {
+        "message": "時間"
+    },
+    "injLooperStoppedText": {
+        "message": "一時停止されました"
+    },
+    "injLooperLoopFromLabel": {
+        "message": "から"
+    },
+    "injLooperLoopToLabel": {
+        "message": "まで"
+    },
+    "injSubtitlesBtnTooltip": {
+        "message": "字幕"
+    },
+    "injDownloadsManagerBtnTooltip": {
+        "message": "ダウンロード管理"
+    },
+    "injScreenshotBtnTooltip": {
+        "message": "スクリーンショットを撮る"
+    },
+    "injEnableEditModeText": {
+        "message": "タイトルを編集する"
+    },
+    "injMoreToggleButtonText": {
+        "message": "さらに"
+    },
+    "injCancelEditModeText": {
+        "message": "キャンセル"
+    },
+    "injDarkModeInactiveTooltip": {
+        "message": "ダークモードを有効にする"
+    },
+    "injDarkModeActiveTooltip": {
+        "message": "ダークモードを無効にする"
+    },
+    "injCinemaModeInactiveTooltip": {
+        "message": "シネマモードを有効にする"
+    },
+    "injCinemaModeActiveTooltip": {
+        "message": "シネマモードを無効にする"
+    },
+    "injPipInactiveTooltip": {
+        "message": "ピクチャーインピクチャーモードを有効にする"
+    },
+    "injPipActiveTooltip": {
+        "message": "ピクチャーインピクチャーモードを無効にする"
+    },
+    "injFloatVideoInactiveTooltip": {
+        "message": "フローティングビデオプレーヤーを有効にする"
+    },
+    "injFloatVideoActiveTooltip": {
+        "message": "フローティングビデオプレーヤーを無効にする"
+    },
+    "injLooperActiveTooltip": {
+        "message": "ビデオルーパーを非表示"
+    },
+    "injLooperInactiveTooltip": {
+        "message": "高度ビデオルーパーを表示"
+    },
+    "injAutoplayInactiveTooltip": {
+        "message": "自動再生を有効にする"
+    },
+    "injAutoplayActiveTooltip": {
+        "message": "自動再生を無効にする"
+    },
+    "injAudioModeInactiveTooltip": {
+        "message": "音声のみモードを有効にする"
+    },
+    "injAudioModeActiveTooltip": {
+        "message": "音声のみモードを無効にする"
+    },
+    "injOptionsTooltip": {
+        "message": "拡張設定を開く"
+    },
+    "injHideCommentsActiveTooltip": {
+        "message": "コメント欄を表示"
+    },
+    "injHideCommentsInactiveTooltip": {
+        "message": "コメント欄を非表示"
+    },
+    "injVideoSearchActiveTooltip": {
+        "message": "動画検索を無効にする"
+    },
+    "injVideoSearchInactiveTooltip": {
+        "message": "動画再生中の動画検索を有効にする"
+    },
+    "injVolumeControlInactiveTooltip": {
+        "message": "マウスホイールで音量調節を有効にする"
+    },
+    "injVolumeControlActiveTooltip": {
+        "message": "マウスホイールで音量調節を無効にする"
+    },
+    "injSmartPauseActiveTooltip": {
+        "message": "スマートポーズを無効にする"
+    },
+    "injSmartPauseInactiveTooltip": {
+        "message": "タブスイッチでスマートポーズ動画を有効にする"
+    },
+    "injLooperLoopForPortionText": {
+        "message": "一部をループ"
+    },
+    "injLooperLoopForTimesText": {
+        "message": "ループ（x回）"
+    },
+    "downloadsDownloaderNotAvailableMessage": {
+        "message": "ライブまたは今後の動画のダウンロードはご利用いただけません。"
+    },
+    "downloadsDownloaderVideoIdErrorText": {
+        "message": "動画IDの抽出に失敗しました。URLを確認してください。"
+    },
+    "handleLinksDownloadButtonTooltip": {
+        "message": "YouTube動画とMP3ダウンローダでダウンロード"
+    },
+    "flixmateAppDescription": {
+        "message": "Flixmateメディアダウンローダで1080p、2k、4K、8KなどのMP3とHDのフォーマット形式を制限なしでダウンロード"
+    },
+    "popupDownloaderNotAvailableMessage": {
+        "message": "ライブまたは今後の動画のダウンロードはご利用いただけません。"
+    },
+    "downloadsError_FILE_NAME_TOO_LONG": {
+        "message": "ファイル名が長すぎます"
+    },
+    "downloadsError_FILE_NO_SPACE": {
+        "message": "ストレージの空き容量が不足しています"
+    },
+    "extDescription": {
+        "message": "様々な画質（1080P、720P、480P、360pなど）のYouTube動画をダウンロードすることができます。MP3、MP4、FLV、WebM、3GPなどのフォーマット形式に対応しています"
+    },
+    "injGuideFeatSubtitlesNote2P2": {
+        "message": "アイコン"
+    },
+    "injGuideFeatScreenshotHeading": {
+        "message": "スクリーンショットを撮る"
+    },
+    "injGuideFeatDownloadsHeading": {
+        "message": "ダウンロードマネージャー"
+    },
+    "injGuideFeatDownloadsSec1Step1P1": {
+        "message": "クリック"
+    },
+    "injGuideFeatDarkModeHeading": {
+        "message": "ダークモード"
+    },
+    "injGuideFeatCinemaModeHeading": {
+        "message": "シネマモード"
+    },
+    "injGuideFeatCinemaModeDescriptionP3": {
+        "message": "ボタン"
+    },
+    "injGuideFeatPipHeading": {
+        "message": "ピクチャーインピクチャーモード"
+    },
+    "injGuideFeatPipDescriptionP3": {
+        "message": "ボタン"
+    },
+    "injGuideFeatLooperHeading": {
+        "message": "ルーパー"
+    },
+    "injGuideFeatAutoPlayHeading": {
+        "message": "自動再生"
+    },
+    "injGuideFeatSmartPauseHeading": {
+        "message": "スマートポーズ"
+    },
+    "injGuideFeatAudioModeHeading": {
+        "message": "音声モード"
+    },
+    "injGuideFeatVideoSearchHeading": {
+        "message": "動画検索"
+    },
+    "injGuideFeatHideCommentsDescriptionP1": {
+        "message": "クリック"
+    },
+    "injGuideFeatHideCommentsHeading": {
+        "message": "コメントを隠す"
+    },
+    "optHeading": {
+        "message": "設定"
+    },
+    "optRestoreButtonText": {
+        "message": "デフォルト設定に戻す"
+    },
+    "optRestoreConfirmTitle": {
+        "message": "よろしいですか？"
+    },
+    "optConfirmButtonText": {
+        "message": "確定"
+    },
+    "optCancelButtonText": {
+        "message": "キャンセル"
+    },
+    "optThemeSelectLabel": {
+        "message": "拡張テーマを選択する"
+    },
+    "optThemeOptionSystemLabel": {
+        "message": "システムデフォルト"
+    },
+    "optThemeOptionLightLabel": {
+        "message": "ライトモード"
+    },
+    "optThemeOptionDarkLabel": {
+        "message": "ダークモード"
+    },
+    "optDownloadNotificationsSwitchLabel": {
+        "message": "ダウンロード通知を表示する"
+    },
+    "optEmbeddedDownloadsSwitchLabel": {
+        "message": "埋め込み動画にダウンロードボタンを表示する"
+    },
+    "optDownloadSettingsHeading": {
+        "message": "ダウンローダの設定"
+    },
+    "optDashFormatsRadioAudio": {
+        "message": "音声のみ"
+    },
+    "optDashFormatsRadioVideo": {
+        "message": "動画のみ"
+    },
+    "optFlixmateUnsupportedLinkText": {
+        "message": "さらに詳しく"
+    },
+    "optDisconnectedLinkText": {
+        "message": "ダウンロード"
+    },
+    "optFlixmateInstallUpdateText": {
+        "message": "インストールするには"
+    },
+    "optFlixmateEnabledSwitchLabel": {
+        "message": "Flixmateメディアダウンローダを有効にする"
+    },
+    "optFlixmateEnabledSwitchHelpText": {
+        "message": "MP3とUHDフォーマット形式を無制限でダウンロードする"
+    },
+    "injDownloaderLoadingText": {
+        "message": "動画を読み込み中..."
+    },
+    "injDownloaderErrorText": {
+        "message": "動画を取得できませんでした"
+    },
+    "injNotAvailableMessage": {
+        "message": "ライブまたは今後の動画のダウンロードはご利用いただけません。"
+    },
+    "optHideCommentsSwitchLabel": {
+        "message": "YouTubeのコメントを隠す"
+    },
+    "optVideoSearchSwitchLabel": {
+        "message": "動画を見ながら検索"
+    },
+    "optMousewheelVolumeControlSwitchLabel": {
+        "message": "マウスホイールで音量を調節する"
+    },
+    "optAudioModeSwitchLabel": {
+        "message": "音声モードを有効にする"
+    },
+    "injGuideAudioModeButtonTooltip": {
+        "message": "音声モード"
+    },
+    "injGuideVideoSearchButtonTooltip": {
+        "message": "動画検索"
+    },
+    "injGuideHideCommentsButtonTooltip": {
+        "message": "コメントを隠す"
+    },
+    "injGuideAutoplayButtonTooltip": {
+        "message": "自動再生"
+    },
+    "optSmartPauseSwitchLabel": {
+        "message": "スマートポーズを有効にする"
+    },
+    "injGuideSmartPauseButtonTooltip": {
+        "message": "スマートポーズ"
+    },
+    "injGuideLooperButtonTooltip": {
+        "message": "ルーパー"
+    },
+    "injGuidePipButtonTooltip": {
+        "message": "フローティングビデオプレーヤー"
+    },
+    "injGuideCinemaModeButtonTooltip": {
+        "message": "シネマモード"
+    },
+    "injGuideDarkModeButtonTooltip": {
+        "message": "ダークモード"
+    },
+    "injGuideDownloadsManagerButtonTooltip": {
+        "message": "ダウンロードマネージャー"
+    },
+    "injGuideScreenshotButtonTooltip": {
+        "message": "スクリーンショット"
+    },
+    "injGuideSubtitlesButtonTooltip": {
+        "message": "字幕"
+    },
+    "injGuideThumbnailsButtonTooltip": {
+        "message": "サムネイル"
+    },
+    "injGuideFeatUhdHeading": {
+        "message": "UHD画質ダウンロード"
+    },
+    "injGuideFeatUhdDescriptionP1": {
+        "message": "Flixmate"
+    },
+    "injGuideFeatSdSec1Step4": {
+        "message": "ファイルのダウンロードが開始します。"
+    },
+    "injGuideFeatSubtitlesSec1Step4": {
+        "message": "ファイルのダウンロードが開始します。"
+    },
+    "injGuideFeatThumbnailsSec1Step4": {
+        "message": "ファイルのダウンロードが開始します。"
+    },
+    "injGuideFeatMp3Sec1Step5": {
+        "message": "ファイルのダウンロードが開始します。"
+    },
+    "injGuideFeatUhdSec2Step2P1": {
+        "message": "クリック"
+    },
+    "injGuideFeatThumbnailsSec1Step1P1": {
+        "message": "クリック"
+    },
+    "injGuideFeatThumbnailsHeading": {
+        "message": "サムネイル"
+    },
+    "injGuideFeatThumbnailsSec1Title": {
+        "message": "動画のサムネイルをダウンロードする方法は？"
+    },
+    "injGuideFeatSubtitlesHeading": {
+        "message": "字幕"
+    },
+    "injGuideFeatSubtitlesSec1Step1P1": {
+        "message": "クリック"
+    },
+    "injGuideFeatLooperDescriptionP2": {
+        "message": "クリック"
+    },
+    "injGuideFeatUhdSec1Step2P1": {
+        "message": "クリック"
+    },
+    "injGuideFeatMp3Sec1Step1P1": {
+        "message": "クリック"
+    },
+    "injGuideFeatSdSec1Step1P1": {
+        "message": "クリック"
+    },
+    "downloadsDownloadStartedSubText": {
+        "message": "ここをクリックしてダウンロードマネージャーを開く"
+    },
+    "downloadsFlixmateDownloadsClearedNotificationText": {
+        "message": "ダウンロードがクリアされました。"
+    },
+    "downloadsStateFilterAll": {
+        "message": "ダウンロード済みファイル"
+    },
+    "downloadsStateDownloading": {
+        "message": "ダウンロード中"
+    },
+    "downloadsStateQueued": {
+        "message": "順番待ち中"
+    },
+    "downloadsStateCanceled": {
+        "message": "キャンセルされました"
+    },
+    "downloadsStateError": {
+        "message": "エラー"
+    },
+    "downloadsStatePaused": {
+        "message": "一時停止されました"
+    },
+    "downloadsStateProcessing": {
+        "message": "処理中"
+    },
+    "downloadsStateCompleted": {
+        "message": "完了"
+    },
+    "downloadsUrlCopiedText": {
+        "message": "クリップボードにコピーされたURLをダウンロード"
+    },
+    "injHelpButtonText": {
+        "message": "ヘルプ・よくあるご質問"
+    },
+    "injGuideFeatSdHeading": {
+        "message": "標準ダウンロード"
+    },
+    "injGuideSdDownloadsButtonTooltip": {
+        "message": "標準ダウンロード"
+    },
+    "optMp3BitrateLabel": {
+        "message": "MP3変換機のデフォルトビットレート"
+    },
+    "injGuideMp3ConverterButtonTooltip": {
+        "message": "MP3変換機"
+    },
+    "injGuideFeatMp3Heading": {
+        "message": "MP3変換機"
+    },
+    "optVideoQualityDisabledOptionLabel": {
+        "message": "無効になりました"
+    },
+    "optDashFormatsRadioBoth": {
+        "message": "音声と動画"
+    },
+    "optQrButtonSwitchLabel": {
+        "message": "QRコード作成ボタンを有効にする"
+    },
+    "optCopyButtonSwitchLabel": {
+        "message": "クリップボードにコピーするボタンを有効にする"
+    },
+    "optFlixmateSettingsHeading": {
+        "message": "Flixmateメディアダウンローダ"
+    },
+    "optFlixmateUnsupportedText": {
+        "message": "Flixmateはこのシステムでは対応されていません。"
+    },
+    "optFlixmateDisconnectedText": {
+        "message": "Flixmateが接続されていません"
+    },
+    "optFlixmateUpdateAvailableText": {
+        "message": "利用可能なアップデートがあります"
+    },
+    "optFloatVideoSwitchLabel": {
+        "message": "フローティングビデオプレーヤーを有効にする"
+    },
+    "optHideCommentsSwitchHelpText": {
+        "message": "（YouTube動画ですべてのユーザーのコメントを非表示にします）"
+    },
+    "optFlixmateConnectedText": {
+        "message": "が接続されました"
+    },
+    "optSaveAsSwitchLabel": {
+        "message": "動画のダウンロードを選択した時に[名前を付けて保存]を表示させる"
+    },
+    "optDashFormatsRadioNone": {
+        "message": "なし"
+    },
+    "optDownloadButtonOnUrlsSwitchLabel": {
+        "message": "YouTubeのリンクにダウンロードボタンを追加する"
+    },
+    "optRestoreSuccessMessage": {
+        "message": "設定が正常にリセットされました。"
+    },
+    "optRestoreConfirmMessage": {
+        "message": "設定がデフォルトにリセットされます。"
+    },
+    "injGuideFeatVolumeControlHeading": {
+        "message": "マウスホイールで音量調節"
+    },
+    "injGuideFeatVolumeControlDescriptionP1": {
+        "message": "この機能を有効にするには、ここの"
+    },
+    "injGuideFeatFloatViewHeading": {
+        "message": "フロートビデオプレーヤー"
+    },
+    "injGuideFeatDarkModeDescription": {
+        "message": "これはYouTubeをダークモードに切り替えるショートキーです。"
+    },
+    "injGuideFeatDownloadsSec1Title": {
+        "message": "ダウンロード済みファイルはどこに保存されますか？ダウンロードフォルダを開く方法は？"
+    },
+    "injGuideFeatScreenshotDescriptionP1": {
+        "message": "スクリーンショットを撮るには、ここの"
+    },
+    "injGuideFeatSubtitlesNote2P1": {
+        "message": "自動作成された字幕には、次のものが付きます。"
+    },
+    "injGuideFeatSubtitlesSec2Title": {
+        "message": "字幕付きの動画をダウンロードすることができますか？"
+    },
+    "injGuideFeatSubtitlesSec1Step2": {
+        "message": "動画が読み込むのを待ちます。"
+    },
+    "injGuideFeatSdSec1Step2": {
+        "message": "動画が読み込むのを待ちます。"
+    },
+    "injGuideFeatMp3Sec1Step2": {
+        "message": "動画が読み込むのを待ちます。"
+    },
+    "injGuideFeatUhdSec1Step3": {
+        "message": "動画が読み込むのを待ちます。"
+    },
+    "injGuideFeatUhdSec2Step3": {
+        "message": "動画が読み込むのを待ちます。"
+    },
+    "injGuideFeatThumbnailsSec1Step2": {
+        "message": "動画が読み込むのを待ちます。"
+    },
+    "injGuideFeatMp3Sec1Step1P2": {
+        "message": "ツールバーにあるアイコン。"
+    },
+    "injGuideFeatSdSec1Step1P2": {
+        "message": "ツールバーにあるアイコン。"
+    },
+    "injGuideFeatUhdSec1Step2P2": {
+        "message": "ツールバーにあるアイコン。"
+    },
+    "injGuideFeatUhdSec2Step2P2": {
+        "message": "ツールバーにあるアイコン。"
+    },
+    "injGuideFeatThumbnailsSec1Step1P2": {
+        "message": "ツールバーにあるアイコン。"
+    },
+    "injGuideFeatSubtitlesSec1Step1P2": {
+        "message": "ツールバーにあるアイコン。"
+    },
+    "injGuideFeatScreenshotDescriptionP2": {
+        "message": "ツールバーにあるアイコンをクリックします。スクリーンショットの画質は動画の再生中の画質によります。"
+    },
+    "injGuideFeatSubtitlesSec1Title": {
+        "message": "字幕をダウンロードする方法は？"
+    },
+    "injGuideFeatUhdSec1Step5": {
+        "message": "ダウンロード済みファイルはflixmateに追加されます。"
+    },
+    "injGuideFeatUhdSec2Step6": {
+        "message": "ダウンロード済みファイルはflixmateに追加されます。"
+    },
+    "injGuideFeatUhdSec2Step4": {
+        "message": "「詳細」ボタンをクリックします。"
+    },
+    "injGuideFeatUhdSec2Step5": {
+        "message": "ビデオをトリミングする必要がある場合は、目的のビデオ品質とフォーマットを選択し、ビデオの長さを調整します。"
+    },
+    "injGuideFeatUhdSec1Step1": {
+        "message": "PCにFlixmateをインストール。"
+    },
+    "injGuideFeatUhdSec1Title": {
+        "message": "UHD（1080p、4k、8k）の動画をダウンロードする方法は？"
+    },
+    "injGuideFeatMp3Sec1Step4": {
+        "message": "ダウンロードボタンをクリックして、リクエストが完了するまでお待ください。"
+    },
+    "injGuideFeatMp3Sec1Step3": {
+        "message": "MP3のビットレートを選択し、動画をトリミングしたい場合は動画の長さを調整してください。"
+    },
+    "injGuideFeatMp3Sec1Title": {
+        "message": "動画をMP3に変換する方法は？"
+    },
+    "injGuideFeatSdNote1P2": {
+        "message": "QRコードを作成する"
+    },
+    "injGuideFeatUhdSec1Step4": {
+        "message": "リストで動画の画質をクリックします。"
+    },
+    "injGuideFeatSdSec1Step3": {
+        "message": "リストで動画の画質をクリックします。"
+    },
+    "injGuideFaqHeading": {
+        "message": "よくあるご質問"
+    },
+    "injGuideVolumeControlButtonTooltip": {
+        "message": "マウスホイールで音量調節"
+    },
+    "injGuideUhdDownloadsButtonTooltip": {
+        "message": "UHD ダウンロード済みファイル"
+    },
+    "injGuideFeatMp3Note1": {
+        "message": "インプットボックスのスライダーを使って動画の長さを調整してトリミングすることができます。"
+    },
+    "injGuideFeatMp3Note2": {
+        "message": "YouTubeはMP3のダウンロードに対応していません。MP3を変換するには外部のダウンロードサービスを使っています。"
+    },
+    "injGuideFeatMp3Note3": {
+        "message": "flixmateをすでにインストール済みで有効にしている場合、ダウンロード済みファイルはflixmateに追加されます。"
+    },
+    "injGuideFeatSdNote3": {
+        "message": "アンダーバー形式の動画には音声が含まれていません。"
+    },
+    "injGuideFeatSdNote1P1": {
+        "message": "次のことができます。"
+    },
+    "injGuideFeatSdNote1P3": {
+        "message": "そしてスキャンして動画をスマホにダウンロードすることができます。"
+    },
+    "injGuideFeatSdSec1Title": {
+        "message": "動画をダウンロードする方法は？"
+    },
+    "injGuideBackButtonText": {
+        "message": "戻る"
+    },
+    "injGuideContactUsButtonText": {
+        "message": "お問い合わせ"
+    },
+    "injGuideContactUsNote": {
+        "message": "問題は解消されていません？"
+    },
+    "injGuideFaqSubtitles": {
+        "message": "字幕付きのYouTube動画をダウンロードすることはできますか？"
+    },
+    "injGuideFaqDownloads": {
+        "message": "ダウンロード済みの動画はどこに保存されますか？"
+    },
+    "injGuideFaqMP3": {
+        "message": "YouTube動画をMP3に変換する方法は？"
+    },
+    "injGuideFaqSD": {
+        "message": "YouTubeで動画をダウンロードする方法は？"
+    },
+    "injGuideNoteText": {
+        "message": "詳細についてはアイコンをクリックするか、またはよくあるご質問をご参照ください。"
+    },
+    "injGuideDescription": {
+        "message": "YouTube動画ダウンローダの機能と使用方法についてさらに詳く"
+    },
+    "injGuideFeatDownloadsDescriptionP1": {
+        "message": "ダウンロードマネージャーでダウンロード済みファイルをキャンセル・一時停止・再生することができます。ここの"
+    },
+    "injGuideFeatDownloadsDescriptionP2": {
+        "message": "ツールバーのアイコンをクリックして、ダウンロードマネージャーを開きます。"
+    },
+    "injGuideFeatDownloadsSec1Step1P2": {
+        "message": "ツールバーのアイコンをクリックして、ダウンロードマネージャーを開きます。"
+    },
+    "injGuideFeatCinemaModeDescriptionP2": {
+        "message": "シネマモードをオンにするには、ここの"
+    },
+    "injGuideFeatPipDescriptionP2": {
+        "message": "ピクチャーインピクチャーモードをオンにするには、ここの"
+    },
+    "optFormatsLabel": {
+        "message": "ダウンロードメニューに表示させる動画フォーマット形式"
+    },
+    "optDashFormatsLabel": {
+        "message": "ダウンロードメニューに表示させるアンダーバーフォーマット形式"
+    },
+    "optAudioModeSwitchHelpText": {
+        "message": "（動画を読み込まないで音声のみ再生）"
+    },
+    "optAudioModeChangeAlert": {
+        "message": "変更を有効にするにはYouTubeタブをリフレッシュします。"
+    },
+    "optMousewheelVolumeControlSwitchHelpText": {
+        "message": "（動画内でマウスホイールで音量を調節します）"
+    },
+    "optVideoSearchSwitchHelpText": {
+        "message": "（動画を中断せずに関連動画クションで検索結果を読み込み、YouTubeで他の動画を検索します）"
+    },
+    "optSmartPauseSwitchHelpText": {
+        "message": "（ページを離れると、現在YouTubeで再生中の動画を自動的に一時停止させ、ページに戻った時に再開させます）"
+    },
+    "optFloatVideoSwitchHelpText": {
+        "message": "（下にスクロールしながら動画が表示されるスマートビュー。動画は右下隅に表示されます）"
+    },
+    "optVideoQualityMenuLabel": {
+        "message": "好きな動画の再生画質を設定する"
+    },
+    "optFlixmateFormatsLabel": {
+        "message": "ダウンロードメニューに表示する変換フォーマット形式"
+    },
+    "injGuideFeatHideCommentsDescriptionP2": {
+        "message": "ボタンをクリックしてYouTube動画でのコメントを隠します。"
+    },
+    "injGuideFeatVideoSearchDescriptionP1": {
+        "message": "この機能を使うと、動画を見ながらYouTube検索を使うことができます。 ここの"
+    },
+    "injGuideFeatVolumeControlDescriptionP2": {
+        "message": "ボタンをクリックすると、マウスホイールでYouTube動画の音量を調節することができるようになります。"
+    },
+    "injGuideFeatAudioModeNote1": {
+        "message": "この機能を切り替えて変更を有効にすると、ページが再読み込みされます。"
+    },
+    "injGuideFeatDownloadsNote1": {
+        "message": "Flixmateはユーザーディレクトリにアクセスできないため、ファイルがパブリックディレクトリに保存されます。"
+    },
+    "injGuideFeatDownloadsSec1Step3": {
+        "message": "[拡張機能のダウンロード] または[Flixmateのダウンロード]をクリックし、ダウンロードフォルダーを開きます。"
+    },
+    "injGuideFeatDownloadsSec1Step2": {
+        "message": "ダウンロードマネージャーページで、右上隅にあるドロップダウンメニューの[ダウンロードフォルダーを開く]をクリックします。"
+    },
+    "injGuideFeatSubtitlesNote3": {
+        "message": "YouTubeは、ほとんどの動画プレーヤーも対応しているWebVTT、TTMLとSRV3形式を提供しています。"
+    },
+    "injGuideFeatSubtitlesNote1": {
+        "message": "一部の動画には字幕がない場合があります。"
+    },
+    "injGuideFeatSubtitlesSec2Text": {
+        "message": "字幕が埋め込まれたYouTubeの動画をダウンロードすることができません。 字幕ファイルを個別にダウンロードし、VLCなど対応しているプレーヤーで使用できます。"
+    },
+    "injGuideFeatSubtitlesSec1Step3": {
+        "message": "ドロップダウンとフォーマットから言語を選択し、ダウンロードボタンをクリックします。"
+    },
+    "injGuideFeatThumbnailsSec1Step3": {
+        "message": "ドロップダウンからサムネイルの画質を選択し、ダウンロードボタンをクリックします。"
+    },
+    "injGuideFeatUhdNote1": {
+        "message": "FlixmateはMacOSまたはLinuxでは対応されていません。"
+    },
+    "injGuideFeatUhdSec2Step1": {
+        "message": "PCにFlixmateをインストール。"
+    },
+    "injGuideFeatUhdSec2Title": {
+        "message": "動画をトリミングと別の形式（mkv、avi）に変換する方法は？"
+    },
+    "injGuideFeatUhdDescriptionP2": {
+        "message": "1080p、2k、4k、8kなどの高品質動画をダウンロードすることができます。また、音声・動画ストリームを結合したり、さまざまなフォーマット形式に変換したりできるデスクトップサービスです。"
+    },
+    "injGuideFeatSdNote2": {
+        "message": "YouTubeは一部の動画のHDダウンロードに対応していません。それらの動画をダウンロードするには、外部のダウンロードサービスを使っています。"
+    },
+    "injGuideFeatAutoPlayDescription": {
+        "message": "これはYouTubeの自動再生機能をオンにするショートキーです。"
+    },
+    "injGuideFeatSmartPauseDescription": {
+        "message": "スマートポーズは、YouTubeの動画をどこまで見たのを自動的に記憶し、中断したところから簡単に再開できます。タブを変更したり、新しいタブを開いたり、新しいウィンドウを開いたりしても、中断したところから再開することができます。"
+    },
+    "injGuideFeatLooperDescriptionP3": {
+        "message": "アイコンで動画をループします。 アイコンをクリックすると、指定の回数で動画をループしたり、一部のみループしたりできる高度ルーパーも表示されます。"
+    },
+    "injGuideFeatLooperDescriptionP1": {
+        "message": "YouTubeは動画をループする機能を提供していないため、良い便利な体験を届けたくてこの機能を追加しました。"
+    },
+    "injGuideFeatFloatViewDescriptionP1": {
+        "message": "フロートビューを有効にすると、スクロールしたりコメントを読んだりしながらYouTube動画を見ることができます。ここの"
+    },
+    "injGuideFeatFloatViewDescriptionP2": {
+        "message": "ボタンをクリックしてフローティングビデオプレーヤーをオンにします。"
+    },
+    "injGuideFeatVideoSearchDescriptionP2": {
+        "message": "ボタンをクリックすると、ページの右側に検索バーが追加されます。検索バーで新しい動画を検索する際に、視聴中の動画が中断されたり、離れたりすることなく、次の動画を探すことができます。"
+    },
+    "injGuideFeatAudioModeDescriptionP1": {
+        "message": "YouTubeの動画で音楽や音声のみ聞きたい場合は、次の方法でこの機能をオンにすることができます"
+    },
+    "injGuideFeatAudioModeDescriptionP2": {
+        "message": "音声のみを再生する場合は、より高速なバッファ時間をサポートしながら帯域幅を節約することができます。なぜなら音声モードでは音声のみが読み込まれるからです。この機能はBGMや授業の聴取などに最適です。"
+    },
+    "injGuideFeatPipDescriptionP1": {
+        "message": "ピクチャーインピクチャーを使用すると、フローティングウィンドウ（常に他のウィンドウの上に表示される）で動画を視聴できるため、他のサイトやアプリを使っている間にも動画を視聴できます。"
+    },
+    "injGuideFeatCinemaModeDescriptionP1": {
+        "message": "シネマモードでダークモードをオンにすると、他のものに気を取られないで視聴体験を向上させることができます。"
+    },
+    "optMultithreadingSwitchHelpText": {
+        "message": "サーバーへの複数の接続を持つファイルをダウンロードして、ダウンロード速度を上げます。"
+    },
+    "optMultithreadingSwitchLabel": {
+        "message": "ダウンロードにマルチスレッドを使用する"
+    },
+    "optCompactDisplayModeButtonText": {
+        "message": "スイッチ"
+    },
+    "optCompactDisplayModeSubheading": {
+        "message": "拡張機能はYouTubeにコンパクトなボタンとして表示されます。このボタンをクリックすると、フルモードに切り替わります。"
+    },
+    "optCompactDisplayModeHeading": {
+        "message": "拡張機能はコンパクトモードで表示されます"
+    },
+    "optChangeLanguageText": {
+        "message": "言語を変えてください"
+    },
+    "injCompactButtonTooltip": {
+        "message": "このボタンを使用して、コンパクトモードでAddoncropYouTubeDownloaderを使用します"
+    },
+    "injExpandBtnTooltip": {
+        "message": "フルエクステンションバーに切り替える"
+    },
+    "injSwitchDisplayButtonTooltip": {
+        "message": "コンパクトモードに切り替えます"
+    },
+    "injSwitchDisplayButtonText": {
+        "message": "このボタンをクリックして、コンパクトモードに切り替えます。"
+    },
+    "injWelcomeMessageTooltip": {
+        "message": "ビデオをダウンロードするには、このボタンをクリックしてください。"
+    },
+    "downloadsOpenVideoPageButtonTooltip": {
+        "message": "YouTubeでビデオを開く"
+    },
+    "downloadsFlixmateDownloadsHeading": {
+        "message": "FlixmateでUltraHDをダウンロード"
+    }
+}

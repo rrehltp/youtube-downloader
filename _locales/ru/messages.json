@@ -1,0 +1,1193 @@
+{
+    "extName": {
+        "message": "Загрузчик Видео и MP3 с YouTube"
+    },
+    "downloadsHeading": {
+        "message": "Загрузки"
+    },
+    "extDescription": {
+        "message": "Скачивайте видео с YouTube с различным качеством видео: 1080P, 720P, 480P, 360p и т.д. Поддерживает все форматы Mp3, MP4, FLV, WebM, 3GP"
+    },
+    "downloadsError_FILE_FAILED": {
+        "message": "Неудачно"
+    },
+    "downloadsError_FILE_ACCESS_DENIED": {
+        "message": "Доступ запрещен"
+    },
+    "downloadsError_FILE_NO_SPACE": {
+        "message": "Недостаточно места для сохранения"
+    },
+    "downloadsError_FILE_NAME_TOO_LONG": {
+        "message": "Cлишком длинное имя файла"
+    },
+    "downloadsError_FILE_TOO_LARGE": {
+        "message": "Слишком большой файл"
+    },
+    "downloadsError_FILE_VIRUS_INFECTED": {
+        "message": "Файл может быть заражен"
+    },
+    "downloadsError_FILE_TRANSIENT_ERROR": {
+        "message": "Неудачно"
+    },
+    "flixmateDownloadFailedText": {
+        "message": "Не удалось загрузить."
+    },
+    "thumbnailsDownloadFailedText": {
+        "message": "Не удалось загрузить."
+    },
+    "subtitlesDownloadFailedText": {
+        "message": "Не удалось загрузить."
+    },
+    "downloadsError_FILE_BLOCKED": {
+        "message": "Заблокировано"
+    },
+    "downloadsError_FILE_SECURITY_CHECK_FAILED": {
+        "message": "Проверка безопасности не удалась"
+    },
+    "downloadsError_FILE_TOO_SHORT": {
+        "message": "Слишком маленький файл"
+    },
+    "downloadsError_NETWORK_FAILED": {
+        "message": "Сбой сети"
+    },
+    "downloadsError_NETWORK_TIMEOUT": {
+        "message": "Время вышло"
+    },
+    "downloadsError_NETWORK_DISCONNECTED": {
+        "message": "Отсутствует соединение"
+    },
+    "downloadsError_NETWORK_SERVER_DOWN": {
+        "message": "Сервер не работает"
+    },
+    "downloadsError_NETWORK_INVALID_REQUEST": {
+        "message": "Неверный запрос"
+    },
+    "downloadsError_SERVER_FAILED": {
+        "message": "Сбой сервера"
+    },
+    "downloadsError_SERVER_NO_RANGE": {
+        "message": "Ошибка в диапазоне сервера"
+    },
+    "downloadsError_SERVER_BAD_CONTENT": {
+        "message": "Плохой контент"
+    },
+    "downloadsError_SERVER_UNAUTHORIZED": {
+        "message": "Несанкционированно"
+    },
+    "downloadsError_SERVER_CERT_PROBLEM": {
+        "message": "Ошибка сертификата"
+    },
+    "downloadsError_SERVER_FORBIDDEN": {
+        "message": "Запрещено"
+    },
+    "downloadsError_USER_CANCELED": {
+        "message": "Отменено"
+    },
+    "downloadsError_USER_SHUTDOWN": {
+        "message": "Выключение"
+    },
+    "downloadsError_CRASH": {
+        "message": "Вылетел"
+    },
+    "bgFlixmateNotConnectedError": {
+        "message": "Flixmate не подключен."
+    },
+    "popupHomeButtonTooltip": {
+        "message": "Перейдите в раздел главная"
+    },
+    "popupDownloadsButtonTooltip": {
+        "message": "Показать загрузки"
+    },
+    "popupVideoButtonTooltip": {
+        "message": "Перейдите в раздел видео"
+    },
+    "popupThemeToggleButtonTooltip": {
+        "message": "Сменить тему"
+    },
+    "popupThemeMenuSystemLabel": {
+        "message": "Система по умолчанию"
+    },
+    "popupThemeMenuDarkLabel": {
+        "message": "Темная тема"
+    },
+    "popupThemeMenuLightLabel": {
+        "message": "Светлая тема"
+    },
+    "popupOptionsButtonTooltip": {
+        "message": "Открыть страницу с параметрами"
+    },
+    "popupHomeLinkHomePageText": {
+        "message": "Домашняя страница"
+    },
+    "popupHomeLinkHowToUseText": {
+        "message": "Как использовать"
+    },
+    "popupHomeLinkDownloadsText": {
+        "message": "Загрузки"
+    },
+    "popupHomeLinkReportBugText": {
+        "message": "Сообщить об Ошибке"
+    },
+    "popupHomeAlertsHeading": {
+        "message": "Недавние оповещения"
+    },
+    "popupDownloaderLoadingText": {
+        "message": "Загрузка деталей о видео..."
+    },
+    "popupDownloaderErrorText": {
+        "message": "Не удалось получить подробную информацию о видео"
+    },
+    "popupDownloaderNotAvailableMessage": {
+        "message": "Загрузок недоступны для прямых эфиров и предстоящих видео."
+    },
+    "popupDownloaderTabSDLabel": {
+        "message": "Стандартная загрузка"
+    },
+    "popupDownloaderTabMP3Label": {
+        "message": "Конвертировать в MP3"
+    },
+    "popupDownloaderTabUHDLabel": {
+        "message": "Ultra HD"
+    },
+    "popupDownloaderTabThumbnailsLabel": {
+        "message": "Миниатюры"
+    },
+    "popupDownloaderTabSubtitlesLabel": {
+        "message": "Субтитры"
+    },
+    "videoInfoGenericError": {
+        "message": "Произошла ошибка, Пожалуйста, повторите попытку."
+    },
+    "genericDownloadError": {
+        "message": "Произошла ошибка, Пожалуйста, повторите попытку."
+    },
+    "subtitlesDownloadButtonText": {
+        "message": "Загрузить"
+    },
+    "downloadsQrCodeButtonTooltip": {
+        "message": "Сгенерировать QR-код"
+    },
+    "downloadsCopyToClipboardButtonTooltip": {
+        "message": "Скопировать URL-адрес в буфер обмена"
+    },
+    "downloadsVideoOnlyTooltip": {
+        "message": "Этот файл не содержит аудио"
+    },
+    "downloadsAudioOnlyTooltip": {
+        "message": "Только аудио файл"
+    },
+    "flixmateNotConnectedTitle": {
+        "message": "Flixmate не подключен"
+    },
+    "flixmateNotConnectedText": {
+        "message": "Загрузка в формате Ultra HD недоступна."
+    },
+    "flixmateNotConnectedMp3Text": {
+        "message": "Продолжительность загрузки MP3 будет ограничена."
+    },
+    "flixmateNotConnectedLinkText": {
+        "message": "Узнайте подробнее"
+    },
+    "downloadsPrimaryDownloadsHeading": {
+        "message": "Загрузки с YouTube"
+    },
+    "downloadsApiDownloadsHeading": {
+        "message": "Загрузки из внешнего сервиса"
+    },
+    "downloadsDashFormatsShowButtonText": {
+        "message": "Dash форматы"
+    },
+    "downloadsDashFormatsHideButtonText": {
+        "message": "Скрыть"
+    },
+    "downloadsDownloadStartedText": {
+        "message": "Загрузка началась."
+    },
+    "downloadsDownloadFailedText": {
+        "message": "Не удалось загрузить."
+    },
+    "downloadsUrlCopiedToClipboard": {
+        "message": "URL-адрес загрузки, скопирован в буфер обмена."
+    },
+    "downloadsQrCodeNote": {
+        "message": "Отсканируйте данный QR-код на своем устройстве, чтобы получить URL-адрес загрузки."
+    },
+    "downloadsQrCodeButtonText": {
+        "message": "Закрыть"
+    },
+    "downloadsApiRequestLoadingText": {
+        "message": "Запрос на загрузку может занять несколько секунд."
+    },
+    "mp3ConverterBitrateLabel": {
+        "message": "Выберите битрейт MP3"
+    },
+    "mp3ConverterTimeLabel": {
+        "message": "Время"
+    },
+    "mp3ConverterTimeFromLabel": {
+        "message": "От"
+    },
+    "mp3ConverterTimeToLabel": {
+        "message": "До"
+    },
+    "mp3ConverterMp3DownloadButtonText": {
+        "message": "Загрузить"
+    },
+    "mp3ConverterDownloadStartedText": {
+        "message": "Загрузка началась."
+    },
+    "mp3ConverterDownloadFailedText": {
+        "message": "Не удалось загрузить."
+    },
+    "flixmateDownloadStartedText": {
+        "message": "Загрузка добавлена в Flixmate."
+    },
+    "flixmateInstallText": {
+        "message": "Установить"
+    },
+    "flixmateAppName": {
+        "message": "Загрузчик Мультимедиа Flixmate"
+    },
+    "flixmateAppTitle": {
+        "message": "Загрузить видео в Ultra HD, 4K и 8k"
+    },
+    "flixmateAppDescription": {
+        "message": "Загружайте Неограниченное количество форматов MP3 и HD, включая 1080p, 2k, 4K и 8K, с помощью Загрузчика Мультимедиа Flixmate"
+    },
+    "flixmateAppDownloadButtonText": {
+        "message": "Загрузить"
+    },
+    "flixmateHowToLinkText": {
+        "message": "Как это работает?"
+    },
+    "flixmateAdvancedShowButtonText": {
+        "message": "Дополнительно (Конвертировать или Обрезать)"
+    },
+    "flixmateAdvancedHideButtonText": {
+        "message": "Скрыть"
+    },
+    "flixmateSelectFormatLabel": {
+        "message": "Выберите формат"
+    },
+    "flixmateSelectQualityLabel": {
+        "message": "Выберите качество"
+    },
+    "flixmateTimeLabel": {
+        "message": "Время"
+    },
+    "flixmateFromLabel": {
+        "message": "От"
+    },
+    "flixmateToLabel": {
+        "message": "До"
+    },
+    "flixmateDownloadButtonText": {
+        "message": "Загрузить"
+    },
+    "thumbnailsQualityLabel": {
+        "message": "Выберите качество"
+    },
+    "thumbnailsDownloadButtonText": {
+        "message": "Загрузить"
+    },
+    "thumbnailsDownloadStartedText": {
+        "message": "Загрузка началась."
+    },
+    "subtitlesLanguageLabel": {
+        "message": "Выберите язык"
+    },
+    "subtitlesAutoGeneratedNote": {
+        "message": "Автоматически сгенерированные субтитры отмечены этим значком."
+    },
+    "subtitlesFormatLabel": {
+        "message": "Выберите формат файла"
+    },
+    "subtitlesNotAvailableMessage": {
+        "message": "Субтитры к этому видео не найдены."
+    },
+    "subtitlesDownloadStartedText": {
+        "message": "Загрузка началась."
+    },
+    "handleLinksDownloadButtonText": {
+        "message": "Загрузить"
+    },
+    "handleLinksDownloadButtonTooltip": {
+        "message": "Загрузка с помощью Загрузчика Видео и MP3 с YouTube"
+    },
+    "downloadsAddDownloadButtonText": {
+        "message": "Добавить загрузку"
+    },
+    "downloadsClearAllButtonText": {
+        "message": "Очистить все"
+    },
+    "downloadsOpenFolderMenuText": {
+        "message": "Открыть папку с загрузками"
+    },
+    "downloadsExtensionFolderButtonText": {
+        "message": "Загрузки расширений"
+    },
+    "downloadsFlixmateFolderButtonText": {
+        "message": "Загрузки Flixmate"
+    },
+    "downloadsTabBrowserButtonText": {
+        "message": "Браузер"
+    },
+    "downloadsTabFlixmateButtonText": {
+        "message": "Flixmate"
+    },
+    "downloadsStateMenuAllLabel": {
+        "message": "Все загрузки"
+    },
+    "downloadsStateMenuDownloadingLabel": {
+        "message": "Загрузка"
+    },
+    "downloadsStateMenuQueuedLabel": {
+        "message": "В очереди"
+    },
+    "downloadsStateMenuPausedLabel": {
+        "message": "На паузе"
+    },
+    "downloadsStateMenuProcessingLabel": {
+        "message": "В процессе"
+    },
+    "downloadsStateMenuCompletedLabel": {
+        "message": "Завершено"
+    },
+    "downloadsStateMenuCanceledLabel": {
+        "message": "Отменено"
+    },
+    "downloadsStateMenuErrorLabel": {
+        "message": "Ошибка"
+    },
+    "downloadsSearchInputPlaceholder": {
+        "message": "Поиск в загрузках"
+    },
+    "downloadsSizeUnknownText": {
+        "message": "Размер неизвестен"
+    },
+    "downloadsPausedText": {
+        "message": "На паузе"
+    },
+    "downloadsPauseButtonText": {
+        "message": "Пауза"
+    },
+    "downloadsResumeButtonText": {
+        "message": "Возобновить"
+    },
+    "downloadsCopyUrlButtonText": {
+        "message": "Копировать URL"
+    },
+    "downloadsCancelButtonText": {
+        "message": "Отменить"
+    },
+    "downloadsPlayButtonText": {
+        "message": "Проиграть"
+    },
+    "downloadsShowFolderButtonText": {
+        "message": "Показать в папке"
+    },
+    "downloadsRemoveButtonText": {
+        "message": "Убрать"
+    },
+    "downloadsDeleteStateText": {
+        "message": "Удалено"
+    },
+    "downloadsLoadMoreButtonText": {
+        "message": "Загрузить больше"
+    },
+    "downloadsDownloaderVideoIdErrorText": {
+        "message": "Не удалось извлечь ID видео, пожалуйста, проверьте URL-адрес."
+    },
+    "downloadsDownloaderTitle": {
+        "message": "Введите URL-адрес видео на YouTube"
+    },
+    "downloadsDownloaderLoadingText": {
+        "message": "Загрузка информации о видео..."
+    },
+    "downloadsDownloaderErrorText": {
+        "message": "Не удалось получить подробную информацию о видео"
+    },
+    "downloadsDownloaderNotAvailableMessage": {
+        "message": "Загрузок недоступны для прямых эфиров и предстоящих видео."
+    },
+    "downloadsDownloaderTabSDLabel": {
+        "message": "Стандартная загрузка"
+    },
+    "injSdDownloadsBtnTooltip": {
+        "message": "Стандартная загрузка"
+    },
+    "downloadsDownloaderTabMP3Label": {
+        "message": "Конвертировать в MP3"
+    },
+    "downloadsDownloaderTabUHDLabel": {
+        "message": "Ultra HD"
+    },
+    "downloadsDownloaderTabThumbnailsLabel": {
+        "message": "Миниатюры"
+    },
+    "injThumbnailsBtnTooltip": {
+        "message": "Миниатюры"
+    },
+    "injSubtitlesBtnTooltip": {
+        "message": "Субтитры"
+    },
+    "downloadsDownloaderTabSubtitlesLabel": {
+        "message": "Субтитры"
+    },
+    "injLooperPlayedText": {
+        "message": "Проиграно"
+    },
+    "injLooperPlayedTimesText": {
+        "message": "раз"
+    },
+    "injLooperStoppedText": {
+        "message": "Остановлено"
+    },
+    "injLooperLoopForTimesText": {
+        "message": "Цикл для (x раз)"
+    },
+    "injLooperLoopForPortionText": {
+        "message": "Цикл для части"
+    },
+    "injLooperLoopFromLabel": {
+        "message": "От"
+    },
+    "injLooperLoopToLabel": {
+        "message": "До"
+    },
+    "injNotificationsBtnTooltip": {
+        "message": "Уведомления"
+    },
+    "injMp3ConverterBtnTooltip": {
+        "message": "MP3 Конвертер"
+    },
+    "injUhdDownloadsBtnTooltip": {
+        "message": "Ultra HD загрузки"
+    },
+    "injDownloadsManagerBtnTooltip": {
+        "message": "Менеджер Загрузок"
+    },
+    "injScreenshotBtnTooltip": {
+        "message": "Сделать скриншот"
+    },
+    "injEnableEditModeText": {
+        "message": "Редактировать карточки"
+    },
+    "injMoreToggleButtonText": {
+        "message": "Еще"
+    },
+    "injCancelEditModeText": {
+        "message": "Отмена"
+    },
+    "injDarkModeInactiveTooltip": {
+        "message": "Включить темный режим"
+    },
+    "injDarkModeActiveTooltip": {
+        "message": "Отключить темный режим"
+    },
+    "injCinemaModeInactiveTooltip": {
+        "message": "Включить режим кино"
+    },
+    "injCinemaModeActiveTooltip": {
+        "message": "Отключить режим кино"
+    },
+    "injPipInactiveTooltip": {
+        "message": "Включить режим \"картинка в картинке\""
+    },
+    "injPipActiveTooltip": {
+        "message": "Отключить режим \"картинка в картинке\""
+    },
+    "injFloatVideoInactiveTooltip": {
+        "message": "Включить плавающий видеоплеер"
+    },
+    "injFloatVideoActiveTooltip": {
+        "message": "Отключить плавающий видеоплеер"
+    },
+    "injLooperInactiveTooltip": {
+        "message": "Показать расширенный видео лупер"
+    },
+    "injLooperActiveTooltip": {
+        "message": "Скрыть видео лупер"
+    },
+    "injSmartPauseInactiveTooltip": {
+        "message": "Включить умную функцию паузы видео при переключении вкладки"
+    },
+    "injSmartPauseActiveTooltip": {
+        "message": "Отключить функцию умной паузы"
+    },
+    "injAutoplayInactiveTooltip": {
+        "message": "Включить автозапуск"
+    },
+    "injAutoplayActiveTooltip": {
+        "message": "Отключить автозапуск"
+    },
+    "injAudioModeInactiveTooltip": {
+        "message": "Включить режим только аудио"
+    },
+    "injAudioModeActiveTooltip": {
+        "message": "Отключить режим только аудио"
+    },
+    "injVolumeControlInactiveTooltip": {
+        "message": "Включить регулировку громкости с помощью колесика мыши"
+    },
+    "injVolumeControlActiveTooltip": {
+        "message": "Отключить регулировку громкости с помощью колесика мыши"
+    },
+    "injVideoSearchInactiveTooltip": {
+        "message": "Включить поиск видео во время просмотра видео"
+    },
+    "injVideoSearchActiveTooltip": {
+        "message": "Отключить поиск видео"
+    },
+    "injHideCommentsInactiveTooltip": {
+        "message": "Скрыть раздел комментариев"
+    },
+    "injHideCommentsActiveTooltip": {
+        "message": "Показать раздел комментариев"
+    },
+    "injOptionsTooltip": {
+        "message": "Открыть настройки расширения"
+    },
+    "downloadsDownloadStartedSubText": {
+        "message": "Нажмите здесь, чтобы открыть менеджер загрузок"
+    },
+    "downloadsFlixmateDownloadsClearedNotificationText": {
+        "message": "Загрузки очищены"
+    },
+    "downloadsStateFilterAll": {
+        "message": "Все Загрузки"
+    },
+    "downloadsStateDownloading": {
+        "message": "Загружается"
+    },
+    "downloadsStateQueued": {
+        "message": "В очереди"
+    },
+    "downloadsStateError": {
+        "message": "Ошибка"
+    },
+    "downloadsStateCanceled": {
+        "message": "Отменено"
+    },
+    "downloadsStatePaused": {
+        "message": "На паузе"
+    },
+    "downloadsStateProcessing": {
+        "message": "Обработка"
+    },
+    "downloadsStateCompleted": {
+        "message": "Завершено"
+    },
+    "downloadsUrlCopiedText": {
+        "message": "URL-адрес скопирован в буфер обмена."
+    },
+    "injHelpButtonText": {
+        "message": "Помощь и FAQ"
+    },
+    "injGuideDescription": {
+        "message": "Узнайте больше о функциях Загрузчика Видео с YouTube и о том, как их использовать"
+    },
+    "injGuideSdDownloadsButtonTooltip": {
+        "message": "Стандартные Загрузки"
+    },
+    "injGuideMp3ConverterButtonTooltip": {
+        "message": "MP3 Конвертер"
+    },
+    "injGuideUhdDownloadsButtonTooltip": {
+        "message": "Загрузки в формате Ultra HD"
+    },
+    "injGuideThumbnailsButtonTooltip": {
+        "message": "Миниатюры"
+    },
+    "injGuideSubtitlesButtonTooltip": {
+        "message": "Субтитры"
+    },
+    "injGuideScreenshotButtonTooltip": {
+        "message": "Скриншоты"
+    },
+    "injGuideDownloadsManagerButtonTooltip": {
+        "message": "Менеджер Загрузок"
+    },
+    "injGuideDarkModeButtonTooltip": {
+        "message": "Темный Режим"
+    },
+    "injGuideCinemaModeButtonTooltip": {
+        "message": "Режим Кинотеатра"
+    },
+    "injGuidePipButtonTooltip": {
+        "message": "Плавающий видеоплеер"
+    },
+    "injGuideLooperButtonTooltip": {
+        "message": "Looper"
+    },
+    "injGuideSmartPauseButtonTooltip": {
+        "message": "Умная Пауза"
+    },
+    "injGuideAutoplayButtonTooltip": {
+        "message": "Автозапуск"
+    },
+    "injGuideAudioModeButtonTooltip": {
+        "message": "Аудио Режим"
+    },
+    "injGuideVolumeControlButtonTooltip": {
+        "message": "Регулятор Громкости Колесиком Мыши"
+    },
+    "injGuideVideoSearchButtonTooltip": {
+        "message": "Поиск Видео"
+    },
+    "injGuideHideCommentsButtonTooltip": {
+        "message": "Скрыть Комментарии"
+    },
+    "injGuideNoteText": {
+        "message": "Нажмите на иконку для получения более подробной информации или найдите свой ответ в разделе FAQ"
+    },
+    "injGuideFaqHeading": {
+        "message": "Часто Задаваемые Вопросы"
+    },
+    "injGuideFaqSD": {
+        "message": "Как загрузить видео с YouTube?"
+    },
+    "injGuideFaqMP3": {
+        "message": "Как конвертировать видео с YouTube в MP3?"
+    },
+    "injGuideFaqDownloads": {
+        "message": "Где хранятся мои загруженные видео?"
+    },
+    "injGuideFaqSubtitles": {
+        "message": "Могу ли я загрузить видео с YouTube с субтитрами?"
+    },
+    "injGuideContactUsNote": {
+        "message": "Все еще есть проблемы?"
+    },
+    "injGuideContactUsButtonText": {
+        "message": "Связаться с Нами"
+    },
+    "injGuideBackButtonText": {
+        "message": "Назад"
+    },
+    "injGuideFeatSdHeading": {
+        "message": "Стандартные загрузки"
+    },
+    "injGuideFeatSdSec1Title": {
+        "message": "Как скачать видео?"
+    },
+    "injGuideFeatSdSec1Step1P1": {
+        "message": "Нажмите"
+    },
+    "injGuideFeatSdSec1Step1P2": {
+        "message": "значок на панели инструментов."
+    },
+    "injGuideFeatSdSec1Step2": {
+        "message": "Дождитесь загрузки подробных сведений о видео."
+    },
+    "injGuideFeatSdSec1Step3": {
+        "message": "Выберите желаемое качество видео из списка."
+    },
+    "injGuideFeatSdSec1Step4": {
+        "message": "Начнется загрузка вашего файла."
+    },
+    "injGuideFeatSdNote1P1": {
+        "message": "Ты можешь"
+    },
+    "injGuideFeatSdNote1P2": {
+        "message": "сгенерируйте QR-код"
+    },
+    "injGuideFeatSdNote1P3": {
+        "message": "и отсканируйте его, чтобы загрузить видео на свой телефон."
+    },
+    "injGuideFeatSdNote2": {
+        "message": "YouTube не обеспечивает загрузку некоторых видео в формате HD, для этих видео мы используем внешний сервис загрузки."
+    },
+    "injGuideFeatSdNote3": {
+        "message": "Видео в формате Dash не содержат аудио."
+    },
+    "injGuideFeatMp3Heading": {
+        "message": "Конвертер MP3"
+    },
+    "injGuideFeatMp3Sec1Title": {
+        "message": "Как конвертировать видео в MP3?"
+    },
+    "injGuideFeatMp3Sec1Step1P1": {
+        "message": "Нажмите"
+    },
+    "injGuideFeatMp3Sec1Step1P2": {
+        "message": "значок на панели инструментов."
+    },
+    "injGuideFeatMp3Sec1Step2": {
+        "message": "Дождитесь загрузки подробных сведений о видео."
+    },
+    "injGuideFeatMp3Sec1Step3": {
+        "message": "Выберите битрейт MP3 и отрегулируйте длину видео, если вам нужно обрезать видео."
+    },
+    "injGuideFeatMp3Sec1Step4": {
+        "message": "Нажмите кнопку загрузить и дождитесь завершения запроса."
+    },
+    "injGuideFeatMp3Sec1Step5": {
+        "message": "Начнется загрузка вашего файла."
+    },
+    "injGuideFeatMp3Note1": {
+        "message": "Вы можете настроить длину видео с помощью ползунка на полях ввода для обрезки."
+    },
+    "injGuideFeatMp3Note2": {
+        "message": "YouTube не обеспечивает загрузку MP3, мы используем сторонний сервис загрузки для конвертации MP3."
+    },
+    "injGuideFeatMp3Note3": {
+        "message": "Если у вас установлен и включен flixmate, загрузки будут добавлены в flixmate."
+    },
+    "injGuideFeatUhdHeading": {
+        "message": "Загрузки в формате Ultra HD"
+    },
+    "injGuideFeatUhdDescriptionP1": {
+        "message": "Flixmate"
+    },
+    "injGuideFeatUhdDescriptionP2": {
+        "message": "требуется для загрузки видео высокого качества, включая 1080p, 2k, 4k и 8k. Это сервис для персонального компьютера, который может объединять аудио/видео потоки и конвертировать их в различные форматы."
+    },
+    "injGuideFeatUhdSec1Title": {
+        "message": "Как загрузить видео в формате Ultra HD (1080p, 4k, 8k)?"
+    },
+    "injGuideFeatUhdSec1Step1": {
+        "message": "Установите Flixmate на свой компьютер."
+    },
+    "injGuideFeatUhdSec1Step2P1": {
+        "message": "Нажмите"
+    },
+    "injGuideFeatHideCommentsDescriptionP1": {
+        "message": "Нажмите"
+    },
+    "injGuideFeatLooperDescriptionP2": {
+        "message": "Нажмите"
+    },
+    "injGuideFeatDownloadsSec1Step1P1": {
+        "message": "Нажмите"
+    },
+    "injGuideFeatSubtitlesSec1Step1P1": {
+        "message": "Нажмите"
+    },
+    "injGuideFeatThumbnailsSec1Step1P1": {
+        "message": "Нажмите"
+    },
+    "injGuideFeatUhdSec2Step2P1": {
+        "message": "Нажмите"
+    },
+    "injGuideFeatUhdSec1Step2P2": {
+        "message": "значок на панели инструментов."
+    },
+    "injGuideFeatUhdSec2Step2P2": {
+        "message": "значок на панели инструментов."
+    },
+    "injGuideFeatThumbnailsSec1Step1P2": {
+        "message": "значок на панели инструментов."
+    },
+    "injGuideFeatSubtitlesSec1Step1P2": {
+        "message": "значок на панели инструментов."
+    },
+    "injGuideFeatUhdSec1Step3": {
+        "message": "Дождитесь загрузки подробных сведений о видео."
+    },
+    "injGuideFeatUhdSec1Step4": {
+        "message": "Выберите желаемое качество видео из списка."
+    },
+    "injGuideFeatUhdSec1Step5": {
+        "message": "Ваша загрузка будет добавлена в flixmate."
+    },
+    "injGuideFeatUhdSec2Title": {
+        "message": "Как обрезать или конвертировать видео в другой формат (mkv, avi)?"
+    },
+    "injGuideFeatUhdSec2Step1": {
+        "message": "Установите Flixmate на свой компьютер."
+    },
+    "injGuideFeatUhdSec2Step3": {
+        "message": "Дождитесь загрузки подробных сведений о видео."
+    },
+    "injGuideFeatUhdSec2Step4": {
+        "message": "Нажмите на кнопку \"Дополнительно\"."
+    },
+    "injGuideFeatUhdSec2Step5": {
+        "message": "Выберите желаемое качество и формат видео и отрегулируйте длину видео, если вам нужно обрезать видео."
+    },
+    "injGuideFeatUhdSec2Step6": {
+        "message": "Ваша загрузка будет добавлена в flixmate."
+    },
+    "injGuideFeatUhdNote1": {
+        "message": "Flixmate не поддерживается в Mac OS или Linux."
+    },
+    "injGuideFeatThumbnailsHeading": {
+        "message": "Миниатюры"
+    },
+    "injGuideFeatThumbnailsSec1Title": {
+        "message": "Как загрузить миниатюры видео?"
+    },
+    "injGuideFeatThumbnailsSec1Step2": {
+        "message": "Дождитесь загрузки подробных сведений о видео."
+    },
+    "injGuideFeatThumbnailsSec1Step3": {
+        "message": "Выберите качество миниатюр из выпадающего списка и нажмите кнопку загрузить."
+    },
+    "injGuideFeatThumbnailsSec1Step4": {
+        "message": "Начнется загрузка вашего файла."
+    },
+    "injGuideFeatSubtitlesHeading": {
+        "message": "Субтитры"
+    },
+    "injGuideFeatSubtitlesSec1Title": {
+        "message": "Как загрузить субтитры?"
+    },
+    "injGuideFeatSubtitlesSec1Step2": {
+        "message": "Дождитесь загрузки подробных сведений о видео."
+    },
+    "injGuideFeatSubtitlesSec1Step3": {
+        "message": "Выберите язык из выпадающего списка и формат, затем нажмите кнопку загрузить."
+    },
+    "injGuideFeatSubtitlesSec1Step4": {
+        "message": "Начнется загрузка вашего файла."
+    },
+    "injGuideFeatSubtitlesSec2Title": {
+        "message": "Могу ли я загрузить видео с субтитрами?"
+    },
+    "injGuideFeatSubtitlesSec2Text": {
+        "message": "Вы не можете загрузить видео с YouTube со встроенными субтитрами. Вы можете загрузить файл субтитров отдельно и использовать его в поддерживаемом проигрывателе, таком как VLC."
+    },
+    "injGuideFeatSubtitlesNote1": {
+        "message": "В некоторых видео могут отсутствовать субтитры."
+    },
+    "injGuideFeatSubtitlesNote2P1": {
+        "message": "Автоматически сгенерированные субтитры помечены"
+    },
+    "injGuideFeatSubtitlesNote2P2": {
+        "message": "значком."
+    },
+    "injGuideFeatSubtitlesNote3": {
+        "message": "YouTube предоставляет форматы WebVTT, TTML и SRV3, которые поддерживаются большинством видеоплееров."
+    },
+    "injGuideFeatScreenshotHeading": {
+        "message": "Сделать скриншот"
+    },
+    "injGuideFeatScreenshotDescriptionP1": {
+        "message": "Вы можете сделать скриншот, нажав на"
+    },
+    "injGuideFeatScreenshotDescriptionP2": {
+        "message": "значок на панели инструментов. Качество скриншота зависит от качества воспроизведения видео."
+    },
+    "injGuideFeatDownloadsHeading": {
+        "message": "Менеджер Загрузок"
+    },
+    "injGuideFeatDownloadsDescriptionP1": {
+        "message": "Вы можете использовать менеджер загрузок для просмотра/отмены/приостановки/воспроизведения загруженных элементов. Нажмите на"
+    },
+    "injGuideFeatDownloadsDescriptionP2": {
+        "message": "значок на панели инструментов, чтобы открыть менеджер загрузок."
+    },
+    "injGuideFeatDownloadsSec1Title": {
+        "message": "Где хранятся загрузки или как открыть папку загрузки?"
+    },
+    "injGuideFeatDownloadsSec1Step1P2": {
+        "message": "значок на панели инструментов, чтобы открыть менеджер загрузок."
+    },
+    "injGuideFeatDownloadsSec1Step2": {
+        "message": "На странице менеджер загрузок нажмите раскрывающееся меню \"Открыть папку загрузок\" в правом верхнем углу."
+    },
+    "injGuideFeatDownloadsSec1Step3": {
+        "message": "Нажмите Загрузки расширений/Загрузки Flixmate, чтобы открыть папку загрузки."
+    },
+    "injGuideFeatDownloadsNote1": {
+        "message": "Flixmate не имеет доступа к каталогу пользователя, поэтому файлы хранятся в общедоступном каталоге."
+    },
+    "injGuideFeatDarkModeHeading": {
+        "message": "Темный режим"
+    },
+    "injGuideFeatDarkModeDescription": {
+        "message": "Это кнопка быстрого переключения для темного режима YouTube."
+    },
+    "injGuideFeatCinemaModeHeading": {
+        "message": "Режим кинотеатра"
+    },
+    "injGuideFeatCinemaModeDescriptionP1": {
+        "message": "Режим кинотеатра может улучшить качество просмотра, включив усиленный темный режим и скрыв отвлекающие элементы."
+    },
+    "injGuideFeatCinemaModeDescriptionP2": {
+        "message": "Вы можете переключать режим кинотеатра с помощью"
+    },
+    "injGuideFeatCinemaModeDescriptionP3": {
+        "message": "кнопки."
+    },
+    "injGuideFeatPipHeading": {
+        "message": "Режим \"Картинка в картинке\""
+    },
+    "injGuideFeatPipDescriptionP1": {
+        "message": "Картинка в картинке позволяет просматривать видео в плавающем окне (всегда поверх других окон), чтобы вы могли следить за тем, что вы смотрите, взаимодействуя с другими сайтами или приложениями."
+    },
+    "injGuideFeatPipDescriptionP2": {
+        "message": "Вы можете переключать PIP с помощью"
+    },
+    "injGuideFeatPipDescriptionP3": {
+        "message": "кнопки."
+    },
+    "injGuideFeatFloatViewHeading": {
+        "message": "Плавающий видеоплеер"
+    },
+    "injGuideFeatFloatViewDescriptionP1": {
+        "message": "Включив режим плавающего просмотра, вы можете просматривать видео на YouTube во время прокрутки и чтения комментариев. Нажмите"
+    },
+    "injGuideFeatFloatViewDescriptionP2": {
+        "message": "кнопку, чтобы переключить плавающий видеоплеер."
+    },
+    "injGuideFeatLooperHeading": {
+        "message": "Looper"
+    },
+    "injGuideFeatLooperDescriptionP1": {
+        "message": "YouTube не предоставляет функции повтора определенного участка, поэтому мы добавили эту функцию для облегчения работы наших пользователей."
+    },
+    "injGuideFeatLooperDescriptionP3": {
+        "message": "значок для повтора участка видео. При нажатии на значок также откроется продвинутая функция повторения, которую можно использовать для повтора видео определенное количество раз или зацикливания части видео."
+    },
+    "injGuideFeatSmartPauseHeading": {
+        "message": "Умная Пауза"
+    },
+    "injGuideFeatAutoPlayHeading": {
+        "message": "Автозапуск"
+    },
+    "injGuideFeatSmartPauseDescription": {
+        "message": "Умная пауза автоматически запоминает, где вы находитесь в своем текущем видео на YouTube, что позволяет вам легко продолжить с того места, на котором вы остановились. Каждый раз, когда вы меняете вкладки, открываете новую вкладку или открываете новое окно, умная пауза будет ждать, пока вы вернетесь и возобновите просмотр видео."
+    },
+    "injGuideFeatAutoPlayDescription": {
+        "message": "Это кнопка быстрого переключения функций автозапуска YouTube."
+    },
+    "injGuideFeatAudioModeHeading": {
+        "message": "Аудио Режим"
+    },
+    "optAudioModeSwitchLabel": {
+        "message": "Включить аудио режим"
+    },
+    "injGuideFeatAudioModeDescriptionP1": {
+        "message": "Вы можете выяснить, что смотрите видео на YouTube только для музыки или аудио. Вы можете переключить эту опцию, используя"
+    },
+    "injGuideFeatAudioModeDescriptionP2": {
+        "message": "воспроизведения только аудио, экономя трафик при одновременной поддержке более быстрого времени буферизации. Это связано с тем, что в режиме аудио загружаются только аудиоформаты. Эта функция идеально подходит для фоновой музыки, прослушивания уроков и многого другого."
+    },
+    "injGuideFeatAudioModeNote1": {
+        "message": "Страница будет перезагружена, когда вы переключите эту функцию, чтобы изменения вступили в силу."
+    },
+    "injGuideFeatVolumeControlHeading": {
+        "message": "Регулятор Громкости Колесиком Мыши"
+    },
+    "injGuideFeatVolumeControlDescriptionP1": {
+        "message": "Включите эту функцию, нажав"
+    },
+    "injGuideFeatVolumeControlDescriptionP2": {
+        "message": "кнопка, и вы сможете регулировать громкость видео на YouTube с помощью колесика мыши."
+    },
+    "injGuideFeatVideoSearchHeading": {
+        "message": "Поиск Видео"
+    },
+    "injGuideFeatVideoSearchDescriptionP1": {
+        "message": "Используя эту функцию, вы можете использовать поиск на YouTube во время просмотра видео. Нажмите"
+    },
+    "injGuideFeatVideoSearchDescriptionP2": {
+        "message": "кнопку, которая добавит строку поиска в правой части страницы. Вы можете продолжить поиск с помощью строки поиска, чтобы найти новые видео, не прерывая и не оставляя видео."
+    },
+    "injGuideFeatHideCommentsHeading": {
+        "message": "Скрыть комментарии"
+    },
+    "injGuideFeatHideCommentsDescriptionP2": {
+        "message": "кнопку, чтобы скрыть комментарии к видео на YouTube, чтобы избежать отвлекающих факторов."
+    },
+    "optHeading": {
+        "message": "Настройки"
+    },
+    "optRestoreButtonText": {
+        "message": "Восстановить настройки по умолчанию"
+    },
+    "optRestoreConfirmTitle": {
+        "message": "Вы уверены?"
+    },
+    "optRestoreConfirmMessage": {
+        "message": "Это приведет к сбросу ваших настроек по умолчанию."
+    },
+    "optRestoreSuccessMessage": {
+        "message": "Настройки успешно восстановлены."
+    },
+    "optConfirmButtonText": {
+        "message": "Подтвердить"
+    },
+    "optCancelButtonText": {
+        "message": "Отменить"
+    },
+    "optThemeSelectLabel": {
+        "message": "Выберите тему расширения"
+    },
+    "optThemeOptionSystemLabel": {
+        "message": "Системное значение по умолчанию"
+    },
+    "optThemeOptionLightLabel": {
+        "message": "Легкая тема"
+    },
+    "optThemeOptionDarkLabel": {
+        "message": "Темная тема"
+    },
+    "optDownloadNotificationsSwitchLabel": {
+        "message": "Показывать уведомления о загрузке"
+    },
+    "optEmbeddedDownloadsSwitchLabel": {
+        "message": "Показывать кнопку загрузки на встроенных видео"
+    },
+    "optDownloadButtonOnUrlsSwitchLabel": {
+        "message": "Добавить кнопку загрузки по ссылкам на YouTube"
+    },
+    "optVideoQualityDisabledOptionLabel": {
+        "message": "Отключено"
+    },
+    "optDownloadSettingsHeading": {
+        "message": "Настройки загрузчика"
+    },
+    "optFormatsLabel": {
+        "message": "Форматы видео для отображения в меню загрузки"
+    },
+    "optDashFormatsLabel": {
+        "message": "Форматы Dash для отображения в меню загрузки"
+    },
+    "optDashFormatsRadioNone": {
+        "message": "Нет"
+    },
+    "optDashFormatsRadioBoth": {
+        "message": "Аудио и Видео"
+    },
+    "optDashFormatsRadioVideo": {
+        "message": "Только видео"
+    },
+    "optDashFormatsRadioAudio": {
+        "message": "Только аудио"
+    },
+    "optMp3BitrateLabel": {
+        "message": "MP3 конвертер битрейт по умолчанию"
+    },
+    "optCopyButtonSwitchLabel": {
+        "message": "Включить кнопку копировать в буфер обмена"
+    },
+    "optQrButtonSwitchLabel": {
+        "message": "Кнопка включения генератора QR-кода"
+    },
+    "optSaveAsSwitchLabel": {
+        "message": "Показывать диалоговое окно Сохранить как, когда я выбираю загрузку видео"
+    },
+    "optFlixmateSettingsHeading": {
+        "message": "Загрузчик мультимедиа Flixmate"
+    },
+    "optFlixmateUnsupportedText": {
+        "message": "Flixmate не поддерживается в вашей системе."
+    },
+    "optFlixmateUnsupportedLinkText": {
+        "message": "Узнать больше"
+    },
+    "optFlixmateDisconnectedText": {
+        "message": "Flixmate не подключен."
+    },
+    "optDisconnectedLinkText": {
+        "message": "Загрузить"
+    },
+    "optFlixmateConnectedText": {
+        "message": "подключен"
+    },
+    "optFlixmateUpdateAvailableText": {
+        "message": "Обновление доступно"
+    },
+    "optFlixmateInstallUpdateText": {
+        "message": "для установки"
+    },
+    "optFlixmateEnabledSwitchLabel": {
+        "message": "Включить загрузчик мультимедиа Flixmate"
+    },
+    "optFlixmateEnabledSwitchHelpText": {
+        "message": "Скачивайте Неограниченное количество форматов MP3 и Ultra HD"
+    },
+    "optFlixmateFormatsLabel": {
+        "message": "Форматы конвертации для отображения в меню загрузки"
+    },
+    "optVideoQualityMenuLabel": {
+        "message": "Установите предпочтительное качество воспроизведения видео"
+    },
+    "optFloatVideoSwitchLabel": {
+        "message": "Включить плавающее видео"
+    },
+    "optFloatVideoSwitchHelpText": {
+        "message": "(Умный просмотр для просмотра видео при прокрутке вниз. Видео будет показано в правом нижнем углу)"
+    },
+    "optSmartPauseSwitchLabel": {
+        "message": "Включить умную паузу"
+    },
+    "optSmartPauseSwitchHelpText": {
+        "message": "(Автоматическая приостановка текущего воспроизведения видео на YouTube после того, как вы покинете страницу, и возобновление при возвращении)"
+    },
+    "optAudioModeSwitchHelpText": {
+        "message": "(Прослушивание только аудио без загрузки видео)"
+    },
+    "optAudioModeChangeAlert": {
+        "message": "Обновите вкладки YouTube, чтобы изменения вступили в силу."
+    },
+    "optMousewheelVolumeControlSwitchLabel": {
+        "message": "Регулировка громкости с помощью колесика мыши"
+    },
+    "optMousewheelVolumeControlSwitchHelpText": {
+        "message": "(Используйте колесо мыши внутри области видео, чтобы регулировать громкость)"
+    },
+    "optVideoSearchSwitchLabel": {
+        "message": "Поиск во время просмотра видео"
+    },
+    "optHideCommentsSwitchLabel": {
+        "message": "Скрыть комментарии на YouTube"
+    },
+    "optHideCommentsSwitchHelpText": {
+        "message": "(Скрывает все комментарии пользователей к видео на YouTube)"
+    },
+    "optVideoSearchSwitchHelpText": {
+        "message": "(Поиск на YouTube без прерывания видео, загружает результаты поиска в разделе похожие видео)"
+    },
+    "injDownloaderLoadingText": {
+        "message": "Загрузка деталей видео..."
+    },
+    "injDownloaderErrorText": {
+        "message": "Не удалось получить подробную информацию о видео"
+    },
+    "injNotAvailableMessage": {
+        "message": "Загрузки недоступны для трансляций или предстоящих видео."
+    },
+    "optMultithreadingSwitchHelpText": {
+        "message": "Загружайте файлы с несколькими подключениями к серверу, чтобы увеличить скорость загрузки."
+    },
+    "optMultithreadingSwitchLabel": {
+        "message": "Используйте многопоточность для загрузки"
+    },
+    "optCompactDisplayModeButtonText": {
+        "message": "Выключатель"
+    },
+    "optCompactDisplayModeSubheading": {
+        "message": "Расширение будет отображаться в виде компактной кнопки на YouTube. Нажмите эту кнопку, чтобы перейти в полноценный режим."
+    },
+    "optCompactDisplayModeHeading": {
+        "message": "Расширение отображается в компактном режиме"
+    },
+    "optChangeLanguageText": {
+        "message": "Изменить язык"
+    },
+    "injCompactButtonTooltip": {
+        "message": "Используйте Addoncrop YouTube Downloader в компактном режиме с помощью этой кнопки"
+    },
+    "injExpandBtnTooltip": {
+        "message": "Переключиться на полную выдвижную панель"
+    },
+    "injSwitchDisplayButtonTooltip": {
+        "message": "Переключиться в компактный режим"
+    },
+    "injSwitchDisplayButtonText": {
+        "message": "Нажмите эту кнопку, чтобы переключиться в компактный режим."
+    },
+    "injWelcomeMessageTooltip": {
+        "message": "Нажмите эту кнопку, чтобы загрузить видео."
+    },
+    "downloadsOpenVideoPageButtonTooltip": {
+        "message": "Открыть видео на YouTube"
+    },
+    "downloadsFlixmateDownloadsHeading": {
+        "message": "Скачать Ultra HD с Flixmate"
+    }
+}
