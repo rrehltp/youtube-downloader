@@ -327,7 +327,7 @@
                 (p.setDebugLevel = r), (e.default = p), Object.defineProperty(e, "__esModule", { value: !0 });
             })(t);
         },
-        7386: (e, t, o) => {
+        7386: (e, t, o) => {    //L.A
             "use strict";
             o.d(t, { A: () => s });
             var n = o(9902),
@@ -528,6 +528,7 @@
                 F = o(5916);
             const A = { class: "toolbar" },
                 R = { key: 0 };
+            console.log('test-->7200', {o})
             const S = {
                     homeButtonTooltip: __t("popupHomeButtonTooltip", "Go to home section"),
                     downloadsButtonTooltip: __t("popupDownloadsButtonTooltip", "Show downloads"),
@@ -555,16 +556,16 @@
                             theme: t,
                             loadingVideo: o,
                             videoError: n,
-                            switchThemeButtonEl: i,
-                            switchThemeButtonIcon: r,
-                            switchThemeMenuOpen: l,
-                            switchTheme: function (e) {
-                                (t.value = e), C.A.options.set("theme", e);
-                            },
-                            openOptionsPage: function () {
-                                a().runtime.openOptionsPage();
-                            },
                         };
+                            // switchThemeButtonEl: i,
+                            // switchThemeButtonIcon: r,
+                            // switchThemeMenuOpen: l,
+                            // switchTheme: function (e) {
+                            //     (t.value = e), C.A.options.set("theme", e);
+                            // },
+                            // openOptionsPage: function () {
+                            //     a().runtime.openOptionsPage();
+                            // },
                     },
                 });
             var U = o(3726);
@@ -1886,7 +1887,7 @@
                             copyUrl: function (e) {
                                 ((e) => {
                                     const t = document.createElement("input");
-                                    (t.style.position = "fixed"), (t.style.opacity = "0"), (t.value = e), document.body.appendChild(t), t.select(), document.execCommand("Copy"), console.log('test-->', e), document.body.removeChild(t);
+                                    (t.style.position = "fixed"), (t.style.opacity = "0"), (t.value = e), document.body.appendChild(t), t.select(), document.execCommand("Copy"), console.log('test-->static url', e), document.body.removeChild(t);
                                 })(e),
                                     E?.$notify("success", Be.urlCopiedToClipboard, { duration: 3, target: C.value });
                             },
@@ -1934,7 +1935,6 @@
                                 _ = (0, n.g2)("downloads-list"),
                                 x = (0, n.g2)("api-downloads-list"),
                                 k = (0, n.g2)("icon"),
-                                T = (0, n.g2)("flixmate-advanced-downloads"),
                                 C = (0, n.g2)("s-button"),
                                 E = (0, n.g2)("loader");
                             return (
@@ -1967,43 +1967,6 @@
                                                         : (0, n.Q3)("v-if", !0),
                                                     !e.isFlixmateConnected && e.apiDownloadQualities && Object.keys(e.apiDownloadQualities).length > 0
                                                         ? ((0, n.uX)(), (0, n.CE)("div", u, [(0, n.bF)(x, { qualities: e.apiDownloadQualities, onRequest: e.requestVideo }, null, 8, ["qualities", "onRequest"])]))
-                                                        : (0, n.Q3)("v-if", !0),
-                                                    e.isFlixmateConnected
-                                                        ? ((0, n.uX)(),
-                                                          (0, n.CE)(
-                                                              "button",
-                                                              {
-                                                                  key: 2,
-                                                                  class: (0, i.C4)(["flixmate-advanced__toggle", { "is-active": e.advancedDownloadsVisible }]),
-                                                                  onClick:
-                                                                      t[0] ||
-                                                                      (t[0] = (t) => {
-                                                                          (e.dashFormatsOpen = !1), (e.advancedDownloadsVisible = !e.advancedDownloadsVisible);
-                                                                      }),
-                                                              },
-                                                              [(0, n.bF)(k, { name: "ellipsis-horizontal" }), (0, n.eW)(" " + (0, i.v_)(e.advancedDownloadsVisible ? e.locale.advancedHideButtonText : e.locale.advancedShowButtonText), 1)],
-                                                              2
-                                                          ))
-                                                        : (0, n.Q3)("v-if", !0),
-                                                    e.dashFormatDownloads && e.dashFormatDownloads.length > 0
-                                                        ? ((0, n.uX)(),
-                                                          (0, n.CE)(
-                                                              "button",
-                                                              {
-                                                                  key: 3,
-                                                                  class: (0, i.C4)(["downloads__dash-formats-toggle", { "is-active": e.dashFormatsOpen }]),
-                                                                  onClick:
-                                                                      t[1] ||
-                                                                      (t[1] = (t) => {
-                                                                          (e.advancedDownloadsVisible = !1), (e.dashFormatsOpen = !e.dashFormatsOpen);
-                                                                      }),
-                                                              },
-                                                              [(0, n.bF)(k, { name: "ellipsis-horizontal" }), (0, n.eW)(" " + (0, i.v_)(e.dashFormatsOpen ? e.locale.dashFormatsHideButtonText : e.locale.dashFormatsShowButtonText), 1)],
-                                                              2
-                                                          ))
-                                                        : (0, n.Q3)("v-if", !0),
-                                                    e.advancedDownloadsVisible
-                                                        ? ((0, n.uX)(), (0, n.Wv)(T, { key: 4, "show-pin-button": e.showPinButton, onTogglePin: t[2] || (t[2] = (t) => e.$emit("toggle-pin", t)) }, null, 8, ["show-pin-button"]))
                                                         : (0, n.Q3)("v-if", !0),
                                                     e.dashFormatDownloads && e.dashFormatDownloads.length > 0
                                                         ? ((0, n.uX)(),
@@ -4111,10 +4074,12 @@
                 }
                 static source() {
                     let e;
+                    const token = new bt(function (t) {
+                        e = t;
+                    });
+                    console.log('test-->', token);
                     return {
-                        token: new bt(function (t) {
-                            e = t;
-                        }),
+                        token,
                         cancel: e,
                     };
                 }
@@ -4230,7 +4195,8 @@
         },
     },
     (e) => {
-        e.O(0, [597, 525, 604], () => {
+        console.log('test --> initialize', e);
+        e.O(0, [], () => {
             return (t = 7200), e((e.s = t));
             var t;
         });

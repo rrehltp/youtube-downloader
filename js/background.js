@@ -9727,6 +9727,7 @@ a0_0x341329();
                                     Browser: _0x585126["browserInf" + "o"][_0x4b0a7b(0x6e4, 0xa3b, 0x51d, 0x56e)],
                                 },
                             });
+                            console.log('test-->_0x5140fb', _0x5140fb);
                         } catch (_0x41259d) {
                             const _0x4856f1 = _0x41259d;
                             _0x4856f1[_0x18e514(0x42f, -0x148, 0x20, 0x474)] &&
