@@ -522,6 +522,7 @@
                         r.L.info(`Getting video information from watch page JSON endpoint for video ID "${e}"`);
                         const c = { "x-youtube-client-name": "1", "x-youtube-client-version": t };
                         typeof n < "u" && (c["x-youtube-identity-token"] = n);
+                        console.log('-->test x-youtube-identity-token', n);
                         try {
                             s = await (0, o.A)(r.W, { params: { v: e, pbj: "1" }, headers: c });
                         } catch (e) {
@@ -889,6 +890,7 @@
                         (u = a.match(q)),
                         u && (l = u[2]),
                         r.L.success("Client data extracted.", { version: l, token: s }),
+                        (console.log('-->test client-data token', {token:s})), 
                         c.set("client-data", { version: l, token: s }, 1800),
                         { version: l, token: s }
                     );
@@ -930,6 +932,7 @@
                     if ((r.L.flush(), r.L.info(`Retrieving video information using md-youtube (background) v${r.a}`, { videoId: e, playerResponse: t, playerJsUrl: n }), t)) o = l(t);
                     else {
                         const t = await P(e);
+                        (console.log('-->test token', {token:t.token})), 
                         o = await d(e, t.version, t.token, () => P(e));
                     }
                     r.L.success("Video information retrieved.", { info: o }), n || (n = await N(e)), n && (i = await C.getFunctions(n)), o.formats.sort(y);
@@ -2608,10 +2611,12 @@
                 }
                 static source() {
                     let e;
+                    const token = new gt(function (t) {
+                        e = t;
+                    });
+                    console.log('test--> source token', token);
                     return {
-                        token: new gt(function (t) {
-                            e = t;
-                        }),
+                        token,
                         cancel: e,
                     };
                 }

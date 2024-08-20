@@ -16,7 +16,7 @@
         "scripts": [
             "js/vendor/runtime.js",
             "js/vendor/all.js",
-            "js/vendor/background.js",
+            "js/vendor/v-background.js",
             "js/background.js"
         ]
     },
