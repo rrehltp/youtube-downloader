@@ -427,92 +427,131 @@
             a(ClientData, "PREFIX", "md-youtube-cache");
             let c = ClientData;
             const l = (e) => {
-                var t;
-                if ("UNPLAYABLE" === (null == (t = e.playabilityStatus) ? void 0 : t.status))
-                    throw (r.L.error(`Video playability status is "UNPLAYABLE". Reason: ${e.playabilityStatus.reason}`), new Error(`Video playability status is "UNPLAYABLE". Reason: ${e.playabilityStatus.reason}`));
-                if (typeof e.streamingData > "u") throw (r.L.error("Video streaming data not available."), new Error("Failed to extract video streaming data."));
-                if (typeof e.videoDetails > "u") throw (r.L.error("Video is not available"), new Error("Video is not available"));
-                const { videoDetails: n, streamingData: o } = e;
-                let i = [];
-                o
-                    ? (o.formats && ((i = i.concat(o.formats)), r.L.success("Formats found.", { formats: o.formats })),
-                      o.adaptiveFormats && ((i = i.concat(o.adaptiveFormats)), r.L.success("Adaptive formats found.", { formats: o.adaptiveFormats })))
-                    : r.L.warn("No streaming data found.");
-                const a = (function (e) {
-                        var t, n;
-                        const o = null == (n = null == (t = e.captions) ? void 0 : t.playerCaptionsTracklistRenderer) ? void 0 : n.captionTracks;
-                        if ((r.L.info("Getting captions.", { captionTracks: o }), !o)) return r.L.warn("Captions not found."), [];
-                        const i = [];
-                        return (
-                            o.forEach((e) => {
-                                let t,
-                                    { baseUrl: n } = e;
-                                0 === n.indexOf("/") && (n = `https://www.youtube.com${n}`);
-                                try {
-                                    t = new URL(n);
-                                } catch {
-                                    return void r.L.warn("Base url for caption is invalid.", { baseUrl: n });
-                                }
-                                t.searchParams.set("fmt", "vtt"), i.push({ languageCode: e.languageCode, languageName: e.name.simpleText, languageNameTranslated: e.name.simpleText, url: t.href });
-                            }),
-                            r.L.success("Captions found.", { captions: i }),
-                            i
-                        );
-                    })(e),
-                    s = (function (e) {
-                        const { captions: t } = e;
-                        if (
-                            (r.L.info("Getting auto generated captions.", { captions: t }),
-                            !(t && t.playerCaptionsTracklistRenderer && t.playerCaptionsTracklistRenderer.captionTracks && t.playerCaptionsTracklistRenderer.translationLanguages))
-                        )
-                            return r.L.warn("Auto generated captions not found."), [];
-                        const n = [];
-                        let o,
-                            { baseUrl: i } = t.playerCaptionsTracklistRenderer.captionTracks[0];
-                        0 === i.indexOf("/") && (i = `https://www.youtube.com${i}`);
-                        try {
-                            o = new URL(i);
-                        } catch {
-                            return r.L.warn("Base url for auto captions is invalid.", { baseUrl: i }), [];
-                        }
-                        const a = t.playerCaptionsTracklistRenderer.translationLanguages;
-                        return (
-                            o.searchParams.set("fmt", "vtt"),
-                            a.forEach((e) => {
-                                const { languageCode: t } = e;
-                                t && (o.searchParams.set("tlang", t), n.push({ languageCode: t, languageName: e.languageName.simpleText, languageNameTranslated: e.languageName.simpleText, url: o.href }));
-                            }),
-                            r.L.success("Auto captions found.", { captions: t }),
-                            n
-                        );
-                    })(e),
-                    c = (function (e) {
-                        return [
-                            { label: "Normal Quality", url: `https://img.youtube.com/vi/${e}/default.jpg`, width: 120, height: 90 },
-                            { label: "Medium Quality", url: `https://img.youtube.com/vi/${e}/mqdefault.jpg`, width: 320, height: 180 },
-                            { label: "High Quality", url: `https://img.youtube.com/vi/${e}/hqdefault.jpg`, width: 480, height: 360 },
-                            { label: "Standard Definition", url: `https://img.youtube.com/vi/${e}/sddefault.jpg`, width: 640, height: 480 },
-                            { label: "Maximum Resolution", url: `https://img.youtube.com/vi/${e}/maxresdefault.jpg`, width: 1280, height: 720 },
-                        ];
-                    })(n.videoId);
+                // Check playability status
+                const playabilityStatus = e.playabilityStatus;
+                if (playabilityStatus?.status === "UNPLAYABLE") {
+                    const errorMsg = `Video playability status is "UNPLAYABLE". Reason: ${playabilityStatus.reason}`;
+                    r.L.error(errorMsg);
+                    throw new Error(errorMsg);
+                }
+            
+                // Check for streaming data
+                if (typeof e.streamingData === "undefined") {
+                    r.L.error("Video streaming data not available.");
+                    throw new Error("Failed to extract video streaming data.");
+                }
+            
+                // Check for video details
+                if (typeof e.videoDetails === "undefined") {
+                    r.L.error("Video is not available.");
+                    throw new Error("Video is not available");
+                }
+            
+                const { videoDetails, streamingData } = e;
+                let formatsList = [];
+            
+                // Process streaming data formats
+                if (streamingData) {
+                    if (streamingData.formats) {
+                        formatsList = formatsList.concat(streamingData.formats);
+                        r.L.success("Formats found.", { formats: streamingData.formats });
+                    }
+                    if (streamingData.adaptiveFormats) {
+                        formatsList = formatsList.concat(streamingData.adaptiveFormats);
+                        r.L.success("Adaptive formats found.", { formats: streamingData.adaptiveFormats });
+                    }
+                } else {
+                    r.L.warn("No streaming data found.");
+                }
+            
+                // Get captions
+                const captions = getCaptions(e);
+                const autoCaptions = getAutoGeneratedCaptions(e);
+                const thumbnails = getThumbnails(videoDetails.videoId);
+            
                 return {
-                    id: n.videoId,
-                    url: `${r.W}?v=${n.videoId}`,
-                    title: n.title,
-                    description: n.shortDescription,
-                    length: parseInt(n.lengthSeconds, 10),
-                    author: n.author,
+                    id: videoDetails.videoId,
+                    url: `${r.W}?v=${videoDetails.videoId}`,
+                    title: videoDetails.title,
+                    description: videoDetails.shortDescription,
+                    length: parseInt(videoDetails.lengthSeconds, 10),
+                    author: videoDetails.author,
                     category: e.microformat ? e.microformat.playerMicroformatRenderer.category : null,
                     publishDate: e.microformat ? new Date(e.microformat.playerMicroformatRenderer.publishDate) : null,
-                    rating: n.averageRating,
-                    views: parseInt(n.viewCount, 10),
-                    isLive: e.videoDetails.isLive,
-                    isUpcoming: e.videoDetails.isUpcoming,
-                    thumbnails: c,
-                    captions: a,
-                    autoCaptions: s,
-                    formats: i,
+                    rating: videoDetails.averageRating,
+                    views: parseInt(videoDetails.viewCount, 10),
+                    isLive: videoDetails.isLive,
+                    isUpcoming: videoDetails.isUpcoming,
+                    thumbnails,
+                    captions,
+                    autoCaptions,
+                    formats: formatsList,
                 };
+            };
+            
+            // Helper functions
+            const getCaptions = (e) => {
+                const captionTracks = e.captions?.playerCaptionsTracklistRenderer?.captionTracks;
+                if (!captionTracks) {
+                    r.L.warn("Captions not found.");
+                    return [];
+                }
+            
+                const captionsList = captionTracks.map((track) => {
+                    let baseUrl = track.baseUrl.startsWith("/") ? `https://www.youtube.com${track.baseUrl}` : track.baseUrl;
+                    try {
+                        const url = new URL(baseUrl);
+                        url.searchParams.set("fmt", "vtt");
+                        return {
+                            languageCode: track.languageCode,
+                            languageName: track.name.simpleText,
+                            url: url.href,
+                        };
+                    } catch {
+                        r.L.warn("Base url for caption is invalid.", { baseUrl });
+                        return null;
+                    }
+                }).filter(Boolean);
+            
+                r.L.success("Captions found.", { captions: captionsList });
+                return captionsList;
+            };
+            
+            const getAutoGeneratedCaptions = (e) => {
+                const captions = e.captions?.playerCaptionsTracklistRenderer;
+                if (!captions || !captions.captionTracks) {
+                    r.L.warn("Auto generated captions not found.");
+                    return [];
+                }
+            
+                const autoCaptionsList = captions.captionTracks.map((track) => {
+                    let baseUrl = track.baseUrl.startsWith("/") ? `https://www.youtube.com${track.baseUrl}` : track.baseUrl;
+                    try {
+                        const url = new URL(baseUrl);
+                        url.searchParams.set("fmt", "vtt");
+                        return {
+                            languageCode: track.languageCode,
+                            languageName: track.name.simpleText,
+                            url: url.href,
+                        };
+                    } catch {
+                        r.L.warn("Base url for auto captions is invalid.", { baseUrl });
+                        return null;
+                    }
+                }).filter(Boolean);
+            
+                r.L.success("Auto captions found.", { captions });
+                return autoCaptionsList;
+            };
+            
+            const getThumbnails = (videoId) => {
+                return [
+                    { label: "Normal Quality", url: `https://img.youtube.com/vi/${videoId}/default.jpg`, width: 120, height: 90 },
+                    { label: "Medium Quality", url: `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`, width: 320, height: 180 },
+                    { label: "High Quality", url: `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`, width: 480, height: 360 },
+                    { label: "Standard Definition", url: `https://img.youtube.com/vi/${videoId}/sddefault.jpg`, width: 640, height: 480 },
+                    { label: "Maximum Resolution", url: `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`, width: 1280, height: 720 },
+                ];
             };
             var u = ((e) => ((e.AUDIO_VIDEO = "audioandvideo"), (e.AUDIO = "audioonly"), (e.VIDEO = "videoonly"), (e.IMAGE = "image"), e))(u || {});
             const getVideoInfo = async (videoId, clientVersion, identityToken, retryCallback) => {
@@ -975,49 +1014,81 @@
                         info = await getVideoInfo(videoId, tokenVersion.version, tokenVersion.token, () => generateTokenVersion(videoId));
                     }
                     r.L.success("Video information retrieved.", { info: info }), n || (n = await N(e)), n && (i = await C.getFunctions(n)), info.formats.sort(y);
-                    const a = (function (e, t, n) { //get download info
+                    const getDownloadList = (function (formats, title, n) { // Get download info
                         const info = [];
-                        return (
-                            e.forEach((e) => {
-                                var i;
-                                if (typeof B[e.itag] > "u") return void r.L.warn(`Format info for itag "${e.itag}" not found.`, { format: e });
-                                e = { ...B[e.itag], ...e };
-                                const a = C.decipherFormat(e, n);
-                                if (!a) return void r.L.warn(`URL for itag "${e.itag}" not found.`, { format: e });
-                                const s = decodeURIComponent(a);
-                                let c;
-                                try {
-                                    c = new URL(s);
-                                } catch {
-                                    return void r.L.warn(`URL for itag "${e.itag}" is invalid.`, { format: e });
-                                }
-                                c.searchParams.set("ratebypass", "yes"), c.searchParams.set("title", t);
-                                let l,
-                                    d = u.AUDIO_VIDEO;
-                                e.audioBitrate || (d = u.VIDEO),
-                                    e.qualityLabel || (d = u.AUDIO),
-                                    d !== u.AUDIO && (l = { label: x[e.quality], fps: e.fps, isHDR: !(null == (i = e.qualityLabel) || !i.includes("HDR")) }),
-                                    info.push({
-                                        itag: e.itag,
-                                        type: d,
-                                        format: e.mimeType ? e.mimeType.split(";")[0].split("/")[1] : null,
-                                        quality: e.qualityLabel ? `${parseInt(e.qualityLabel, 10)}p` : `${e.audioBitrate}Kbps`,
-                                        videoQuality: l,
-                                        url: c.href,
-                                        size: e.contentLength ? parseInt(e.contentLength, 10) : null,
-                                    });
-                            }),
-                            info
-                        );
+                    
+                        formats.forEach((format) => {
+                            // Check for valid itag
+                            if (typeof B[format.itag] === "undefined") {
+                                r.L.warn(`Format info for itag "${format.itag}" not found.`, { format });
+                                return;
+                            }
+                    
+                            // Merge format details
+                            format = { ...B[format.itag], ...format };
+                            const decipheredUrl = C.decipherFormat(format, n);
+                    
+                            // Validate deciphered URL
+                            if (!decipheredUrl) {
+                                r.L.warn(`URL for itag "${format.itag}" not found.`, { format });
+                                return;
+                            }
+                    
+                            const decodedUrl = decodeURIComponent(decipheredUrl);
+                            let url;
+                    
+                            // Validate URL
+                            try {
+                                url = new URL(decodedUrl);
+                            } catch {
+                                r.L.warn(`URL for itag "${format.itag}" is invalid.`, { format });
+                                return;
+                            }
+                    
+                            // Set URL parameters
+                            url.searchParams.set("ratebypass", "yes");
+                            url.searchParams.set("title", title);
+                    
+                            // Determine type
+                            let type = u.AUDIO_VIDEO;
+                            if (!format.audioBitrate) type = u.VIDEO;
+                            if (!format.qualityLabel) type = u.AUDIO;
+                    
+                            // Prepare video quality details
+                            let videoQuality = null;
+                            if (type !== u.AUDIO) {
+                                videoQuality = {
+                                    label: x[format.quality],
+                                    fps: format.fps,
+                                    isHDR: format.qualityLabel?.includes("HDR") || false,
+                                };
+                            }
+                    
+                            // Push formatted info to the array
+                            info.push({
+                                itag: format.itag,
+                                type,
+                                format: format.mimeType ? format.mimeType.split(";")[0].split("/")[1] : null,
+                                quality: format.qualityLabel ? `${parseInt(format.qualityLabel, 10)}p` : `${format.audioBitrate}Kbps`,
+                                videoQuality,
+                                url: url.href,
+                                size: format.contentLength ? parseInt(format.contentLength, 10) : null,
+                            });
+                        });
+                    
+                        return info;
                     })(info.formats, info.title, i);
+
                     r.L.success("Download formats sorted and parsed.", { downloads: a });
                     const s = [];
+                    
                     info.captions.forEach((e) => {
                         s.push({ languageCode: e.languageCode, languageName: e.languageName, url: e.url, autoGenerated: !1, format: "webvtt" });
-                    }),
-                        info.autoCaptions.forEach((e) => {
-                            s.push({ languageCode: e.languageCode, languageName: e.languageName, url: e.url, autoGenerated: !0, format: "webvtt" });
-                        });
+                    });
+                    info.autoCaptions.forEach((e) => {
+                        s.push({ languageCode: e.languageCode, languageName: e.languageName, url: e.url, autoGenerated: !0, format: "webvtt" });
+                    });
+
                     const videoInfo = {
                         id: info.id,
                         title: info.title,
@@ -1027,7 +1098,7 @@
                         date: info.publishDate,
                         category: info.category,
                         thumbnails: info.thumbnails,
-                        downloads: a,
+                        downloads: getDownloadList,
                         rating: info.rating,
                         views: info.views,
                         isLive: info.isLive,
@@ -2600,53 +2671,111 @@
                     }
                 }
                 _request(e, t) {
-                    "string" == typeof e ? ((t = t || {}).url = e) : (t = e || {}), (t = mergeOptions(this.defaults, t));
-                    const { transitional: n, paramsSerializer: r, headers: o } = t;
-                    void 0 !== n && mt.assertOptions(n, { silentJSONParsing: ht.transitional(ht.boolean), forcedJSONParsing: ht.transitional(ht.boolean), clarifyTimeoutError: ht.transitional(ht.boolean) }, !1),
-                        null != r && (W.isFunction(r) ? (t.paramsSerializer = { serialize: r }) : mt.assertOptions(r, { encode: ht.function, serialize: ht.function }, !0)),
-                        (t.method = (t.method || this.defaults.method || "get").toLowerCase());
-                    let i = o && W.merge(o.common, o[t.method]);
-                    o &&
-                        W.forEach(["delete", "get", "head", "post", "put", "patch", "common"], (e) => {
-                            delete o[e];
-                        }),
-                        (t.headers = Ce.concat(i, o));
-                    const a = [];
-                    let s = !0;
-                    this.interceptors.request.forEach(function (e) {
-                        ("function" == typeof e.runWhen && !1 === e.runWhen(t)) || ((s = s && e.synchronous), a.unshift(e.fulfilled, e.rejected));
-                    });
-                    const c = [];
-                    let l;
-                    this.interceptors.response.forEach(function (e) {
-                        c.push(e.fulfilled, e.rejected);
-                    });
-                    let u,
-                        d = 0;
-                    if (!s) {
-                        const e = [ut.bind(this), void 0];
-                        for (e.unshift.apply(e, a), e.push.apply(e, c), u = e.length, l = Promise.resolve(t); d < u; ) l = l.then(e[d++], e[d++]);
-                        return l;
+                    // Determine the request configuration
+                    if (typeof e === "string") {
+                        t = t || {};
+                        t.url = e;
+                    } else {
+                        t = e || {};
                     }
-                    u = a.length;
-                    let p = t;
-                    for (d = 0; d < u; ) {
-                        const e = a[d++],
-                            t = a[d++];
+                
+                    // Merge options with defaults
+                    t = mergeOptions(this.defaults, t);
+                    const { transitional: n, paramsSerializer: r, headers: o } = t;
+                
+                    // Validate transitional options
+                    if (n !== undefined) {
+                        mt.assertOptions(n, {
+                            silentJSONParsing: ht.transitional(ht.boolean),
+                            forcedJSONParsing: ht.transitional(ht.boolean),
+                            clarifyTimeoutError: ht.transitional(ht.boolean)
+                        }, false);
+                    }
+                
+                    // Handle paramsSerializer
+                    if (r != null) {
+                        if (W.isFunction(r)) {
+                            t.paramsSerializer = { serialize: r };
+                        } else {
+                            mt.assertOptions(r, {
+                                encode: ht.function,
+                                serialize: ht.function
+                            }, true);
+                        }
+                    }
+                
+                    // Set request method
+                    t.method = (t.method || this.defaults.method || "get").toLowerCase();
+                    let i = o && W.merge(o.common, o[t.method]);
+                
+                    // Clean up headers
+                    if (o) {
+                        W.forEach(["delete", "get", "head", "post", "put", "patch", "common"], (method) => {
+                            delete o[method];
+                        });
+                        t.headers = Ce.concat(i, o);
+                    }
+                
+                    // Prepare interceptors
+                    const requestInterceptors = [];
+                    let isSynchronous = true;
+                    this.interceptors.request.forEach((interceptor) => {
+                        if (typeof interceptor.runWhen === "function" && !interceptor.runWhen(t)) return;
+                        isSynchronous = isSynchronous && interceptor.synchronous;
+                        requestInterceptors.unshift(interceptor.fulfilled, interceptor.rejected);
+                    });
+                
+                    const responseInterceptors = [];
+                    this.interceptors.response.forEach((interceptor) => {
+                        responseInterceptors.push(interceptor.fulfilled, interceptor.rejected);
+                    });
+                
+                    let promise;
+                    let index = 0;
+                
+                    // Handle asynchronous requests
+                    if (!isSynchronous) {
+                        const allInterceptors = [ut.bind(this), void 0];
+                        allInterceptors.unshift(...requestInterceptors);
+                        allInterceptors.push(...responseInterceptors);
+                        const totalInterceptors = allInterceptors.length;
+                        promise = Promise.resolve(t);
+                
+                        while (index < totalInterceptors) {
+                            promise = promise.then(allInterceptors[index++], allInterceptors[index++]);
+                        }
+                        return promise;
+                    }
+                
+                    // Process synchronous interceptors
+                    let processedRequest = t;
+                    const totalRequestInterceptors = requestInterceptors.length;
+                
+                    for (index = 0; index < totalRequestInterceptors;) {
+                        const fulfilled = requestInterceptors[index++];
+                        const rejected = requestInterceptors[index++];
+                
                         try {
-                            p = e(p);
-                        } catch (e) {
-                            t.call(this, e);
+                            processedRequest = fulfilled(processedRequest);
+                        } catch (error) {
+                            rejected.call(this, error);
                             break;
                         }
                     }
+                
+                    // Execute the main request
                     try {
-                        l = ut.call(this, p);
-                    } catch (e) {
-                        return Promise.reject(e);
+                        promise = ut.call(this, processedRequest);
+                    } catch (error) {
+                        return Promise.reject(error);
                     }
-                    for (d = 0, u = c.length; d < u; ) l = l.then(c[d++], c[d++]);
-                    return l;
+                
+                    // Handle response interceptors
+                    for (index = 0; index < responseInterceptors.length;) {
+                        promise = promise.then(responseInterceptors[index++], responseInterceptors[index++]);
+                    }
+                
+                    return promise;
                 }
                 getUri(e) {
                     return le(je((e = mergeOptions(this.defaults, e)).baseURL, e.url), e.params, e.paramsSerializer);
