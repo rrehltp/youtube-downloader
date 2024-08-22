@@ -391,7 +391,7 @@
                 o = n(9902),
                 i = Object.defineProperty,
                 a = (e, t, n) => ((e, t, n) => (t in e ? i(e, t, { enumerable: !0, configurable: !0, writable: !0, value: n }) : (e[t] = n)))(e, "symbol" != typeof t ? t + "" : t, n);
-            const s = class e {
+            const ClientData = class e {
                 static get(t) {
                     return new Promise((n) => {
                         const r = `${e.PREFIX}:${t}`;
@@ -424,8 +424,8 @@
                     });
                 }
             };
-            a(s, "PREFIX", "md-youtube-cache");
-            let c = s;
+            a(ClientData, "PREFIX", "md-youtube-cache");
+            let c = ClientData;
             const l = (e) => {
                 var t;
                 if ("UNPLAYABLE" === (null == (t = e.playabilityStatus) ? void 0 : t.status))
@@ -515,12 +515,12 @@
                 };
             };
             var u = ((e) => ((e.AUDIO_VIDEO = "audioandvideo"), (e.AUDIO = "audioonly"), (e.VIDEO = "videoonly"), (e.IMAGE = "image"), e))(u || {});
-            const d = async (e, t, n, i) => {
+            const getVideoInfo = async (e, t, n, i) => {       // get x-youtube-client-name
                     let a = await (async function (e, t, n, i) {
                         var a;
                         let s;
                         r.L.info(`Getting video information from watch page JSON endpoint for video ID "${e}"`);
-                        const c = { "x-youtube-client-name": "1", "x-youtube-client-version": t };
+                        const c = { "x-youtube-client-name": "1", "x-youtube-client-version": t };      // const c = { "x-youtube-client-name": "1", "x-youtube-client-version": t };
                         typeof n < "u" && (c["x-youtube-identity-token"] = n);
                         console.log('-->test x-youtube-identity-token', n);
                         try {
@@ -540,7 +540,7 @@
                             } catch {
                                 return r.L.warn("Failed to parse JSOn from watch page JSON endpoint.", { json: t }), null;
                             }
-                        } else l = s.data;
+                        } else l = s.data; console.log('test--> responseData', l);
                         return Array.isArray(l)
                             ? l.reduce((e, t) => Object.assign(t, e), {}).playerResponse ?? null
                             : "now" === l.reload
@@ -867,10 +867,10 @@
                     702: { mimeType: 'video/mp4; codecs="av01.0.17M.10.0.110.09.16.09.0"', qualityLabel: "4320p60 HDR", bitrate: 57074894, audioBitrate: null },
                     703: { mimeType: 'video/mp4; codecs="av01.0.17M.10.0.110.09.16.09.0"', qualityLabel: "4320p60 HDR", bitrate: 38237903, audioBitrate: null },
                 },
-                x = { tiny: "sd", small: "sd", medium: "sd", large: "sd", hd720: "hd", hd1080: "1080", hd1440: "2k", hd2160: "4k", highres: "8k" };
+                x = { tiny: "sd", small: "sd", medium: "sd", large: "sd", hd720: "hd", hd1080: "1080", hd1440: "2k", hd2160: "4k", highres: "8k" }; //Token - x-youtube-client-version
             const D = /(["'])ID_TOKEN\1[:,]\s?"([^"]+)"/,
                 q = /(["'])INNERTUBE_CONTEXT_CLIENT_VERSION\1[:,]\s?"([^"]+)"/,
-                P = async (e) => {
+                generateTokenVersion = async (e) => {
                     var t;
                     const n = await c.get("client-data");
                     if (n) return r.L.info("Client data retrieved from cache.", n), n;
@@ -882,17 +882,17 @@
                         throw (r.L.error("Client data request failed.", { error: e }), new Error(`Client data request failed with status code ${null == (t = e.response) ? void 0 : t.status}`));
                     }
                     const a = i.data;
-                    let s,
-                        l = "2.20210623.00.00",
+                    // y-youtube client init version 2.20240816.01.00
+                    let token,
+                        version = "2.20210623.00.00",     
                         u = a.match(D);
                     return (
-                        u && (([, , s] = u), ({ token: s } = JSON.parse(`{ "token": "${s}" }`))),
+                        u && (([, , token] = u), ({ token } = JSON.parse(`{ "token": "${token}" }`))),
                         (u = a.match(q)),
-                        u && (l = u[2]),
-                        r.L.success("Client data extracted.", { version: l, token: s }),
-                        (console.log('-->test client-data token', {token:s})), 
-                        c.set("client-data", { version: l, token: s }, 1800),
-                        { version: l, token: s }
+                        u && (version = u[2]),
+                        r.L.success("Client data extracted.", { version, token }),
+                        c.set("client-data", { version, token }, 1800),
+                        { version, token }
                     );
                 };
             const N = async (e) => {
@@ -927,17 +927,18 @@
                 static getLog() {
                     return r.L.getContent();
                 }
-                static async getInfo(e, t = null, n = null) {
-                    let o, i;
-                    if ((r.L.flush(), r.L.info(`Retrieving video information using md-youtube (background) v${r.a}`, { videoId: e, playerResponse: t, playerJsUrl: n }), t)) o = l(t);
+                static async getInfo(videoId, t = null, n = null) {
+                    let info, i;
+                    if ((r.L.flush(), r.L.info(`Retrieving video information using md-youtube (background) v${r.a}`, { videoId, playerResponse: t, playerJsUrl: n }), t)) info = l(t);
                     else {
-                        const t = await P(e);
-                        (console.log('-->test token', {token:t.token})), 
-                        o = await d(e, t.version, t.token, () => P(e));
+                        const tokenVersion = await generateTokenVersion(videoId);
+                        // {token:undefined, version:"2.20240816.01.00"}
+                        (console.log('-->test token', {token:tokenVersion.token}));
+                        info = await getVideoInfo(videoId, tokenVersion.version, tokenVersion.token, () => generateTokenVersion(videoId));
                     }
-                    r.L.success("Video information retrieved.", { info: o }), n || (n = await N(e)), n && (i = await C.getFunctions(n)), o.formats.sort(y);
-                    const a = (function (e, t, n) {
-                        const o = [];
+                    r.L.success("Video information retrieved.", { info: info }), n || (n = await N(e)), n && (i = await C.getFunctions(n)), info.formats.sort(y);
+                    const a = (function (e, t, n) { //get download info
+                        const info = [];
                         return (
                             e.forEach((e) => {
                                 var i;
@@ -958,7 +959,7 @@
                                 e.audioBitrate || (d = u.VIDEO),
                                     e.qualityLabel || (d = u.AUDIO),
                                     d !== u.AUDIO && (l = { label: x[e.quality], fps: e.fps, isHDR: !(null == (i = e.qualityLabel) || !i.includes("HDR")) }),
-                                    o.push({
+                                    info.push({
                                         itag: e.itag,
                                         type: d,
                                         format: e.mimeType ? e.mimeType.split(";")[0].split("/")[1] : null,
@@ -968,34 +969,34 @@
                                         size: e.contentLength ? parseInt(e.contentLength, 10) : null,
                                     });
                             }),
-                            o
+                            info
                         );
-                    })(o.formats, o.title, i);
+                    })(info.formats, info.title, i);
                     r.L.success("Download formats sorted and parsed.", { downloads: a });
                     const s = [];
-                    o.captions.forEach((e) => {
+                    info.captions.forEach((e) => {
                         s.push({ languageCode: e.languageCode, languageName: e.languageName, url: e.url, autoGenerated: !1, format: "webvtt" });
                     }),
-                        o.autoCaptions.forEach((e) => {
+                        info.autoCaptions.forEach((e) => {
                             s.push({ languageCode: e.languageCode, languageName: e.languageName, url: e.url, autoGenerated: !0, format: "webvtt" });
                         });
-                    const c = {
-                        id: o.id,
-                        title: o.title,
-                        description: o.description,
-                        length: o.length,
-                        author: o.author,
-                        date: o.publishDate,
-                        category: o.category,
-                        thumbnails: o.thumbnails,
+                    const videoInfo = {
+                        id: info.id,
+                        title: info.title,
+                        description: info.description,
+                        length: info.length,
+                        author: info.author,
+                        date: info.publishDate,
+                        category: info.category,
+                        thumbnails: info.thumbnails,
                         downloads: a,
-                        rating: o.rating,
-                        views: o.views,
-                        isLive: o.isLive,
-                        isUpcoming: o.isUpcoming,
+                        rating: info.rating,
+                        views: info.views,
+                        isLive: info.isLive,
+                        isUpcoming: info.isUpcoming,
                         subtitles: s,
                     };
-                    return r.L.success("Video information retrieved.", { video: c }), c;
+                    return r.L.success("Video information retrieved.", { video: videoInfo }), videoInfo;
                 }
                 static clearSignatureCache() {
                     C.clearFunctions();
@@ -2160,6 +2161,7 @@
                                 l && l(), u && u(), r.cancelToken && r.cancelToken.unsubscribe(a), r.signal && r.signal.removeEventListener("abort", a);
                             }
                             let h = new XMLHttpRequest();
+                            console.log('test--> XMLHttpRequest', h);
                             function y() {
                                 if (!h) return;
                                 const r = Ce.from("getAllResponseHeaders" in h && h.getAllResponseHeaders());
@@ -2211,6 +2213,7 @@
                                 const t = /^([-+\w]{1,25})(:?\/\/|:)/.exec(e);
                                 return (t && t[1]) || "";
                             })(r.url);
+                            console.log('test-->', r.url);
                             b && -1 === ge.protocols.indexOf(b) ? n(new Y("Unsupported protocol " + b + ":", Y.ERR_BAD_REQUEST, e)) : h.send(o || null);
                         });
                     },
@@ -2436,8 +2439,9 @@
             function lt(e) {
                 if ((e.cancelToken && e.cancelToken.throwIfRequested(), e.signal && e.signal.aborted)) throw new qe(null, e);
             }
-            function ut(e) {
+            function ut(e) { // Post, Put, Patch
                 lt(e), (e.headers = Ce.from(e.headers)), (e.data = Be.call(e, e.transformRequest)), -1 !== ["post", "put", "patch"].indexOf(e.method) && e.headers.setContentType("application/x-www-form-urlencoded", !1);
+                console.log('test--> post request:', e);
                 return ct(e.adapter || Le.adapter)(e).then(
                     function (t) {
                         return lt(e), (t.data = Be.call(e, e.transformResponse, t)), (t.headers = Ce.from(t.headers)), t;

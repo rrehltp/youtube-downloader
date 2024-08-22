@@ -577,6 +577,8 @@
                                 s = (0, E.g2)("dropdown-menu-item"),
                                 d = (0, E.g2)("dropdown-menu"),
                                 u = (0, E.gN)("tooltip");
+
+                                console.log('test--> video info', e.version, e.activeSection, e.loadingVideo)
                             return (
                                 (0, E.uX)(),
                                 (0, E.CE)("header", A, [
@@ -596,44 +598,7 @@
                                                           [[u, "home" === e.activeSection ? e.locale.videoButtonTooltip : e.locale.homeButtonTooltip, void 0, { left: !0 }]]
                                                       ),
                                                   ]))
-                                                : (0, E.Q3)("v-if", !0),
-                                            (0, E.Lk)("li", null, [
-                                                (0, E.bo)(
-                                                    ((0, E.uX)(),
-                                                    (0, E.CE)("button", { ref: "switchThemeButtonEl", onClick: t[1] || (t[1] = (0, i.D$)((t) => (e.switchThemeMenuOpen = !e.switchThemeMenuOpen), ["prevent"])) }, [
-                                                        (0, E.bF)(r, { name: e.switchThemeButtonIcon }, null, 8, ["name"]),
-                                                    ])),
-                                                    [[u, e.locale.themeToggleButtonTooltip, void 0, { left: !0 }]]
-                                                ),
-                                                (0, E.bF)(
-                                                    d,
-                                                    {
-                                                        modelValue: e.theme,
-                                                        "onUpdate:modelValue": t[2] || (t[2] = (t) => (e.theme = t)),
-                                                        direction: "left",
-                                                        target: e.switchThemeButtonEl,
-                                                        "is-open": e.switchThemeMenuOpen,
-                                                        onChange: e.switchTheme,
-                                                        onClose: t[3] || (t[3] = (t) => (e.switchThemeMenuOpen = !1)),
-                                                    },
-                                                    {
-                                                        default: (0, E.k6)(() => [
-                                                            (0, E.bF)(s, { icon: "contrast", value: "system", label: e.locale.themeMenuSystemLabel }, null, 8, ["label"]),
-                                                            (0, E.bF)(s, { icon: "moon", value: "dark", label: e.locale.themeMenuDarkLabel }, null, 8, ["label"]),
-                                                            (0, E.bF)(s, { icon: "sunny", value: "light", label: e.locale.themeMenuLightLabel }, null, 8, ["label"]),
-                                                        ]),
-                                                        _: 1,
-                                                    },
-                                                    8,
-                                                    ["modelValue", "target", "is-open", "onChange"]
-                                                ),
-                                            ]),
-                                            (0, E.Lk)("li", null, [
-                                                (0, E.bo)(
-                                                    ((0, E.uX)(), (0, E.CE)("button", { onClick: t[4] || (t[4] = (0, i.D$)((...t) => e.openOptionsPage && e.openOptionsPage(...t), ["prevent"])) }, [(0, E.bF)(r, { name: "settings" })])),
-                                                    [[u, e.locale.optionsButtonTooltip, void 0, { left: !0 }]]
-                                                ),
-                                            ]),
+                                                : (0, E.Q3)("v-if", !0)
                                         ],
                                         2
                                     ),
@@ -4198,7 +4163,6 @@
         console.log('test --> initialize', e);
         e.O(0, [], () => {
             return (t = 7200), e((e.s = t));
-            var t;
         });
         e.O();
     },
