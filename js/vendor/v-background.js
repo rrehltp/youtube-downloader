@@ -515,70 +515,108 @@
                 };
             };
             var u = ((e) => ((e.AUDIO_VIDEO = "audioandvideo"), (e.AUDIO = "audioonly"), (e.VIDEO = "videoonly"), (e.IMAGE = "image"), e))(u || {});
-            const getVideoInfo = async (e, t, n, i) => {       // get x-youtube-client-name
-                    let a = await (async function (e, t, n, i) {
-                        var a;
-                        let s;
-                        r.L.info(`Getting video information from watch page JSON endpoint for video ID "${e}"`);
-                        const c = { "x-youtube-client-name": "1", "x-youtube-client-version": t };      // const c = { "x-youtube-client-name": "1", "x-youtube-client-version": t };
-                        typeof n < "u" && (c["x-youtube-identity-token"] = n);
-                        console.log('-->test x-youtube-identity-token', n);
+            const getVideoInfo = async (videoId, clientVersion, identityToken, retryCallback) => {
+                // Fetch video information from the watch page JSON endpoint
+                let videoInfo = await (async function (id, version, token, retry) {
+                    let responseData;
+                    r.L.info(`Getting video information from watch page JSON endpoint for video ID "${id}"`);
+            
+                    const headers = {
+                        "x-youtube-client-name": "1",
+                        "x-youtube-client-version": version,
+                    };
+            
+                    if (typeof token !== "undefined") {
+                        headers["x-youtube-identity-token"] = token;
+                    }
+            
+                    console.log('--> test x-youtube-identity-token', token);
+            
+                    try {
+                        responseData = await (0, o.A)(r.W, {
+                            params: { v: id, pbj: "1" },
+                            headers: headers,
+                        });
+                    } catch (error) {
+                        r.L.error("Video information request from watch page JSON endpoint failed.", { error });
+                        throw new Error(`Video information request failed with status code ${error.response?.status}`);
+                    }
+            
+                    let playerResponse;
+                    if (typeof responseData.data === "string") {
+                        const cleanData = responseData.data.replace(/^[)\]}'\s]+/, "");
                         try {
-                            s = await (0, o.A)(r.W, { params: { v: e, pbj: "1" }, headers: c });
-                        } catch (e) {
-                            throw (
-                                (r.L.error("Video information request from watch page JSON endpoint failed.", { error: e }),
-                                new Error(`Video information request from watch page JSON endpoint failed with status code ${null == (a = e.response) ? void 0 : a.status}`))
-                            );
+                            playerResponse = JSON.parse(cleanData);
+                        } catch {
+                            r.L.warn("Failed to parse JSON from watch page JSON endpoint.", { json: cleanData });
+                            return null;
                         }
-                        let l;
-                        if ("string" == typeof s.data) {
-                            const e = /^[)\]}'\s]+/,
-                                t = s.data.replace(e, "");
-                            try {
-                                l = JSON.parse(t);
-                            } catch {
-                                return r.L.warn("Failed to parse JSOn from watch page JSON endpoint.", { json: t }), null;
-                            }
-                        } else l = s.data; console.log('test--> responseData', l);
-                        return Array.isArray(l)
-                            ? l.reduce((e, t) => Object.assign(t, e), {}).playerResponse ?? null
-                            : "now" === l.reload
-                            ? (r.L.warn("Failed to get information from from watch page JSON endpoint. Client token is invalid.", { jsonResponse: l }), typeof i < "u" && (await i()), null)
-                            : l.playerResponse ?? null;
-                    })(e, t, n, i);
-                    if (null !== a && typeof a.streamingData < "u") return r.L.success("Player response extracted from JSON endpoint URL.", { playerResponse: a }), l(a);
-                    if (
-                        (r.L.warn("Failed to extract player response from watch page JSON endpoint URL."),
-                        (a = await (async function (e) {
-                            var t;
-                            let n;
-                            r.L.info(`Getting video information from watch page HTML endpoint for video ID "${e}"`);
-                            try {
-                                n = await (0, o.A)(r.W, { params: { v: e, hl: "en", bpctr: Math.ceil(Date.now() / 1e3).toString() } });
-                            } catch (e) {
-                                throw (
-                                    (r.L.error("Video information request from watch page HTML endpoint failed.", { error: e }),
-                                    new Error(`Video information request from watch page HTML endpoint failed with status code ${null == (t = e.response) ? void 0 : t.status}`))
-                                );
-                            }
-                            const i = n.data.match(/ytInitialPlayerResponse\s*=\s*({.+?})\s*;/);
-                            if (null === i) return r.L.warn("Failed to extract player response from watch page HTML endpoint."), null;
-                            r.L.info("Player response found in initial player response.");
-                            const a = i[1];
-                            let s;
-                            try {
-                                s = JSON.parse(a);
-                            } catch {
-                                return r.L.warn("Failed to parse player response from watch page HTML endpoint."), null;
-                            }
-                            return s;
-                        })(e)),
-                        !a)
-                    )
-                        throw (r.L.warn("Failed to extract player response from watch page HTML endpoint URL."), new Error("Failed to extract player response."));
-                    return r.L.success("Player response extracted from HTML endpoint URL.", { playerResponse: a }), l(a);
-                },
+                    } else {
+                        playerResponse = responseData.data;
+                    }
+            
+                    console.log('test--> responseData', playerResponse);
+            
+                    if (Array.isArray(playerResponse)) {
+                        return playerResponse.reduce((accumulator, current) => Object.assign(current, accumulator), {}).playerResponse ?? null;
+                    } else if (playerResponse.reload === "now") {
+                        r.L.warn("Client token is invalid.", { jsonResponse: playerResponse });
+                        if (typeof retry !== "undefined") await retry();
+                        return null;
+                    }
+            
+                    return playerResponse.playerResponse ?? null;
+                })(videoId, clientVersion, identityToken, retryCallback);
+            
+                if (videoInfo !== null && typeof videoInfo.streamingData !== "undefined") {
+                    r.L.success("Player response extracted from JSON endpoint URL.", { playerResponse: videoInfo });
+                    return l(videoInfo);
+                }
+            
+                r.L.warn("Failed to extract player response from watch page JSON endpoint URL.");
+            
+                // Fetch video information from the watch page HTML endpoint
+                videoInfo = await (async function (id) {
+                    let response;
+                    r.L.info(`Getting video information from watch page HTML endpoint for video ID "${id}"`);
+            
+                    try {
+                        response = await (0, o.A)(r.W, {
+                            params: { v: id, hl: "en", bpctr: Math.ceil(Date.now() / 1000).toString() },
+                        });
+                    } catch (error) {
+                        r.L.error("Video information request from watch page HTML endpoint failed.", { error });
+                        throw new Error(`Video information request failed with status code ${error.response?.status}`);
+                    }
+            
+                    const playerResponseMatch = response.data.match(/ytInitialPlayerResponse\s*=\s*({.+?})\s*;/);
+                    if (playerResponseMatch === null) {
+                        r.L.warn("Failed to extract player response from watch page HTML endpoint.");
+                        return null;
+                    }
+            
+                    r.L.info("Player response found in initial player response.");
+                    const playerResponseString = playerResponseMatch[1];
+                    
+                    let playerResponse;
+                    try {
+                        playerResponse = JSON.parse(playerResponseString);
+                    } catch {
+                        r.L.warn("Failed to parse player response from watch page HTML endpoint.");
+                        return null;
+                    }
+            
+                    return playerResponse;
+                })(videoId);
+            
+                if (!videoInfo) {
+                    r.L.warn("Failed to extract player response from watch page HTML endpoint URL.");
+                    throw new Error("Failed to extract player response.");
+                }
+            
+                r.L.success("Player response extracted from HTML endpoint URL.", { playerResponse: videoInfo });
+                return l(videoInfo);
+            },
                 p = ["mp4a", "mp3", "vorbis", "aac", "opus", "flac"],
                 f = ["mp4v", "avc1", "Sorenson H.283", "MPEG-4 Visual", "VP8", "VP9", "H.264"];
             function m(e) {
@@ -2060,66 +2098,122 @@
                     : t;
             }
             const Me = (e) => (e instanceof Ce ? { ...e } : e);
-            function He(e, t) {
-                t = t || {};
-                const n = {};
-                function r(e, t, n) {
-                    return W.isPlainObject(e) && W.isPlainObject(t) ? W.merge.call({ caseless: n }, e, t) : W.isPlainObject(t) ? W.merge({}, t) : W.isArray(t) ? t.slice() : t;
+            function mergeOptions(defaults, options = {}) {
+                const result = {};
+                const isUndefined = (e) => { return typeof e === "undefined" }
+                const isPlainObject = (e) => {
+                    if (typeof e !== "object") {
+                        return false;
+                    }
+                    
+                    const prototype = Object.getPrototypeOf(e);
+                    const isNotPlainObject = 
+                        (prototype !== null && prototype !== Object.prototype) ||
+                        (Symbol.toStringTag in e) ||
+                        (Symbol.iterator in e);
+                    
+                    return !isNotPlainObject;
                 }
-                function o(e, t, n) {
-                    return W.isUndefined(t) ? (W.isUndefined(e) ? void 0 : r(void 0, e, n)) : r(e, t, n);
+                const isArray = (e) => {
+                    return Array.isArray(e);
                 }
-                function i(e, t) {
-                    if (!W.isUndefined(t)) return r(void 0, t);
+                const merge = function e() {
+                    const { caseless: t } = (D(this) && this) || {},
+                        n = {},
+                        r = (r, o) => {
+                            const i = (t && B(n, o)) || o;
+                            g(n[i]) && g(r) ? (n[i] = e(n[i], r)) : g(r) ? (n[i] = e({}, r)) : d(r) ? (n[i] = r.slice()) : (n[i] = r);
+                        };
+                    for (let e = 0, t = arguments.length; e < t; e++) arguments[e] && C(arguments[e], r);
+                    return n;
                 }
-                function a(e, t) {
-                    return W.isUndefined(t) ? (W.isUndefined(e) ? void 0 : r(void 0, e)) : r(void 0, t);
+
+                function mergeValues(target, source, caseless) {
+                    if (isPlainObject(target) && isPlainObject(source)) {
+                        return merge.call({
+                            caseless
+                        }, target, source);
+                    } else if (isPlainObject(source)) {
+                        return merge({}, source);
+                    } else if (isArray(source)) {
+                        return source.slice();
+                    }
+                    return source;
                 }
-                function s(n, o, i) {
-                    return i in t ? r(n, o) : i in e ? r(void 0, n) : void 0;
+
+                function handleUndefined(target, source) {
+                    return isUndefined(source) ?
+                        (isUndefined(target) ? undefined : mergeValues(undefined, target)) :
+                        mergeValues(target, source);
                 }
-                const c = {
-                    url: i,
-                    method: i,
-                    data: i,
-                    baseURL: a,
-                    transformRequest: a,
-                    transformResponse: a,
-                    paramsSerializer: a,
-                    timeout: a,
-                    timeoutMessage: a,
-                    withCredentials: a,
-                    withXSRFToken: a,
-                    adapter: a,
-                    responseType: a,
-                    xsrfCookieName: a,
-                    xsrfHeaderName: a,
-                    onUploadProgress: a,
-                    onDownloadProgress: a,
-                    decompress: a,
-                    maxContentLength: a,
-                    maxBodyLength: a,
-                    beforeRedirect: a,
-                    transport: a,
-                    httpAgent: a,
-                    httpsAgent: a,
-                    cancelToken: a,
-                    socketPath: a,
-                    responseEncoding: a,
-                    validateStatus: s,
-                    headers: (e, t) => o(Me(e), Me(t), !0),
+
+                function handleOptional(target, source) {
+                    if (!isUndefined(source)) {
+                        return mergeValues(undefined, source);
+                    }
+                }
+
+                function handleBase(target, source) {
+                    return isUndefined(source) ?
+                        (isUndefined(target) ? undefined : mergeValues(undefined, target)) :
+                        mergeValues(undefined, source);
+                }
+
+                function validateOption(target, source, key) {
+                    return key in options ?
+                        mergeValues(target, source) :
+                        key in defaults ?
+                        mergeValues(undefined, target) :
+                        undefined;
+                }
+
+                const optionHandlers = {
+                    url: handleOptional,
+                    method: handleOptional,
+                    data: handleOptional,
+                    baseURL: handleBase,
+                    transformRequest: handleBase,
+                    transformResponse: handleBase,
+                    paramsSerializer: handleBase,
+                    timeout: handleBase,
+                    timeoutMessage: handleBase,
+                    withCredentials: handleBase,
+                    withXSRFToken: handleBase,
+                    adapter: handleBase,
+                    responseType: handleBase,
+                    xsrfCookieName: handleBase,
+                    xsrfHeaderName: handleBase,
+                    onUploadProgress: handleBase,
+                    onDownloadProgress: handleBase,
+                    decompress: handleBase,
+                    maxContentLength: handleBase,
+                    maxBodyLength: handleBase,
+                    beforeRedirect: handleBase,
+                    transport: handleBase,
+                    httpAgent: handleBase,
+                    httpsAgent: handleBase,
+                    cancelToken: handleBase,
+                    socketPath: handleBase,
+                    responseEncoding: handleBase,
+                    validateStatus: validateOption,
+                    headers: (baseHeaders, customHeaders) => handleUndefined(Me(baseHeaders), Me(customHeaders), true),
                 };
-                return (
-                    W.forEach(Object.keys(Object.assign({}, e, t)), function (r) {
-                        const i = c[r] || o,
-                            a = i(e[r], t[r], r);
-                        (W.isUndefined(a) && i !== s) || (n[r] = a);
-                    }),
-                    n
-                );
+
+                // Merge defaults and options
+                Object.keys({ ...defaults, ...options }).forEach(function (key) {
+                    const handler = optionHandlers[key] || handleUndefined;
+                    const mergedValue = handler(defaults[key], options[key], key);
+                
+                    // Only add to result if mergedValue is not undefined
+                    if (!isUndefined(mergedValue) || handler === validateOption) {
+                        result[key] = mergedValue;
+                    }
+                });
+
+                return result;
             }
             const Ve = (e) => {
-                    const t = He({}, e);
+                    const t = mergeOptions({}, e);
                     let n,
                         { data: r, withXSRFToken: o, xsrfHeaderName: i, xsrfCookieName: a, headers: s, auth: c } = t;
                     if (
@@ -2506,7 +2600,7 @@
                     }
                 }
                 _request(e, t) {
-                    "string" == typeof e ? ((t = t || {}).url = e) : (t = e || {}), (t = He(this.defaults, t));
+                    "string" == typeof e ? ((t = t || {}).url = e) : (t = e || {}), (t = mergeOptions(this.defaults, t));
                     const { transitional: n, paramsSerializer: r, headers: o } = t;
                     void 0 !== n && mt.assertOptions(n, { silentJSONParsing: ht.transitional(ht.boolean), forcedJSONParsing: ht.transitional(ht.boolean), clarifyTimeoutError: ht.transitional(ht.boolean) }, !1),
                         null != r && (W.isFunction(r) ? (t.paramsSerializer = { serialize: r }) : mt.assertOptions(r, { encode: ht.function, serialize: ht.function }, !0)),
@@ -2555,18 +2649,18 @@
                     return l;
                 }
                 getUri(e) {
-                    return le(je((e = He(this.defaults, e)).baseURL, e.url), e.params, e.paramsSerializer);
+                    return le(je((e = mergeOptions(this.defaults, e)).baseURL, e.url), e.params, e.paramsSerializer);
                 }
             }
             W.forEach(["delete", "get", "head", "options"], function (e) {
                 yt.prototype[e] = function (t, n) {
-                    return this.request(He(n || {}, { method: e, url: t, data: (n || {}).data }));
+                    return this.request(mergeOptions(n || {}, { method: e, url: t, data: (n || {}).data }));
                 };
             }),
                 W.forEach(["post", "put", "patch"], function (e) {
                     function t(t) {
                         return function (n, r, o) {
-                            return this.request(He(o || {}, { method: e, headers: t ? { "Content-Type": "multipart/form-data" } : {}, url: n, data: r }));
+                            return this.request(mergeOptions(o || {}, { method: e, headers: t ? { "Content-Type": "multipart/form-data" } : {}, url: n, data: r }));
                         };
                     }
                     (yt.prototype[e] = t()), (yt.prototype[e + "Form"] = t(!0));
@@ -2702,7 +2796,7 @@
                     W.extend(r, bt.prototype, n, { allOwnKeys: !0 }),
                     W.extend(r, n, null, { allOwnKeys: !0 }),
                     (r.create = function (n) {
-                        return e(He(t, n));
+                        return e(mergeOptions(t, n));
                     }),
                     r
                 );
@@ -2726,7 +2820,7 @@
                 (Et.isAxiosError = function (e) {
                     return W.isObject(e) && !0 === e.isAxiosError;
                 }),
-                (Et.mergeConfig = He),
+                (Et.mergeConfig = mergeOptions),
                 (Et.AxiosHeaders = Ce),
                 (Et.formToJSON = (e) => we(W.isHTMLForm(e) ? new FormData(e) : e)),
                 (Et.getAdapter = ct),
