@@ -1673,25 +1673,40 @@
                 }
                 return e;
             }
-            const ue = class {
-                    constructor() {
-                        this.handlers = [];
+            const InterceptorManager = class {
+                constructor() {
+                    this.handlers = [];
+                }
+            
+                use(fulfilled, rejected, options) {
+                    const handler = {
+                        fulfilled: fulfilled,
+                        rejected: rejected,
+                        synchronous: !!options && options.synchronous,
+                        runWhen: options ? options.runWhen : null
+                    };
+                    this.handlers.push(handler);
+                    return this.handlers.length - 1;
+                }
+            
+                eject(index) {
+                    if (this.handlers[index]) {
+                        this.handlers[index] = null;
                     }
-                    use(e, t, n) {
-                        return this.handlers.push({ fulfilled: e, rejected: t, synchronous: !!n && n.synchronous, runWhen: n ? n.runWhen : null }), this.handlers.length - 1;
-                    }
-                    eject(e) {
-                        this.handlers[e] && (this.handlers[e] = null);
-                    }
-                    clear() {
-                        this.handlers && (this.handlers = []);
-                    }
-                    forEach(e) {
-                        W.forEach(this.handlers, function (t) {
-                            null !== t && e(t);
-                        });
-                    }
-                },
+                }
+            
+                clear() {
+                    this.handlers = [];
+                }
+            
+                forEach(callback) {
+                    this.handlers.forEach((handler) => {
+                        if (handler !== null) {
+                            callback(handler);
+                        }
+                    });
+                }
+            },
                 de = { silentJSONParsing: !0, forcedJSONParsing: !0, clarifyTimeoutError: !1 },
                 pe = {
                     isBrowser: !0,
@@ -2634,127 +2649,156 @@
                 };
             };
             const mt = {
-                    assertOptions: function (e, t, n) {
-                        if ("object" != typeof e) throw new Y("options must be an object", Y.ERR_BAD_OPTION_VALUE);
-                        const r = Object.keys(e);
-                        let o = r.length;
-                        for (; o-- > 0; ) {
-                            const i = r[o],
-                                a = t[i];
-                            if (a) {
-                                const t = e[i],
-                                    n = void 0 === t || a(t, i, e);
-                                if (!0 !== n) throw new Y("option " + i + " must be " + n, Y.ERR_BAD_OPTION_VALUE);
-                            } else if (!0 !== n) throw new Y("Unknown option " + i, Y.ERR_BAD_OPTION);
+                assertOptions: function (options, validators, allowUnknown) {
+                    if (typeof options !== "object") {
+                        throw new Y("options must be an object", Y.ERR_BAD_OPTION_VALUE);
+                    }
+            
+                    const keys = Object.keys(options);
+                    let keyCount = keys.length;
+            
+                    while (keyCount-- > 0) {
+                        const key = keys[keyCount];
+                        const validator = validators[key];
+            
+                        if (validator) {
+                            const value = options[key];
+                            const isValid = value === undefined || validator(value, key, options);
+            
+                            if (isValid !== true) {
+                                throw new Y(`option ${key} must be ${isValid}`, Y.ERR_BAD_OPTION_VALUE);
+                            }
+                        } else if (allowUnknown !== true) {
+                            throw new Y(`Unknown option ${key}`, Y.ERR_BAD_OPTION);
                         }
-                    },
-                    validators: pt,
+                    }
                 },
-                ht = mt.validators;
-            class yt {
-                constructor(e) {
-                    (this.defaults = e), (this.interceptors = { request: new ue(), response: new ue() });
+                validators: pt,
+            };
+            
+            const ht = mt.validators;
+            class YouTube {
+                constructor(config) {
+                    this.defaults = config;
+                    this.interceptors = {
+                        request: new InterceptorManager(),
+                        response: new InterceptorManager(),
+                    };
                 }
-                async request(e, t) {
+            
+                async request(urlOrConfig, config) {
                     try {
-                        return await this._request(e, t);
-                    } catch (e) {
-                        if (e instanceof Error) {
-                            let t;
-                            Error.captureStackTrace ? Error.captureStackTrace((t = {})) : (t = new Error());
-                            const n = t.stack ? t.stack.replace(/^.+\n/, "") : "";
-                            try {
-                                e.stack ? n && !String(e.stack).endsWith(n.replace(/^.+\n.+\n/, "")) && (e.stack += "\n" + n) : (e.stack = n);
-                            } catch (e) {}
-                        }
-                        throw e;
+                        return await this._request(urlOrConfig, config);
+                    } catch (error) {
+                        this._handleError(error);
+                        throw error;
                     }
                 }
-                _request(e, t) {
-                    // Determine the request configuration
-                    if (typeof e === "string") {
-                        t = t || {};
-                        t.url = e;
-                    } else {
-                        t = e || {};
+            
+                _handleError(error) {
+                    if (error instanceof Error) {
+                        let stackTrace;
+                        if (Error.captureStackTrace) {
+                            Error.captureStackTrace((stackTrace = {}));
+                        } else {
+                            stackTrace = new Error();
+                        }
+                        const stack = stackTrace.stack ? stackTrace.stack.replace(/^.+\n/, "") : "";
+                        try {
+                            if (error.stack) {
+                                if (!String(error.stack).endsWith(stack.replace(/^.+\n.+\n/, ""))) {
+                                    error.stack += "\n" + stack;
+                                }
+                            } else {
+                                error.stack = stack;
+                            }
+                        } catch (e) {}
                     }
-                
+                }
+            
+                _request(urlOrConfig, config) {
+                    // Determine request configuration
+                    if (typeof urlOrConfig === "string") {
+                        config = config || {};
+                        config.url = urlOrConfig;
+                    } else {
+                        config = urlOrConfig || {};
+                    }
+            
                     // Merge options with defaults
-                    t = mergeOptions(this.defaults, t);
-                    const { transitional: n, paramsSerializer: r, headers: o } = t;
-                
+                    config = mergeOptions(this.defaults, config);
+                    const { transitional, paramsSerializer, headers } = config;
+            
                     // Validate transitional options
-                    if (n !== undefined) {
-                        mt.assertOptions(n, {
+                    if (transitional !== undefined) {
+                        mt.assertOptions(transitional, {
                             silentJSONParsing: ht.transitional(ht.boolean),
                             forcedJSONParsing: ht.transitional(ht.boolean),
-                            clarifyTimeoutError: ht.transitional(ht.boolean)
+                            clarifyTimeoutError: ht.transitional(ht.boolean),
                         }, false);
                     }
-                
+            
                     // Handle paramsSerializer
-                    if (r != null) {
-                        if (W.isFunction(r)) {
-                            t.paramsSerializer = { serialize: r };
+                    if (paramsSerializer != null) {
+                        if (W.isFunction(paramsSerializer)) {
+                            config.paramsSerializer = { serialize: paramsSerializer };
                         } else {
-                            mt.assertOptions(r, {
+                            mt.assertOptions(paramsSerializer, {
                                 encode: ht.function,
-                                serialize: ht.function
+                                serialize: ht.function,
                             }, true);
                         }
                     }
-                
+            
                     // Set request method
-                    t.method = (t.method || this.defaults.method || "get").toLowerCase();
-                    let i = o && W.merge(o.common, o[t.method]);
-                
+                    config.method = (config.method || this.defaults.method || "get").toLowerCase();
+                    let mergedHeaders = headers && W.merge(headers.common, headers[config.method]);
+            
                     // Clean up headers
-                    if (o) {
+                    if (headers) {
                         W.forEach(["delete", "get", "head", "post", "put", "patch", "common"], (method) => {
-                            delete o[method];
+                            delete headers[method];
                         });
-                        t.headers = Ce.concat(i, o);
+                        config.headers = Ce.concat(mergedHeaders, headers);
                     }
-                
+            
                     // Prepare interceptors
                     const requestInterceptors = [];
                     let isSynchronous = true;
+            
                     this.interceptors.request.forEach((interceptor) => {
-                        if (typeof interceptor.runWhen === "function" && !interceptor.runWhen(t)) return;
+                        if (typeof interceptor.runWhen === "function" && !interceptor.runWhen(config)) return;
                         isSynchronous = isSynchronous && interceptor.synchronous;
                         requestInterceptors.unshift(interceptor.fulfilled, interceptor.rejected);
                     });
-                
+            
                     const responseInterceptors = [];
                     this.interceptors.response.forEach((interceptor) => {
                         responseInterceptors.push(interceptor.fulfilled, interceptor.rejected);
                     });
-                
+            
                     let promise;
                     let index = 0;
-                
+            
                     // Handle asynchronous requests
                     if (!isSynchronous) {
                         const allInterceptors = [ut.bind(this), void 0];
                         allInterceptors.unshift(...requestInterceptors);
                         allInterceptors.push(...responseInterceptors);
-                        const totalInterceptors = allInterceptors.length;
-                        promise = Promise.resolve(t);
-                
-                        while (index < totalInterceptors) {
+                        promise = Promise.resolve(config);
+            
+                        while (index < allInterceptors.length) {
                             promise = promise.then(allInterceptors[index++], allInterceptors[index++]);
                         }
                         return promise;
                     }
-                
+            
                     // Process synchronous interceptors
-                    let processedRequest = t;
-                    const totalRequestInterceptors = requestInterceptors.length;
-                
-                    for (index = 0; index < totalRequestInterceptors;) {
+                    let processedRequest = config;
+                    for (index = 0; index < requestInterceptors.length;) {
                         const fulfilled = requestInterceptors[index++];
                         const rejected = requestInterceptors[index++];
-                
+            
                         try {
                             processedRequest = fulfilled(processedRequest);
                         } catch (error) {
@@ -2762,39 +2806,61 @@
                             break;
                         }
                     }
-                
+            
                     // Execute the main request
                     try {
                         promise = ut.call(this, processedRequest);
                     } catch (error) {
                         return Promise.reject(error);
                     }
-                
+            
                     // Handle response interceptors
                     for (index = 0; index < responseInterceptors.length;) {
                         promise = promise.then(responseInterceptors[index++], responseInterceptors[index++]);
                     }
-                
+            
                     return promise;
                 }
-                getUri(e) {
-                    return le(je((e = mergeOptions(this.defaults, e)).baseURL, e.url), e.params, e.paramsSerializer);
+            
+                getUri(config) {
+                    const mergedConfig = mergeOptions(this.defaults, config);
+                    return le(je(mergedConfig.baseURL, mergedConfig.url), mergedConfig.params, mergedConfig.paramsSerializer);
                 }
             }
-            W.forEach(["delete", "get", "head", "options"], function (e) {
-                yt.prototype[e] = function (t, n) {
-                    return this.request(mergeOptions(n || {}, { method: e, url: t, data: (n || {}).data }));
+            // Define HTTP methods for the prototype
+            const httpMethods = ["delete", "get", "head", "options"];
+            httpMethods.forEach((method) => {
+                YouTube.prototype[method] = function (url, options) {
+                    const mergedOptions = mergeOptions(options || {}, {
+                        method: method,
+                        url: url,
+                        data: (options || {}).data
+                    });
+                    return this.request(mergedOptions);
                 };
-            }),
-                W.forEach(["post", "put", "patch"], function (e) {
-                    function t(t) {
-                        return function (n, r, o) {
-                            return this.request(mergeOptions(o || {}, { method: e, headers: t ? { "Content-Type": "multipart/form-data" } : {}, url: n, data: r }));
-                        };
-                    }
-                    (yt.prototype[e] = t()), (yt.prototype[e + "Form"] = t(!0));
-                });
-            const bt = yt;
+            });
+
+            // Define request methods with support for multipart/form-data
+            const dataMethods = ["post", "put", "patch"];
+            dataMethods.forEach((method) => {
+                const createRequestFunction = (isForm = false) => {
+                    return function (url, data, options) {
+                        const headers = isForm ? {
+                            "Content-Type": "multipart/form-data"
+                        } : {};
+                        const mergedOptions = mergeOptions(options || {}, {
+                            method: method,
+                            headers: headers,
+                            url: url,
+                            data: data
+                        });
+                        return this.request(mergedOptions);
+                    };
+                };
+
+                YouTube.prototype[method] = createRequestFunction();
+                YouTube.prototype[`${method}Form`] = createRequestFunction(true);
+            });
             class gt {
                 constructor(e) {
                     if ("function" != typeof e) throw new TypeError("executor must be a function.");
@@ -2919,10 +2985,10 @@
             });
             const Lt = vt;
             const Et = (function e(t) {
-                const n = new bt(t),
-                    r = o(bt.prototype.request, n);
+                const n = new YouTube(t),
+                    r = o(YouTube.prototype.request, n);
                 return (
-                    W.extend(r, bt.prototype, n, { allOwnKeys: !0 }),
+                    W.extend(r, YouTube.prototype, n, { allOwnKeys: !0 }),
                     W.extend(r, n, null, { allOwnKeys: !0 }),
                     (r.create = function (n) {
                         return e(mergeOptions(t, n));
@@ -2930,7 +2996,7 @@
                     r
                 );
             })(Le);
-            (Et.Axios = bt),
+            (Et.Axios = YouTube),
                 (Et.CanceledError = qe),
                 (Et.CancelToken = wt),
                 (Et.isCancel = xe),
