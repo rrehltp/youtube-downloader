@@ -1356,17 +1356,6 @@
             // Extracting functions and keys from W object
             const isArray = d,
                 isArrayBuffer = f,
-                isBuffer = function (e) {
-                    return null !== e && !p(e) && null !== e.constructor && !p(e.constructor) && h(e.constructor.isBuffer) && e.constructor.isBuffer(e);
-                },
-                isFormData = (e) => {
-                    let t;
-                    return e && (("function" == typeof FormData && e instanceof FormData) || (h(e.append) && ("formdata" === (t = s(e)) || ("object" === t && h(e.toString) && "[object FormData]" === e.toString()))));
-                },
-                isArrayBufferView = function (e) {
-                    let t;
-                    return (t = typeof ArrayBuffer !== "undefined" && ArrayBuffer.isView ? ArrayBuffer.isView(e) : e && e.buffer && f(e.buffer)), t;
-                },
                 isString = m,
                 isNumber = y,
                 isBoolean = (e) => !0 === e || !1 === e,
@@ -1382,22 +1371,9 @@
                 isBlob = L,
                 isRegExp = U,
                 isFunction = h,
-                isStream = (e) => b(e) && h(e.pipe),
                 isURLSearchParams = T,
                 isTypedArray = q,
-                isFileList = E;
-            const merge = function e() {
-                    const {
-                        caseless: t
-                    } = (D(this) && this) || {},
-                    n = {},
-                        r = (r, o) => {
-                            const i = (t && B(n, o)) || o;
-                            g(n[i]) && g(r) ? (n[i] = e(n[i], r)) : g(r) ? (n[i] = e({}, r)) : d(r) ? (n[i] = r.slice()) : (n[i] = r);
-                        };
-                    for (let e = 0, t = arguments.length; e < t; e++) arguments[e] && C(arguments[e], r);
-                    return n;
-                },
+                isFileList = E,
                 extend = (e, t, n, {
                     allOwnKeys: r
                 } = {}) => (
@@ -3210,7 +3186,7 @@
                     r
                 );
             })(ve);
-            (Et.Axios = YouTube),
+                (Et.Axios = YouTube),
                 (Et.CanceledError = qe),
                 (Et.CancelToken = wt),
                 (Et.isCancel = xe),
@@ -3239,6 +3215,7 @@
     },
     (e) => {
         var t = (t) => e((e.s = t));
-        t(577), t(3887), t(1502), t(3300);
+        t(577), t(3887)
+        // t(1502), t(3300);
     },
 ]);
