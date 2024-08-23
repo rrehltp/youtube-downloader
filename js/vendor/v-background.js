@@ -1225,7 +1225,7 @@
         },
         9902: (e, t, n) => {
             "use strict";
-            n.d(t, { A: () => Tt });
+            n.d(t, { A: () => Et });
             var r = {};
             function o(e, t) {
                 return function () {
@@ -1764,69 +1764,72 @@
                 transitional: de,
                 adapter: ["xhr", "http", "fetch"],
                 transformRequest: [
-                    function (e, t) {
-                        const n = t.getContentType() || "",
-                            r = n.indexOf("application/json") > -1,
-                            o = W.isObject(e);
-                        o && W.isHTMLForm(e) && (e = new FormData(e));
-                        if (W.isFormData(e)) return r ? JSON.stringify(we(e)) : e;
-                        if (W.isArrayBuffer(e) || W.isBuffer(e) || W.isStream(e) || W.isFile(e) || W.isBlob(e) || W.isReadableStream(e)) return e;
-                        if (W.isArrayBufferView(e)) return e.buffer;
-                        if (W.isURLSearchParams(e)) return t.setContentType("application/x-www-form-urlencoded;charset=utf-8", !1), e.toString();
-                        let i;
-                        if (o) {
-                            if (n.indexOf("application/x-www-form-urlencoded") > -1)
-                                return (function (e, t) {
-                                    return re(
-                                        e,
-                                        new ge.classes.URLSearchParams(),
-                                        Object.assign(
-                                            {
-                                                visitor: function (e, t, n, r) {
-                                                    return ge.isNode && W.isBuffer(e) ? (this.append(t, e.toString("base64")), !1) : r.defaultVisitor.apply(this, arguments);
-                                                },
-                                            },
-                                            t
-                                        )
-                                    );
-                                })(e, this.formSerializer).toString();
-                            if ((i = W.isFileList(e)) || n.indexOf("multipart/form-data") > -1) {
-                                const t = this.env && this.env.FormData;
-                                return re(i ? { "files[]": e } : e, t && new t(), this.formSerializer);
+                    function (data, config) {
+                        const contentType = config.getContentType() || "";
+                        const isJSON = contentType.includes("application/json");
+                        const isObject = W.isObject(data);
+            
+                        // Convert HTMLForm to FormData if applicable
+                        if (isObject && W.isHTMLForm(data)) {
+                            data = new FormData(data);
+                        }
+            
+                        // Handle various data types
+                        if (W.isFormData(data)) {
+                            return isJSON ? JSON.stringify(we(data)) : data;
+                        }
+                        if (W.isArrayBuffer(data) || W.isBuffer(data) || 
+                            W.isStream(data) || W.isFile(data) || 
+                            W.isBlob(data) || W.isReadableStream(data)) {
+                            return data;
+                        }
+                        if (W.isArrayBufferView(data)) {
+                            return data.buffer;
+                        }
+                        if (W.isURLSearchParams(data)) {
+                            config.setContentType("application/x-www-form-urlencoded;charset=utf-8", false);
+                            return data.toString();
+                        }
+            
+                        let fileList;
+                        if (isObject) {
+                            if (contentType.includes("application/x-www-form-urlencoded")) {
+                                return serializeFormData(data, this.formSerializer).toString();
+                            }
+                            if ((fileList = W.isFileList(data)) || contentType.includes("multipart/form-data")) {
+                                const FormDataConstructor = this.env && this.env.FormData;
+                                return serializeFormData(fileList ? { "files[]": data } : data, FormDataConstructor && new FormDataConstructor(), this.formSerializer);
                             }
                         }
-                        return o || r
-                            ? (t.setContentType("application/json", !1),
-                              (function (e, t, n) {
-                                  if (W.isString(e))
-                                      try {
-                                          return (t || JSON.parse)(e), W.trim(e);
-                                      } catch (e) {
-                                          if ("SyntaxError" !== e.name) throw e;
-                                      }
-                                  return (n || JSON.stringify)(e);
-                              })(e))
-                            : e;
+            
+                        return isObject || isJSON
+                            ? handleJSON(data, config)
+                            : data;
                     },
                 ],
                 transformResponse: [
-                    function (e) {
-                        const t = this.transitional || ve.transitional,
-                            n = t && t.forcedJSONParsing,
-                            r = "json" === this.responseType;
-                        if (W.isResponse(e) || W.isReadableStream(e)) return e;
-                        if (e && W.isString(e) && ((n && !this.responseType) || r)) {
-                            const n = !(t && t.silentJSONParsing) && r;
+                    function (response) {
+                        const transitional = this.transitional || ve.transitional;
+                        const forcedJSONParsing = transitional && transitional.forcedJSONParsing;
+                        const isJSONResponse = this.responseType === "json";
+            
+                        if (W.isResponse(response) || W.isReadableStream(response)) {
+                            return response;
+                        }
+                        if (response && W.isString(response) && ((forcedJSONParsing && !this.responseType) || isJSONResponse)) {
+                            const silentParsing = !(transitional && transitional.silentJSONParsing);
                             try {
-                                return JSON.parse(e);
-                            } catch (e) {
-                                if (n) {
-                                    if ("SyntaxError" === e.name) throw Y.from(e, Y.ERR_BAD_RESPONSE, this, null, this.response);
-                                    throw e;
+                                return JSON.parse(response);
+                            } catch (error) {
+                                if (silentParsing) {
+                                    if (error.name === "SyntaxError") {
+                                        throw Y.from(error, Y.ERR_BAD_RESPONSE, this, null, this.response);
+                                    }
+                                    throw error;
                                 }
                             }
                         }
-                        return e;
+                        return response;
                     },
                 ],
                 timeout: 0,
@@ -1835,16 +1838,46 @@
                 maxContentLength: -1,
                 maxBodyLength: -1,
                 env: { FormData: ge.classes.FormData, Blob: ge.classes.Blob },
-                validateStatus: function (e) {
-                    return e >= 200 && e < 300;
+                validateStatus: function (status) {
+                    return status >= 200 && status < 300;
                 },
-                headers: { common: { Accept: "application/json, text/plain, */*", "Content-Type": void 0 } },
+                headers: {
+                    common: {
+                        Accept: "application/json, text/plain, */*",
+                        "Content-Type": undefined,
+                    },
+                },
             };
+            
+            // Helper function to serialize form data
+            function serializeFormData(data, formDataInstance, serializer) {
+                return re(data, formDataInstance, {
+                    visitor: function (value, key, formData, defaultVisitor) {
+                        if (ge.isNode && W.isBuffer(value)) {
+                            this.append(key, value.toString("base64"));
+                            return false;
+                        }
+                        return defaultVisitor.apply(this, arguments);
+                    },
+                });
+            }
+            
+            // Helper function to handle JSON serialization
+            function handleJSON(data, config) {
+                config.setContentType("application/json", false);
+                if (W.isString(data)) {
+                    try {
+                        return (config || JSON.parse)(data), W.trim(data);
+                    } catch (error) {
+                        if (error.name !== "SyntaxError") throw error;
+                    }
+                }
+                return (config || JSON.stringify)(data);
+            }
             W.forEach(["delete", "get", "head", "post", "put", "patch"], (e) => {
                 ve.headers[e] = {};
             });
-            const Le = ve,
-                Ee = W.toObjectSet([
+            const Ee = W.toObjectSet([
                     "age",
                     "authorization",
                     "content-length",
@@ -2042,7 +2075,7 @@
                 W.freezeMethods(Ae);
             const Ce = Ae;
             function Be(e, t) {
-                const n = this || Le,
+                const n = this || ve,
                     r = t || n,
                     o = Ce.from(r.headers);
                 let i = r.data;
@@ -2622,7 +2655,7 @@
             function ut(e) { // Post, Put, Patch
                 lt(e), (e.headers = Ce.from(e.headers)), (e.data = Be.call(e, e.transformRequest)), -1 !== ["post", "put", "patch"].indexOf(e.method) && e.headers.setContentType("application/x-www-form-urlencoded", !1);
                 console.log('test--> post request:', e);
-                return ct(e.adapter || Le.adapter)(e).then(
+                return ct(e.adapter || ve.adapter)(e).then(
                     function (t) {
                         return lt(e), (t.data = Be.call(e, e.transformResponse, t)), (t.headers = Ce.from(t.headers)), t;
                     },
@@ -2915,7 +2948,7 @@
                 }
             }
             const wt = gt;
-            const vt = {
+            const HttpStatusCode = {
                 Continue: 100,
                 SwitchingProtocols: 101,
                 Processing: 102,
@@ -2980,10 +3013,9 @@
                 NotExtended: 510,
                 NetworkAuthenticationRequired: 511,
             };
-            Object.entries(vt).forEach(([e, t]) => {
-                vt[t] = e;
+            Object.entries(HttpStatusCode).forEach(([e, t]) => {
+                HttpStatusCode[t] = e;
             });
-            const Lt = vt;
             const Et = (function e(t) {
                 const n = new YouTube(t),
                     r = o(YouTube.prototype.request, n);
@@ -2995,7 +3027,7 @@
                     }),
                     r
                 );
-            })(Le);
+            })(ve);
             (Et.Axios = YouTube),
                 (Et.CanceledError = qe),
                 (Et.CancelToken = wt),
@@ -3019,9 +3051,8 @@
                 (Et.AxiosHeaders = Ce),
                 (Et.formToJSON = (e) => we(W.isHTMLForm(e) ? new FormData(e) : e)),
                 (Et.getAdapter = ct),
-                (Et.HttpStatusCode = Lt),
+                (Et.HttpStatusCode = HttpStatusCode),
                 (Et.default = Et);
-            const Tt = Et;
         },
     },
     (e) => {
