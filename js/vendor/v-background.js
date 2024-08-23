@@ -1720,33 +1720,62 @@
                 be = (fe && window.location.href) || "http://localhost",
                 ge = { ...r, ...pe };
             const we = function (e) {
-                function t(e, n, r, o) {
-                    let i = e[o++];
-                    if ("__proto__" === i) return !0;
-                    const a = Number.isFinite(+i),
-                        s = o >= e.length;
-                    if (((i = !i && W.isArray(r) ? r.length : i), s)) return W.hasOwnProp(r, i) ? (r[i] = [r[i], n]) : (r[i] = n), !a;
-                    (r[i] && W.isObject(r[i])) || (r[i] = []);
-                    return (
-                        t(e, n, r[i], o) &&
-                            W.isArray(r[i]) &&
-                            (r[i] = (function (e) {
-                                const t = {},
-                                    n = Object.keys(e);
-                                let r;
-                                const o = n.length;
-                                let i;
-                                for (r = 0; r < o; r++) (i = n[r]), (t[i] = e[i]);
-                                return t;
-                            })(r[i])),
-                        !a
-                    );
+                function updateObject(e, value, result, index) {
+                    let key = e[index++];
+                
+                    // Check for '__proto__' key
+                    if (key === "__proto__") return true;
+                
+                    const isFiniteKey = Number.isFinite(+key);
+                    const isEndOfArray = index >= e.length;
+                
+                    // Set default key if undefined
+                    if (!key && W.isArray(result)) {
+                        key = result.length;
+                    }
+                
+                    // Base case: Add property to object
+                    if (isEndOfArray) {
+                        if (W.hasOwnProp(result, key)) {
+                            result[key] = [result[key], value];
+                        } else {
+                            result[key] = value;
+                        }
+                        return !isFiniteKey;
+                    }
+                
+                    // Ensure the property is an object or initialize it
+                    if (!result[key] || !W.isObject(result[key])) {
+                        result[key] = [];
+                    }
+                
+                    // Recursive call to continue processing
+                    const shouldContinue = updateObject(e, value, result[key], index);
+                    
+                    // Transform to plain object if it's an array
+                    if (shouldContinue && W.isArray(result[key])) {
+                        result[key] = convertToPlainObject(result[key]);
+                    }
+                
+                    return !isFiniteKey;
+                }
+                
+                // Helper function to convert array to plain object
+                function convertToPlainObject(array) {
+                    const plainObject = {};
+                    const keys = Object.keys(array);
+                    
+                    for (const key of keys) {
+                        plainObject[key] = array[key];
+                    }
+                
+                    return plainObject;
                 }
                 if (W.isFormData(e) && W.isFunction(e.entries)) {
                     const n = {};
                     return (
                         W.forEachEntry(e, (e, r) => {
-                            t(
+                            updateObject(
                                 (function (e) {
                                     return W.matchAll(/\w+|\[(\w*)]/g, e).map((e) => ("[]" === e[0] ? "" : e[1] || e[0]));
                                 })(e),
@@ -1874,7 +1903,7 @@
                 }
                 return (config || JSON.stringify)(data);
             }
-            W.forEach(["delete", "get", "head", "post", "put", "patch"], (e) => {
+            ["delete", "get", "head", "post", "put", "patch"].forEach((e) => {
                 ve.headers[e] = {};
             });
             const Ee = W.toObjectSet([
