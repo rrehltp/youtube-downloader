@@ -554,6 +554,7 @@
                 ];
             };
             var u = ((e) => ((e.AUDIO_VIDEO = "audioandvideo"), (e.AUDIO = "audioonly"), (e.VIDEO = "videoonly"), (e.IMAGE = "image"), e))(u || {});
+
             const getVideoInfo = async (videoId, clientVersion, identityToken, retryCallback) => {
                 // Fetch video information from the watch page JSON endpoint
                 let videoInfo = await (async function (id, version, token, retry) {
@@ -614,46 +615,13 @@
             
                 r.L.warn("Failed to extract player response from watch page JSON endpoint URL.");
             
-                // Fetch video information from the watch page HTML endpoint
-                videoInfo = await (async function (id) {
-                    let response;
-                    r.L.info(`Getting video information from watch page HTML endpoint for video ID "${id}"`);
-            
-                    try {
-                        response = await (0, o.A)(r.W, {
-                            params: { v: id, hl: "en", bpctr: Math.ceil(Date.now() / 1000).toString() },
-                        });
-                    } catch (error) {
-                        r.L.error("Video information request from watch page HTML endpoint failed.", { error });
-                        throw new Error(`Video information request failed with status code ${error.response?.status}`);
-                    }
-            
-                    const playerResponseMatch = response.data.match(/ytInitialPlayerResponse\s*=\s*({.+?})\s*;/);
-                    if (playerResponseMatch === null) {
-                        r.L.warn("Failed to extract player response from watch page HTML endpoint.");
-                        return null;
-                    }
-            
-                    r.L.info("Player response found in initial player response.");
-                    const playerResponseString = playerResponseMatch[1];
-                    
-                    let playerResponse;
-                    try {
-                        playerResponse = JSON.parse(playerResponseString);
-                    } catch {
-                        r.L.warn("Failed to parse player response from watch page HTML endpoint.");
-                        return null;
-                    }
-            
-                    return playerResponse;
-                })(videoId);
-            
                 if (!videoInfo) {
                     r.L.warn("Failed to extract player response from watch page HTML endpoint URL.");
                     throw new Error("Failed to extract player response.");
                 }
             
                 r.L.success("Player response extracted from HTML endpoint URL.", { playerResponse: videoInfo });
+                updatedResponse = l(videoInfo);
                 return l(videoInfo);
             },
                 p = ["mp4a", "mp3", "vorbis", "aac", "opus", "flac"],
@@ -1518,7 +1486,6 @@
                 },
                 isAsyncFn = j,
                 isThenable = (e) => e && (b(e) || h(e)) && h(e.then) && h(e.catch),
-                setImmediate = M,
                 asap = G;
             function K(e, t, n, r, o) {
                 Error.call(this),
@@ -1620,7 +1587,7 @@
                 toJSONObject,
                 isAsyncFn,
                 isThenable,
-                setImmediate,
+                setImmediate: M,
                 asap,
             };
             function K(e, t, n, r, o) {
@@ -3215,7 +3182,7 @@
     },
     (e) => {
         var t = (t) => e((e.s = t));
-        t(577), t(3887)
-        // t(1502), t(3300);
+        t(577)
+        //, t(3887), t(1502), t(3300);
     },
 ]);
