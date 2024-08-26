@@ -327,61 +327,114 @@
                 (f.setDebugLevel = s), (e.default = f), Object.defineProperty(e, "__esModule", { value: !0 });
             })(t);
         },
-        3887: (e, t, n) => {
+        3887: (module, exports, require) => {
             "use strict";
-            var r = n(6846),
-                o = /[\/\?<>\\:\*\|"]/g,
-                i = /[\x00-\x1f\x80-\x9f]/g,
-                a = /^\.+$/,
-                s = /^(con|prn|aux|nul|com[0-9]|lpt[0-9])(\..*)?$/i,
-                c = /[\. ]+$/;
-            function l(e, t) {
-                if ("string" != typeof e) throw new Error("Input must be string");
-                var n = e.replace(o, t).replace(i, t).replace(a, t).replace(s, t).replace(c, t);
-                return r(n, 255);
+            
+            const sanitize = require(6846);
+            const invalidCharsRegex = /[\/\?<>\\:\*\|"]/g;
+            const controlCharsRegex = /[\x00-\x1f\x80-\x9f]/g;
+            const dotRegex = /^\.+$/;
+            const reservedNamesRegex = /^(con|prn|aux|nul|com[0-9]|lpt[0-9])(\..*)?$/i;
+            const trailingSpacesRegex = /[\. ]+$/;
+        
+            function cleanString(input, replacement) {
+                if (typeof input !== 'string') throw new Error("Input must be a string");
+        
+                const sanitized = input
+                    .replace(invalidCharsRegex, replacement)
+                    .replace(controlCharsRegex, replacement)
+                    .replace(dotRegex, replacement)
+                    .replace(reservedNamesRegex, replacement)
+                    .replace(trailingSpacesRegex, replacement);
+                
+                return sanitize(sanitized, 255);
             }
-            e.exports = function (e, t) {
+            module.exports = function (e, t) {
                 var n = (t && t.replacement) || "",
                     r = l(e, n);
                 return "" === n ? r : l(r, "");
             };
         },
-        6846: (e, t, n) => {
+        
+        6846: (module, exports, require) => {
             "use strict";
-            var r = n(8418),
-                o = n(6401);
-            e.exports = r.bind(null, o);
+            
+            const bindFunction = require(8418);
+            const otherFunction = require(6401);
+            
+            exports.default = bindFunction.bind(null, otherFunction);
         },
-        8418: (e) => {
+        
+        8418: (module) => {
             "use strict";
-            function t(e) {
-                return e >= 55296 && e <= 56319;
+            
+            function isHighSurrogate(code) {
+                return code >= 55296 && code <= 56319;
             }
-            function n(e) {
-                return e >= 56320 && e <= 57343;
+        
+            function isLowSurrogate(code) {
+                return code >= 56320 && code <= 57343;
             }
-            e.exports = function (e, r, o) {
-                if ("string" != typeof r) throw new Error("Input must be string");
-                for (var i, a, s = r.length, c = 0, l = 0; l < s; l += 1) {
-                    if (((i = r.charCodeAt(l)), (a = r[l]), t(i) && n(r.charCodeAt(l + 1)) && (a += r[(l += 1)]), (c += e(a)) === o)) return r.slice(0, l + 1);
-                    if (c > o) return r.slice(0, l - a.length + 1);
+        
+            module.exports = function (encodingFunction, input, limit) {
+                if (typeof input !== 'string') throw new Error("Input must be a string");
+                
+                let charCode, combinedChar, length = input.length, total = 0;
+        
+                for (let index = 0; index < length; index += 1) {
+                    charCode = input.charCodeAt(index);
+                    combinedChar = input[index];
+        
+                    if (isHighSurrogate(charCode) && isLowSurrogate(input.charCodeAt(index + 1))) {
+                        combinedChar += input[(index += 1)];
+                    }
+        
+                    total += encodingFunction(combinedChar);
+                    if (total === limit) return input.slice(0, index + 1);
+                    if (total > limit) return input.slice(0, index - combinedChar.length + 1);
                 }
-                return r;
+                
+                return input;
             };
         },
-        6401: (e) => {
+        
+        6401: (module) => {
             "use strict";
-            function t(e) {
-                return e >= 55296 && e <= 56319;
+            
+            function isHighSurrogate(code) {
+                return code >= 55296 && code <= 56319;
             }
-            function n(e) {
-                return e >= 56320 && e <= 57343;
+        
+            function isLowSurrogate(code) {
+                return code >= 56320 && code <= 57343;
             }
-            e.exports = function (e) {
-                if ("string" != typeof e) throw new Error("Input must be string");
-                for (var r = e.length, o = 0, i = null, a = null, s = 0; s < r; s++)
-                    n((i = e.charCodeAt(s))) ? (null != a && t(a) ? (o += 1) : (o += 3)) : i <= 127 ? (o += 1) : i >= 128 && i <= 2047 ? (o += 2) : i >= 2048 && i <= 65535 && (o += 3), (a = i);
-                return o;
+        
+            module.exports = function (input) {
+                if (typeof input !== 'string') throw new Error("Input must be a string");
+                
+                let totalLength = 0;
+                let previousCharCode = null;
+        
+                for (let index = 0; index < input.length; index++) {
+                    const currentCharCode = input.charCodeAt(index);
+                    
+                    if (isLowSurrogate(currentCharCode)) {
+                        if (previousCharCode !== null && isHighSurrogate(previousCharCode)) {
+                            totalLength += 1; // one combined character
+                        } else {
+                            totalLength += 3; // one low surrogate
+                        }
+                    } else if (currentCharCode <= 127) {
+                        totalLength += 1; // ASCII
+                    } else if (currentCharCode <= 2047) {
+                        totalLength += 2; // two bytes
+                    } else if (currentCharCode <= 65535) {
+                        totalLength += 3; // three bytes
+                    }
+                    previousCharCode = currentCharCode;
+                }
+                
+                return totalLength;
             };
         },
         1502: (e, t, n) => {
@@ -554,7 +607,7 @@
                 ];
             };
             var u = ((e) => ((e.AUDIO_VIDEO = "audioandvideo"), (e.AUDIO = "audioonly"), (e.VIDEO = "videoonly"), (e.IMAGE = "image"), e))(u || {});
-
+        
             const getVideoInfo = async (videoId, clientVersion, identityToken, retryCallback) => {
                 // Fetch video information from the watch page JSON endpoint
                 let videoInfo = await (async function (id, version, token, retry) {
@@ -913,32 +966,50 @@
                     703: { mimeType: 'video/mp4; codecs="av01.0.17M.10.0.110.09.16.09.0"', qualityLabel: "4320p60 HDR", bitrate: 38237903, audioBitrate: null },
                 },
                 x = { tiny: "sd", small: "sd", medium: "sd", large: "sd", hd720: "hd", hd1080: "1080", hd1440: "2k", hd2160: "4k", highres: "8k" }; //Token - x-youtube-client-version
-            const D = /(["'])ID_TOKEN\1[:,]\s?"([^"]+)"/,
-                q = /(["'])INNERTUBE_CONTEXT_CLIENT_VERSION\1[:,]\s?"([^"]+)"/,
-                generateTokenVersion = async (e) => {
-                    var t;
-                    const n = await c.get("client-data");
-                    if (n) return r.L.info("Client data retrieved from cache.", n), n;
-                    let i;
-                    r.L.info(`Getting client data from watch page for video ID "${e}"`);
-                    try {
-                        i = await (0, o.A)(r.W, { params: { v: e, hl: "en", bpctr: Math.ceil(Date.now() / 1e3).toString() } });
-                    } catch (e) {
-                        throw (r.L.error("Client data request failed.", { error: e }), new Error(`Client data request failed with status code ${null == (t = e.response) ? void 0 : t.status}`));
+                const ID_TOKEN_REGEX = /(["'])ID_TOKEN\1[:,]\s?"([^"]+)"/;
+                const INNERTUBE_CONTEXT_VERSION_REGEX = /(["'])INNERTUBE_CONTEXT_CLIENT_VERSION\1[:,]\s?"([^"]+)"/;
+                
+                const generateTokenVersion = async (videoId) => {
+                    let response;
+                
+                    const cachedData = await c.get("client-data");
+                    if (cachedData) {
+                        r.L.info("Client data retrieved from cache.", cachedData);
+                        return cachedData;
                     }
-                    const a = i.data;
-                    // y-youtube client init version 2.20240816.01.00
-                    let token,
-                        version = "2.20210623.00.00",     
-                        u = a.match(D);
-                    return (
-                        u && (([, , token] = u), ({ token } = JSON.parse(`{ "token": "${token}" }`))),
-                        (u = a.match(q)),
-                        u && (version = u[2]),
-                        r.L.success("Client data extracted.", { version, token }),
-                        c.set("client-data", { version, token }, 1800),
-                        { version, token }
-                    );
+                
+                    r.L.info(`Getting client data from watch page for video ID "${videoId}"`);
+                    try {
+                        response = await (0, o.A)(r.W, {
+                            params: {
+                                v: videoId,
+                                hl: "en",
+                                bpctr: Math.ceil(Date.now() / 1000).toString()
+                            }
+                        });
+                    } catch (error) {
+                        r.L.error("Client data request failed.", { error });
+                        throw new Error(`Client data request failed with status code ${error.response?.status}`);
+                    }
+                
+                    const responseData = response.data;
+                    let token, version = "2.20210623.00.00";
+                
+                    const tokenMatch = responseData.match(ID_TOKEN_REGEX);
+                    if (tokenMatch) {
+                        [, , token] = tokenMatch;
+                        token = JSON.parse(`{ "token": "${token}" }`).token;
+                    }
+                
+                    const versionMatch = responseData.match(INNERTUBE_CONTEXT_VERSION_REGEX);
+                    if (versionMatch) {
+                        version = versionMatch[2];
+                    }
+                
+                    r.L.success("Client data extracted.", { version, token });
+                    c.set("client-data", { version, token }, 1800);
+                
+                    return { version, token };
                 };
             const N = async (e) => {
                 var t;
@@ -1046,7 +1117,7 @@
                     
                         return info;
                     })(info.formats, info.title, i);
-
+        
                     r.L.success("Download formats sorted and parsed.", { downloads: a });
                     const s = [];
                     
@@ -1056,7 +1127,7 @@
                     info.autoCaptions.forEach((e) => {
                         s.push({ languageCode: e.languageCode, languageName: e.languageName, url: e.url, autoGenerated: !0, format: "webvtt" });
                     });
-
+        
                     const videoInfo = {
                         id: info.id,
                         title: info.title,
@@ -1114,7 +1185,7 @@
                 return null;
             });
         },
-        8529: (e, t, n) => {
+        8529: (e, t, n) => {    // get yt info
             "use strict";
             n.d(t, { L: () => a, P: () => l, W: () => c, a: () => s });
             var r = Object.defineProperty,
@@ -1168,28 +1239,28 @@
                 c = "https://www.youtube.com/watch",
                 l = /([a-zA-Z0-9_-]{8,})\/player_ias\.vflset(?:\/[a-zA-Z]{2,3}_[a-zA-Z]{2,3})?\/base\.([a-z]+)$/;
         },
-        577: (e, t, n) => {
+        577: (module, exports, require) => {
             "use strict";
-            n.d(t, { pe: () => i });
-            var r = n(9902);
-            const {
-                Axios: o,
-                AxiosError: i,
-                CanceledError: a,
-                isCancel: s,
-                CancelToken: c,
-                VERSION: l,
-                all: u,
-                Cancel: d,
-                isAxiosError: p,
-                spread: f,
-                toFormData: m,
-                AxiosHeaders: h,
-                HttpStatusCode: y,
-                formToJSON: b,
-                getAdapter: g,
-                mergeConfig: w,
-            } = r.A;
+            // require.d(exports, { pe: () => i });
+            var r = require(9902);
+            // const {
+            //     Axios: o,
+            //     AxiosError: i,
+            //     CanceledError: a,
+            //     isCancel: s,
+            //     CancelToken: c,
+            //     VERSION: l,
+            //     all: u,
+            //     Cancel: d,
+            //     isAxiosError: p,
+            //     spread: f,
+            //     toFormData: m,
+            //     AxiosHeaders: h,
+            //     HttpStatusCode: y,
+            //     formToJSON: b,
+            //     getAdapter: g,
+            //     mergeConfig: w,
+            // } = r.A;
         },
         9902: (e, t, n) => {
             "use strict";
