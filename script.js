@@ -439,44 +439,38 @@ const assignProperty = (obj, key, value) => {
 
 const ClientData = class e{
     static get(key) {
-        return new Promise((resolve) => {
-            const storageKey = `${e.PREFIX}:${key}`;
-            localStorage.getItem(storageKey, (result) => {
-                const item = result[storageKey];
-                if (typeof item === "undefined") {
-                    resolve(null);
-                } else if (!item.expiresAt || item.expiresAt > Date.now()) {
-                    resolve(item.value);
-                } else {
-                    localStorage.removeItem(storageKey, () => resolve(null));
-                }
-            });
-        });
+        const storageKey = `${e.PREFIX}:${key}`;
+        const result = localStorage.getItem(storageKey);
+        if(!result) return null;
+
+        const item = result[storageKey];
+
+        if (typeof item === "undefined") {
+            return null;
+        } else if (!item.expiresAt || item.expiresAt > Date.now()) {
+            return item.value;
+        } else {
+            localStorage.removeItem(storageKey);
+            return null
+        }
     }
 
     static set(key, value, expiry) {
-        return new Promise((resolve) => {
-            const storageKey = `${e.PREFIX}:${key}`;
-            const expiresAt = expiry ? Date.now() + 1000 * Math.abs(expiry) : null;
-            const data = { value: value, expiresAt: expiresAt };
-            localStorage.setItem({ [storageKey]: data }, resolve);
-        });
-    }
+        const storageKey = `${e.PREFIX}:${key}`;
+        const expiresAt = expiry ? Date.now() + 1000 * Math.abs(expiry) : null;
+        const data = { value: value, expiresAt: expiresAt };
+        localStorage.setItem({ [storageKey]: data }, resolve);
+   }
 
     static remove(key) {
-        return new Promise((resolve) => {
-            const storageKey = `${e.PREFIX}:${key}`;
-            localStorage.removeItem(storageKey, resolve);
-        });
+        const storageKey = `${e.PREFIX}:${key}`;
+        localStorage.removeItem(storageKey);
     }
 
     static clear(prefix = "") {
-        return new Promise((resolve) => {
-            localStorage.getItem(null, (result) => {
-                const keysToRemove = Object.keys(result).filter((key) => key.startsWith(`${e.PREFIX}:${prefix}`));
-                localStorage.removeItem(keysToRemove, resolve);
-            });
-        });
+        const result = localStorage.getItem(null);
+        const keysToRemove = Object.keys(result).filter((key) => key.startsWith(`${e.PREFIX}:${prefix}`));
+        localStorage.removeItem(keysToRemove);
     }
 };
 
